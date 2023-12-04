@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tum"
+version = "1.0.0"
+description = "TA2 Table Understanding"
+authors = ["Binh Vu <binh@toan2.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sem-desc = "^5.5.0"
+gramsplus = "^3.0.1"
+serde2 = "^1.6.2"
+ream2 = "^3.8.0"
+kgdata = "^5.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

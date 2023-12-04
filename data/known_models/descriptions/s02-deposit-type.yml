@@ -1,0 +1,11 @@
+prefixes:
+  mndr: https://minmod.isi.edu/resource/
+models:
+  - nodes:
+      - id: deposit-type
+        col_index: 0
+        label: Deposit type
+      - id: mineral-site
+        uri: mndr:MineralSite
+    edges:
+      - mineral-site---mndr:deposit_type---deposit-type

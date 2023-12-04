@@ -1,0 +1,23 @@
+prefixes:
+  mndr: https://minmod.isi.edu/resource/
+models:
+  - nodes:
+      - id: cutoff-value
+        col_index: 0
+        label: Cut-Off (% Zinc)
+      - id: category
+        col_index: 1
+        label: Category
+      - id: tons
+        col_index: 2
+        label: Tons
+      - id: zinc
+        col_index: 3
+        label: "% Zinc"
+      - id: inventory
+        uri: mndr:MineralInventory
+    edges:
+      - inventory---mndr:category---category
+      - inventory---mndr:p_cutoff_grade---cutoff-value
+      - inventory---mndr:p_ore_t---tons
+      - inventory---mndr:p_grade_zn---zinc

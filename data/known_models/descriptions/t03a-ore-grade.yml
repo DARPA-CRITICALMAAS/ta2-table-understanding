@@ -1,0 +1,29 @@
+prefixes:
+  mndr: https://minmod.isi.edu/resource/
+models:
+  - nodes:
+      - id: ore
+        col_index: 0
+        label: Mt ore
+      - id: pb
+        col_index: 1
+        label: "%Pb"
+      - id: zn
+        col_index: 2
+        label: "%Zn"
+      - id: ag
+        col_index: 3
+        label: "g/t Ag"
+      - id: inventory1
+        uri: mndr:MineralInventory
+      - id: inventory2
+        uri: mndr:MineralInventory
+      - id: inventory3
+        uri: mndr:MineralInventory
+    edges:
+      - inventory1---mndr:ore---ore
+      - inventory1---mndr:grade---pb
+      - inventory2---mndr:ore---ore
+      - inventory2---mndr:grade---zn
+      - inventory3---mndr:ore---ore
+      - inventory3---mndr:grade---ag

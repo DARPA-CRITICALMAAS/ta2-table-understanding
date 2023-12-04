@@ -1,0 +1,7 @@
+id,label,aliases,description
+p_ore_Mt,ore Mt,Mt ore,ore in million tonnes
+p_ore_t,ore t,t ore,ore in tonnes
+p_grade_zn,%zn,% Zn|zn %|Zn%,grade of zinc in percentage
+p_grade_pb,%pb,% Pb|pb %|Pb%,grade of lead in percentage
+p_grade_ag,g/t Ag,Ag g/t,grade of silver in grams per tonne
+p_cutoff_grade,cutoff (%),% cutoff|%cutoff|cutoff %|cutoff%,cutoff grade in percentage
