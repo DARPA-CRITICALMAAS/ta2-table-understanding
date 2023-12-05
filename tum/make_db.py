@@ -7,9 +7,6 @@ from pathlib import Path
 import orjson
 from drepr.engine import MemoryOutput, OutputFormat, execute
 from drepr.models import DRepr
-from rdflib import RDFS, Graph
-from tum.db import MNDRDB
-
 from kgdata.dataset import Dataset
 from kgdata.db import GenericDB, build_database, deser_from_dict, ser_to_dict
 from kgdata.dbpedia.datasets.ontology_dump import aggregated_triples
@@ -17,13 +14,10 @@ from kgdata.misc.resource import RDFResource, assert_not_bnode
 from kgdata.models.entity import Entity, EntityLabel, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
+from rdflib import RDFS, Graph
 
-CRITICAL_MAAS_DIR = Path(
-    os.environ.get(
-        "CRITICAL_MAAS_DIR",
-        str(Path(__file__).parent.parent.parent),
-    )
-)
+from tum.config import CRITICAL_MAAS_DIR
+from tum.db import MNDRDB
 
 MINMOD_ENTITIES = CRITICAL_MAAS_DIR / "ta2-minmod-data/data/entities"
 MINMOD_ONTOLOGY_FILE = CRITICAL_MAAS_DIR / "ta2-minmod-data/data/ontology.ttl"

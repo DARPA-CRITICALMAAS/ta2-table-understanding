@@ -4,13 +4,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import pandas as pd
-from grams.actors.data import DataActor
-from grams.semanticmodeling.postprocessing.cgraph import BaseEdge, CGNode, CGraph
-from grams.semanticmodeling.postprocessing.steiner_tree import SteinerTree
-from hugedict.chained_mapping import ChainedMapping
-
 from dsl.dsl import DSL
 from dsl.input import DSLTable
+from hugedict.chained_mapping import ChainedMapping
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.models.ont_property import OntologyProperty
 from ream.actors.base import BaseActor
@@ -26,6 +22,10 @@ from sm.outputs.semantic_model import (
     SemanticModel,
     SemanticType,
 )
+
+from tum.actors.data import DataActor
+from tum.lib.cgraph import BaseEdge, CGNode, CGraph
+from tum.lib.steiner_tree import SteinerTree
 
 
 @dataclass
