@@ -12,6 +12,7 @@ from ream.actors.base import BaseActor
 from sm.misc.ray_helper import get_instance
 from sm.namespaces.utils import KGName, get_kgns, register_kgns
 
+from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
 
 
@@ -66,7 +67,7 @@ class DBActor(BaseActor[DBActorArgs]):
         }
 
 
-PyKGDB: TypeAlias = Union[GenericDB, WikidataDB]
+PyKGDB: TypeAlias = MNDRDB
 
 
 @dataclass
@@ -79,12 +80,7 @@ class KGDB:
 
     @cached_property
     def pydb(self) -> PyKGDB:
-        if self.args.name == KGName.Wikidata:
-            return WikidataDB(self.args.datadir)
-        elif self.args.name == KGName.Generic:
-            return GenericDB(self.args.datadir)
-        else:
-            raise NotImplementedError()
+        return MNDRDB(self.args.datadir)
 
     @staticmethod
     def get_instance(db: KGDB | KGDBArgs) -> KGDB:

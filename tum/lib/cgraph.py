@@ -4,28 +4,52 @@ from dataclasses import dataclass
 from typing import Optional, TypeAlias
 
 from graph.retworkx import BaseEdge, BaseNode, RetworkXStrDiGraph
+
 from sm.dataset import FullTable
 from sm.misc.funcs import assert_not_null
 
 
-@dataclass
 class CGNode(BaseNode[str]):
-    id: str  # it is number but converted into a string
+    def __init__(
+        self,
+        id: str,
+        is_statement_node: bool,
+        is_column_node: bool,
+        is_entity_node: bool,
+        is_literal_node: bool,
+        is_in_context: bool,
+        column_index: Optional[int],
+        value: Optional[str],
+    ):
+        super().__init__(id)
+        self.is_statement_node = is_statement_node
+        self.is_column_node = is_column_node
+        self.is_entity_node = is_entity_node
+        self.is_literal_node = is_literal_node
+        self.is_in_context = is_in_context
+        self.column_index = column_index  # not null if is_column_node=True
+        self.value = value  # will be URI if it's entity/class, or value if it's literal
 
-    is_statement_node: bool
-    is_column_node: bool
-    is_entity_node: bool
-    is_literal_node: bool
-    is_in_context: bool
+    @property
+    def is_class_node(self) -> bool:
+        return (
+            not self.is_entity_node
+            and not self.is_column_node
+            and not self.is_statement_node
+            and not self.is_literal_node
+        )
 
-    column_index: Optional[int]  # not null if is_column_node=True
+
+class CGEdge(BaseEdge[str, str]):
+    def __init__(self, id: int, source: str, target: str, key: str, score: float):
+        super().__init__(id, source, target, key)
+        self.score = score
 
 
 CGEdgeTriple: TypeAlias = tuple[str, str, str]
-CGEdge: TypeAlias = BaseEdge[str, str]
 
 
-class CGraph(RetworkXStrDiGraph[str, CGNode, BaseEdge[str, str]]):
+class CGraph(RetworkXStrDiGraph[str, CGNode, CGEdge]):
     """A temporary copied version of the candidate graph in Rust for running post-processing"""
 
     def remove_dangling_statement(self):

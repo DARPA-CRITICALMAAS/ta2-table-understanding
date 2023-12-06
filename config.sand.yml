@@ -1,0 +1,39 @@
+kgns: tum.namespace.MNDRNamespace.create
+entity:
+  constructor: tum.integrations.sand.get_entity_db
+  args:
+    dbfile: ::RELPATH::../data/databases/entities.db
+  default: builtins.dict
+  instanceof:
+    https://minmod.isi.edu/resource/: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+  nil:
+    id: drepr:nil
+    uri: https://purl.org/drepr/ontology/1.0/nil
+  new_entity_template: https://minmod.isi.edu/resource/{id}
+class:
+  constructor: tum.integrations.sand.get_ontclass_db
+  args:
+    dbfile: ::RELPATH::../data/databases/classes.db
+  default: builtins.dict
+property:
+  constructor: tum.integrations.sand.get_ontprop_db
+  args:
+    dbfile: ::RELPATH::../data/databases/properties.db
+  default: builtins.dict
+  # default: tum.integrations.sand.get_default_properties
+semantic_model:
+  identifiers:
+    - http://www.w3.org/2000/01/rdf-schema#label
+  statements:
+    - http://wikiba.se/ontology#Statement
+search:
+  # entity: sand.extensions.search.default_search.DefaultSearch
+  # ontology: sand.extensions.search.default_search.DefaultSearch
+  entity: tum.integrations.sand.dummy_search
+  ontology: tum.integrations.sand.dummy_search
+export:
+  default: drepr
+  drepr: tum.integrations.drepr.CustomizedDReprExport
+assistant:
+  default: grams+minmod
+  grams+minmod: tum.integrations.sand.GramsMinModAssistant

@@ -1,17 +1,28 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from dataclasses import dataclass
 from functools import cached_property, lru_cache, partial
 from pathlib import Path
+from typing import cast
 
-from rdflib import RDF, RDFS, XSD, Graph
-
-from kgdata.db import deser_from_dict, make_get_rocksdb, ser_to_dict, small_dbopts
+import pandas as pd
+from kgdata.db import (
+    GenericDB,
+    deser_from_dict,
+    make_get_rocksdb,
+    ser_to_dict,
+    small_dbopts,
+)
 from kgdata.dbpedia.datasets.entities import to_entity
 from kgdata.dbpedia.datasets.ontology_dump import aggregated_triples
 from kgdata.models.entity import Entity
+from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.models.ont_class import OntologyClass
 from kgdata.models.ont_property import OntologyProperty
+from rdflib import RDF, RDFS, XSD, Graph
+from sm.namespaces.namespace import KnowledgeGraphNamespace
+from sm.outputs.semantic_model import SemanticType
 
 get_entity_db = make_get_rocksdb(
     ser_value=ser_to_dict,
@@ -33,7 +44,24 @@ get_prop_db = make_get_rocksdb(
 )
 
 
-class MNDRDB:
+@dataclass
+class MetaProperty(OntologyProperty):
+    expand_graph: list[tuple[str, str, str]]
+
+    def get_equivalent_property(self) -> str:
+        for edge in self.expand_graph:
+            if edge[2] == "[target]":
+                return edge[1]
+        raise ValueError("Meta property must have one [target] marker")
+
+    def get_target_semantic_type(self) -> tuple[str, str]:
+        for edge in self.expand_graph:
+            if edge[2] == "[target]":
+                return edge[0], edge[1]
+        raise ValueError("Meta property must have one [target] marker")
+
+
+class MNDRDB(GenericDB):
     instance = None
 
     def __init__(self, database_dir: Path | str, read_only: bool = True):
@@ -66,6 +94,48 @@ class MNDRDB:
     @cached_property
     def props(self):
         return get_prop_db(self.database_dir / "props.db", read_only=self.read_only)
+
+    def get_meta_properties(
+        self, kgns: KnowledgeGraphNamespace, meta_prop_file: Path
+    ) -> dict[str, OntologyProperty]:
+        props = {}
+        df = pd.read_csv(str(meta_prop_file))
+
+        for _, row in df.iterrows():
+            mndr = kgns.prefix2ns["mndr"]
+            prop = MetaProperty(
+                id=mndr + row["id"],
+                label=MultiLingualString.en(row["label"]),
+                description=MultiLingualString.en(row["description"]),
+                aliases=MultiLingualStringList.en(
+                    [str(x).strip() for x in row["aliases"].split("|")]
+                ),
+                datatype="",
+                parents=[],
+                related_properties=[],
+                equivalent_properties=[],
+                subjects=[],
+                inverse_properties=[],
+                instanceof=[],
+                ancestors={},
+                expand_graph=[
+                    cast(
+                        tuple[str, str, str],
+                        (
+                            [
+                                resource
+                                if resource in ["[source]", "[target]"]
+                                else kgns.get_abs_uri(resource)
+                                for resource in edge.split("--")
+                            ]
+                        ),
+                    )
+                    for edge in row["graph"].split(",")
+                ],
+            )
+            prop.equivalent_properties.append(prop.get_equivalent_property())
+            props[prop.id] = prop
+        return props
 
     @classmethod
     @lru_cache()

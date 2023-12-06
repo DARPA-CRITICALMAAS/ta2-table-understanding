@@ -25,6 +25,7 @@ actor = G.create_actor(
             train_dsquery="darpa-criticalmaas",
             meta_prop_file=CRITICAL_MAAS_DIR
             / "ta2-table-understanding/data/meta_property/data.csv",
+            top_n_stypes=2,
         ),
         MinmodGraphInferenceActorArgs(),
     ],

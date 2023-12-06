@@ -2,28 +2,78 @@ prefixes:
   mndr: https://minmod.isi.edu/resource/
 models:
   - nodes:
-      - id: ore
+      - id: col:ore
         col_index: 0
         label: Mt ore
-      - id: pb
+      - id: col:pb
         col_index: 1
         label: "%Pb"
-      - id: zn
+      - id: col:zn
         col_index: 2
         label: "%Zn"
-      - id: ag
+      - id: col:ag
         col_index: 3
         label: "g/t Ag"
-      - id: inventory1
+
+      - id: cls:ore
+        uri: mndr:Ore
+      - id: cls:grade:pb
+        uri: mndr:Grade
+      - id: cls:grade:zn
+        uri: mndr:Grade
+      - id: cls:grade:ag
+        uri: mndr:Grade
+      - id: cls:inventory:1
         uri: mndr:MineralInventory
-      - id: inventory2
+      - id: cls:inventory:2
         uri: mndr:MineralInventory
-      - id: inventory3
+      - id: cls:inventory:3
         uri: mndr:MineralInventory
+
+      - id: ent:zn
+        value: https://minmod.isi.edu/resource/Q589
+        readable_label: "Zinc"
+        datatype: "entity-id"
+      - id: ent:ag
+        value: https://minmod.isi.edu/resource/Q585
+        readable_label: "Silver"
+        datatype: "entity-id"
+      - id: ent:pb
+        value: https://minmod.isi.edu/resource/Q565
+        readable_label: "Lead"
+        datatype: "entity-id"
+
+      - id: unit:mton
+        value: https://minmod.isi.edu/resource/Q202
+        readable_label: "million tonnes"
+        datatype: "entity-id"
+      - id: unit:percent
+        value: https://minmod.isi.edu/resource/Q201
+        readable_label: "percent"
+        datatype: "entity-id"
+      - id: unit:g/t
+        value: https://minmod.isi.edu/resource/Q203
+        readable_label: "g/t"
+        datatype: "entity-id"
     edges:
-      - inventory1---mndr:ore---ore
-      - inventory1---mndr:grade---pb
-      - inventory2---mndr:ore---ore
-      - inventory2---mndr:grade---zn
-      - inventory3---mndr:ore---ore
-      - inventory3---mndr:grade---ag
+      - cls:inventory:1---mndr:ore---cls:ore
+      - cls:inventory:1---mndr:grade---cls:grade:pb
+      - cls:inventory:1---mndr:commodity---ent:pb
+
+      - cls:inventory:2---mndr:ore---cls:ore
+      - cls:inventory:2---mndr:grade---cls:grade:zn
+      - cls:inventory:2---mndr:commodity---ent:zn
+
+      - cls:inventory:3---mndr:ore---cls:ore
+      - cls:inventory:3---mndr:grade---cls:grade:ag
+      - cls:inventory:3---mndr:commodity---ent:ag
+
+      - cls:ore---mndr:ore_value---col:ore
+      - cls:ore---mndr:ore_unit---unit:mton
+
+      - cls:grade:pb---mndr:grade_value---col:pb
+      - cls:grade:pb---mndr:grade_unit---unit:percent
+      - cls:grade:zn---mndr:grade_value---col:zn
+      - cls:grade:zn---mndr:grade_unit---unit:percent
+      - cls:grade:ag---mndr:grade_value---col:ag
+      - cls:grade:ag---mndr:grade_unit---unit:g/t

@@ -1,0 +1,138 @@
+version: "2"
+resources: csv
+preprocessing:
+  - type: pmap
+    path: [1.., 4]
+    code: |
+      id = hash(("simon_2017_zinc_db", value)) % 10000000 + 100000
+      return "https://minmod.isi.edu/resource/Q" + str(id)
+attributes:
+  deposit_uri: [1.., 4]
+  deposit: [1.., 0]
+  country: [1.., 1]
+  primary_deposit_type: [1.., 2]
+  source: [1.., 5]
+  mt_ore:
+    path: [1.., 7]
+    missing_values: [""]
+  pb:
+    path: [1.., 8]
+    missing_values: [""]
+  zn:
+    path: [1.., 9]
+    missing_values: [""]
+  ag:
+    path: [1.., 10]
+    missing_values: [""]
+  au:
+    path: [1.., 12]
+    missing_values: [""]
+  cu:
+    path: [1.., 13]
+    missing_values: [""]
+alignments:
+  - type: dimension
+    value: deposit:0 <-> deposit_uri:0
+  - type: dimension
+    value: deposit:0 <-> country:0
+  - type: dimension
+    value: deposit:0 <-> primary_deposit_type:0
+  - type: dimension
+    value: deposit:0 <-> source:0
+  - type: dimension
+    value: deposit:0 <-> mt_ore:0
+  - type: dimension
+    value: deposit:0 <-> pb:0
+  - type: dimension
+    value: deposit:0 <-> zn:0
+  - type: dimension
+    value: deposit:0 <-> ag:0
+  - type: dimension
+    value: deposit:0 <-> au:0
+  - type: dimension
+    value: deposit:0 <-> cu:0
+semantic_model:
+  mndr:MineralSite:1:
+    properties:
+      - [drepr:uri, deposit_uri]
+      - [rdfs:label, deposit]
+      - [mndr:deposit_type, primary_deposit_type]
+    links:
+      - [mndr:location_info, mndr:LocationInfo:1]
+      - [mndr:mineral_inventory, mndr:MineralInventory:1]
+      - [mndr:mineral_inventory, mndr:MineralInventory:2]
+      - [mndr:mineral_inventory, mndr:MineralInventory:3]
+      - [mndr:mineral_inventory, mndr:MineralInventory:4]
+      - [mndr:mineral_inventory, mndr:MineralInventory:5]
+  mndr:Ore:1:
+    properties:
+      - [mndr:ore_value, mt_ore, xsd:decimal]
+    static_properties:
+      - [mndr:ore_unit, "https://minmod.isi.edu/resource/Q202", xsd:anyURI]
+  mndr:LocationInfo:1:
+    properties:
+      - [mndr:country, country]
+
+  mndr:MineralInventory:1:
+    static_properties:
+      - [mndr:commodity, https://minmod.isi.edu/resource/Q565, xsd:anyURI]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:1]
+  mndr:MineralInventory:2:
+    static_properties:
+      - [mndr:commodity, https://minmod.isi.edu/resource/Q589, xsd:anyURI]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:2]
+  mndr:MineralInventory:3:
+    static_properties:
+      - [mndr:commodity, https://minmod.isi.edu/resource/Q585, xsd:anyURI]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:3]
+  mndr:MineralInventory:4:
+    static_properties:
+      - [mndr:commodity, https://minmod.isi.edu/resource/Q538, xsd:anyURI]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:4]
+  mndr:MineralInventory:5:
+    static_properties:
+      - [mndr:commodity, https://minmod.isi.edu/resource/Q551, xsd:anyURI]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:5]
+
+  mndr:Grade:1:
+    properties:
+      - [mndr:grade_value, pb, xsd:decimal]
+    static_properties:
+      - [mndr:grade_unit, https://minmod.isi.edu/resource/Q201, xsd:anyURI]
+  mndr:Grade:2:
+    properties:
+      - [mndr:grade_value, zn, xsd:decimal]
+    static_properties:
+      - [mndr:grade_unit, https://minmod.isi.edu/resource/Q201, xsd:anyURI]
+  mndr:Grade:3:
+    properties:
+      - [mndr:grade_value, ag, xsd:decimal]
+    static_properties:
+      - [mndr:grade_unit, https://minmod.isi.edu/resource/Q203, xsd:anyURI]
+  mndr:Grade:4:
+    properties:
+      - [mndr:grade_value, au, xsd:decimal]
+    static_properties:
+      - [mndr:grade_unit, https://minmod.isi.edu/resource/Q201, xsd:anyURI]
+  mndr:Grade:5:
+    properties:
+      - [mndr:grade_value, cu, xsd:decimal]
+    static_properties:
+      - [mndr:grade_unit, https://minmod.isi.edu/resource/Q203, xsd:anyURI]
+
+  prefixes:
+    mndr: https://minmod.isi.edu/resource/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    owl: http://www.w3.org/2002/07/owl#
+    gkbi: https://geokb.wikibase.cloud/entity/

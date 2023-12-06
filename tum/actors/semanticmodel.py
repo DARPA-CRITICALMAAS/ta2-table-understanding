@@ -2,18 +2,21 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Mapping
 
-import pandas as pd
 from dsl.dsl import DSL
+from dsl.generate_train_data import DefaultSemanticTypeComparator
 from dsl.input import DSLTable
 from hugedict.chained_mapping import ChainedMapping
-from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
+from kgdata.models.ont_class import OntologyClass
 from kgdata.models.ont_property import OntologyProperty
+from loguru import logger
+from ream.actor_version import ActorVersion
 from ream.actors.base import BaseActor
 from ream.cache_helper import Cache, MemBackend
 from ream.params_helper import NoParams
 from sm.dataset import Example, FullTable
-from sm.misc.funcs import group_by
+from sm.misc.funcs import assert_not_null
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.outputs.semantic_model import (
     ClassNode,
@@ -24,8 +27,11 @@ from sm.outputs.semantic_model import (
 )
 
 from tum.actors.data import DataActor
-from tum.lib.cgraph import BaseEdge, CGNode, CGraph
+from tum.db import MetaProperty
+from tum.lib.cgraph import CGraph
+from tum.lib.graph_generation import GraphGeneration
 from tum.lib.steiner_tree import SteinerTree
+from tum.misc import SemanticTypePrediction
 
 
 @dataclass
@@ -36,23 +42,11 @@ class MinmodGraphGenerationActorArgs:
 
 
 MinmodGraphInferenceActorArgs = NoParams
-
-
-@dataclass
-class MinmodCanGraphExtractedResult:
-    nodes: dict[str, dict]
-    edges: list[dict]
-
-
-@dataclass
-class SemanticTypePrediction:
-    stype: SemanticType
-    score: float
-    column: int
+MinmodCanGraphExtractedResult = CGraph
 
 
 class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
-    VERSION = 103
+    VERSION = ActorVersion.create(108, [DSL])
 
     def __init__(self, params: MinmodGraphGenerationActorArgs, data_actor: DataActor):
         super().__init__(params, dep_actors=[data_actor])
@@ -62,7 +56,6 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
         kgns = self.data_actor.get_kgdb(dsquery).kgns
 
         examples = self.data_actor(dsquery)
-
         example_stypes = self.get_dsl()(
             [ex.replace_table(DSLTable.from_full_table(ex.table)) for ex in examples],
             top_n=self.params.top_n_stypes,
@@ -74,11 +67,14 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
                 self.gen_graph(
                     ex,
                     [
-                        SemanticTypePrediction(
-                            (s := example_stypes[ei][ci][0]).semantic_type,
-                            s.score,
-                            col.index,
-                        )
+                        [
+                            SemanticTypePrediction(
+                                stype.semantic_type,
+                                stype.score,
+                                col.index,
+                            )
+                            for stype in example_stypes[ei][ci]
+                        ]
                         for ci, col in enumerate(ex.table.table.columns)
                     ],
                     kgns,
@@ -90,125 +86,43 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
     def gen_graph(
         self,
         ex: Example[FullTable],
-        ex_stypes: list[SemanticTypePrediction],
+        ex_stypes: list[list[SemanticTypePrediction]],
         kgns: KnowledgeGraphNamespace,
-    ):
-        cls2types = group_by(ex_stypes, lambda stype: stype.stype.class_abs_uri)
-
-        nodes: dict[str, dict] = {}
-        edges: list[dict] = []
-
-        mineral_site = kgns.get_abs_uri("mndr:MineralSite")
-
-        if mineral_site in cls2types:
-            source_id = mineral_site + ":0"
-            nodes[source_id] = {
-                "id": source_id,
-                "uri": mineral_site,
-                "score": max(stype.score for stype in cls2types[mineral_site]),
-            }
-            for stype in cls2types.pop(mineral_site):
-                target_id = f"col:{stype.column}"
-                nodes[target_id] = {
-                    "id": target_id,
-                    "col_index": stype.column,
-                    "label": ex.table.table.columns[stype.column].clean_multiline_name,
-                    "score": 1.0,
-                }
-                edges.append(
-                    {
-                        "source": source_id,
-                        "target": target_id,
-                        "predicate": stype.stype.predicate_abs_uri,
-                        "score": stype.score,
-                    }
-                )
-
-        mineral_inventory = kgns.get_abs_uri("mndr:MineralInventory")
-        if mineral_inventory in cls2types:
-            # TODO: fix me -- infer this list
-            key_props = {
-                kgns.get_abs_uri(reluri)
-                for reluri in [
-                    "mndr:grade",
-                    "mndr:p_grade_zn",
-                    "mndr:p_grade_pb",
-                    "mndr:p_grade_ag",
-                ]
-            }
-            inventory_props = cls2types.pop(mineral_inventory)
-            node_inventories = {}
-            for i, stype in enumerate(inventory_props):
-                if stype.stype.predicate_abs_uri not in key_props:
-                    continue
-                source_id = mineral_inventory + f":{i}"
-                target_id = f"col:{stype.column}"
-                node_inventories[source_id] = {
-                    "id": source_id,
-                    "uri": mineral_inventory,
-                    "score": stype.score,
-                }
-                nodes[target_id] = {
-                    "id": target_id,
-                    "col_index": stype.column,
-                    "label": ex.table.table.columns[stype.column].clean_multiline_name,
-                    "score": 1.0,
-                }
-                edges.append(
-                    {
-                        "source": source_id,
-                        "target": target_id,
-                        "predicate": stype.stype.predicate_abs_uri,
-                        "score": stype.score,
-                    }
-                )
-            nodes.update(node_inventories)
-
-            for i, stype in enumerate(inventory_props):
-                if stype.stype.predicate_abs_uri in key_props:
-                    continue
-
-                target_id = f"col:{stype.column}"
-                if target_id not in nodes:
-                    nodes[target_id] = {
-                        "id": target_id,
-                        "col_index": stype.column,
-                        "label": ex.table.table.columns[
-                            stype.column
-                        ].clean_multiline_name,
-                        "score": 1.0,
-                    }
-
-                for source_id in node_inventories:
-                    edges.append(
-                        {
-                            "source": source_id,
-                            "target": target_id,
-                            "predicate": stype.stype.predicate_abs_uri,
-                            "score": stype.score,
-                        }
-                    )
-
-        sources = [
-            node for node in nodes.values() if node.get("uri", None) == mineral_site
-        ]
-        targets = [
-            node
-            for node in nodes.values()
-            if node.get("uri", None) == mineral_inventory
-        ]
-        for source in sources:
-            for target in targets:
-                edges.append(
-                    {
-                        "source": source["id"],
-                        "target": target["id"],
-                        "predicate": kgns.get_abs_uri("mndr:mineral_inventory"),
-                        "score": 1.0,
-                    }
-                )
-
-        return MinmodCanGraphExtractedResult(nodes, edges)
+    ) -> MinmodCanGraphExtractedResult:
+        gen = GraphGeneration(
+            {
+                kgns.get_abs_uri("mndr:MineralSite"): 1,
+                kgns.get_abs_uri("mndr:LocationInfo"): 1,
+                kgns.get_abs_uri("mndr:MineralInventory"): 1,
+                kgns.get_abs_uri("mndr:Grade"): None,
+                kgns.get_abs_uri("mndr:Ore"): 1,
+            },
+            {
+                (
+                    kgns.get_abs_uri("mndr:MineralSite"),
+                    kgns.get_abs_uri("mndr:MineralInventory"),
+                ): {kgns.get_abs_uri("mndr:mineral_inventory"): 1.0},
+                (
+                    kgns.get_abs_uri("mndr:MineralSite"),
+                    kgns.get_abs_uri("mndr:LocationInfo"),
+                ): {kgns.get_abs_uri("mndr:location_info"): 1.0},
+                (
+                    kgns.get_abs_uri("mndr:MineralInventory"),
+                    kgns.get_abs_uri("mndr:Grade"),
+                ): {kgns.get_abs_uri("mndr:grade"): 1.0},
+                (
+                    kgns.get_abs_uri("mndr:MineralInventory"),
+                    kgns.get_abs_uri("mndr:Ore"),
+                ): {kgns.get_abs_uri("mndr:ore"): 1.0},
+            },
+        )
+        cg = gen(ex_stypes)
+        logger.info(
+            "Candidate Graph with: {} nodes and {} edges",
+            cg.num_nodes(),
+            cg.num_edges(),
+        )
+        return cg
 
     @Cache.cache(backend=MemBackend())
     def get_dsl(self):
@@ -222,37 +136,22 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
         kgdb = self.data_actor.get_kgdb(self.params.train_dsquery)
         db = kgdb.pydb
 
-        # TODO: fix me.
-        df = pd.read_csv(str(self.params.meta_prop_file))
         props = {}
         props.update(db.default_props)
-
-        for _, row in df.iterrows():
-            mndr = kgdb.kgns.prefix2ns["mndr"]
-            props[mndr + row["id"]] = OntologyProperty(
-                id=mndr + row["id"],
-                label=MultiLingualString.en(row["label"]),
-                description=MultiLingualString.en(row["description"]),
-                aliases=MultiLingualStringList.en(
-                    [str(x).strip() for x in row["aliases"].split("|")]
-                ),
-                datatype="",
-                parents=[],
-                related_properties=[],
-                equivalent_properties=[],
-                subjects=[],
-                inverse_properties=[],
-                instanceof=[],
-                ancestors={},
-            )
+        props.update(db.get_meta_properties(kgdb.kgns, self.params.meta_prop_file))
+        props = ChainedMapping(db.props.cache(), props)
 
         dsl = DSL(
             examples,
             self.get_working_fs().get("dsl").get_or_create(),
             db.classes,
-            ChainedMapping(db.props.cache(), props),
+            props,
         )
-        dsl.get_model(train_if_not_exist=True)
+        dsl.get_model(
+            train_if_not_exist=True,
+            stype_cmp=SemanticTypeMetaComparator(db.classes, props, kgdb.kgns),
+            save_train_data=True,
+        )
         return dsl
 
 
@@ -278,37 +177,15 @@ class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
     def predict_sm(
         self,
         ex: Example[FullTable],
-        cangraph: MinmodCanGraphExtractedResult,
+        cgraph: MinmodCanGraphExtractedResult,
         kgns: KnowledgeGraphNamespace,
     ):
-        cgraph = CGraph()
-        for node in cangraph.nodes.values():
-            cgraph.add_node(
-                CGNode(
-                    id=node["id"],
-                    is_statement_node=False,
-                    is_column_node="col_index" in node,
-                    is_entity_node=False,
-                    is_literal_node=False,
-                    is_in_context=False,
-                    column_index=node.get("col_index", None),
-                )
-            )
-
         edge_probs = {}
-        for edge in cangraph.edges:
-            cgraph.add_edge(
-                BaseEdge(
-                    id=-1,
-                    source=edge["source"],
-                    target=edge["target"],
-                    key=edge["predicate"],
-                )
-            )
-            edge_probs[(edge["source"], edge["target"], edge["predicate"])] = (
-                edge["score"]
-                * cangraph.nodes[edge["source"]]["score"]
-                * cangraph.nodes[edge["target"]]["score"]
+        for edge in cgraph.iter_edges():
+            edge_probs[(edge.source, edge.target, edge.key)] = (
+                edge.score
+                # * cangraph.nodes[edge["source"]]["score"]
+                # * cangraph.nodes[edge["target"]]["score"]
             )
 
         st = SteinerTree(
@@ -323,24 +200,29 @@ class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
         sm = SemanticModel()
         idmap = {}
         for e in pred_cg.iter_edges():
-            source = cangraph.nodes[e.source]
-            target = cangraph.nodes[e.target]
+            source = cgraph.get_node(e.source)
+            target = cgraph.get_node(e.target)
 
             for node in [source, target]:
-                if node["id"] not in idmap:
-                    if "col_index" in node:
-                        idmap[node["id"]] = sm.add_node(
+                if node.id not in idmap:
+                    if node.is_column_node:
+                        assert node.column_index is not None
+                        idmap[node.id] = sm.add_node(
                             DataNode(
-                                col_index=node["col_index"],
-                                label=node["label"],
+                                col_index=node.column_index,
+                                label=assert_not_null(
+                                    ex.table.table.get_column_by_index(
+                                        node.column_index
+                                    ).clean_multiline_name
+                                ),
                             )
                         )
                     else:
-                        assert "uri" in node
-                        idmap[node["id"]] = sm.add_node(
+                        assert node.value is not None and node.is_class_node
+                        idmap[node.id] = sm.add_node(
                             ClassNode(
-                                abs_uri=node["uri"],
-                                rel_uri=kgns.get_rel_uri(node["uri"]),
+                                abs_uri=node.value,
+                                rel_uri=kgns.get_rel_uri(node.value),
                             )
                         )
 
@@ -353,3 +235,48 @@ class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
                 )
             )
         return sm
+
+
+class SemanticTypeMetaComparator(DefaultSemanticTypeComparator):
+    def __init__(
+        self,
+        classes: Mapping[str, OntologyClass],
+        props: Mapping[str, OntologyProperty],
+        kgns: KnowledgeGraphNamespace,
+    ):
+        super().__init__(classes, props)
+        self.kgns = kgns
+
+    def __call__(self, stype1: SemanticType, stype2: SemanticType):
+        score = super().__call__(stype1, stype2)
+        if score == 1.0:
+            return score
+
+        stype1_prop = self.props[stype1.predicate_abs_uri]
+        stype2_prop = self.props[stype2.predicate_abs_uri]
+
+        need_recal = False
+
+        if isinstance(stype1_prop, MetaProperty):
+            newstype = stype1_prop.get_target_semantic_type()
+            stype1 = SemanticType(
+                class_abs_uri=newstype[0],
+                class_rel_uri=self.kgns.get_rel_uri(newstype[0]),
+                predicate_abs_uri=newstype[1],
+                predicate_rel_uri=self.kgns.get_rel_uri(newstype[1]),
+            )
+            need_recal = True
+
+        if isinstance(stype2_prop, MetaProperty):
+            newstype = stype2_prop.get_target_semantic_type()
+            stype2 = SemanticType(
+                class_abs_uri=newstype[0],
+                class_rel_uri=self.kgns.get_rel_uri(newstype[0]),
+                predicate_abs_uri=newstype[1],
+                predicate_rel_uri=self.kgns.get_rel_uri(newstype[1]),
+            )
+            need_recal = True
+
+        if need_recal:
+            score = max(score, self.__call__(stype1, stype2))
+        return score
