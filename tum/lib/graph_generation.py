@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import Optional
+from typing import Mapping, Optional, Sequence
 
 from tum.lib.cgraph import CGEdge, CGNode, CGraph
 from tum.misc import SemanticTypePrediction
@@ -8,13 +8,13 @@ from tum.misc import SemanticTypePrediction
 class GraphGeneration:
     def __init__(
         self,
-        classes: dict[str, Optional[int]],
-        object_props: dict[tuple[str, str], dict[str, float]],
+        classes: Mapping[str, Optional[int]],
+        object_props: Mapping[tuple[str, str], Mapping[str, float]],
     ):
         self.classes = classes
         self.object_props = object_props
 
-    def __call__(self, ex_stypes: list[list[SemanticTypePrediction]]):
+    def __call__(self, ex_stypes: Sequence[Sequence[SemanticTypePrediction]]):
         cg = CGraph()
 
         # construct classes
@@ -26,7 +26,7 @@ class GraphGeneration:
 
         class2nodes = defaultdict(list)
         for clsid, cols in class2cols.items():
-            n_classes = min(self.classes[clsid] or len(cols), len(cols))
+            n_classes = min(self.classes.get(clsid) or len(cols), len(cols))
             for i in range(n_classes):
                 uid = cg.add_node(
                     CGNode(
