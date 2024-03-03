@@ -1,4 +1,4 @@
-kgns: tum.namespace.MNDRNamespace.create
+kgns: tum.integrations.sand.WrappedMNDRNamespace.create
 entity:
   constructor: tum.integrations.sand.get_entity_db
   args:
@@ -20,7 +20,6 @@ property:
   args:
     dbfile: ::RELPATH::../data/databases/properties.db
   default: builtins.dict
-  # default: tum.integrations.sand.get_default_properties
 semantic_model:
   identifiers:
     - http://www.w3.org/2000/01/rdf-schema#label

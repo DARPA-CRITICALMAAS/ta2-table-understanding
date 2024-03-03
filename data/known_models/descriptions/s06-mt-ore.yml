@@ -1,0 +1,15 @@
+prefixes:
+  mndr: https://minmod.isi.edu/resource/
+models:
+  - nodes:
+      - id: c0
+        col_index: 0
+        label: Mt Ore
+      - id: c1
+        col_index: 1
+        label: "% Zn"
+      - id: cls
+        uri: mndr:MineralInventory
+    edges:
+      - cls---mndr:p_ore_Mt---c0
+      - cls---mndr:p_grade_zn---c1

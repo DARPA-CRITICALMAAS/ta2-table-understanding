@@ -95,6 +95,54 @@ class MNDRDB(GenericDB):
     def props(self):
         return get_prop_db(self.database_dir / "props.db", read_only=self.read_only)
 
+    def get_default_props(self):
+        props = super().get_default_props()
+        props.update(
+            {
+                "http://purl.org/drepr/1.0/unknown": OntologyProperty(
+                    id="http://purl.org/drepr/1.0/unknown",
+                    label=MultiLingualString.en("unknown"),
+                    description=MultiLingualString.en("type of an column is unknown"),
+                    aliases=MultiLingualStringList({"en": ["unknown"]}, "en"),
+                    datatype=str(XSD.string),
+                    parents=[],
+                    related_properties=[],
+                    equivalent_properties=[],
+                    subjects=[],
+                    inverse_properties=[],
+                    instanceof=[str(RDF.Property)],
+                    ancestors={},
+                )
+            }
+        )
+        return props
+
+    def get_default_classes(self):
+        return {
+            "http://purl.org/drepr/1.0/Unknown": OntologyClass(
+                id="http://purl.org/drepr/1.0/Unknown",
+                label=MultiLingualString.en("Unknown"),
+                description=MultiLingualString.en("type of an column is unknown"),
+                aliases=MultiLingualStringList({"en": ["unknown"]}, "en"),
+                parents=[],
+                properties=[],
+                different_froms=[],
+                equivalent_classes=[],
+                ancestors={},
+            ),
+            str(RDFS.Resource): OntologyClass(
+                id=str(RDFS.Resource),
+                label=MultiLingualString.en("Resource"),
+                description=MultiLingualString.en("Resource"),
+                aliases=MultiLingualStringList.en(["Resource", "Entity"]),
+                parents=[],
+                properties=[],
+                different_froms=[],
+                equivalent_classes=[],
+                ancestors={},
+            ),
+        }
+
     def get_meta_properties(
         self, kgns: KnowledgeGraphNamespace, meta_prop_file: Path
     ) -> dict[str, OntologyProperty]:
@@ -123,9 +171,11 @@ class MNDRDB(GenericDB):
                         tuple[str, str, str],
                         (
                             [
-                                resource
-                                if resource in ["[source]", "[target]"]
-                                else kgns.get_abs_uri(resource)
+                                (
+                                    resource
+                                    if resource in ["[source]", "[target]"]
+                                    else kgns.get_abs_uri(resource)
+                                )
                                 for resource in edge.split("--")
                             ]
                         ),

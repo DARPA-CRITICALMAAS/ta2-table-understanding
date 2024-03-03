@@ -1,0 +1,852 @@
+﻿Deposit,Country,Primary Deposit Type,Secondary Deposit Type,,Company,Source,Mt ore,%Zn
+Ain Khala,Algeria,Sediment-hosted Pb-Zn,MVT,NC,unknown,USGS OFR 1297,7.1,1.9
+Boukdema-Kef Semmah,Algeria,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),12,6.5
+El Abed,Algeria,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),38,3.52
+Kherzet Youcef,Algeria,Sediment-hosted Pb-Zn,MVT,NC,unknown,USGS OFR 1297,1.6,18.4
+Oued El Kebir,Algeria,VMS,Kuroko,C,formerly Celamin Holdings,Annual Report 2011,11.5,2.1
+Tala Hamza,Algeria,Epithermal,,C,Terramin Australia,Annual Report 2013,68.6,4.6
+Tan Chaffao Est,Algeria,VMS,,NC,Cancor Mines,Tech Rep (2012-02),6.585,1.65
+Aguilar,Argentina,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,Reserves-Resources 2013,8.82,4.6
+Los Azules,Argentina,Porphyry,,C,McEwen Mining,Tech Rep (2013-10),"1,786",0.02
+Navidad,Argentina,Epithermal,,C,Pan American Silver Corp.,Ann Info Form 2013,201.1,
+Pingüino,Argentina,Epithermal,Low sulfidation,C,Argentex Mining Corp,Tech Rep (2014-08),59.25,0.9
+Pirquitas,Argentina,Epithermal,Low sulfidation?,C,Silver Standard,Ann Info Form 2013,33.6,1.5
+Akhtala (Alaverdi),Armenia,VMS,,NC,unknown,Mederer et al 2014,1.2,4.48
+Armanis-Sagamar,Armenia,VMS,,NC,Global Metals,Website (2016-05-01),16.3,2.2
+Shahumyan (Kapan),Armenia,Epithermal,Low sulfidation?,C,Dundee Precious Metals,Ann Info Form 2013,13.4,1.74
+Shamlugh,Armenia,VMS,,NC,unknown,Calder et al (2014),4.5,4.96
+Marjan,Armenia,Epithermal,Low sulfidation,NC,Global Gold Corp,Website (2014-08-11),15.4,1.21
+Admiral Bay,Australia,Sediment-hosted Pb-Zn,MVT,C,Kagara,Ann Rep 2011,96.7,2.4
+Allison's Lode,Australia,VMS,,C,Zeehan Zinc / Creat Resources Holdings,Media (2009-03-29),0.057,4.41
+Altia,Australia,Sediment-hosted Pb-Zn,Sedex,C,Breakaway Resources (now Minotaur Exploration),Ann Rep 2012,5.8,0.5
+Anaconda,Australia,VMS,,C,Glencore (?),Minedex (2013-05-05),0.877,1.97
+Angas,Australia,Sediment-hosted Pb-Zn,Sedex,C,Terramin Australia,Ann Rep 2013,0.91,4.2
+Area 55,Australia,Magmatic sulfide,Sediment-hosted polymetallic,C,Hunnan Australia Resources,Ann Rep 2007 (Compass Res.),12.2,
+Balcooma Group,Australia,VMS,,C,Kagara,Ann Rep 2011,2.977,5.06
+Bali Hi,Australia,Epithermal,Low sulfidation?,C,Artemis Resources (?),Minedex (2013-05-05),0.095,
+Barrow Creek-Home of Bullion,Australia,VMS,,C,Kidman Resources,Ann Rep 2015,2.5,2
+Belara,Australia,VMS,,C,Ironbark Zinc,Website (2013-03-22),2.545,3.75
+Bentley,Australia,VMS,,C,Independence Group,Ann Rep 2013,2.77,9.6
+Bowdens,Australia,Epithermal,Low sulfidation,C,Kingsgate Consolidated,Ann Rep 2013,88,0.39
+Broken Hill (Aust),Australia,Sediment-hosted Pb-Zn,Sedex,C,Perilya Mines,media (2012-12-28),21.7,9.2
+Broken Hill (Aust)-Rasp,Australia,Sediment-hosted Pb-Zn,Sedex,C,Toho Zinc,Ann Rep 2009 (CBH),16.5,6.6
+Browns Reef,Australia,Orogenic Au,,C,Comet Resources,Ann Rep 2007,20.5,2
+Brown's-Brown's East,Australia,Sediment-hosted polymetallic,,C,HNC Australia Resources,NT DME Fact Sheet 2013-09,54.5,0.6
+Bulman,Australia,Sediment-hosted Pb-Zn,Sedex,C,Admiralty Resources,NT DME Fact Sheet 2013-09,1,11
+Burns Peak,Australia,VMS,,NC,Mancala Resources Pty Ltd,DPEMP (2014),0.12,9.1
+Burnside-Iron Blow,Australia,VMS,,C,Crocodile Gold,Tech Rep (2013-07),3.18,3.3
+Cannington,Australia,Sediment-hosted Pb-Zn,Sedex,C,BHP Billiton,Ann Rep 2013,96.3,2.98
+Carboona,Australia,Epithermal,Low sulfidation?,C,unknown,Aust Mines Atlas (2013-10-01),0.035,1.37
+Century-Century East,Australia,Sediment-hosted Pb-Zn,Sedex,C,MMG,Ann Rep 2013,17.6,1.5
+Chakola-Harnett Central,Australia,VMS,,C,Capital Mining,Ann Rep 2011,1.22,0.7
+Comstock (Australia),Australia,VMS,,C,Zeehan Zinc / Creat Resources Holdings,Media (2009-03-29),3.062,1.48
+Conrad-King Conrad-Greisen,Australia,Skarn,,C,Malachite Resources,Ann Rep 2009,3.13,0.56
+Coxco,Australia,Sediment-hosted Pb-Zn,Sedex,C,Admiralty Resources,NT DME Fact Sheet 2013-09,7.8,4.2
+Daly River Anomaly A,Australia,VMS,,NC,Troy Resources,Ann Rep 2007,0.76,9.99
+Develin Creek-Rookwood,Australia,VMS,,C,Fitzroy Resources,Ann Rep 2011,1.75,2.05
+Djibigan (Manbarrum),Australia,Sediment-hosted Pb-Zn?,Sedex?,C,TNG Ltd (sold to Legacy Iron late 2013),Ann Rep 2012,19.93,0.5
+Dugald River,Australia,Sediment-hosted Pb-Zn,Sedex,C,MMG,Ann Rep 2013,63,12.1
+Eastman,Australia,VMS,,C,Massive Resources Pty Ltd,Minedex (2013-05-05),3.4,1.7
+Ediacara,Australia,Sediment-hosted Pb-Zn,,C,unknown,SA DMITRE Website (2014-12-15),17,
+Emull-Lamboo,Australia,VMS,,C,Northern Star Resources,Minedex (2013-05-05),4.7,4.5
+Endeavour (Elura),Australia,VMS,,C,Toho Zinc,Tech Rep (2013-04) (Couer Mining),17.4,7.8
+Evelyn,Australia,Skarn,,NC,Crocodile Gold,Ann Info Form 2013,0.01,3.7
+Explorer 108,Australia,Sediment-hosted Pb-Zn,Sedex,C,Westgold Resources (now Metals-X),Ann Rep 2013,11.87,3.24
+Federation,Australia,Skarn,,C,unknown,Ann Rep 2009,0.56,1.4
+Flinders Group,Australia,Sediment-hosted Pb-Zn,MVT,C,Perilya Mines,Ann Rep 2011,0.69,30.2
+Fossey-Fossey East,Australia,VMS,,C,Bass Metals,Ann Rep 2013,0.43,11.4
+Golden Grove,Australia,VMS,,C,MMG,Ann Rep 2013,26.1,3.9
+Gossan Dam-Bonnie Rock,Australia,Skarn,Epithermal?,C,unknown,Minedex (2013-05-05),0.45,1.25
+Grants Creek-Wilsons Reef,Australia,Orogenic Au,,C,Firestrike Resources,Minedex (2013-05-05),0.07,0.25
+Grieves Quarry,Australia,VMS,,C,Icon Resources,Website (2013-03-24),0.2,5
+Hellyer Remnants,Australia,VMS,,C,Bass Metals,Ann Rep 2013,0.75,7
+Hellyer Tailings,Australia,VMS Tailings,VMS Tailings,TC,Ivy Resources,Ann Rep 2011 (Bass Metals),9.5,2.5
+Hera,Australia,Sediment-hosted Pb-Zn,Sedex,C,YTC Resources,Ann Rep 2013,2.44,3.8
+Higgs,Australia,VMS,,C,Frontier Resources (?),Aust Mines Atlas (2013-10-01),0.22,1.3
+Jackson-Stella-Chloe Trend,Australia,Sediment-hosted Pb-Zn,Sedex,C,Kagara (?),Ann Rep 2011 (Copper Strike),4.7,4.8
+Jaguar,Australia,VMS,,C,Independence Group,Ann Rep 2013,0.48,2.8
+Jervois Group,Australia,VMS,Possibly Sedex,C,KGL-Kentor Gold,Ann Rep 2011,1,2.21
+Kamarga-JB,Australia,Sediment-hosted Pb-Zn,MVT,C,RMG,Ann Rep 2013,10.4,2.7
+Kangaroo Caves,Australia,VMS,,C,Venturex Resources,Ann Rep 2013,6.3,3.3
+Kangiara,Australia,Porphyry,Porpphyry Cu-Au,C,Paradigm Metals,Ann Rep 2012,2.75,1.3
+Kempfield,Australia,VMS,,C,Argent Minerals,Ann Rep 2012,21.8,0.9
+Koonenberry,Australia,VMS,,C,Ausmon Resources,Website (2013-03-24),5.75,0.35
+Kroombit (Cu+Zn/Cu),Australia,VMS,,C,Argonaut Resources,Media (2009-06-11),5.16,1.88
+Lady Loretta,Australia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,ResV ResC 2013,14.27,16.1
+Lennard Shelf Group,Australia,Sediment-hosted Pb-Zn,MVT,C,North-West Mining & Geology Group (formerly Meridian Minerals),Minedex (2013-05-05),14.99,4.69
+Lennon's Find,Australia,VMS,,C,Laconia Resources (sold to Musketeer Minerals Pty Ltd late 2013),Ann Rep 2013,1.8,5.1
+Lewis Ponds,Australia,VMS,,C,TriAusMin,Ann Rep 2013,6.62,2.4
+Liberty-Indee (Evelyn),Australia,VMS,,C,Venturex Resources,Ann Rep 2013,0.66,3.7
+Magellan,Australia,Sediment-hosted Pb-Zn,Non-sulfide MVT,C,Ivernia,Ann Rep 2013,51.1,
+Manindi-Freddie Well,Australia,VMS,,C,Metals Australia,Ann Rep 2013,1.354,6.04
+Maramungee,Australia,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Williams & Heinemann (1993),1.8,4.4
+Mariposa,Australia,VMS,,C,Zeehan Zinc / Creat Resources Holdings,Media (2009-03-29),0.57,1.9
+Mayfield,Australia,Skarn,,C,Forge Resources / Capital Mining,Ann Rep 2013 (Capital),4.9,0.6
+McArthur River,Australia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,ResV ResC 2013,194,9.2
+Menninnie Dam,Australia,Sediment-hosted Pb-Zn,Sedex,C,Terramin Australia,Ann Rep 2013,7.7,3.1
+Merlin-Little Wizard,Australia,IOCG,Cloncurry-type,C,Inova Res. (formerly Ivanhoe Aust.),Tech Rep (2010-10),6.72,0.14
+Mons Cupri,Australia,VMS,,C,Venturex Resources,Ann Rep 2013,4.61,1.3
+Morrison,Australia,Skarn,,C,Kagara (?),Aust Mines Atlas (2013-09-30),1.93,5.4
+Mt Angelo North,Australia,Porphyry,Porphyry Cu-Au-Pb-Zn,C,3D Resources,Minedex (2013-05-05),0.124,2.7
+Mt Ararat,Australia,VMS,,C,Stavely Minerals,Media (2015-09-08),1.3,0.4
+Mt Bonnie,Australia,VMS,,NC,Crocodile Gold,Tech Rep (2013-07),0.65,9
+Mt Charter,Australia,VMS,,C,Bass Metals,Ann Rep 2011,6.1,0.5
+Mt Clement-Eastern Hills,Australia,Epithermal,Low sulfidation?,C,Artemis Resources,Ann Rep 2009,0.61,
+Mt Dore,Australia,IOCG,,C,Inova Res. (formerly Ivanhoe Aust.),Tech Rep (2010-10),144.3,0.3
+Mt Garnet Group,Australia,Skarn,,C,Kagara,Ann Rep 2011,9.633,7.8
+Mt Isa (Open Cut),Australia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,ResV ResC 2013,427.8,3.4
+Mt Isa-Black Star,Australia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,ResV ResC 2013,24.4,4.6
+Mt Isa-George Fisher North,Australia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,ResV ResC 2013,145.1,8.3
+Mt Isa-George Fisher South (Hilton),Australia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,ResV ResC 2013,56,7.8
+Mt Isa-Handle Bar Hill,Australia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,ResV ResC 2013,8.27,5.7
+Mt Moss,Australia,Skarn,,C,Curtain Bros (Qld),Qld Met. Ind. Mines 2012,20,0.35
+Mt Mulcahy,Australia,VMS,,C,Black Raven Mining,Minedex (2013-05-05),0.228,1.9
+Mulgul-Jillawarra (Abra),Australia,VMS,,C,Hunan Nonferrous Metals,Ann Rep 2010 (Jabiru Metals; also Minedex),107,0.09
+Myrtle,Australia,Sediment-hosted Pb-Zn,Sedex,C,Rox Resources,Ann Rep 2013,43.6,4.09
+Narrawa,Australia,Skarn,,C,Torque Mining (formerly Frontier Resources),Prospectus (2013-07),0.209,1.11
+Nightflower-Digger Lode,Australia,VMS,,C,unknown,media (2008-09-26) (Axiom Mining),0.216,2.2
+Nimbus,Australia,Epithermal,High sulfidation,C,MacPhersons Resources,Tech Rep (2013-11),4.876,1.33
+Northampton-Mary Springs,Australia,Epithermal,Low sulfidation?,C,Prospect Resources (formerly Ethan Minerals),Aust Mines Atlas (2013-09-30),0.145,
+Nymagee,Australia,Sediment-hosted Pb-Zn,Sedex,C,YTC Resources,Ann Rep 2013,8.1,0.7
+O'Callaghans,Australia,Skarn,,C,Newcrest Mining,ResV ResC 2013,78,0.5
+Oceana,Australia,Sediment-hosted Pb-Zn,MVT,C,Zeehan Zinc / Creat Resources Holdings,Media (2009-03-29),2.145,4.41
+Onedin (Koongie Park),Australia,VMS,,C,Anglo Australian Resources,Ann Rep 2011,4.46,3.24
+Parkers Hill (Mineral Hill),Australia,VMS,,C,KBL Mining,Ann Rep 2013,4.867,0.94
+Peelwood North/South,Australia,VMS,,C,Balamara Resources (Sultan Corp),Ann Rep 2012,0.9,4
+Pegmont,Australia,Sediment-hosted Pb-Zn,Sedex,C,Pegmont Mines,Ann Rep 2013,8.852,1.48
+Peterlumbo-Paris,Australia,Epithermal,High sulfidation?,C,Investigator Resources,Media (2013-10-15),5.9,
+Prairie Downs,Australia,VMS,,C,Prairie Downs Metals (now Brumby Resources),Minedex (2013-05-05),2.98,4.94
+Que River-Que River S Lens,Australia,VMS,,C,Bass Metals,Ann Rep 2013,0.68,4.9
+Queenslander,Australia,Skarn,,C,Kagara (?),Aust Mines Atlas (2013-09-30),1.59,4.5
+Quinns-Austin,Australia,VMS,,C,Caravel Minerals (formerly Silver Swan Group),Ann Rep 2012,1.48,1.39
+Railway Flat,Australia,Skarn,,C,Kagara (?),Ann Rep 2011 (Copper Strike),0.9,3.4
+Range & Turtle/Copper Ridge,Australia,Epithermal,Low sulfidation?,C,Onslow Minerals,Minedex (2013-05-05),0.13,
+Red Cap Group,Australia,Skarn,,C,Kagara,Qtr 2012-06,3.832,4.8
+Rosebery-South Hercules,Australia,VMS,,C,MMG,Ann Rep 2013,19.1,11
+Salt Creek,Australia,VMS,,C,Venturex Resources,Ann Rep 2013,1,7
+Sandiego,Australia,VMS,,C,Anglo Australian Resources,Ann Rep 2011,3.53,4.05
+Sandy Creek,Australia,Sediment-hosted Pb-Zn,,C,TNG Ltd,Ann Rep 2012,24.38,1.81
+Silver King,Australia,Sediment-hosted Pb-Zn,Sedex,C,MMG,Ann Rep 2012,1.6,5.1
+Sorby Hills,Australia,Sediment-hosted Pb-Zn,MVT,C,KBL Mining,Ann Rep 2013,16.7,0.7
+Stockman,Australia,VMS,,C,Independence Group,Ann Rep 2013,13.99,4
+Sulphur Springs,Australia,VMS,,C,Venturex Resources,Ann Rep 2013,12.83,4.1
+Sunny Corner,Australia,VMS,,C,Argent Minerals,Ann Rep 2013,1.5,3.7
+Sunshine,Australia,Sediment-hosted Pb-Zn,MVT,C,Stonehenge Metals (?),Aust Mines Atlas (2013-10-01),0.288,2.8
+Sunter,Australia,Sediment-hosted Pb-Zn,Sedex,C,Terramin Australia,Ann Rep 2013,0.38,3.8
+Tally Ho,Australia,Orogenic Au?,,C,Alcyone Resources,Ann Rep 2008,0.73,0.83
+Teena,Australia,Sediment-hosted Pb-Zn,Sedex,C,Rox Resources,Media (2016-06-01),58,11.1
+Teutonic Bore,Australia,VMS,,C,Independence Group,Ann Rep 2013,1.55,2.5
+Thalanga Group,Australia,VMS,,C,Kagara,Ann Rep 2011,4.171,7.93
+Trilogy,Australia,Orogenic Au,Associated with Kundip,C,Silver Lake Resources,Ann Rep 2012/2013,6.24,1.2
+Turner River-Orchard Well/Discovery,Australia,VMS,,C,De Grey Mining,Minedex (2013-05-05),2.61,2.67
+Wagga Tank,Australia,Orogenic Au,,C,"MMG51%, Golden Cross Resources49%",Ann Rep 2001 (GCR),1.25,3.3
+Walford Creek,Australia,Sediment-hosted Pb-Zn,Sedex,C,Aeon Metals,ASX (2014-04-03),48.3,0.88
+Webbs,Australia,Epithermal,,C,Silver Mines,Ann Rep 2013,1.49,1.56
+Whim Creek,Australia,VMS,,C,Venturex Resources,Ann Rep 2013,0.97,1.1
+Whundo Cu-Zn / Zn,Australia,VMS,,C,Fox Resources,Ann Rep 2013,2.88,1.35
+Wonawinta,Australia,Sediment-hosted Pb-Zn,MVT?,C,Cobar Consolidated Resources,Inv Pres 2014-03,41.5,
+Woodlawn Tailings,Australia,Sediment-hosted Pb-Zn/VMS Tailings,Sedex/VMS,TC,TriAusMin,Ann Rep 2013,11.65,2.29
+Woodlawn Underground,Australia,Sediment-hosted Pb-Zn/VMS,Sedex/VMS,C,TriAusMin,Ann Rep 2013,10.1,10.15
+Zeehan Group Slag,Australia,VMS Slag,VMS Slag,TC,Intec Ltd,"Ann Rep 2007, 2013",0.42,13.6
+Filizchay (Filizchai),Azerbaijan,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Azerbaijan Gov't website (2015-04-24),95,3.63
+Bolivar,Bolivia,Epithermal,Bolivian Polymetallic vein type?,C,Glencore Xstrata,Reserves-Resources 2013,4.1,9.8
+Caballo Blanco,Bolivia,Epithermal?,Bolivian Polymetallic vein type?,C,Glencore Xstrata,Reserves-Resources 2013,2.33,8.7
+La Solución Tailings,Bolivia,Epithermal ? Tailings,Bolivian Polymetallic vein type?,TC,Apogee Minerals,Tech Rep (2007-11),0.365,2.23
+La Solución-Veta Hampaturi Sur,Bolivia,Epithermal,Bolivian Polymetallic vein type?,C,Apogee Minerals,Tech Rep (2007-05),0.12,5.1
+Malku Khota,Bolivia,Sediment-hosted Pb-Zn,Sedex,C,South American Silver Corp,Tech Rep (2011-05),485.01,0.04
+Paca,Bolivia,Epithermal,,C,Apogee Minerals,Tech Rep (2007-05),18.416,1.16
+Poopo,Bolivia,Epithermal?,,C,Glencore Xstrata,Reserves-Resources 2013,2.23,6.2
+Porco,Bolivia,Epithermal?,,C,Glencore Xstrata,Reserves-Resources 2013,2.35,9.2
+Pulacayo-Paya,Bolivia,Epithermal,,C,"Apogee Minerals, COMIBOL",Tech Rep (2013-01),20.74,1.37
+San Vicente (Bolivia),Bolivia,Epithermal,,C,Pan American Silver Corp.,Ann Info Form 2013,6.6,2.57
+Kihabe,Botswana,Sediment-hosted Pb-Zn,Sedex,C,Mt Burgess Mining,Ann Rep 2012,14.4,1.75
+Nxuu,Botswana,Sediment-hosted Pb-Zn,,C,Mt Burgess Mining,Ann Rep 2012,10.9,1.8
+Aripuanã (Ambrex-Arex-Expedito-Valley),Brazil,VMS,,C,"Votorantim Metais-70%, Karmin Expl-30%",Tech Rep (2013-02),33.8,4.26
+Boquira,Brazil,Sediment-hosted Pb-Zn,,NC,unknown,Misi et al (1999),7,0.6
+Canoas,Brazil,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Misi et al (1999),1.5,3.5
+Fagundes,Brazil,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),3,4.5
+Irecê,Brazil,Sediment-hosted Pb-Zn,,NC,unknown,Misi et al (1999),1.5,7.9
+Januaria,Brazil,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),0.1,4
+Morro Agudo,Brazil,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Cunha et al (2000),9.47,6.13
+Nova Redenção (New Redemption),Brazil,Sediment-hosted Pb-Zn,,NC,unknown,Filho et al (2001),5.2,0.5
+Palmeirópolis,Brazil,VMS,,C,unknown,Brandão et al (2000),6.89,4.54
+Perau,Brazil,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),3.3,1.88
+S. Maria,Brazil,Sediment-hosted Pb-Zn,,NC,unknown,Misi et al (1999),46,0.9
+Tres Irmas,Brazil,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),7,7.6
+Vazante,Brazil,Sediment-hosted Pb-Zn,,NC,unknown,Monteiro et al (2007),18.8,23.7
+Perkoa,Burkina Faso,VMS,,C,Glencore Xstrata,Reserves-Resources 2013,12.96,9.8
+Abcourt-Barvue,Canada,VMS,,C,Abcourt Mines Inc,Tech Rep (2014-04),10.127,3.03
+Akie-Cardiac Creek,Canada,Sediment-hosted Pb-Zn,Sedex,C,Canada Zinc Metals,Tech Rep (2012-05),68.19,5.2
+Aldermac,Canada,VMS,,NC,Abcourt Mines,Ann Info Form 2011,1.54,3
+Amy,Canada,Sediment-hosted Pb-Zn,?,NC,unknown,BC OFR (1998-10),0.072,6.03
+Andrew (Lad),Canada,Mesothermal Vein,,C,Overland Resources,Ann Rep 2013,7.76,5.8
+Atlin-Ruffner,Canada,Epithermal?,,NC,unknown,BC OFR (1998-10),0.114,
+Barvallée,Canada,VMS,,C,Abcourt Mines,Tech Rep (2013-02),0.276,4.39
+Bear,Canada,VMS,,NC,unknown (Solid Res. Now Iberian Mins.??),NWT Guide 2007,1.136,5.1
+Bear-Twit,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,NWT Guide 2007,9.07,5.4
+Belfort (Roymont),Canada,VMS,,C,Abcourt Mines,Tech Rep (2013-02),0.067,5.71
+Bend 1 (Canyon Zone),Canada,Sediment-hosted Pb-Zn,SEDEX,NC,unknown,BC OFR (1998-10),5,0.6
+Berrigan North (Taché),Canada,VMS,,NC,Chibougamau Independent Mines Inc,Tech Rep (2012-08),1.389,3.17
+Berrigan South (Lac Taché),Canada,VMS,,NC,Chibougamau Independent Mines Inc,Tech Rep (2012-08),0.26,3.05
+Beveley,Canada,Sediment-hosted Pb-Zn,MVT?,NC,unknown,BC OFR (1998-10),2.721,
+Big Bull,Canada,VMS,,C,Chieftain Metals,Tech Rep (2010-11),0.96,5.03
+Big Ledge,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,6.5,4
+Big Showing (Teddy Glacier),Canada,Sediment-hosted Pb-Zn,MVT,NC,Jazz Resources,Tech Rep (2007-11),0.044,6.74
+Blende,Canada,Sediment-hosted Pb-Zn,MVT,C,Blind Creek Resources (formerly Eagle Plains Res.),Tech Rep (2007-08),19.6,3.04
+Bobby's Pond,Canada,VMS,,C,Mountain Lake Resources,Tech Rep (2008-09),2.27,4.16
+Boomerang-Domino (Tulks South),Canada,VMS,,C,Canadian Zinc Corp,Tech Rep (2007-08),2.077,6.82
+Bowler Creek,Canada,VMS,VMS,NC,unknown,BC OFR (1998-10),0.296,2.58
+Brabant Lake,Canada,VMS,,C,Manicougan Minerals,Tech Rep (2008-09),4.45,6.75
+Bracemac-McLeod,Canada,VMS,,C,Glencore Xstrata,Reserves-Resources 2013,5.88,8.87
+Brandywine-Silver Tunnel-Northair,Canada,VMS,,NC,unknown,BC OFR (1998-10),0.497,0.26
+Buckton-Buckton South,Canada,Shale-hosted,,C,DNI Metals,Tech Rep (2014-01),"5,008.70",0.017
+Cadieux,Canada,Sediment-hosted Pb-Zn,,NC,unknown,"(see Gatineau, Midland Expl'n)",1.25,9.4
+Caledonia,Canada,Skarn,,NC,unknown,"BC OFR (1998-10), MINFILE 092L-061",0.07,7.45
+Caribou,Canada,VMS,,C,Trevali Mining Corp.,Tech Rep (2013-11),10.89,6.98
+Cassiar Camp,Canada,Skarn-Manto,,NC,unknown,BC OFR (1998-10),0.905,3.49
+Chester,Canada,VMS,,C,Explor Resources,Tech Rep (2014-04),4.014,0.02
+Chu Chua,Canada,VMS,,C,Reva Resources,Tech Rep (2013-10),2.827,0.32
+Cirque-South Cirque,Canada,Sediment-hosted Pb-Zn,Sedex,NC,"Teck Resources-50%, Korea Zinc-50%",(Canada Zinc Metals; Tech Rep 2012-05 Pie),54,7.7
+CK,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,BC OFR (1998-10),1.49,8.6
+Clark,Canada,Skarn-manto,,NC,unknown,Yukon Gov't Zn profile,0.327,4.6
+Clear Lake,Canada,Sediment-hosted Pb-Zn,,C,Golden Predator (formerly Redtail Metals),Tech Rep (2010-02),9.21,6.6
+Colby (Kingfisher-Noreen),Canada,Sediment-hosted Pb-Zn,Sedex,NC,Rich River Exploration (?),Corp Brochure,1.8,2.6
+Comstock (Canada),Canada,Epithermal?,,NC,unknown,BC OFR (1998-10),0.043,10
+Copper Crown,Canada,Epithermal,Low sulfidation?,NC,unknown,BC OFR (1998-10),0.317,4.23
+Cottonbelt,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,BC OFR (1998-10),1,2
+Coulon,Canada,VMS,,C,Virginia Mines Inc,Tech Rep (2009-05),13.73,3.84
+Craig,Canada,Sediment-hosted Pb-Zn,MVT,C,Glencore Xstrata (?),Yukon Gov't Zn profile,0.875,8.5
+Cronin,Canada,Epithermal?,,NC,unknown,BC OFR (1998-10),0.16,8.12
+Damascus,Canada,Epithermal,High sulfidation?,NC,Gold Reach Resources,Website (2016-07-11),0.196,4.7
+Darcy,Canada,Mesothermal Vein,,C,Overland Resources,Ann Rep 2013,5.55,4.7
+Darin,Canada,Mesothermal Vein,,C,Overland Resources,Ann Rep 2013,0.36,4
+DEB,Canada,VMS,,NC,Seabridge Gold (?),NWT Guide 2007,1.02,2.96
+De Maurès,Canada,VMS,,NC,unknown,Vior Expl. & Mining website (2014-07-27),0.35,7.84
+Domergue-Anomaly E,Canada,VMS,,NC,unknown,Vior Expl. & Mining website (2014-07-27),0.03,5.51
+Driftpile Creek,Canada,Sediment-hosted Pb-Zn,Sedex,NC,Teck Resources,(Canada Zinc Metals; Tech Rep 2012-05 Pie),2.44,11.9
+Duck Pond,Canada,VMS,,C,Teck,Ann Info Form 2013,1.7,4.4
+Duncan,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,BC Geol Surv,2.76,3.1
+Duthie,Canada,VMS,,NC,Silver Standard,BC OFR (1998-10),0.075,7.1
+East Kemptville,Canada,Skarn (Greisen),,C,Avalon Rare Metals,Factsheet,80.36,0.12
+Eclipse,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,Geol Innuit 1991,1,13
+Ecstall,Canada,VMS,,NC,Atna Resources,BC OFR (1998-10),6.35,2.5
+Ericksen-Ashby,Canada,Skarn,,NC,unknown,BC OFR (1998-10),0.907,3.8
+Errington,Canada,VMS,,C,Glencore Xstrata,Reserves-Resources 2013,9,4.03
+Esker,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,Min Deps Canada 2007 Paradis et al,1.9,3.5
+Estrades-Caribou,Canada,VMS,,C,Cogitore Resources,Tech Rep (2008-12),0.791,9.29
+Explo-Zinc (Kistabiche),Canada,VMS,,C,Cancor Mines,Ann Info Form 2008,0.588,7.63
+Faro,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,4.42,14.1
+Fault Creek,Canada,VMS,,C,unknown,Fyre Lake Tech Rep (Pacific Ridge),0.05,7.1
+Fireweed,Canada,Sediment-hosted Pb-Zn,Sedex,NC,Regulus Resources (formerly Jandar Res.),Tech Rep (2006-03; Jandar Res.),0.581,2.22
+Gayna River,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown (Eagle Plains Res.??),Min Deps Canada 2007 Paradis et al,50,4.7
+George Lake,Canada,VMS,,NC,unknown (formerly Golden Arch Resources?),Tech Rep (2007-04),2.631,3.67
+Goz Creek (Barrier Reef),Canada,Sediment-hosted Pb-Zn,MVT,C,unknown,Yukon Gov't Zn profile,2.495,11
+GP4F,Canada,VMS,,C,Shaanxi Non-ferrous Metals Holding Group Co Ltd,Yukon Gov't Zn profile,1.5,6.4
+Gray Rock,Canada,Epithermal?,,NC,unknown,BC OFR (1998-10),0.07,
+Grizzly (Dy),Canada,Sediment-hosted Pb-Zn,Sedex,C,unknown,Yukon Gov't Zn profile,17.24,6.39
+Groundhog (Jeff-Lorne),Canada,Epithermal?,,NC,unknown (Prism Reosurces?),Yukon Gov't Zn profile,0.201,4.01
+Grum,Canada,Sediment-hosted Pb-Zn,Sedex,C,unknown,Yukon Gov't Zn profile,18.65,4.43
+H.B.,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),6.45,4.1
+Hackett River,Canada,VMS,,C,Glencore Xstrata,Reserves-Resources 2013,87,3.8
+Halfmile Lake,Canada,VMS,,C,Trevali Mining Corp.,Tech Rep (2011-08),12.34,7.42
+Hart River,Canada,VMS,,NC,unknown,Yukon Gov't Zn profile,0.524,3.65
+High Lake,Canada,VMS,,C,MMG,Annual Report 2013,13.9,3.8
+Holliday,Canada,Epithermal?,,NC,unknown,BC OFR (1998-10),0.036,20.78
+Homestake,Canada,VMS,,NC,unknown,BC OFR (1998-10),0.25,2.19
+Horne 5,Canada,VMS,,C,Falco Resources,Tech Rep (2014-05),67.618,0.72
+Howard's Pass-Anniv Group,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,97.95,4.41
+Howard's Pass-Brodel,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,12.1,4.31
+Howard's Pass-Don Group,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,130.162,5.29
+Howard's Pass-HC Group,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,57.87,4.69
+Howard's Pass-HP,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,6.18,4.55
+Howard's Pass-OP Group,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,3.15,3.52
+Howard's Pass-Pelly North,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,6.85,3.2
+Howard's Pass-XY Group,Canada,Sediment-hosted Pb-Zn,Sedex,C,Chihong Canada Mining (formerly Selwyn Resources),Ann Info Form 2012,109.301,4.8
+Hudson Bay Mountain-Silver Lake 2,Canada,Epithermal,,NC,Lions Gate Metals,Tech Rep (2005-04),0.03,17.7
+Hudson Bay-777,Canada,VMS,,C,HudBay Minerals,Ann Info Form 2013,11.38,4.16
+Hudson Bay-Bur,Canada,VMS,,C,HudBay Minerals,Tech Rep (2008-01),1.05,8.57
+Hudson Bay-Lalor,Canada,VMS,,C,HudBay Minerals,Ann Info Form 2013,25.31,5.01
+Hudson Bay-Reed,Canada,VMS,,C,"HudBay Minerals-70%, VMS Ventures-30%",Ann Info Form 2013,2.35,0.5
+Hudson Bay-Watts River,Canada,VMS,,C,HudBay Minerals,Tech Rep (2008-01),6.62,2.63
+Hudvam,Canada,VMS,,C,Murgor Resources,Tech Rep (2008-10),1.36,1.61
+Indian Mountain (BB Lake-Kennedy Lake),Canada,VMS,,NC,Panarc Resources,Brochure,0.92,9.4
+Inel (AK),Canada,Skarn?,,NC,Snip Gold Corp,Tech Rep (2012-05),0.317,2.6
+Izok Lake,Canada,VMS,,C,MMG,Annual Report 2013,14.2,12.8
+J&L (Main Zone-Yellowknife-Yellowjacket),Canada,Sediment-hosted Pb-Zn,Sedex,C,Huakan International Mining,Tech Rep (2012-04),7.199,3.28
+Jason,Canada,Sediment-hosted Pb-Zn,Sedex,C,HudBay Minerals,Website (2014-10-26),12.46,6.57
+Jersey,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),7.88,3.49
+Jonpol,Canada,VMS?,,NC,Abcourt Mines,Ann Info Form 2011,2.547,0.96
+Jubilee,Canada,Sediment-hosted Pb-Zn,MVT,C,Merrex Gold,Tech Rep (2009-02),3.465,3.62
+Keg Main Zone,Canada,Skarn-epithermal,Original skarn with epithermal overprint,C,Silver Range Resources,Tech Rep (2013-05),63.97,0.64
+Kennedy Lake-BB Zone,Canada,VMS,,NC,unknown (Axmin Inc??),NWT Guide 2007,0.919,9.4
+Keno Hill-Bellekeno,Canada,Mesothermal Vein,,C,Alexco Resource Corp.,Tech Rep (2013-12),0.61,5.2
+Keno Hill-Flame/Moth,Canada,Mesothermal Vein,,C,Alexco Resource Corp.,Tech Rep (2013-03),1.49,5.59
+Keno Hill-Lucky Queen,Canada,Mesothermal Vein,,C,Alexco Resource Corp.,Tech Rep (2013-12),0.27,1.28
+Keno Hill-Onek,Canada,Mesothermal Vein,,C,Alexco Resource Corp.,Tech Rep (2011-09),0.82,13.1
+Kidd Creek,Canada,VMS,,C,Glencore Xstrata,Reserves-Resources 2013,21.47,4.93
+Kitsault (Mo),Canada,Porphyry,Porphyry Mo,C,Avanti Mining,Tech Rep (2014-03),639.6,
+Kitsault River-Torbrit,Canada,Porphyry,Porphyry Mo,NC,unknown,BC OFR (1998-10),0.786,0.5
+Kitsault River-Wolf,Canada,Porphyry,Porphyry Mo,NC,unknown,BC OFR (1998-10),0.485,0.12
+Klaza-BRX,Canada,Epithermal,Low sulfidation,C,Rockhaven Resources,Tech Rep (2015-01),9.06,0.84
+Kokanee (Scranton/Sunset),Canada,Epithermal?,,NC,unknown,BC OFR (1998-10),0.018,8
+Kootenay King,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),0.01,15.6
+Kudz Ze Kayah (ABM),Canada,VMS,,C,Teck,Ann Info Form 2005,12.8,6
+Kutcho,Canada,VMS,,C,Capstone Mining,Ann Info Form 2012,12.37,3.17
+La Ronde,Canada,VMS,,C,Agnico Eagle Mines,Reserves-Resources 2013,38.91,0.74
+Lafontaine,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,0.03,12.03
+Langlois,Canada,VMS,,C,Nyrstar,Reserves-Resources 2013,5.71,9.86
+Lara-Coronation Trend,Canada,VMS,,C,Treasury Metals,Website (2014-10-26),1.816,2.73
+Leitch,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,"(see Gatineau, Midland Expl'n)",0.13,8
+Lemarchant-South Tally Pond,Canada,VMS,,C,Canadian Zinc Corp,Tech Rep (2012-03),3.79,3.86
+Lenora (L.35G),Canada,VMS,,NC,unknown,BC OFR (1998-10),0.317,6.6
+Lessard,Canada,VMS,,C,Landore Resources,Tech Rep (2008-12),0.74,3.5
+Linda 2-RLM,Canada,VMS,,NC,Thundermin Resources,Website (2014-08-11),11.8,0.8
+Logan,Canada,Epithermal,,C,Yukon Zinc Corp,Company Fact Sheet (2014-06),13.08,5.1
+Long Lake,Canada,Sediment-hosted Pb-Zn,,C,Canadian Zinc Corp,Tech Rep (2012-03),0.49,7.49
+Lundberg-Engine,Canada,VMS,,C,Minco Silver,Tech Rep (2013-07),28.64,1.42
+Lustdust (Canyon Creek),Canada,Skarn,,NC,ALQ Gold Corp,BC OFR (1998-10),0.307,2.7
+Magusi River,Canada,VMS,,C,Globex Mining,Tech Rep (2012-03),1.66,3.32
+Marg,Canada,VMS,,C,Golden Predator (formerly Redtail Metals),Tech Rep (2011-06),14.35,2.86
+Matt Berry (Barb),Canada,VMS,,NC,Silver Range Resources,Website (2016-02-04),0.533,4.6
+McIlvenna Bay,Canada,VMS,,C,Foran Mining Corp,Tech Rep (from media 2013-03-27),25.21,2.8
+McMillan,Canada,Skarn,,NC,Glencore Xstrata (?),Yukon Gov't Zn profile,1.5,6.5
+Mel,Canada,Sediment-hosted Pb-Zn,Sedex,NC,Silver Range Resources,Tech Rep (2014-11),5.62,6.31
+Mineral King,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),2.1,4.12
+Ming-Rambler,Canada,VMS,Noranda-type,C,Rambler Metals & Mining,Tech Rep (2015-11),83.63,0.02
+Miya-Emerald Glacier,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.041,9.49
+Monarch-Kicking Horse,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),0.76,7
+Mt Pleasant (North Zone),Canada,Porphyry,Sn-W-Mo,C,Adex Mining,Tech Rep (2013-10),18.49,0.8
+Murray Brook,Canada,VMS,,C,"Votorantim Metais, El Nino",Tech Rep (2012-04),20.71,2.45
+Myra Falls,Canada,VMS,,C,Nyrstar,Reserves-Resources 2013,9.15,6.22
+Nanisivik,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,Min Deps Canada 2007 Paradis et al,7.28,2.77
+Nash Creek,Canada,VMS,,C,Slam Resources,Tech Rep (2009-02),9.02,2.71
+Nepisiguit,Canada,VMS,,C,Slam Resources,Tech Rep (2012-07),7.56,1.52
+New Moon,Canada,Epithermal,Low sulfidation,NC,Northaven Resources Corp (?),BC OFR (1998-10),0.689,5.51
+Ox-C,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.217,4.63
+Packsack,Canada,VMS,,NC,unknown,BC OFR (1998-10),2.7,0.2
+PD1,Canada,VMS,,C,Glencore Xstrata,Reserves-Resources 2013,1.55,4.72
+Peak,Canada,Epithermal,,C,Grizzly Discoveries,Website (2014-10-26),0.003,
+Peso (Rex),Canada,Intrusion-related,,NC,unknown (Victoria Gold Corp?),Yukon Gov't Zn profile,0.139,
+Pick Lake,Canada,VMS,,C,Golden Share Mining Corp,Tech Rep (2013-06),1.29,15.06
+Pine Point Group,Canada,Sediment-hosted Pb-Zn,MVT,C,Tamerlane Ventures,Tech Rep (2014-03),25.28,2.57
+Plata,Canada,Epithermal,,NC,Rockhaven Resources,Tech Rep (2008-01),0.31,2.5
+Point Leamington,Canada,VMS,,C,Newmarket Gold,Tech Rep (2013-09),19.37,1.63
+Polaris,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,Min Deps Canada 2007 Paradis et al,5.9,15.6
+Porter-Idaho,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.826,5
+Portland Canal,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.147,0.4
+Prairie Creek,Canada,Sediment-hosted Pb-Zn,MVT,C,Canadian Zinc Corp.,Tech Rep (2012-06),11.67,12.8
+Premier Camp,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.359,
+Rea / Extra High,Canada,VMS,,NC,37 Capitral,Tech Rep (2008-02),0.38,6.1
+Red Bird,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,BC OFR (1998-10),2.177,18.5
+Remac,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),5.8,3.42
+Ribago,Canada,VMS,,NC,Falco Resources,Website (2014-10-26),0.48,7.97
+River Jordan,Canada,Sediment-hosted Pb-Zn,Sedex,NC,Silver Phoenix Resources,BC OFR (1998-10),2.606,5.6
+Robb Lake (Barrier),Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,BC MINFILE 094B 005,20.14,3.3
+Rochon Lake,Canada,VMS,,NC,Panarc Resources,Brochure,1,2.06
+Rock and Roll,Canada,VMS,,C,Pacific North West Capital,Tech Rep (2011-02),2.314,0.88
+Romer-Frederickson Lake,Canada,VMS,,NC,Minco Silver,Tech Rep (2014-02),0.25,4.38
+Romer-Jimmick Lake,Canada,VMS,,NC,Minco Silver,Tech Rep (2014-02),0.1,5.2
+Romer-Koke,Canada,VMS,,NC,Minco Silver,Tech Rep (2014-02),0.96,6.86
+Romer-Soucy #1,Canada,VMS,,NC,Minco Silver,Tech Rep (2014-02),4.94,1.8
+Ruddock Creek,Canada,Sediment-hosted Pb-Zn,Sedex,C,Imperial Metals Corp.,"see also Silver Phoenix (River Jordan), Selkirk Metals ??",15.13,5.89
+Ruth-Vermont,Canada,Epithermal,,NC,Jasper Mining,BC OFR (1998-10),0.274,4.8
+Ruttan,Canada,VMS,,C,Trevali Mining Corp.,Tech Rep (2011-08),22.264,1.33
+Sä Dena Hes (Mt Hundere),Canada,Skarn-manto,,C,JDS Silver,Ann Info Form 2005 (Teck),2.19,10.4
+Salerno Lake,Canada,Sediment-hosted Pb-Zn,,NC,unknown,"(see Gatineau, Midland Expl'n)",1.5,5.7
+Salmo,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,BC OFR (1998-10),0.036,4.1
+Scotia (BC),Canada,VMS,,NC,Atna Resources,BC OFR (1998-10),1.34,3.8
+Scotia-Gays River,Canada,Sediment-hosted Pb-Zn,MVT,C,Selwyn Resources,Tech Rep (2013-06),11.52,2.97
+Scotia-Getty,Canada,Sediment-hosted Pb-Zn,MVT,C,Selwyn Resources,Tech Rep (2013-06),5.32,1.85
+Scott Lake,Canada,VMS,,C,Cogitore Resources,Tech Rep (2011-07),5.45,4.6
+Seneca,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),1.506,3.57
+Sherridon (Cold-Lost-Bob-Jungle),Canada,VMS,,C,Sendero Mining Corp (formerly Halo Resources),Tech Rep (2010-11),22.413,0.95
+Silver Coin,Canada,Epithermal,,C,Jayden Resources,Tech Rep (2013-08),1.669,0.74
+Silver Hart,Canada,Epithermal,Low sulfidation,C,CMC Metals,Tech Rep (2010-01),0.07,9.12
+Silver King (Ymir),Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.068,0.92
+Silver Queen (Cole Lake),Canada,Epithermal,,NC,New Nadina Exploration,Tech Rep (1996-02),0.842,5.49
+Silver Queen (Wrinch),Canada,Epithermal,,NC,New Nadina Exploration,Tech Rep (1996-02),0.578,6.53
+Silvertip (Midway),Canada,Sediment-hosted Pb-Zn,Sedex,C,JDS Silver,Tech Rep (2002-10; Silver Standard),2.57,8.8
+Sito East,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown (formerly Golden Arch Resources?),Steadman & Spry 2015,0.05,4.5
+Skidder,Canada,VMS,,NC,Canadian Zinc Corp,Website (2014-10-31),1,2
+Slocan Group,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.121,13.62
+Smith Copper,Canada,Skarn,,NC,unknown,BC OFR (1998-10),0.084,12.5
+Spar,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),1.36,0.08
+Stannex-Woolsey,Canada,Epithermal,,NC,Northavn Resources Corp,BC OFR (1998-10),0.591,1.26
+Stemwinder,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,0.03,15.6
+Stratmat,Canada,VMS,,C,Trevali Mining Corp.,Tech Rep (2009-02),5.525,6.11
+Sullivan,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,12.8,12
+Summit,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,BC OFR (1998-10),0.24,4.5
+Sunrise Lake,Canada,VMS?,,C,Silver Standard,Ann Info Form 2013,4.1,4.99
+Swim,Canada,Sediment-hosted Pb-Zn,,NC,unknown,Yukon Gov't Zn profile; PorterGeo,4.3,4.7
+Tetagouche-Armstrong A/B,Canada,VMS,,NC,Wolfden Resources Corp,Website (2014-10-31),3.866,2.11
+Tetagouche-Canoe Landing Lake,Canada,VMS,,NC,Wolfden Resources Corp,Website (2014-10-31),22.8,1.82
+Tetagouche-Rocky Turn,Canada,VMS,,NC,Wolfden Resources Corp,Website (2014-10-31),0.13,8.43
+Tinta Hill,Canada,Epithermal?,,C,Northern Freegold Resources,Tech Rep (2009-08),4.53,0.91
+Tintina (Eagle),Canada,Skarn,,NC,unknown,Yukon Gov't Zn profile,0.091,10
+Thor,Canada,VMS,,C,Taranis Resources,Tech Rep (213-08),1.06,3.39
+Tom,Canada,Sediment-hosted Pb-Zn,Sedex,C,HudBay Minerals,Website (2014-10-26),18.53,6.67
+Tortigny,Canada,Sediment-hosted Pb-Zn,VMS-associated or SEDEX,C,Beaufield Resources,Tech Rep (2014-04),1.2,3.46
+Treasure Mountain,Canada,Epithermal,,C,Huldra Silver,Tech Rep (2012-06),0.31,3.03
+Trout Lake Camp,Canada,VMS,,NC,unknown,BC OFR (1998-10),0.416,5.52
+Tulsequah Chief,Canada,VMS,,C,Chieftain Metals,Ann Info Form 2013,6.97,5.84
+Upton,Canada,Sediment-hosted Pb-Zn,MVT,NC,unknown,Min Deps Canada 2007 Paradis et al,1.31,1.94
+Val,Canada,Sediment-hosted U,Basal U mineralisation,NC,unknown (Prism Reosurces?),Yukon Gov't Zn profile,0.02,7.3
+Vangorda,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Yukon Gov't Zn profile,7.1,4.3
+Vendôme (Mogador),Canada,VMS,,C,Abcourt Mines,Tech Rep (2013-02),0.676,7.5
+Vera,Canada,Epithermal,,NC,unknown (Prism Reosurces?),Yukon Gov't Zn profile,0.353,3.47
+Vermilion,Canada,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,Reserves-Resources 2013,3.2,4.36
+Vine 1,Canada,Epithermal,,NC,PJX Resources,Website (2014-10-26),1.3,3.12
+Virginia Silver,Canada,Epithermal,,NC,unknown,BC OFR (1998-10),0.02,2.2
+Walton,Canada,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Nova Scotia MinFile 2008,0.5,3.5
+West Ansil,Canada,VMS,,NC,"Falco Resources, Glencore Xstrata",Website (2014-10-26),1.13,0.3
+Wim,Canada,VMS,,C,Murgor Resources,Tech Rep (2008-10),3.22,0.32
+Wolf (Hasselberg),Canada,VMS,,NC,Atna Resources,Yukon Gov't Zn profile,4.1,6.2
+Wolverine (Fetish),Canada,VMS,,C,Yukon Zinc Corp,Tech Rep (2007-10),6.15,12.14
+Wrigley,Canada,Sediment-hosted Pb-Zn,MVT,C,Devonian Metals,Tech Rep (2012-06),10.82,4.15
+Yava,Canada,VMS?,,NC,Savant Explorations,Tech Rep (2008-02),1.3,4.96
+Cachinal,Chile,Epithermal,Low sulfidation,C,"Apogee Minerals, Valencia Ventures",Tech Rep (2010-04),6.47,0.22
+El Toqui,Chile,Manto,Porphyry-IOCG?,C,Nyrstar,Reserves-Resources 2013,11.2,5.3
+Minera Florida,Chile,Epithermal,Low sulfidation?,C,Yamana Gold,Ann Rep 2013,9.39,1.65
+Paguanta-Patricia,Chile,Epithermal,Low sulfidation,C,Herencia Resources,Website (2014-10-26),5.6,4.4
+Vallecillo-La Colorada,Chile,Porphyry,Cu-Au-Ag-Zn,C,Metminco,Website (2016-06-25),27.891,0.8
+Aerhada,China,Epithermal,,NC,Shanjinaerhada Mining,ILZSG database (2016-03-02),11.4,3.3
+Baiyinnour,China,Skarn,,NC,Chifeng Nonferrous Metals Corp,ILZSG database; CNMI website,14.21,5.53
+Beiya,China,Skarn,,NC,Yunnan Gold Mining Group?,Zhou et al (2016),77.1,0.69
+BYP,China,Sediment-hosted Pb-Zn,MVT,C,Silvercorp Metals,Tech Rep (2012-06),32.12,1.8
+Caijiaying,China,Skarn,,C,Griffin Mining,Ann Rep 2013,49.4,4.1
+Changba-Lijiagou,China,Sediment-hosted Pb-Zn,Sedex,NC,Baiyin Nonferrous,ILZSG database (2016-07-12),13.5,11
+Dakuangshan,China,Skarn,,C,China Polymetallic Mining,Ann Rep 2013,4.36,5.2
+Fuwan-Changkeng,China,Epithermal,Low sulfidation?,C,Minco Silver,Ann Info Form 2013,27.265,0.64
+Huangshaping,China,Skarn,,NC,unknown,Li et al (2016),22.43,8
+Huayuan Fenghuang,China,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),50,3.4
+Inner Mongolia Sanguikou,China,Sediment-hosted Pb-Zn,Sedex,C,Zijin Mining,Ann Rep 2013,133,2.25
+Jiama,China,Porphyry,Porphyry with skarn,C,China Gold International Resources Corp,Website (2014-10-26),"1,449.00",0.03
+Jiawula,China,Epithermal,,NC,"Naneco Minerals, Vina Mineral Res, Hullunbeir",ILZSG database (2016-07-12),5,5.2
+Liziping,China,Sediment-hosted Pb-Zn,Sedex?,C,China Polymetallic Mining,Ann Rep 2013,1.2,3.88
+Menghu,China,Sediment-hosted Pb-Zn,Sedex?,C,China Polymetallic Mining,Ann Rep 2013,0.233,7.8
+Mengya,China,Skarn,,NC,MCC,ILZSG database (2016-07-12),2,10
+Nonggeshan,China,Skarn?,,C,MCC JV,Tech Rep (2009-07),20.42,1.4
+Qiandongshan,China,Sediment-hosted Pb-Zn,MVT,NC,"Marshall Minerals, CNMI, Quinsun",ILZSG database (2016-07-12),25,7.7
+Qinghai Deerni,China,VMS,,C,Zijin Mining,Ann Rep 2013,20.6,0.4
+Shizishan,China,Skarn,,C,China Polymetallic Mining,Ann Rep 2013,8.502,6
+Xietongmen,China,Skarn,,C,Continental Minerals,Tech Rep (2009-05),219.8,0.08
+Xinjiang Ashele,China,VMS,,C,Zijin Mining,Ann Rep 2013,35.2,0.85
+Xinjiang Wulugentashi,China,Skarn?,,C,Zijin Mining,Ann Rep 2013,136.4,2.46
+Ying Group,China,Mesothermal Vein,with Orogenic Au,C,Silvercorp Metals,Tech Rep (2014-07),21.54,1.15
+Berlin,Columbia,Sediment-hosted mixed,,C,U3O8 Corp,MDA 2011,8.7,2.8
+Matahambre,Cuba,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),14.8,0.51
+Victoria,Cuba,VMS,,NC,unknown,Russell et al (undated),0.54,0.26
+Santa Lucia Castellanos,Cuba,Sediment-hosted Pb-Zn,Sedex,NC,Trafigura,ILZSG database (2016-07-12),12,2.4
+Kipushi,Dem. Rep. Congo,Sediment-hosted Pb-Zn,MVT?,NC,Ivanhoe Mines,Tech Rep (2012-09),25.975,19.04
+Sable Zinc Kabwe Tailings,Dem. Rep. Congo,Sediment-hosted Pb-Zn Tailings,MVT?,TC,formerly Metorex,Ann Rep 2010,5.3,4.9
+Bayaguana Group,Dom. Rep.,Epithermal,High sulfidation,NC,Perilya,Tech Rep (2006-01),2.495,0.89
+Cerro de Maimón,Dom. Rep.,VMS,,C,Perilya,Tech Rep (2012-08),7.51,1.42
+Las Animas,Dom. Rep.,VMS,,C,GoldQuest Mining Corp,Tech Rep (2013-08),1.45,3.21
+Romero-Romero South,Dom. Rep.,Epithermal,Intermediate sulfidation,C,GoldQuest Mining Corp,Tech Rep (2013-12),57.55,0.32
+Curipamba-El Domo,Ecuador,VMS,,C,Salazar Resources,Tech Rep (2014-04),9.96,2.72
+Abu Marawat,Egypt,Orogenic Au,,C,Alexander Nubia,Website (2014-10-26),2.9,1.15
+Umm Gheig,Egypt,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),1.5,11
+Asmara-Adi Nefas,Eritrea,VMS,,C,Sunridge Gold Corp,Tech Rep (2013-08),1.84,10.05
+Asmara-Debarwa,Eritrea,VMS,,C,Sunridge Gold Corp,Tech Rep (2013-08),3.99,0.99
+Asmara-Emba Derho,Eritrea,VMS,,C,Sunridge Gold Corp,Tech Rep (2013-08),85.03,1.29
+Bisha,Eritrea,VMS,,C,Nevsun Resources,Ann Info Form 2013,30.28,4.28
+Hambok,Eritrea,VMS,,C,Nevsun Resources,Ann Info Form 2013,6.88,1.85
+Harena,Eritrea,VMS,,C,Nevsun Resources,Ann Info Form 2013,2.24,3.78
+Northwest,Eritrea,VMS,,C,Nevsun Resources,Ann Info Form 2013,4.25,0.66
+Huatalampi,Finland,VMS,,C,Altona Mining,Ann Rep 2013,3.16,0.08
+Kainuu-Rautavaara,Finland,Sediment-hosted Pb-Zn/VMS,Sedex/VMS,C,FinnAust Mining (Magnus Minerals-Western Areas),Website (2014-10-26),34.4,0.38
+Kettukumpu,Finland,VMS,,NC,unknown,Geol Survey Finland,0.4,0.1
+Kylylahti,Finland,VMS,,C,Altona Mining,Ann Rep 2013,7.7,0.52
+Perttilahti,Finland,VMS,,NC,unknown,Geol Survey Finland,1.32,1.89
+Pyhäsalmi,Finland,VMS,,C,First Quantum,Ann Info Form 2013,14.61,1.13
+Rauhala,Finland,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),1.7,4.97
+Rautavaara,Finland,IOCG,,C,"FinnAust Mining (formerly Western Areas, Magnus Minerals)",Website (10-01-2013) (FinnAust Mining),34.4,0.38
+Riihilahti,Finland,VMS,,NC,unknown,Geol Survey Finland,0.7,0.09
+Saramäki,Finland,VMS,,C,Altona Mining,Ann Rep 2013,3.4,0.63
+Sykäräinen,Finland,VMS?,,NC,unknown,Geol Survey Finland,0.2,0.25
+Talvivaara (Kolmisoppi/Kuusilampi),Finland,Sediment-hosted Pb-Zn/VMS,Sedex/VMS,C,Talvivaara,Ann Rep 2012,"2,052.80",0.5
+Vuonos,Finland,VMS,,C,Altona Mining,Ann Rep 2013,0.76,1.33
+Arrens,France,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),4,3.5
+Trèves,France,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),0.06,6
+Amtkeli,Georgia,Epithermal,,C,unknown,NATO Sci 2002 v17,0.29,3.8
+Brdzyshra,Georgia,Sediment-hosted Pb-Zn,MVT,C,unknown,NATO Sci 2002 v17,0.25,1
+Dambludi,Georgia,Epithermal,High sulphidation,C,unknown,NATO Sci 2002 v17,1.87,5.31
+David Garedji,Georgia,Epithermal,High sulphidation,C,unknown,NATO Sci 2002 v17,2,5
+Kvaisi,Georgia,Epithermal,,C,unknown,NATO Sci 2002 v17,2.85,6.47
+Madneuli,Georgia,Epithermal,High sulphidation,C,unknown,NATO Sci 2002 v17; Migineishvili 2005,93.07,4.09
+Merisi Group,Georgia,Porphyry,,C,unknown,NATO Sci 2002 v17,3.27,1.4
+Razdarankom,Georgia,Epithermal,,C,unknown,NATO Sci 2002 v17,0.34,1
+Rtskhmeluri,Georgia,Epithermal?,,C,unknown,NATO Sci 2002 v17,0.26,2.67
+Skatykom,Georgia,Epithermal,,C,unknown,NATO Sci 2002 v17,0.17,
+Zeshko,Georgia,VMS,May also be Sedex?,C,unknown,NATO Sci 2002 v17,22.88,1.67
+Tellerhäuser,Germany,Skarn,,C,Anglo Saxony Mining,Website (2015-12-28),32.2,0.74
+Geyer Southwest,Germany,Skarn,,C,Tin International (Deutchse Rohstoff),Website (2015-12-28),11.6,0.47
+Olympias,Greece,Skarn,,C,Eldorado Gold,Form-40F 2013,20.92,5.5
+Stratoni,Greece,Skarn,,C,Eldorado Gold,Form-40F 2013,1.83,10.1
+Ark,Greenland,Sediment-hosted Pb-Zn,Sedex,C,Angel Mining,Conf. Pres. 2011-11,0.49,4.7
+Black Angel,Greenland,Sediment-hosted Pb-Zn,Sedex,C,Angel Mining,Conf. Pres. 2011-11,4.43,8.6
+Blyklippen,Greenland,Sediment-hosted Pb-Zn,MVT,NC,Ironbark Zinc,Thomassen (2005),0.22,9.3
+Citronen,Greenland,Sediment-hosted Pb-Zn,Sedex,C,Ironbark Zinc,Ann Rep 2013-14,132,4
+Kvanefjeld,Greenland,Magmatic Alkaline Intrusive,Layered alkaline complex,C,Greenland Energy & Minerals,Ann Rep 2013,956,0.235
+Nunngarut,Greenland,Sediment-hosted Pb-Zn,Sedex,C,Angel Mining,Conf. Pres. 2011-11,0.2,9
+South Lakes,Greenland,Sediment-hosted Pb-Zn,Sedex,C,Angel Mining,Conf. Pres. 2011-11,1.7,6.9
+Holly-Banderas (HB)-Escobal,Guatemala,Epithermal,Low sulfidation,C,Radius Gold,Website (2014-10-26),31.7,1.19
+Torlon Hill,Guatemala,Manto,Oxide Zinc - IOCG? ,C,Firestone Ventures,Tech Rep (2008-12),2.174,6.88
+El Mochito,Honduras,Skarn,,C,Nyrstar,Reserves-Resources 2013,6.42,5.57
+Ajari,India,VMS,,NC,Indo Gold,Website (2014-10-26),0.1,3.5
+Ambaji,India,Sediment-hosted Pb-Zn,MVT,NC,RBG Minerals (Binani Industries),ILZSG database (2016-07-12),8.8,4.2
+Ambamata,India,Sediment-hosted Pb-Zn,Sedex,NC,Indo Gold,Website (2014-10-26),8.3,6
+Askot,India,VMS,,C,Pebble Creek Mining,Tech Rep (2008-09),2.01,5.71
+Bajta Central,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),1.22,3.84
+Ballaria,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),16,5.85
+Bamnai Kalan,India,Sediment-hosted Pb-Zn,Sedex,C,Hindustan Zinc / Vedanta,Ann Rep 2013-14,16.3,4
+Baroi,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),7,1.71
+Basantgarh,India,VMS,,NC,Indo Gold,Website (2014-10-26),3.5,1.3
+Bethumni,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),0.23,1
+Bhilwara,India,Sediment-hosted Pb-Zn,Sedex,C,unknown,IMYB 2013,7.1,1.4
+Danva,India,VMS,,NC,Indo Gold,Website (2014-10-26),0.3,6.4
+Deri,India,Sediment-hosted Pb-Zn,Sedex,NC,Indo Gold,Website (2014-10-26),1,7.3
+Devpura,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),17.49,1.84
+Ganeshpura,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),0.77,
+Gorubathan,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),2.79,4.23
+Kalabar,India,VMS,,NC,Indo Gold,Website (2014-10-26),1,6.7
+Kankariya,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),9.01,3.22
+Kayad,India,Sediment-hosted Pb-Zn,Sedex,C,Hindustan Zinc / Vedanta,Ann Rep 2013-14,7.7,10.6
+Kolari,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),8.2,6.8
+Madarpura,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),6.6,5.51
+Mochia,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,27,3.79
+Mokanpura North,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,40,2.4
+Paduna North Block,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),3.14,3.25
+Pipela,India,VMS,,NC,Indo Gold,Website (2014-10-26),0.6,1.8
+Rajpura Dariba,India,Sediment-hosted Pb-Zn,Sedex,C,Hindustan Zinc / Vedanta,Ann Rep 2013-14,54.2,6.9
+Rampura Agucha,India,Sediment-hosted Pb-Zn,Sedex,C,Hindustan Zinc / Vedanta,Ann Rep 2013-14,109.4,12.8
+Rangpo,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),0.56,2.6
+Rewara,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),1.2,0.4
+Saladipura,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),115,1
+Samodi,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),3.69,1.85
+Sargipali,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),2,
+Sawar,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),0.9,1.45
+Sindesar Khurd,India,Sediment-hosted Pb-Zn,Sedex,C,Hindustan Zinc / Vedanta,Ann Rep 2013-14,99.1,4.3
+South Dedwas,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),18.38,1.3
+Tikhi,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),1.47,2.59
+Tiranga,India,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),1.15,1.13
+Zawar,India,Sediment-hosted Pb-Zn,Sedex,C,Hindustan Zinc / Vedanta,Ann Rep 2013-14,78.5,4.8
+Dairi-Anjing Hitam,Indonesia,Sediment-hosted Pb-Zn,Sedex,C,"Bumi Resources, PT Antam",Ann Rep 2013,8.11,14.6
+Dairi-Base Camp,Indonesia,Sediment-hosted Pb-Zn,Sedex,C,"Bumi Resources, PT Antam",Ann Rep 2013,0.83,5
+Dairi-Lae Jahe,Indonesia,Sediment-hosted Pb-Zn,Sedex,C,"Bumi Resources, PT Antam",Ann Rep 2013,16.18,8.2
+Atlantis II,International,VMS,Seafloor Massive sulfide,NC,Diamond Fields International,Website (2016-07-14),89.5,2.06
+Angouran,Iran,Sediment-hosted Pb-Zn,Sedex,NC,IMIDRO,Daliran et al 2013,22.23,30.3
+Anjireh-Vejin,Iran,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),1.16,5.59
+Emarat,Iran,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ehya et al 2010,10,6
+Heyder Abad,Iran,Sediment-hosted Pb-Zn,MVT,NC,unknown,Bazargani-Guilani et al 2011,0.12,1
+Irankuh,Iran,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),10,7.4
+Kuh-e-Surmeh,Iran,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),0.9,12.1
+Kushk,Iran,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),4,10
+Mehdiabad,Iran,Sediment-hosted Pb-Zn,Sedex/MVT?,C,Mawarid Mining,Ann Rep 2012 (UCL Res.),394,4.2
+Nakhlak,Iran,Sediment-hosted Pb-Zn,MVT,NC,unknown,Jazi et al (2016),7,0.38
+Reza Barak,Iran,Sediment-hosted Pb-Zn,MVT,NC,unknown,Bazargani-Guilani et al 2011,0.15,2.5
+Allenwood West,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Tech Rep 2010 (Rathdowney Res.),10.1,1.6
+Ballinalack,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,7.83,6.8
+Courtbrown,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,1,3.5
+Garrycam,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,1.35,2.67
+Harberton Bridge,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,3.7,8.8
+Keel,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,1.85,7.71
+Lisheen,Ireland,Sediment-hosted Pb-Zn,MVT,C,Vedanta,Ann Rep 2013-14,3.8,12.56
+Moyvoughly,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,0.13,5.3
+Oldcastle,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Tech Rep 2010 (Rathdowney Res.),3,4.3
+Pallas Green,Ireland,Sediment-hosted Pb-Zn,MVT,C,Glencore Xstrata,Reserves-Resources 2013,42,7
+Rickardstown,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,3.5,2.2
+Silvermines,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,6.89,7.7
+Tara (Navan),Ireland,Sediment-hosted Pb-Zn,MVT,C,Boliden,Ann Rep 2013,26.4,6.8
+Tatestown,Ireland,Sediment-hosted Pb-Zn,MVT,NC,unknown,Ireland Gov't Top 55 brochure,3.6,4.6
+Alaigyr (Alaigir),Kazakhstan,VMS?,,NC,"Tau-Ken Samruk, Radington Industrial Consulting",ILZSG database (2016-07-12),50,
+Central Region (formerly Karaganda),Kazakhstan,Porphyry and VMS deposits,,C,Kazakhmys (now KAZ Minerals),Ann Rep 2013,"5,396.80",0.01
+Chashinskoye Tailings,Kazakhstan,VMS? Tailings,,TC,Glencore Xstrata / KazZinc,Reserves-Resources 2013,88,0.43
+Dolinnoe,Kazakhstan,VMS?,,C,Glencore Xstrata / KazZinc,Reserves-Resources 2013,3.01,2.76
+East Region,Kazakhstan,VMS?,,C,Kazakhmys (now KAZ Minerals),Ann Rep 2013,91.81,3.64
+Maleevsky,Kazakhstan,VMS,,C,Glencore Xstrata / KazZinc,Reserves-Resources 2013,22.6,7.26
+Novo-Leninogorskoye,Kazakhstan,VMS,,C,Glencore Xstrata / KazZinc,Reserves-Resources 2013,40,4
+Obruchevskoe,Kazakhstan,VMS?,,C,Glencore Xstrata / KazZinc,Reserves-Resources 2013,5.16,8.5
+Ridder-Sokolny,Kazakhstan,VMS,,C,Glencore Xstrata / KazZinc,Reserves-Resources 2013,41.4,1.32
+Shaimerden Stockpile,Kazakhstan,VMS?,Non-sulfide Zinc,SC,Glencore Xstrata / KazZinc,Reserves-Resources 2013,2,22
+Shalkiya,Kazakhstan,Sediment-hosted Pb-Zn,Sedex,C,ShalkiyaZinc,Website (2014-10-26; translated),274,3.1
+Shubinsky,Kazakhstan,VMS,,C,Glencore Xstrata / KazZinc,Reserves-Resources 2013,3.85,2.15
+Staroye Tailings,Kazakhstan,VMS? Tailings,,TC,Glencore Xstrata / KazZinc,Reserves-Resources 2013,6.7,0.64
+Talap,Kazakhstan,Sediment-hosted Pb-Zn,Sedex,C,ShalkiyaZinc,Website (2014-10-26; translated),11.14,4.71
+Tishinksy,Kazakhstan,VMS,,C,Glencore Xstrata / KazZinc,Reserves-Resources 2013,17.8,4.48
+Tishinsky Tailings,Kazakhstan,VMS Tailings,,TC,Glencore Xstrata / KazZinc,Ann Rep 2012 (note: not reported in 2013),1.15,2.26
+Zhairem,Kazakhstan,Sediment-hosted Pb-Zn,,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,20,5
+Bumbo,Kenya,Sediment-hosted Pb-Zn,Sedex,C,"African Barrick Gold-51%, Lonmin-49%",Ann Rep 2012 (Aviva Corp),1.58,4.5
+Boz Emchek,Kyrgyzstan,Skarn,,NC,unknown,data Kyrgyz Investment Group,17.84,4.3
+Mironovskoye,Kyrgyzstan,Skarn?,,C,Chaarat Gold Holdings,Website (2014-10-26),1.582,
+Kasi,Laos,Sediment-hosted Pb-Zn?,MVT?,C,Padaeng Industries,Ann Rep 2013,0.9,9
+Lamphun,Laos,Sediment-hosted Pb-Zn,MVT,C,Padaeng Industries,Ann Rep 2013,2.1,7.2
+Angangueo,Mexico,Epithermal,High to intermediate sulfidation,C,Southern Copper Corp (Grupo Mexico),Form 10K 2013,6.64,2.63
+Bahuerachi,Mexico,Porphyry-Skarn,,C,Jinchuan,Tech Rep (2007-11; Tyler Res.),604.69,0.53
+Bilbao,Mexico,Skarn,,C,Xtierra,Tech Rep (2011-05),11.05,2.1
+Bismark,Mexico,Skarn,,C,Peñoles Group,Ann Rep 2013,6.14,6.11
+Boleo,Mexico,Skarn-Manto,,C,"Baja Mining, KORES",Tech Rep 2010-03,424.53,0.66
+Bolivar Group,Mexico,Skarn,,C,Sierra Metals (formerly Dia Bras Expl'n),Tech Rep (2013-05),34.66,0.75
+Buenavista Zinc,Mexico,Skarn?,,C,Grupo Mexico / SCC,Form 10K 2013,36,3.3
+Camino Rojo,Mexico,Skarn,,C,Goldcorp,Ann Rep 2013,363.98,0.26
+Campo Morado Group,Mexico,VMS,,C,Nyrstar,Reserves-Resources 2013,19.1,3.69
+Capire-Aurora 1,Mexico,VMS,,C,Impact Silver Corp,Tech Rep (2011-01),5.283,0.87
+Cerro Prieto,Mexico,Epithermal,overprints mesothermal mineralisation,C,Goldgroup Mining,Tech Rep (2013-06),23.16,0.65
+Chalchihuites,Mexico,Epithermal,,C,Grupo Mexico / SCC,Form 10K 2013,16,3.08
+Cieneguita,Mexico,Epithermal,,C,Pan American Goldfields,Tech Rep (2013-11),57.96,0.24
+Cinco de Mayo (Upper Manto),Mexico,Skarn,,C,MAG Silver Corp,Tech Rep (2012-11),14.93,5.77
+Cordero,Mexico,Porphyry,,C,Levon Resources,Tech Rep (2014-10),940.62,0.464
+Cozamin Group,Mexico,Epithermal-Mesothermal,Intermediate sulfidation?,C,Capstone Mining,Ann Info Form 2013,17.06,1.35
+Cusi Group,Mexico,Epithermal,,C,Sierra Metals (formerly Dia Bras Expl'n),Tech Rep (2013-08),4.617,0.18
+Del Toro,Mexico,Skarn,,C,First Majestic Silver Corp,Website (2014-10-26),17.393,3.6
+El Tecolote (Reyna del Cobre) Tailings,Mexico,Skarn Tailings,,TNC,Azure Minerals,Website (2015-02-24),1,2.3
+Francisco I Madero,Mexico,Skarn,,C,Peñoles Group,Ann Rep 2013,47.23,2.17
+Fresnillo-San Julián,Mexico,Epithermal,Intermediate sulfidation,C,Fresnillo,Ann Rep 2013,21.3,1.42
+La Arista-El Aguila,Mexico,Epithermal,,C,Gold Resource Corp,Tech Rep (2012-07),4.48,4.1
+La Colorada,Mexico,Epithermal,Low sulfidation,C,Pan American Silver Corp.,Ann Info Form 2013,11.5,2.05
+La Encantada,Mexico,Sediment-hosted Pb-Zn,MVT,C,First Majestic Silver Corp,Website (2014-10-26),9.588,2.4
+La Encantada Tailings,Mexico,Sediment-hosted Pb-Zn Tailings,MVT,TC,First Majestic Silver Corp,Website (2014-10-26),5.305,0.2
+La Frazada,Mexico,Epithermal,,C,First Majestic Silver Corp,Tech Rep (2009-01),1.12,2.53
+La Negra,Mexico,Skarn,,C,Aurcana Corp,Tech Rep (2013-05),40.3,2.29
+La Parilla,Mexico,Skarn,,C,First Majestic Silver Corp,Website (2014-10-26),19.156,1.4
+Los Gatos,Mexico,Epithermal,,C,Sunshine Silver Mines,Tech Rep (2012-12),25.49,2.7
+Metates,Mexico,Skarn,,C,Chesapeake Gold Corp,Tech Rep (2013-11),1.247,0.16
+Miguel Auza,Mexico,Epithermal,High and low sulphidation,NC,Excellon Resources,ILZSG database (2016-07-12),2,2.3
+Minera Ciénega,Mexico,Epithermal,Low sulfidation,C,Fresnillo,Ann Rep 2013,31.75,0.95
+Minera Fresnillo (underground),Mexico,Epithermal,Low sulfidation,C,Fresnillo,Ann Rep 2013,69.49,2.82
+Minera Juanicipio,Mexico,Epithermal,,C,"Fresnillo-56%, MAG Silver Corp-44%",Ann Rep 2013 (Fresnillo),8.02,3.49
+Minera Parreña-Guachichil,Mexico,Epithermal?,Low sulfidation?,C,Fresnillo,Ann Rep 2013,44.25,0.17
+Minera Parreña-Leones,Mexico,Epithermal?,Low sulfidation?,C,Fresnillo,Ann Rep 2013,7.05,1.27
+Minera Parreña-Lucerito,Mexico,Epithermal?,Low sulfidation?,C,Fresnillo,Ann Rep 2013,162.72,0.41
+Minera Saucito,Mexico,Epithermal,Intermediate sulfidation,C,Fresnillo,Ann Rep 2013,44.39,2.39
+Naica,Mexico,Skarn,,C,Peñoles Group,Ann Rep 2013,13.54,5.18
+Namiquipa,Mexico,Epithermal,Low/Intermediate sulfidation,C,Santana Minerals,Tech Rep (2012-11),7.6,1.54
+Nuestra Señora,Mexico,Skarn,,C,Scorpio Mining Corp,Tech Rep (2013-05),4.45,1.6
+Peñasquito (mill),Mexico,Skarn,,C,Goldcorp,Ann Rep 2013,851.37,0.83
+Pitarrilla,Mexico,Epithermal,Intermediate sulfidation,C,Silver Standard,Ann Info Form 2013,282.4,0.7
+Platosa,Mexico,Manto/Skarn/Epithermal?,,C,Excellon Resources,Tech Rep (2011-11),0.71,10.66
+Plomosas (Rosario-San Juan),Mexico,Sediment-hosted Pb-Zn,MVT,NC,First Majestic Silver Corp,Website (2014-10-26),0.896,3.4
+Rey de Plata,Mexico,VMS,,C,Industrias Penoles,Ann Rep 2013; ILZSG database (2016-07-12),25.2,8.3
+Rosario,Mexico,Epithermal,Low sulfidation?,C,Santacruz Silver Mining,Tech Rep (2012-12),1.66,2.21
+Sabinas,Mexico,Sediment-hosted Pb-Zn,MVT,C,Peñoles Group,Ann Rep 2013,13.16,2.06
+San Agustín,Mexico,Skarn,,C,Argonaut Gold,ResV-ResC 2012 (Silver Std),212.2,0.49
+San Felipe (Hochschild),Mexico,Epithermal,,C,Hochschild Mining,Ann Rep 2013,4.006,6.49
+San Felipe (Santacruz),Mexico,Skarn,,C,Santacruz Silver Mining,Tech Rep (2012-12),8.94,4.01
+San José,Mexico,Epithermal,Low sulfidation,C,Arian Silver Corp,Tech Rep (2013-05),32.5,0.78
+San José de Gracia,Mexico,Epithermal,Low sulfidation,C,Goldgroup Mining,Tech Rep (2011-09),15.06,0.18
+San Marcial,Mexico,Epithermal,Low sulfidation,C,Silver Standard,Ann Info Form 2013,2.3,0.66
+San Martin (Pb-Zn-Ag-Au only),Mexico,Skarn,,C,First Majestic Silver Corp,Website (2014-10-26),1.735,1.56
+San Nicolas,Mexico,VMS,,C,"Teck-79%, Goldcorp-21%",Ann Rep 2013 (Goldcorp),21.54,1.6
+San Rafael,Mexico,Skarn,,C,Scorpio Mining Corp,Tech Rep (2013-05),23.24,1.36
+San Sebastian,Mexico,Epithermal,Low/Intermediate sulfidation,C,Hecla Mining,Website (2014-10-26),5.029,0.9
+Sierra Mojada,Mexico,Sediment-hosted Pb-Zn,MVT,C,Silver Bull Resources,Tech (2013-12),94.5,1.27
+SCC-IMMSA Group (Charcas-Santa Barbara-San Martin-Santa Eulalia-Taxco),Mexico,Epithermal-Skarn,Skarn may be dominant?,C,Grupo Mexico / SCC,Form 10K 2013,48.77,2.88
+Terrazas,Mexico,IOCG?,,C,Constellation Cu Corp (bankrupt),Ann Rep 2007,90.64,1.35
+Tizapa,Mexico,VMS,,C,Peñoles Group,Ann Rep 2013,10.87,5.38
+Topia,Mexico,Epithermal,Low sulfidation,C,Great Panther Silver,Ann Info Form 2013,0.429,4
+Velardeña (Peñoles),Mexico,Skarn,,C,Peñoles Group,Ann Rep 2013,29.94,4.21
+Velardeña-Chicago (GM),Mexico,Skarn,,C,Golden Minerals,Form 10K 2013,2.14,1.25
+Brskovo,Montenegro,Sediment-hosted Pb-Zn,Sedex,C,Balamara Resources,Ann Rep 2013,2.51,3.84
+Visnjica,Montenegro,Sediment-hosted Pb-Zn,Sedex,C,Balamara Resources,Ann Rep 2013,1.9,2.98
+Zuta Prla,Montenegro,Sediment-hosted Pb-Zn,Sedex,C,Balamara Resources,Ann Rep 2013,4.74,4.06
+Boumadine,Morocco,Epithermal,Low-sulfidation,NC,Maya Gold & Silver,Tech Rep (2014-04),3.839,3.9
+Hajar,Morocco,Sediment-hosted Pb-Zn,MVT,NC,Compagnie Minière des Guemassa,USGS MYB 2010 Morocco,19,7
+Tighza,Morocco,Skarn,,C,Compagnie Minière de Touissit,CMT Media (2014-05-29),15.88,1.32
+Berg Aukus,Namibia,Sediment-hosted Pb-Zn,MVT,C,China Africa Resources,Tech Rep (2014-04),1.34,14.74
+Gergarub,Namibia,Sediment-hosted Pb-Zn,Sedex,NC,"Vedanta, Glencore",ILZSG database (2016-07-12),17.5,8.6
+Namib,Namibia,Sediment-hosted Pb-Zn,Sedex,C,North River Resources,Ann Rep 2013,0.92,5.7
+Namib Tailings,Namibia,Sediment-hosted Pb-Zn Tailings,,TC,North River Resources,Ann Rep 2013,0.61,2.1
+Rosh Pinah,Namibia,Sediment-hosted Pb-Zn,Sedex,C,Glencore Xstrata,Reserves-Resources 2013,14.62,7.6
+Skorpion,Namibia,VMS,Non-sulfide Zinc,C,Vedanta,Ann Rep 2013-14,7.1,9.67
+Tsongoari,Namibia,Sediment-hosted Pb-Zn,Sedex?,C,unknown,Gauert (2005),5.8,0.8
+Tsumeb Tailings,Namibia,Sediment-hosted Pb-Zn Tailings,MVT?,TC,Weatherly International,Tech Rep (2014-04),12,0.63
+Ganesh Himal-Lari I,Nepal,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Baharani et al 2008,1.3,13.35
+Ganesh Himal-Suple,Nepal,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Baharani et al 2008,1.1,16.25
+Hysean,North Korea,Porphyry,,NC,DPRK Government,Kyung-soo (2011),160,3.6
+Goemdok (Gumdock),North Korea,Sediment-hosted Pb-Zn,MVT,NC,DPRK Government,Kyung-soo (2011),266,4.21
+Duddar,Pakistan,Sediment-hosted Pb-Zn,Sedex,C,MCC JV,Tech Rep (2009-07),14.48,9.9
+Gunga (Khuzdar),Pakistan,Sediment-hosted Pb-Zn,Sedex,NC,unknown,USGS OFR 1297,9.9,5.4
+Accha (AZOD),Peru,Skarn,Non-sulfide Zinc,C,Zincore Metals,Tech Rep (2013-08),8.3,6.19
+Alpamarca,Peru,Manto-Cu,IOCG?,C,Volcan Compania Minera,Ann Rep 2013,11.01,1.39
+Anamaray,Peru,Skarn,,C,Buenaventura,Ann Rep 2011,0.17,4.32
+AntaKori-Sinchao,Peru,Epithermal,High sulfidation,C,Southern Legacy Minerals,Tech Rep (2012-08),519.54,0.19
+Antamina,Peru,Skarn,Porphyry-related,C,BHP Billiton / Glencore Xstrata / Teck,Glencore Xstrata Reserves-Resources 2013,"2,121",0.65
+Ariana,Peru,Skarn,,C,Southern Peaks Mining,Website (2014-12-12),10.985,1.79
+Atacocha,Peru,Skarn,,C,Compania Minera Milpo,Ann Rep 2013,18.093,3.92
+Ayawilca,Peru,Skarn,,C,Tinka Resources,Tech Rep (2015-03),13.3,5.9
+Bongará-Florida Canyon,Peru,Sediment-hosted Pb-Zn,MVT,C,"Solitario Expl. & Royalty Corp., Votorantim Metais",Tech Rep (2014-06),11.85,11.32
+Caylloma,Peru,Epithermal,Intermediate sulfidation,C,Fortuna Silver Mines,Ann Rep 2013,11.26,2.68
+Cerro de Pasco,Peru,Epithermal,High to intermediate-low sulfidation,C,Volcan Compania Minera,Ann Rep 2013,203.1,2.55
+Cerro Lindo,Peru,VMS,,C,Compania Minera Milpo,Ann Rep 2013,85.107,2.57
+Chungar,Peru,Skarn,,C,Volcan Compania Minera,Ann Rep 2013,18.27,6.62
+Contonga,Peru,Skarn,,C,Nyrstar,Reserves-Resources 2013,3.11,3.96
+Corani,Peru,Epithermal,Low-to-intermediate sulfidation,C,Bear Creek Mining Corp,Tech Rep (2011-12),340.38,0.38
+Coricancha,Peru,Skarn,,C,Nyrstar,Reserves-Resources 2012 minus 2013 prod'n,5.72,3.01
+El Brocal (Colquijirca),Peru,Skarn,,C,El Brocal / Buenaventura,Form 20F 2013 (B),45.93,2.53
+El Porvenir,Peru,Skarn,,C,Compania Minera Milpo,Ann Rep 2013,40.973,4.64
+Hilarion,Peru,Skarn,,C,Compania Minera Milpo,Ann Rep 2013,60.456,4.38
+Huampar,Peru,Epithermal-Mesothermal,,NC,Trevali Mining Corp.,Website (2013-10-20),0.874,3.63
+Huaron,Peru,Epithermal,Low sulfidation?,C,Pan American Silver Corp.,Ann Info Form 2013,22.6,2.87
+Invicta,Peru,Epithermal,Intermediate sulfidation,C,Lupaka Gold,Ann Info Form 2013,11.18,0.26
+Iscaycruz,Peru,Skarn,,C,Glencore Xstrata,Reserves-Resources 2013,16.73,5.1
+Islay,Peru,Epithermal?,Low sulfidation?,C,Volcan Compania Minera,Ann Rep 2013,0.3,1.12
+Julcani,Peru,Epithermal,High to intermediate sulfidation,C,Buenaventura,Ann Rep 2013,0.37,
+La Granja,Peru,Porphyry,Cu-Mo,C,Rio Tinto,Ann Rep's 2010 & 2013,"3,600",0.09
+Mallay,Peru,Skarn,,C,Buenaventura,Ann Rep 2013,0.12,8.47
+Morococha,Peru,Epithermal,?low sulfidation?,C,Pan American Silver Corp.,Ann Info Form 2013,15.3,4.58
+Oyama,Peru,Epithermal?,Low sulfidation?,C,Volcan Compania Minera,Ann Rep 2013,6.79,0.23
+Palma,Peru,Sediment-hosted Pb-Zn,Sedex?,C,Volcan Compania Minera,Ann Rep 2013,8,4.42
+Pilarica (Fresnillo Peru),Peru,Epithermal,Low sulfidation,C,Fresnillo,Ann Rep 2013,10.83,0.5
+Pucarrajo,Peru,Sediment-hosted Pb-Zn,Sedex?,C,Nyrstar,Reserves-Resources 2012 (2007 data),0.79,8.01
+Quiruvilca,Peru,Epithermal,Low sulfidation,C,Southern Peaks Mining,Website (2014-12-12),9.164,2.39
+Recuperada,Peru,Epithermal,,C,Buenaventura,Ann Rep 2013,0.06,6.49
+Rio Pallanga,Peru,Epithermal,Low sulfidation,C,Volcan Compania Minera,Ann Rep 2013,1.49,1.16
+San Gregorio,Peru,Epithermal,High sulfidation,C,El Brocal / Buenaventura,Ann Rep 2013 (EB),79.934,5.22
+San Sebastián,Peru,Epithermal,Low sulfidation,C,Volcan Compania Minera,Ann Rep 2013,0.91,6.06
+Santander (Magistral-Puajanca),Peru,Skarn,,C,Trevali Mining Corp.,Tech Rep (2013-11),31.06,3.32
+Santander Tailings,Peru,Skarn Tailings,,TC,Trevali Mining Corp.,Tech Rep (2013-11),4.19,1.93
+Tajo Norte-La Llave,Peru,Epithermal,Low sulfidation,C,El Brocal / Buenaventura,Ann Rep 2013 (EB),45.93,2.53
+Tambomayo,Peru,Epithermal,Low sulfidation,C,Buenaventura,Ann Rep 2013,1.6,3
+"Uchucchacua (Jancapata, Yumpag)",Peru,Skarn,,C,Buenaventura,Ann Rep 2013,3.84,1.4
+Vinchos,Peru,Epithermal,High sulfidation?,C,Volcan Compania Minera,Ann Rep 2013,1.35,3.16
+Yanque,Peru,Skarn,Non-sulfide Zinc,C,Zincore Metals,Tech Rep (2013-08),27.66,2.36
+Yauli,Peru,Skarn,,C,Volcan Compania Minera,Ann Rep 2013,71.75,4.49
+Yauliyacu,Peru,Epithermal?,,C,Glencore Xstrata,Reserves-Resources 2013,23.54,3.8
+Yauricocha,Peru,Skarn,,C,Sierra Metals (formerly Dia Bras Expl'n),Tech Rep (2013-11),6.509,3.33
+Zoraida,Peru,Epithermal?,Low sulfidation?,C,Volcan Compania Minera,Ann Rep 2013,5.64,0.98
+Canatuan,Philippines,VMS,,C,TVI Pacific,Website (2014-01-12),0.995,0.73
+Manat-Magas,Philippines,Epithermal,,C,"Alsons Grou-75%, Indophil-25%",Ann Rep 2013 (Indophil),2.7,1.58
+Ungay-Malobago (Rapu Rapu),Philippines,VMS,,C,KMP Resources Inc. (?) (formerly Lafayette Mining),Ann Rep 2007 (Lafayette),5.14,2.38
+Nakru,PNG,VMS,,C,Coppermoly,Media (2012-07-24),38.4,0.066
+Solwara 1,PNG,VMS,Seafloor Massive sulfide,C,"Nautilus Minerals, PNG Gov.",Ann Rep 2013,2.57,0.7
+Solwara 12,PNG,VMS,Seafloor Massive sulfide,C,"Nautilus Minerals, PNG Gov.",Ann Rep 2013,0.23,3.6
+"Olza (Rokitno, Zawiercie, Chechlo)",Poland,Sediment-hosted Pb-Zn,MVT,C,Rathdowney Resources,Tech Rep (2012-12),21.2,5.88
+Aljustrel,Portugal,VMS,,NC,Almina-Minas do Alentejo,ILZSG database (2016-07-12),13,5.6
+Lagoa Salgada,Portugal,VMS,,C,Portex Minerals,Tech Rep (2012-01),8.41,2.63
+Neves-Corvo,Portugal,VMS,,C,Lundin Mining,Reserves-Resources 2013,193.32,3.8
+Cavnic,Romania,Epithermal,Low sulfidation,NC,unknown,Grancea et al 2002,20,2
+Suior,Romania,Epithermal,Low sulfidation,NC,unknown,Kouzmanov et al 2005,9.3,2.3
+50 Years October,Russia,VMS,,NC,unknown,"Herrington et al, 2005",46,0.47
+Alexandrinka,Russia,VMS,,NC,unknown,"Herrington et al, 2005",10,5.5
+Bakr Tau,Russia,VMS,,NC,unknown,"Herrington et al, 2005",1.3,4.66
+Balta Tau,Russia,VMS,,NC,unknown,"Herrington et al, 2005",3.5,5.1
+Berezitovy,Russia,Orogenic Au?,,C,Nordgold,"Ann Rep 2013, ILZSG (2016-07-12)",27.03,0.68
+Blyava,Russia,VMS,,NC,unknown,"Herrington et al, 2005",10,5
+Buribai,Russia,VMS,,NC,unknown,"Herrington et al, 2005",30,1.2
+Degtyarskoe,Russia,VMS,,NC,unknown,"Herrington et al, 2005",130,1.5
+Gai,Russia,VMS,,NC,unknown,"Herrington et al, 2005",380,0.74
+Goltsovoye,Russia,Epithermal,,C,Polymetal RU,Ann Rep 2012,0.75,
+Gorevskoe,Russia,Sediment-hosted Pb-Zn,Sedex,NC,unknown,"Leach et al, 2005",300,1.4
+Goroblagodat,Russia,Skarn,,NC,unknown,"Herrington et al, 2005",160,0.08
+Ishkinino,Russia,VMS,,NC,unknown,"Herrington et al, 2005",1,0.2
+Kholodninskoe,Russia,Sediment-hosted Pb-Zn,Sedex,NC,MBC Corp,Website (2015-04-24),519,4.08
+Khudesskoye,Russia,Orogenic Au?,,NC,Urals Mining & Metallurgical Co. (UMMC),ILZSG database (2016-03-02),31,0.9
+Komaganskoe,Russia,VMS,,NC,unknown,"Herrington et al, 2005",0.5,0.85
+Korbalikhinskoye,Russia,VMS,,NC,unknown,Min Deps Northeast Asia,24.5,9.8
+Krasnogvardeyskoe,Russia,VMS,,NC,unknown,"Herrington et al, 2005",14.1,0.73
+Letnye,Russia,VMS,,NC,unknown,"Herrington et al, 2005",6,1.2
+Limonitovoye,Russia,Sediment-hosted Pb-Zn,,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,80,1.9
+Mauk,Russia,VMS,,NC,unknown,"Herrington et al, 2005",3,1.7
+Nazarovskoe,Russia,Skarn,,C,MBC Corp,Website (2015-04-24),5.08,7.48
+Novoshirokinskoye,Russia,Skarn/Epithermal?,,C,Highland Gold,Ann Rep 2013,7.391,1.1
+Noyon-Tologoisky,Russia,Skarn,,NC,Baojin Mining (ILZSG db?),Min Deps Northeast Asia,14,1.55
+Ozernoe (Ozerny),Russia,Sediment-hosted Pb-Zn,Sedex,C,MBC Corp,Website (2015-04-24),135.06,6.12
+Pavlovskoye,Russia,Sediment-hosted Pb-Zn,MVT,NC,"Rosatom, Atomredmetzoloto (ARMZ)",ILZSG database (2016-07-12),21.4,9.2
+Perevalnoye,Russia,Epithermal?,Low sulfidation?,C,Polymetal RU,Ann Rep 2012,1.17,2.4
+Podolskoe,Russia,VMS,,NC,unknown,"Herrington et al, 2005",80.8,1.75
+Safyanovka,Russia,VMS,,NC,unknown,"Herrington et al, 2005",18.2,0.86
+Salairskoye,Russia,VMS,,NC,unknown,Min Deps Northeast Asia,25,2.42
+Sardana,Russia,Sediment-hosted Pb-Zn,MVT,C,Summa Group,Website (2016-07-14),18.3,10.4
+Sibay,Russia,VMS,,NC,unknown,"Herrington et al, 2005",110,0.4
+Tarnyerskoe,Russia,VMS,,NC,unknown,"Herrington et al, 2005",9.1,4.24
+Tuva / Kyzyl-Tash Turk,Russia,VMS,,C,Zijin Mining,Website (2014-01-12),12.92,10
+Uchaly,Russia,VMS,,NC,unknown,"Herrington et al, 2005",113,3.73
+Urultun,Russia,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),23,6.74
+Uzelga,Russia,VMS,,NC,unknown,"Herrington et al, 2005",69,2.9
+Yaman Kasy,Russia,VMS,,NC,unknown,"Herrington et al, 2005",2.3,5.56
+Yubilenoe (VMS Cu-Zn),Russia,VMS,,NC,unknown,"Herrington et al, 2005",106,1
+Zimnyee,Russia,VMS,,NC,unknown,"Herrington et al, 2005",12.5,0.87
+Al Masane-Al Kobra (AMAK),Saudi Arabia,VMS,,C,"AMAK, Trecora Res. (formerly Arabian American Devt Co)",Tech Rep (2009-09) (Trecora),10.04,4.42
+Jabal Dhaylan,Saudi Arabia,Sediment-hosted Pb-Zn,MVT,NC,unknown,Leach et al (2005),1.2,5.6
+Jabal Sayid-Citadel (Lode 1 only),Saudi Arabia,VMS,,C,Barrick Gold (formerly Equinox Res.),Ann Rep 2010 (Equinox),17.3,2.3
+Khnaiguiyah (1-2),Saudi Arabia,VMS,,C,"Alara-50%, United Arabian Mining Company (Manajem)-50%",Ann Rep 2013,29.64,3.87
+Chadine,Serbia,VMS,,NC,Aurasian Minerals,Website (2016-05-19),7.7,2.6
+Parlozi,Serbia,Epithermal,,NC,Rosita Mining,Tech Rep (2014-04),6.5,2.12
+Tenka,Serbia,Sediment-hosted Pb-Zn,MVT,NC,unknown,Armstrong et al (2005),4,6.7
+Black Mountain-Deeps/Broken Hill,South Africa,Sediment-hosted Pb-Zn,Sedex,C,Vedanta,Ann Rep 2013-14,25.9,2.62
+Black Mountain-Gamsberg,South Africa,Sediment-hosted Pb-Zn,Sedex,C,Vedanta,Ann Rep 2013-14,214.3,6.67
+Black Mountain-Swartberg,South Africa,Sediment-hosted Pb-Zn,,C,Vedanta,Ann Rep 2013-14,46,0.54
+Bushy Park,South Africa,Sediment-hosted Pb-Zn,MVT,NC,unknown,Wheatley et al 1986,0.63,3.3
+Pering,South Africa,Sediment-hosted Pb-Zn,MVT,C,Minéro Zinc,"Fin. Summary (Pering Base Metals Pty Ltd, 2010-12)",347.77,0.37
+Salt River-Graafwater East/West,South Africa,VMS,,C,Thabex,Website (2014-01-12),14.91,3.04
+Salt River-Hartebeest Vlei,South Africa,VMS,,C,Thabex,Website (2014-01-12),1.13,0.64
+Salt River-Main,South Africa,VMS,,C,Thabex,Website (2014-01-12),26.01,1.76
+Yeonwha 1,South Korea,Skarn,,NC,Woulfe Mining Corp,Website (2014-12-10),7.2,4.8
+Aguas Teñidas,Spain,VMS,,C,Iberian Minerals,Tech Rep (2009-09),38.12,3.4
+Cobre Las Cruces,Spain,VMS,,C,First Quantum,Ann Info Form 2013,40.71,2.45
+Lomero-Poyatos,Spain,VMS,,C,Petaquilla Minerals,Tech Rep (2012-05),30.35,2.35
+Masa Valverde,Spain,VMS,,C,Cambridge Mineral Resources,"Pres. (undated, website 2014-01-12)",134.1,1.1
+Santa Barbara,Spain,Sediment-hosted Pb-Zn,Sedex,NC,Lundin Mining,ILZSG database (2016-03-02),5,8.9
+Toral,Spain,Mesothermal Vein,,C,Portex Minerals,Tech Rep (2012-08),22.7,4.16
+Abu Samar,Sudan,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),3.6,4.9
+Hassaï,Sudan,VMS,,C,Weatherly Investments II (formerly La Mancha),Tech Rep (2012-08; La Mancha),117.06,0.67
+Barsele (Norra),Sweden,VMS/Epithermal,,C,Orex Minerals,Tech Rep (2012-11),0.54,0.46
+Boliden-Kristineberg,Sweden,VMS/Epithermal,High to intermediate sulfidation,C,Boliden,Ann Rep 2013,12.61,5.2
+Boliden-Maurliden,Sweden,VMS,,C,Boliden,Ann Rep 2013,2.81,3.5
+Boliden-Maurliden Östra,Sweden,VMS,,C,Boliden,Ann Rep 2013,0.56,0.1
+Boliden-Petiknäs N,Sweden,VMS,,C,Boliden,Ann Rep 2013,2.23,1.8
+Boliden-Renström,Sweden,VMS,,C,Boliden,Ann Rep 2013,7.68,7.1
+Garpenberg,Sweden,VMS,,C,Boliden,Ann Rep 2013,74.4,3.9
+Häggån,Sweden,Sediment-hosted Pb-Zn (Shale-hosted),,C,Aura Energy,Ann Rep 2013,"2,350",0.043
+Huornaisenvuoma,Sweden,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),0.55,4.5
+Rockliden,Sweden,VMS,,C,Boliden,Ann Rep 2013,10,4
+Viken,Sweden,Sediment-hosted Pb-Zn (Shale-hosted),,C,Continental Precious Minerals,Tech Rep (2014-02),"3,062",0.042
+Viscaria (A-B Zones),Sweden,IOCG?,,C,Avalon Minerals,Media (2011-11-29),41.26,0.19
+Zinkgruven,Sweden,Sediment-hosted Pb-Zn,Sedex,C,Lundin Mining,Reserves-Resources 2013,26.2,7.7
+Konimansur Kalon,Tajikistan,Epithermal?,,NC,Tajik Gov't,ILZSG database (2016-07-12),961,0.4
+Harvest-Terakimti,Tanzania,VMS,,C,East Africa Metals,Tech Rep (2014-02),6.05,1.57
+Mae Sod (Padaeng),Thailand,Sediment-hosted Pb-Zn,MVT,C,Padaeng Industries,Ann Rep 2013,1.61,10.3
+Bou Jabeur-Gite de l'Est,Tunisia,Sediment-hosted Pb-Zn,MVT,C,unknown (formerly Maghreb Minerals plc),"Maghreb Mins. Pres. (Finex'08), Media 2007-12-13",8.84,2.17
+Djebba,Tunisia,Sediment-hosted Pb-Zn,MVT,NC,unknown (formerly Maghreb Minerals plc),Ann Report (2007),2.7,6.14
+Fej Lahdoum-Dar N’Hal Nord,Tunisia,Sediment-hosted Pb-Zn,MVT,C,unknown (formerly Maghreb Minerals plc),Media 2007-03-07,1.2,6
+Kohol,Tunisia,Sediment-hosted Pb-Zn,MVT,NC,unknown (formerly Maghreb Minerals plc),Media 2006-12-07,0.4,1.75
+Sidi at Taia (Sidi Taya),Tunisia,Sediment-hosted Pb-Zn,MVT,NC,unknown (formerly Maghreb Minerals plc),Media 2006-12-07,0.03,1.75
+Zriba-Guebli,Tunisia,Sediment-hosted Pb-Zn,MVT,NC,unknown (formerly Maghreb Minerals plc),Media 2006-12-07,4,1
+Bayindir,Turkey,Sediment-hosted Pb-Zn,Sedex,NC,unknown,Leach et al (2005),0.9,7.5
+Çayeli Bakir,Turkey,VMS,,C,First Quantum,Ann Info Form 2013,13.45,2.72
+Çorak,Turkey,Epithermal,High sulfidation,C,Mediterranean Resources,Tech Rep (2011-08),4.8,0.98
+Tufanbeyli Group,Turkey,Sediment-hosted Pb-Zn,MVT,C,Red Crescent Resources,Tech Rep (2011-08),6.25,1.68
+Yenice,Turkey,Skarn,,C,Nesko,Türkiye (2013),0.923,2.85
+Yenipazar,Turkey,VMS,,C,Aldridge Minerals,Tech Rep (2013-05),30.04,1.48
+South Crofty,UK,Granite-related,????,C,Celeste Copper,Tech Rep (2012-10),3.5,0.29
+Back Forty,USA,VMS,,C,Aquila Resources Inc,Tech Rep (2014-07),17.471,2.95
+Blue Moon,USA,VMS,,C,Savant Explorations,Tech Rep (2008-02),5.57,5.6
+C.O.D.-Kingman,USA,Mesothermal Vein,,NC,ARS Mining,Tech Rep (2008-07),1.265,3.5
+C.O.D.-Kingman Tailings,USA,Mesothermal Vein Tailings,,TNC,ARS Mining,Tech Rep (2008-07),0.047,0.65
+Coeur-Galena Complex (Pb-Ag only),USA,Mesothermal Vein,Coeur D'Alene district,C,US Silver & Gold,Tech Rep (2013-03),2.16,
+East Tennessee (Coy-Immel-Young),USA,Sediment-hosted Pb-Zn,MVT,C,Nyrstar,Reserves-Resources 2013,30.62,3.84
+Empire,USA,Skarn,,NC,Musgrove Minerals,Tech Rep (2006-09),27.88,0.23
+Greens Creek,USA,VMS,,C,Hecla Mining,Website (2014-10-26),9.934,8.1
+Lik,USA,Sediment-hosted Pb-Zn,Sedex,C,Zazu Metals Corp,Ann Info Form 2013,23.45,8.23
+Lone Mountain-Upper Lake Valley,USA,Skarn,,NC,Copper One,Tech Rep 2009-11,6.7,5
+Lucky Friday,USA,Mesothermal Vein,Coeur D'Alene district,C,Hecla Mining,Website (2014-10-26),32.191,1.2
+Middle Tennessee (Gordonsville-Elmwood-Cumberland),USA,Sediment-hosted Pb-Zn,MVT,C,Nyrstar,Reserves-Resources 2013,20.1,3.7
+Montana Tunnels (M-pit),USA,Porphyry,Au,C,Eastern Resources,Reserves-Resources 2008,34.272,0.48
+Niblack (Lookout-Trio),USA,VMS,,C,Heatherdale Resources,Website (2014-01-14),9.03,1.56
+Pend Oreille (Yellowhead),USA,Sediment-hosted Pb-Zn,MVT,C,Teck,Ann Info Form 2013,6.6,6.4
+Red Dog,USA,Sediment-hosted Pb-Zn,Sedex,C,Teck,Ann Info Form 2013,53.1,17.2
+Reef Ridge,USA,Sediment-hosted Pb-Zn,MVT,NC,Doyon,Leach et al (2005),11.8,0.99
+Revenue (Virginius),USA,Epithermal,,C,Fortune Minerals,Tech Rep (2014-07),1.027,1.15
+Revenue (Yellow Rose),USA,Epithermal,,C,Fortune Minerals,Tech Rep (2014-07),0.321,1.62
+San Juan,USA,Epithermal,Low sulfidation,C,Hecla Mining,Website (2014-10-26),3.26,1.1
+Silver Valley-Star,USA,Mesothermal Vein,Coeur D'Alene district,C,Hecla Mining,Website (2014-10-26),3.444,6.2
+Sunshine (inferred only),USA,IOCG,,C,Sunshine Silver Mines,Tech Rep (2012-12),8.269,0.02
+Su-Lik,USA,Sediment-hosted Pb-Zn,,NC,unknown,Min Deps Canada 2007 Goodfellow & Lydon,34,8
+Upper Kobuk-Arctic,USA,VMS,,C,NovaCopper,Tech Rep (2013-02),27.21,4.37
+West Desert (Crypto),USA,Skarn,,C,InZinc Mining (formerly Lithic Res.),Tech Rep (2014-05),71.11,1.88
+Khandiza,Uzbekistan,VMS,,C,Marakand Minerals,Website (2014-10-07; also Oxus Gold),14.41,7.24
+Parys Mountain,Wales,VMS,,C,Anglesey Mining,Tech Rep (2012-11),25.775,1.1
+Jabali,Yemen,Sediment-hosted Pb-Zn,Non-sulfide Zinc deposit,C,unknoown,Mondillo et al 2014,12.6,8.9
+Jabali Stockpile,Yemen,Sediment-hosted Pb-Zn,Non-sulfide Zinc deposit,SNC,unknoown,Mondillo et al 2014,0.12,24
+Kabwe,Zambia,Sediment-hosted Pb-Zn,MVT,NC,Berkley Mineral Resources,ILZSG database (2016-07-12),1.1,15
+Kabwe Tailings,Zambia,Sediment-hosted Pb-Zn,MVT,NC,Berkley Mineral Resources,ILZSG database (2016-07-12),0.6,10.5

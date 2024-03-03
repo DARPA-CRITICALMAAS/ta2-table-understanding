@@ -15,7 +15,6 @@ from kgdata.models.entity import Entity, EntityLabel, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
 from rdflib import RDFS, Graph
-
 from tum.config import CRITICAL_MAAS_DIR
 from tum.db import MNDRDB
 
@@ -145,7 +144,7 @@ def entity_labels() -> Dataset[EntityLabel]:
 if __name__ == "__main__":
     for ds in ["entities", "classes", "props", "entity_labels"]:
         build_database(
-            f"minmod.make_db.{ds}",
+            f"tum.make_db.{ds}",
             lambda: getattr(
                 GenericDB(CRITICAL_MAAS_DIR / "data/databases", read_only=False), ds
             ),

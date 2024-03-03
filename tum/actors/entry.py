@@ -1,6 +1,5 @@
 from ream.prelude import ActorGraph, ReamWorkspace, configure_loguru
 from sm.misc.ray_helper import set_ray_init_args
-
 from tum.actors.data import DataActor, DataActorArgs
 from tum.actors.db import DBActor, DBActorArgs, KGDBArgs
 from tum.actors.semanticmodel import (
@@ -8,6 +7,8 @@ from tum.actors.semanticmodel import (
     MinmodGraphGenerationActorArgs,
     MinmodGraphInferenceActor,
     MinmodGraphInferenceActorArgs,
+    MinmodTableTransformationActor,
+    MinmodTableTransformationActorArgs,
 )
 from tum.config import REAM_DIR
 
@@ -22,6 +23,7 @@ G = ActorGraph.auto(
         DataActor,
         MinmodGraphGenerationActor,
         MinmodGraphInferenceActor,
+        MinmodTableTransformationActor,
     ],
     auto_naming=True,
 )
@@ -37,4 +39,6 @@ __all__ = [
     "MinmodGraphInferenceActor",
     "MinmodGraphGenerationActorArgs",
     "MinmodGraphInferenceActorArgs",
+    "MinmodTableTransformationActor",
+    "MinmodTableTransformationActorArgs",
 ]

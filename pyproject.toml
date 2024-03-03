@@ -15,6 +15,7 @@ kgdata = "^6.0.0"
 drepr = "^2.11.1"
 steiner-tree = "^1.1.3"
 dsl2 = "^1.0.1"
+rltk = "^2.0.0a20"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.27.1"

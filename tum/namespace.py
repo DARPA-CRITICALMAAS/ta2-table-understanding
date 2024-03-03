@@ -8,6 +8,7 @@ MNDR = "mndr"
 MNDR_NS = "https://minmod.isi.edu/resource/"
 GEOKB = "geokb"
 GEOKB_NS = "https://geokb.wikibase.cloud/entity/"
+DREPR_NS = "http://purl.org/drepr/1.0/"
 
 
 class MNDRNamespace(DefaultKnowledgeGraphNamespace):
@@ -15,11 +16,19 @@ class MNDRNamespace(DefaultKnowledgeGraphNamespace):
     entity_uri: str = str(RDFS.Resource)
     entity_label: str = "rdfs:Resource"
     statement_uri: str = MNDR_NS + "Statement"
-    main_namespaces: list[str] = [MNDR_NS, GEOKB_NS]
+    main_namespaces: list[str] = [
+        MNDR_NS,
+        GEOKB_NS,
+        str(RDF),
+        str(RDFS),
+        str(XSD),
+        str(OWL),
+        DREPR_NS,
+    ]
 
-    @staticmethod
-    def create():
-        return MNDRNamespace.from_prefix2ns(
+    @classmethod
+    def create(cls):
+        return cls.from_prefix2ns(
             {
                 MNDR: MNDR_NS,
                 GEOKB: GEOKB_NS,
@@ -27,7 +36,7 @@ class MNDRNamespace(DefaultKnowledgeGraphNamespace):
                 "rdfs": str(RDFS),
                 "xsd": str(XSD),
                 "owl": str(OWL),
-                "drepr": "https://purl.org/drepr/1.0/",
+                "drepr": DREPR_NS,
             }
         )
 

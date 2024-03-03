@@ -1,15 +1,20 @@
+from collections import defaultdict
 from pathlib import Path
 
 import pandas as pd
 import serde.csv
 from sm.dataset import Dataset
 from sm.namespaces.utils import KGName
-
+from sm.prelude import O
 from tum.actors.entry import *
 from tum.make_db import CRITICAL_MAAS_DIR
 
+meta_prop_file = (
+    CRITICAL_MAAS_DIR / "ta2-table-understanding/data/meta_property/data.csv"
+)
+
 actor = G.create_actor(
-    MinmodGraphInferenceActor,
+    MinmodTableTransformationActor,
     [
         DBActorArgs(
             kgdbs=[
@@ -43,7 +48,13 @@ with actor.data_actor.use_examples(
             test_ex.id,
             test_ex,
         ) as testquery:
-            (sm,) = actor(testquery)
+            sm = actor.graphinfer_actor(testquery)[0]
+            # sm = test_ex.sms[0]
             print("=" * 80)
             print(testquery)
             sm.print()
+            # print(
+            #     actor.gen_drepr_model(
+            #         test_ex.table, sm, actor.data_actor.get_kgdb(testquery)
+            #     ).to_lang_yml(use_json_path=True)
+            # )

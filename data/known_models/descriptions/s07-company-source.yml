@@ -1,0 +1,18 @@
+prefixes:
+  mndr: https://minmod.isi.edu/resource/
+  drepr: http://purl.org/drepr/1.0/
+models:
+  - nodes:
+      - id: c0
+        col_index: 0
+        label: Company
+      - id: c1
+        col_index: 1
+        label: Source
+      - id: document
+        uri: mndr:Document
+      - id: drepr-unk
+        uri: drepr:Unknown
+    edges:
+      - drepr-unk---drepr:unknown---c0
+      - document---mndr:title---c1

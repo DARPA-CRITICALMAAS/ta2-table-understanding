@@ -1,9 +1,11 @@
 id,label,aliases,description,graph
 p_ore_Mt,ore Mt,Mt ore,ore in million tonnes,"mndr:MineralInventory--mndr:ore--mndr:Ore,mndr:Ore--mndr:ore_value--[target],mndr:Ore--mndr:ore_unit--mndr:Q202"
 p_ore_t,ore t,t ore,ore in tonnes,"mndr:MineralInventory--mndr:ore--mndr:Ore,mndr:Ore--mndr:ore_value--[target],mndr:Ore--mndr:ore_unit--mndr:Q200"
+p_cutoff_grade,cutoff (%),% cutoff|%cutoff|cutoff %|cutoff%,cutoff grade in percentage,"mndr:MineralInventory--mndr:cutoff_grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q201"
 p_grade_zn,%zn,% Zn|zn %|Zn%,grade of zinc in percentage,"mndr:MineralInventory--mndr:commodity--mndr:Q589,mndr:MineralInventory--mndr:grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q201"
 p_grade_pb,%pb,% Pb|pb %|Pb%,grade of lead in percentage,"mndr:MineralInventory--mndr:commodity--mndr:Q565,mndr:MineralInventory--mndr:grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q201"
 p_grade_ag,g/t Ag,Ag g/t,grade of silver in grams per tonne,"mndr:MineralInventory--mndr:commodity--mndr:Q585,mndr:MineralInventory--mndr:grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q203"
 p_grade_cu,% Cu,Cu %|Cu%|%Cu,grade of copper in grams per tonne,"mndr:MineralInventory--mndr:commodity--mndr:Q538,mndr:MineralInventory--mndr:grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q201"
 p_grade_au,g/t Au,Au g/t,grade of gold in grams per tonne,"mndr:MineralInventory--mndr:commodity--mndr:Q551,mndr:MineralInventory--mndr:grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q203"
-p_cutoff_grade,cutoff (%),% cutoff|%cutoff|cutoff %|cutoff%,cutoff grade in percentage,"mndr:MineralInventory--mndr:cutoff_grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q201"
+p_grade_zn,%zn,% Zn|zn %|Zn%,grade of zinc in percentage,"mndr:MineralInventory--mndr:commodity--mndr:Q589,mndr:MineralInventory--mndr:grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q201"
+p_grade_ni,%ni,% Ni|ni %|Ni%,grade of nickel in percentage,"mndr:MineralInventory--mndr:commodity--mndr:Q578,mndr:MineralInventory--mndr:grade--mndr:Grade,mndr:Grade--mndr:grade_value--[target],mndr:Grade--mndr:grade_unit--mndr:Q201"

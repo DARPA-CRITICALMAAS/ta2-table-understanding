@@ -2,8 +2,18 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Mapping
+from typing import Mapping, Optional, Sequence
 
+from drepr.models import (
+    Alignment,
+    Attr,
+    CSVProp,
+    DRepr,
+    RangeAlignment,
+    Resource,
+    ResourceType,
+)
+from drepr.models import SemanticModel as DReprSemanticModel
 from dsl.dsl import DSL
 from dsl.generate_train_data import DefaultSemanticTypeComparator
 from dsl.input import DSLTable
@@ -11,10 +21,12 @@ from hugedict.chained_mapping import ChainedMapping
 from kgdata.models.ont_class import OntologyClass
 from kgdata.models.ont_property import OntologyProperty
 from loguru import logger
+from rdflib import RDFS
 from ream.actor_version import ActorVersion
 from ream.actors.base import BaseActor
 from ream.cache_helper import Cache, MemBackend
 from ream.params_helper import NoParams
+from sand_drepr.dreprmodel import get_drepr_model
 from sm.dataset import Example, FullTable
 from sm.misc.funcs import assert_not_null
 from sm.namespaces.namespace import KnowledgeGraphNamespace
@@ -25,8 +37,8 @@ from sm.outputs.semantic_model import (
     SemanticModel,
     SemanticType,
 )
-
 from tum.actors.data import DataActor
+from tum.actors.db import KGDB
 from tum.db import MetaProperty
 from tum.lib.cgraph import CGraph
 from tum.lib.graph_generation import GraphGeneration
@@ -43,10 +55,11 @@ class MinmodGraphGenerationActorArgs:
 
 MinmodGraphInferenceActorArgs = NoParams
 MinmodCanGraphExtractedResult = CGraph
+MinmodTableTransformationActorArgs = NoParams
 
 
 class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
-    VERSION = ActorVersion.create(108, [DSL])
+    VERSION = ActorVersion.create(110, [DSL])
 
     def __init__(self, params: MinmodGraphGenerationActorArgs, data_actor: DataActor):
         super().__init__(params, dep_actors=[data_actor])
@@ -76,6 +89,9 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
                             for stype in example_stypes[ei][ci]
                         ]
                         for ci, col in enumerate(ex.table.table.columns)
+                        # if top 1 semantic type is unknown, then we remove them
+                        if example_stypes[ei][ci][0].semantic_type.class_abs_uri
+                        != "http://purl.org/drepr/1.0/Unknown"
                     ],
                     kgns,
                 )
@@ -114,6 +130,14 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
                     kgns.get_abs_uri("mndr:MineralInventory"),
                     kgns.get_abs_uri("mndr:Ore"),
                 ): {kgns.get_abs_uri("mndr:ore"): 1.0},
+                (
+                    kgns.get_abs_uri("mndr:MineralInventory"),
+                    kgns.get_abs_uri("mndr:Reference"),
+                ): {kgns.get_abs_uri("mndr:reference"): 1.0},
+                (
+                    kgns.get_abs_uri("mndr:Reference"),
+                    kgns.get_abs_uri("mndr:Document"),
+                ): {kgns.get_abs_uri("mndr:document"): 1.0},
             },
         )
         cg = gen(ex_stypes)
@@ -136,26 +160,38 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
         kgdb = self.data_actor.get_kgdb(self.params.train_dsquery)
         db = kgdb.pydb
 
-        props = {}
-        props.update(db.default_props)
-        props.update(db.get_meta_properties(kgdb.kgns, self.params.meta_prop_file))
-        props = ChainedMapping(db.props.cache(), props)
+        classes = {}
+        classes.update(db.get_default_classes())
+        classes = ChainedMapping(db.classes.cache(), classes)
+
+        props = self.get_props()
 
         dsl = DSL(
             examples,
             self.get_working_fs().get("dsl").get_or_create(),
-            db.classes,
+            classes,
             props,
         )
         dsl.get_model(
             train_if_not_exist=True,
-            stype_cmp=SemanticTypeMetaComparator(db.classes, props, kgdb.kgns),
+            stype_cmp=SemanticTypeMetaComparator(classes, props, kgdb.kgns),
             save_train_data=True,
         )
         return dsl
 
+    def get_props(self):
+        kgdb = self.data_actor.get_kgdb(self.params.train_dsquery)
+        db = kgdb.pydb
+        props = {}
+        props.update(db.get_default_props())
+        props.update(db.get_meta_properties(kgdb.kgns, self.params.meta_prop_file))
+        props = ChainedMapping(db.props.cache(), props)
+        return props
+
 
 class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
+    VERSION = 101
+
     def __init__(
         self,
         params: MinmodGraphInferenceActorArgs,
@@ -235,6 +271,29 @@ class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
                 )
             )
         return sm
+
+
+class MinmodTableTransformationActor(BaseActor[MinmodTableTransformationActorArgs]):
+    VERSION = 100
+
+    def __init__(self, params: NoParams, graphinfer_actor: MinmodGraphInferenceActor):
+        super().__init__(params, [graphinfer_actor])
+        self.graphinfer_actor = graphinfer_actor
+        self.data_actor = graphinfer_actor.data_actor
+
+    # def __call__(self, dsquery: str):
+    #     pass
+
+    def gen_drepr_model(self, table: FullTable, sm: SemanticModel, kgdb: KGDB) -> DRepr:
+        return get_drepr_model(
+            table_columns=[c.clean_multiline_name for c in table.table.columns],
+            table_size=table.table.shape()[0],
+            sm=sm,
+            kgns=kgdb.kgns,
+            kgns_prefixes=kgdb.kgns.prefix2ns.copy(),
+            ontprop_ar=self.graphinfer_actor.cangraph_actor.get_props(),
+            ident_props=[str(RDFS.label)],
+        )
 
 
 class SemanticTypeMetaComparator(DefaultSemanticTypeComparator):

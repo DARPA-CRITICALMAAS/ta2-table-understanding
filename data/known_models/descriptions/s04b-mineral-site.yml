@@ -1,0 +1,12 @@
+prefixes:
+  mndr: https://minmod.isi.edu/resource/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+models:
+  - nodes:
+      - id: mineral-site
+        col_index: 0
+        label: Project
+      - id: mineral-site
+        uri: mndr:MineralSite
+    edges:
+      - mineral-site---rdfs:label---mineral-site

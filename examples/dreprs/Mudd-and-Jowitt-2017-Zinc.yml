@@ -1,0 +1,209 @@
+version: "2"
+resources:
+  table:
+    type: csv
+    delimiter: ","
+  entity:
+    type: csv
+    delimiter: ","
+preprocessing: []
+attributes:
+  0__deposit:
+    resource_id: table
+    path: $[1:852:1][0]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  1__country:
+    resource_id: table
+    path: $[1:852:1][1]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  2__primary_deposit_type:
+    resource_id: table
+    path: $[1:852:1][2]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  3__secondary_deposit_type:
+    resource_id: table
+    path: $[1:852:1][3]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  4__unnamed_4:
+    resource_id: table
+    path: $[1:852:1][4]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  5__company:
+    resource_id: table
+    path: $[1:852:1][5]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  6__source:
+    resource_id: table
+    path: $[1:852:1][6]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  7__mt_ore:
+    resource_id: table
+    path: $[1:852:1][7]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  8__zn:
+    resource_id: table
+    path: $[1:852:1][8]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+  0__ent__deposit:
+    resource_id: entity
+    path: $[1:852:1][0]
+    unique: false
+    sorted: none
+    value_type: unspecified
+    missing_values:
+      - ""
+alignments:
+  - type: range
+    source: 0__deposit
+    target: 1__country
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 2__primary_deposit_type
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 3__secondary_deposit_type
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 4__unnamed_4
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 5__company
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 6__source
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 7__mt_ore
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 8__zn
+    aligned_dims:
+      - source: 0
+        target: 0
+  - type: range
+    source: 0__deposit
+    target: 0__ent__deposit
+    aligned_dims:
+      - source: 0
+        target: 0
+semantic_model:
+  mndr:MineralSite:1:
+    properties:
+      - - rdfs:label
+        - 0__deposit
+      - - mndr:deposit_type
+        - 2__primary_deposit_type
+      - - mndr:deposit_type
+        - 3__secondary_deposit_type
+      - - drepr:uri
+        - 0__ent__deposit
+        - xsd:anyURI
+    static_properties: []
+    inverse_static_properties: []
+    links:
+      - - mndr:location_info
+        - mndr:LocationInfo:1
+      - - mndr:reference
+        - mndr:Reference:1
+      - - mndr:mineral_inventory
+        - mndr:MineralInventory:1
+  mndr:MineralInventory:1:
+    properties:
+      - - mndr:p_ore_Mt
+        - 7__mt_ore
+      - - mndr:p_grade_zn
+        - 8__zn
+    static_properties: []
+    inverse_static_properties: []
+    links: []
+  mndr:LocationInfo:1:
+    properties: []
+    static_properties: []
+    inverse_static_properties: []
+    links: []
+  mndr:Document:1:
+    properties:
+      - - mndr:title
+        - 6__source
+    static_properties: []
+    inverse_static_properties: []
+    links: []
+  mndr:Reference:1:
+    properties: []
+    static_properties: []
+    inverse_static_properties: []
+    links:
+      - - mndr:document
+        - mndr:Document:1
+  drepr:Unknown:1:
+    properties:
+      - - drepr:unknown
+        - 5__company
+    static_properties: []
+    inverse_static_properties: []
+    links: []
+  prefixes:
+    mndr: https://minmod.isi.edu/resource/
+    geokb: https://geokb.wikibase.cloud/entity/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    xsd: http://www.w3.org/2001/XMLSchema#
+    owl: http://www.w3.org/2002/07/owl#
+    drepr: https://purl.org/drepr/1.0/
