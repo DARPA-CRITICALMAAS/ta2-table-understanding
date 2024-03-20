@@ -34,5 +34,6 @@ Alternatively, you can use the [SAND UI](https://github.com/usc-isi-i2/sand) to 
 
 ## Configuration
 
-- The working folder `<DARPA-CRITICALMAAS-DIR>` can be modified by setting the environment variable `CRITICAL_MAAS_DIR`.
-- To customize SAND, you can update the file [config.sand.yaml](./config.sand.yaml)
+1. The working folder `<DARPA-CRITICALMAAS-DIR>` can be modified by setting the environment variable `CRITICAL_MAAS_DIR`.
+2. To customize SAND, you can update the file [config.sand.yaml](./config.sand.yaml)
+3. Training data to the model is stored under [data/known_models](./data/known_models) folder
