@@ -15,15 +15,24 @@ To work with [MinMod KG](https://minmod.isi.edu/), we need the [ta2-minmod-data]
     ├── ta2-minmod-data           # ta2-minmod-data repository
     └── ta2-table-understanding   # ta2-table-understanding repository
 
-Note: The folder structure is fully customizable. Please see the [Configuration Section](#Configuration)
+Note: The folder structure is fully customizable. Please see the [Configuration Section](#Configuration) for more information.
 
 With the working folder structure setup, we can build the necessary databases (entities, ontology classes, and properties) by running `poetry run python -m tum.make_db`
 
 ## Usage
 
-Check out the [demo notebook](examples/demo.ipynb) on programmatically using the library.
+### API
 
-Alternatively, you can use the [SAND UI](https://github.com/usc-isi-i2/sand) to load a table, create the semantic description, and extract data from the table.
+Check out the [demo notebook](examples/demo.ipynb) on how to use the library programmatically.
+
+### GUI
+
+Alternatively, you can use the [SAND UI](https://github.com/usc-isi-i2/sand) to interactively load a table, create the semantic description, and extract data from the table.
+
+1. Setup SAND (run only once): `poetry run python -m sand init -d <DARPA-CRITICALMAAS-DIR>/data/sand.db`
+2. Start SAND: `poetry run python -m start -d <DARPA-CRITICALMAAS-DIR>/data/sand.db -c <DARPA-CRITICALMAAS-DIR>/ta2-table-understanding/config.sand.yml`
 
 ## Configuration
 
+- The working folder `<DARPA-CRITICALMAAS-DIR>` can be modified by setting the environment variable `CRITICAL_MAAS_DIR`.
+- To customize SAND, you can update the file [config.sand.yaml](./config.sand.yaml)
