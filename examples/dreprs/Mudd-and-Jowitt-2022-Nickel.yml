@@ -1,202 +1,197 @@
 version: "2"
-resources:
-  table:
-    type: csv
-    delimiter: ","
-  entity:
-    type: csv
-    delimiter: ","
-preprocessing: []
+
+resources: csv
+
+preprocessing:
+  - type: pmap
+    path: [1.., 1]
+    output: project_uri
+    code: |
+      from slugify import slugify
+      value = "__".join(["site", slugify("10.5382/econgeo.4950"), slugify(value)])
+      return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1.., 8..11]
+    output: deposit_type_uri
+    code: |
+      from slugify import slugify
+      if value != "":
+        value = "__".join(["dety", slugify("10.5382/econgeo.4950"), slugify(value)])
+        return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1.., 11]
+    code: |
+      return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1.., 2]
+    output: lat_long
+    code: |
+      lat = value.strip()
+      long = context.get_value((context.get_index()[0], 3)).strip()
+      if lat != "" and long != "":
+        return f"POINT ({long} {lat})"
+  - type: pmap
+    path: [1.., 0]
+    output: loc_id
+    code: |
+      from slugify import slugify
+      idx = context.get_index()[0]
+      country, lat, long = context.get_value((idx, 1)), context.get_value((idx, 2)), context.get_value((idx, 3))
+      if country == "" and lat == "" and long == "":
+        return None
+      return (country, lat, long)
+  - type: pmap
+    path: [1.., 13]
+    output: ni_uri
+    code: |
+      from slugify import slugify
+      if value == "":
+        return None
+
+      row_idx = context.get_index()[0]
+      category = context.get_value((row_idx, 11))
+      mineral_site = context.get_value((row_idx, 1))
+
+      value = "__".join([
+        "inv", slugify("10.5382/econgeo.4950"), 
+        slugify(mineral_site), "Q578", slugify(category),
+      ])
+      return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1.., 14]
+    output: co_uri
+    code: |
+      from slugify import slugify
+      if value == "":
+        return None
+
+      row_idx = context.get_index()[0]
+      category = context.get_value((row_idx, 11))
+      mineral_site = context.get_value((row_idx, 1))
+
+      value = "__".join([
+        "inv", slugify("10.5382/econgeo.4950"), 
+        slugify(mineral_site), "Q537", slugify(category),
+      ])
+      return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1, 1]
+    output: document_uri
+    code: |
+      return "https://doi.org/10.5382/econgeo.4950"
 attributes:
-  0__country:
-    resource_id: table
-    path: $[1:1885:1][0]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  1__project:
-    resource_id: table
-    path: $[1:1885:1][1]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  2__lat:
-    resource_id: table
-    path: $[1:1885:1][2]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  3__long:
-    resource_id: table
-    path: $[1:1885:1][3]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  4__company:
-    resource_id: table
-    path: $[1:1885:1][4]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  5__category:
-    resource_id: table
-    path: $[1:1885:1][5]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  6__mt:
-    resource_id: table
-    path: $[1:1885:1][6]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  7__ni:
-    resource_id: table
-    path: $[1:1885:1][7]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  8__source:
-    resource_id: table
-    path: $[1:1885:1][8]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
-  1__ent__project:
-    resource_id: entity
-    path: $[1:1885:1][1]
-    unique: false
-    sorted: none
-    value_type: unspecified
-    missing_values:
-      - ""
+  country: [1.., 0]
+  project: [1.., 1]
+  lat:
+    path: [1.., 2]
+  long:
+    path: [1.., 3]
+  company: [1.., 4]
+  source: [1.., 5]
+  deposit_type:
+    path: [1.., 8..11]
+    missing_values: [""]
+  category: [1.., 11]
+  ore:
+    path: [1.., 12]
+    missing_values: ["", "0.0"]
+  ni:
+    path: [1.., 13]
+    missing_values: [""]
+  co:
+    path: [1.., 14]
+    missing_values: [""]
+  refval: [0, 0]
+
 alignments:
-  - type: range
-    source: 0__country
-    target: 1__project
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 2__lat
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 3__long
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 4__company
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 5__category
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 6__mt
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 7__ni
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 8__source
-    aligned_dims:
-      - source: 0
-        target: 0
-  - type: range
-    source: 0__country
-    target: 1__ent__project
-    aligned_dims:
-      - source: 0
-        target: 0
+  - type: auto
+
 semantic_model:
   mndr:MineralSite:1:
     properties:
-      - - rdfs:label
-        - 1__project
-      - - drepr:uri
-        - 1__ent__project
-        - xsd:anyURI
-    static_properties: []
-    inverse_static_properties: []
+      - [drepr:uri, project_uri]
+      - [rdfs:label, project]
+      - [mndr:name, project]
+      - [mndr:record_id, project]
+    static_properties:
+      - [mndr:source_id, "https://doi.org/10.5382/econgeo.4950"]
     links:
-      - - mndr:location_info
-        - mndr:LocationInfo:1
-      - - mndr:reference
-        - mndr:Reference:1
-      - - mndr:mineral_inventory
-        - mndr:MineralInventory:1
-  mndr:MineralInventory:1:
+      - [mndr:deposit_type_candidate, mndr:DepositTypeCandidate:1]
+      - [mndr:location_info, mndr:LocationInfo:1]
+      - [mndr:mineral_inventory, mndr:MineralInventory:Ni]
+      - [mndr:mineral_inventory, mndr:MineralInventory:Co]
+
+  mndr:DepositTypeCandidate:1:
     properties:
-      - - mndr:category
-        - 5__category
-      - - mndr:p_ore_Mt
-        - 6__mt
-      - - mndr:p_grade_ni
-        - 7__ni
-    static_properties: []
-    inverse_static_properties: []
-    links: []
+      - [drepr:uri, deposit_type_uri]
+      - [mndr:observed_name, deposit_type, xsd:string, true]
+    static_properties:
+      - [mndr:confidence, 0.5]
+      - [mndr:source, "sand"]
+
   mndr:LocationInfo:1:
-    properties: []
-    static_properties: []
-    inverse_static_properties: []
-    links: []
+    properties:
+      - [drepr:blank, loc_id]
+      - [mndr:location, lat_long, geo:wktLiteral]
+      - [mndr:country, country]
+
+  mndr:Reference:1:
+    properties:
+      - [drepr:blank, refval]
+    links:
+      - [mndr:document, mndr:Document:1]
+
   mndr:Document:1:
     properties:
-      - - mndr:title
-        - 8__source
-    static_properties: []
-    inverse_static_properties: []
-    links: []
-  mndr:Reference:1:
-    properties: []
-    static_properties: []
-    inverse_static_properties: []
-    links:
-      - - mndr:document
-        - mndr:Document:1
-  drepr:Unknown:1:
+      - [drepr:uri, document_uri]
+    static_properties:
+      - [
+          mndr:title,
+          "The New Century for Nickel Resources, Reserves, and Mining: Reassessing the Sustainability of the Devil’s Metal",
+        ]
+      - [mndr:doi, "10.5382/econgeo.4950"]
+      - [mndr:uri, "https://doi.org/10.5382/econgeo.4950"]
+
+  mndr:MineralInventory:Ni:
     properties:
-      - - drepr:unknown
-        - 4__company
-    static_properties: []
-    inverse_static_properties: []
-    links: []
+      - [drepr:uri, ni_uri, true]
+      - [mndr:category, category, drepr:uri]
+    static_properties:
+      - [mndr:commodity, mndr:Q578, drepr:uri]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:Ni, true]
+      - [mndr:reference, mndr:Reference:1]
+
+  mndr:MineralInventory:Co:
+    properties:
+      - [drepr:uri, co_uri, true]
+      - [mndr:category, category, drepr:uri]
+    static_properties:
+      - [mndr:commodity, mndr:Q537, drepr:uri]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:Co, true]
+      - [mndr:reference, mndr:Reference:1]
+
+  mndr:Ore:1:
+    properties:
+      - [mndr:ore_value, ore, xsd:decimal, true]
+    static_properties:
+      - [mndr:ore_unit, mndr:Q202, drepr:uri]
+
+  mndr:Grade:Ni:
+    properties:
+      - [mndr:grade_value, ni, xsd:decimal, true]
+    static_properties:
+      - [mndr:grade_unit, mndr:Q201, drepr:uri]
+
+  mndr:Grade:Co:
+    properties:
+      - [mndr:grade_value, co, xsd:decimal, true]
+    static_properties:
+      - [mndr:grade_unit, mndr:Q201, drepr:uri]
+
   prefixes:
     mndr: https://minmod.isi.edu/resource/
     geokb: https://geokb.wikibase.cloud/entity/
@@ -205,3 +200,4 @@ semantic_model:
     xsd: http://www.w3.org/2001/XMLSchema#
     owl: http://www.w3.org/2002/07/owl#
     drepr: https://purl.org/drepr/1.0/
+    geo: http://www.opengis.net/ont/geosparql#

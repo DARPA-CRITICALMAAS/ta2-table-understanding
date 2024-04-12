@@ -5,14 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Sbt install",
-            "type": "python",
+            "name": "Python Debugger: Module",
+            "type": "debugpy",
             "request": "launch",
-            "module": "sbt",
-            "justMyCode": false,
+            "module": "drepr",
             "args": [
-                "install"
+                "examples/dreprs/Mudd-and-Jowitt-2022-Nickel.yml",
+                "default=examples/tables/Mudd-and-Jowitt-2022-Nickel.csv",
+                "--outfile",
+                "examples/ttls/Mudd-and-Jowitt-2022-Nickel.ttl",
+                "--progfile",
+                "examples/programs/Mudd-and-Jowitt-2022-Nickel.py"
             ]
-        }
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "examples/tables/Mudd-and-Jowitt-2022-Nickel.csv",
+                "examples/ttls/Mudd-and-Jowitt-2022-Nickel.ttl"
+            ]
+        },
     ]
 }
