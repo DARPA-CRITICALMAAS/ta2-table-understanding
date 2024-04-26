@@ -55,7 +55,7 @@ Australia,Avebury,,,Dundas Mining,ResV-ResC 2016,C,,Hydrothermal Ni,Skarn,,Measu
 Australia,Avebury,,,Dundas Mining,ResV-ResC 2016,C,,Hydrothermal Ni,Skarn,,Indicated,4.9,0.9,
 Australia,Avebury,,,Dundas Mining,ResV-ResC 2016,C,,Hydrothermal Ni,Skarn,,Inferred,20.7,0.8,
 Serbia,Ba,,,unknown,SMME (2013),NC,,Laterite,Hydrous Mg silicate,,Inferred,2.5,1.55,
-USA,Babbit-Minnamax,,,unknown,"Miller et al (2002), Miller (2015)",NC,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,330.2208,0.19,
+USA,Babbit-Minnamax,51.76,-86.71,unknown,"Miller et al (2002), Miller (2015)",NC,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,330.2208,0.19,
 Sweden,Backviken,,,unknown,Pres. (31 July 2009),NC,,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,0.07,0.46,
 South Africa,Bafokeng-Rasimone,,,"Royal Bafokeng, Anglo Am Pt",ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Contact-type,Measured,169.01,0.1627684752381516,
 South Africa,Bafokeng-Rasimone,,,"Royal Bafokeng, Anglo Am Pt",ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Contact-type,Indicated,123.4,0.15887520259319285,
@@ -88,8 +88,8 @@ Zimbabwe,Bindura (Trojan-Shangani-Hunter's Road),,,Asa Resource Group,AR 2012,C,
 Zimbabwe,Bindura (Trojan-Shangani-Hunter's Road),,,Asa Resource Group,AR 2012,C,,Magmatic Sulphide,Archean Komatiite,,Inferred,10.55,0.62,
 Zimbabwe,Bindura (Trojan-Shangani-Hunter's Road),,,Asa Resource Group,AR 2012,C,,Magmatic Sulphide,Archean Komatiite,,Proven,1.72,1.07,
 Australia,Binti Binti,,,Pioneer Resources,WA MINEDEX,C,C,Laterite,Clay silicate-Oxide,Clay silicate-oxide,Inferred,2.8,0.91,0.09
-USA,Birch Lake,,,Antofagasta (through Twin Metals),AR 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,90.4,0.16,
-USA,Birch Lake,,,Antofagasta (through Twin Metals),AR 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,217.0,0.15,
+USA,Birch Lake,47.75,-91.8,Antofagasta (through Twin Metals),AR 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,90.4,0.16,
+USA,Birch Lake,47.75,-91.8,Antofagasta (through Twin Metals),AR 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,217.0,0.15,
 Australia,Black Hills-North Monger,,,"Western Resources, Zetek Resources",WA MINEDEX,C,C,Laterite,Oxide,Oxide,Inferred,30.0,0.64,0.03
 Australia,Black Swan-Silver Swan,,,Poseidon Nickel,QR 2018-12,C,C,Magmatic Sulphide,Archean Komatiite,,Indicated,9.652,0.7258474927476172,0.010705668698923336
 Australia,Black Swan-Silver Swan,,,Poseidon Nickel,QR 2018-12,C,C,Magmatic Sulphide,Archean Komatiite,,Inferred,21.184,0.5735857250755287,0.010705668698923336
@@ -98,7 +98,7 @@ Canada,Blue Lake,,,unknown,Tech Rep (2013-03),C,,Magmatic Sulphide,Small M-UM In
 South Africa,Blue Ridge,,,"Sibanya-Stillwater, Imbani Pt",ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Measured,29.6,0.11240231217618901,
 South Africa,Blue Ridge,,,"Sibanya-Stillwater, Imbani Pt",ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Indicated,8.2,0.11240231217618901,
 South Africa,Blue Ridge,,,"Sibanya-Stillwater, Imbani Pt",ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,8.4,0.11240231217618901,
-USA,Bohemia Basin (Basin-Takanis-Flapjack),,,unknown,Szumigala et al (2011),NC,NC,Magmatic Sulphide,Small M-UM Intrusion-related,Wrangellia LIP-related,Inferred,19.9584,0.42,0.02
+USA,Bohemia Basin (Basin-Takanis-Flapjack),57.98471,-136.43427,unknown,Szumigala et al (2011),NC,NC,Magmatic Sulphide,Small M-UM Intrusion-related,Wrangellia LIP-related,Inferred,19.9584,0.42,0.02
 Zimbabwe,Bokai North/South (Todal),,,ERG,media (9 July 2009),C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Indicated,40.17,0.22,
 Zimbabwe,Bokai North/South (Todal),,,ERG,media (9 July 2009),C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,41.61,0.21,
 South Africa,Bokoni-Ga Phasha,,,"Atlatsa Resource, Anglo Am Pt",ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Contact-type,Measured,291.42857142857144,0.17955882352941177,
@@ -229,11 +229,11 @@ Canada,Dundonald,,,Class 1 Nickel,Tech Rep (2009-01),C,C,Magmatic Sulphide,Arche
 USA,Dunka Pit,,,unknown,"Miller et al (2002), Miller (2015)",NC,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,246.7584,0.05813953488372093,
 Tanzania,Dutwa (Wamangola-Ngasamo),,,African Eagle,Website (23 May 2013),C,C,Laterite,Oxide,Oxide,Indicated,101.3,0.9277690029615006,0.028427443237907205
 Tanzania,Dutwa (Wamangola-Ngasamo),,,African Eagle,Website (23 May 2013),C,C,Laterite,Oxide,Oxide,Inferred,5.42,0.814520295202952,0.02285239852398524
-USA,Eagle-Eagle East (USA),,,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Measured,1.868,2.6,0.1
-USA,Eagle-Eagle East (USA),,,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Indicated,2.113,4.113393279697113,0.09999999999999999
-USA,Eagle-Eagle East (USA),,,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,0.313,1.6485623003194885,0.1
-USA,Eagle-Eagle East (USA),,,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Proven,1.711,2.1,0.1
-USA,Eagle-Eagle East (USA),,,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Probable,2.377,2.99911653344552,0.10000000000000002
+USA,Eagle-Eagle East (USA),46.74852,-87.88151,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Measured,1.868,2.6,0.1
+USA,Eagle-Eagle East (USA),46.74852,-87.88151,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Indicated,2.113,4.113393279697113,0.09999999999999999
+USA,Eagle-Eagle East (USA),46.74852,-87.88151,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,0.313,1.6485623003194885,0.1
+USA,Eagle-Eagle East (USA),46.74852,-87.88151,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Proven,1.711,2.1,0.1
+USA,Eagle-Eagle East (USA),46.74852,-87.88151,Lundin Mining,ResV-ResC 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Probable,2.377,2.99911653344552,0.10000000000000002
 Canada,Eagle's Nest,,,Noront Resources,AIF 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,,Measured,5.346,2.08,
 Canada,Eagle's Nest,,,Noront Resources,AIF 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,,Indicated,5.643,1.5,
 Canada,Eagle's Nest,,,Noront Resources,AIF 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,8.966,1.1,
@@ -595,11 +595,11 @@ South Africa,Maseve-1 / 3,,,Royal Bafokeng Platinum,AR 2017,C,,Magmatic Sulphide
 South Africa,Maseve-1 / 3,,,Royal Bafokeng Platinum,AR 2017,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,33.89473684210526,0.19547316805783027,
 Philippines,Masinloc,,,unknown,Berger et al (2011),NC,,Laterite,Oxide-Hydrous Mg silicate,,Inferred,24.0,1.68,
 Russia,Maslovskoye,,,Norilsk Nickel,AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Siberian Traps LIP,Indicated,206.8,0.3,0.01
-USA,Maturi (incl. Nokomis),,,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Measured,291.4,0.2,0.009458482217090069
-USA,Maturi (incl. Nokomis),,,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,818.3,0.18,0.009458482217090069
-USA,Maturi (incl. Nokomis),,,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,534.1,0.16,0.009458482217090069
-USA,Maturi Southwest,,,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,93.1,0.17,0.009458482217090069
-USA,Maturi Southwest,,,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,29.3,0.15,0.009458482217090069
+USA,Maturi (incl. Nokomis),47.8,-91.8,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Measured,291.4,0.2,0.009458482217090069
+USA,Maturi (incl. Nokomis),47.8,-91.8,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,818.3,0.18,0.009458482217090069
+USA,Maturi (incl. Nokomis),47.8,-91.8,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,534.1,0.16,0.009458482217090069
+USA,Maturi Southwest,47.8,-91.8,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,93.1,0.17,0.009458482217090069
+USA,Maturi Southwest,47.8,-91.8,Antofagasta (through Twin Metals),AR 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,29.3,0.15,0.009458482217090069
 Guatemala,Mayaniquel-Sechol Group,,,unknown,Tech Rep (2011-04),C,C,Laterite,Oxide-hydrous Mg silicate,Oxide-hydrous Mg silicate,Indicated,50.758,1.29,0.055285714285714285
 Guatemala,Mayaniquel-Sechol Group,,,unknown,Tech Rep (2011-04),C,C,Laterite,Oxide-hydrous Mg silicate,Oxide-hydrous Mg silicate,Inferred,84.163,1.21,0.04821428571428572
 Canada,Mayville,,,Grid Metals,Tech Rep (2014-05),C,,Magmatic Sulphide,Small M-UM Intrusion-related,,Indicated,27.9,0.18,
@@ -607,7 +607,7 @@ Canada,Mayville,,,Grid Metals,Tech Rep (2014-05),C,,Magmatic Sulphide,Small M-UM
 Canada,Mel,,,Victory Nickel,Tech Rep (2007-03),C,,Magmatic Sulphide,Proterozoic Komatiite,,Indicated,4.279,0.875,
 Canada,Mel,,,Victory Nickel,Tech Rep (2007-03),C,,Magmatic Sulphide,Proterozoic Komatiite,,Inferred,1.01,0.839,
 Australia,Melba Flats (North Cuni-Genets),,,Dundas Mining?,AR 2006,NC,,Magmatic Sulphide,Intrusion-related,,Inferred,0.094,0.8,
-USA,Mesaba (Babbit),,,Teck,"Mayhew et al (2009), Teck (2010)",NC,NC,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,1106.54,0.14186057440309432,0.008
+USA,Mesaba (Babbit),47.63,-91.9,Teck,"Mayhew et al (2009), Teck (2010)",NC,NC,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,1106.54,0.14186057440309432,0.008
 South Africa,Millenium,,,Sibanye-Stillwater,ResV-ResC 2015,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Indicated,14.51,0.11240231217618901,
 South Africa,Millenium,,,Sibanye-Stillwater,ResV-ResC 2015,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,2.96,0.11240231217618901,
 Zimbabwe,Mimosa,,,"Sibanye-Stillwater, Impala Pt",ResV-ResC 2018,C,C,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Measured,28.4,0.14,0.05
@@ -622,7 +622,7 @@ Philippines,Mindoro (Lower Kisluyan-Buraboy),,,Intex Resources?,Feasibility Stud
 Philippines,Mindoro (Lower Kisluyan-Buraboy),,,Intex Resources?,Feasibility Study 2010,C,C,Laterite,Oxide-Hydrous Mg silicate,Oxide-Hydrous Mg silicate,Probable,126.27,0.95,0.06
 USA,Mine LaMotte-Fredericktown,,,unknown,Long (1992); Singer et al (2009),NC,NC,Hydrothermal Ni,Sediment-hosted Pb-Zn,MVT,Inferred,1.8144,0.46,0.28
 Australia,Miriam,,,Focus Minerals,WA MINEDEX,C,,Magmatic Sulphide,Archean Komatiite,,Inferred,0.227,1.7,
-USA,Mirror Harbor,,,unknown,Szumigala et al (2011),NC,,Magmatic Sulphide,Small M-UM Intrusion-related,Associated with Wrangellia/Nikolai LIP?,Inferred,0.008,1.57,
+USA,Mirror Harbor,57.78501,-136.30894,unknown,Szumigala et al (2011),NC,,Magmatic Sulphide,Small M-UM Intrusion-related,Associated with Wrangellia/Nikolai LIP?,Inferred,0.008,1.57,
 Sweden,Mjövattnet,,,unknown,Eilu (2012),NC,NC,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,0.169,1.29,0.02
 Philippines,MMDC (Cabangahan-Sipangpang-Pili),,,Marcventures Holdings,CP Tech Rep (2019),C,,Laterite,Oxide-Hydrous Mg silicate,,Indicated,39.46734,0.88,
 Philippines,MMDC (Cabangahan-Sipangpang-Pili),,,Marcventures Holdings,CP Tech Rep (2019),C,,Laterite,Oxide-Hydrous Mg silicate,,Inferred,2.89726,1.3,
@@ -665,7 +665,7 @@ Brazil,Morro de Niquel,,,unknown,Berger et al (2011),NC,,Laterite,Hydrous Mg sil
 Brazil,Morro Sem Bone-Morro do Leme,,,GK Resources,media (12 Sept 2019),NC,,Laterite,Hydrous Mg silicate-oxide,,Inferred,58.003,1.771674051342172,
 South Africa,Mototolo,,,Anglo American Pt,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Measured,21.2,0.11240231217618901,
 South Africa,Mototolo,,,Anglo American Pt,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Proven,11.9,0.11240231217618901,
-USA,Mouat,,,unknown,Tech Rep 2009-06 (Nev),NC,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,131.544,0.31,
+USA,Mouat,45.38,-109.9,unknown,Tech Rep 2009-06 (Nev),NC,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,131.544,0.31,
 Australia,Mount Clifford-Marriotts,,,Norwest Minerals,WA MINEDEX,C,,Laterite,Clay silicate,Clay silicate,Indicated,0.46,1.12,
 Australia,Mount Clifford-Marriotts,,,Norwest Minerals,WA MINEDEX,C,,Laterite,Clay silicate,Clay silicate,Inferred,0.37,1.15,
 Australia,Mount Day-Cat Camp,,,Matsa Resources,WA MINEDEX,C,,Magmatic Sulphide,Archean Komatiite,,Inferred,2.2302,0.52,
@@ -772,11 +772,11 @@ Indonesia,North Konawe Group (Saprolite),,,PT Antam,AR 2018,C,C,Laterite,Hydrous
 Indonesia,North Konawe Group (Saprolite),,,PT Antam,AR 2018,C,C,Laterite,Hydrous Mg silicate-oxide,,Inferred,79.83,1.5620969560315672,0.03970562445196042
 Indonesia,North Konawe Group (Saprolite),,,PT Antam,AR 2018,C,C,Laterite,Hydrous Mg silicate-oxide,,Proven,18.04,1.67,0.04
 Indonesia,North Konawe Group (Saprolite),,,PT Antam,AR 2018,C,C,Laterite,Hydrous Mg silicate-oxide,,Probable,35.92,1.6016146993318485,0.039999999999999994
-USA,NorthMet (Dunka Road),,,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Measured,237.2,0.08,0.0072
-USA,NorthMet (Dunka Road),,,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,412.2,0.07,0.007
-USA,NorthMet (Dunka Road),,,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,508.9,0.07,0.0066
-USA,NorthMet (Dunka Road),,,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Proven,121.849,0.087,0.007481
-USA,NorthMet (Dunka Road),,,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Probable,132.82,0.081,0.007406
+USA,NorthMet (Dunka Road),47.6,-92.0,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Measured,237.2,0.08,0.0072
+USA,NorthMet (Dunka Road),47.6,-92.0,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,412.2,0.07,0.007
+USA,NorthMet (Dunka Road),47.6,-92.0,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,508.9,0.07,0.0066
+USA,NorthMet (Dunka Road),47.6,-92.0,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Proven,121.849,0.087,0.007481
+USA,NorthMet (Dunka Road),47.6,-92.0,Polymet Mining,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Probable,132.82,0.081,0.007406
 Canada,Norton Lake,,,Copper Lake Resources,Tech Rep (2009-05),C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Measured,1.769721,0.67,0.03
 Canada,Norton Lake,,,Copper Lake Resources,Tech Rep (2009-05),C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Indicated,0.488933,0.67,0.03
 Canada,Norton Lake,,,Copper Lake Resources,Tech Rep (2009-05),C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,0.198571,0.66,0.03
@@ -786,7 +786,7 @@ Australia,Nova-Bollinger,,,Independence Group,AR 2018,C,C,Magmatic Sulphide,Prot
 Australia,Nova-Bollinger,,,Independence Group,AR 2018,C,C,Magmatic Sulphide,Proterozoic Komatiite,,Proven,10.2,1.93,0.07
 Australia,Nova-Bollinger,,,Independence Group,AR 2018,C,C,Magmatic Sulphide,Proterozoic Komatiite,,Probable,1.3,1.34,0.04
 Burundi,Nyabikere,,,unknown,Evans et al (2016),C,C,Laterite,Hydrous Mg silicate-oxide,Hydrous Mg silicate-oxide,Inferred,46.0,1.45,0.03
-USA,Nye Basin,,,unknown,Tech Rep 2009-06 (Nev),NC,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,54.432,0.59,
+USA,Nye Basin,45.37,-109.8,unknown,Tech Rep 2009-06 (Nev),NC,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,54.432,0.59,
 Australia,Nyngan-Summervale,,,Alchemy Resources,media 29 Feb 2019,C,C,Laterite,Oxide-clay silicate,Oxide-clay silicate,Inferred,6.63903,0.82,0.04
 Australia,Nyngan-West Lynn,,,Alchemy Resources,media 29 Feb 2019,C,C,Laterite,Oxide-clay silicate,Oxide-clay silicate,Inferred,14.701426,0.85,0.05
 Indonesia,Obi Island,,,"Carnegie Minerals-50%, PT Antam-50% (?)",Berger et al (2011),NC,,Laterite,Oxide-hydrous Mg silicate,Oxide-hydrous Mg silicate,Inferred,88.0,1.2,
@@ -902,7 +902,7 @@ Australia,Ravensthorpe,,,First Quantum,AIF 2018,C,C,Laterite,Oxide,Oxide,Inferre
 Australia,Ravensthorpe,,,First Quantum,AIF 2018,C,C,Laterite,Oxide,Oxide,Proven,81.8,0.63,0.03
 Australia,Ravensthorpe,,,First Quantum,AIF 2018,C,C,Laterite,Oxide,Oxide,Probable,115.4,0.58,0.03
 USA,Red Flat Mountain,,,unknown,pers. comm. Golightly,NC,,Laterite,Hydrous Mg silicate-oxide,Hydrous Mg silicate-oxide,Inferred,14.5152,0.91,
-USA,Riddle (Nickel Mountain),,,unknown,Berger et al (2011),NC,,Laterite,Hydrous Mg silicate-oxide,Hydrous Mg silicate-oxide,Inferred,37.5,1.1,
+USA,Riddle (Nickel Mountain),42.966,-123.437,unknown,Berger et al (2011),NC,,Laterite,Hydrous Mg silicate-oxide,Hydrous Mg silicate-oxide,Inferred,37.5,1.1,
 Finland,Riihilathi,,,unknown,Eilu et al (2012),NC,NC,Hydrothermal Ni,VMS,,Inferred,0.7,0.03,0.09
 Philippines,Rio Tuba,,,Nickel Asia Corp-60%,AR 2018,C,,Laterite,Hydrous Mg silicate-Oxide,Hydrous Mg silicate-oxide,Indicated,51.758,1.264552919355462,
 Philippines,Rio Tuba,,,Nickel Asia Corp-60%,AR 2018,C,,Laterite,Hydrous Mg silicate-Oxide,Hydrous Mg silicate-oxide,Inferred,9.605,1.6384570536179073,
@@ -979,7 +979,7 @@ Botswana,Selebi,,,BCL,website (9 Jan 2013),C,,Magmatic Sulphide,Small M-UM Intru
 Botswana,Selebi Central,,,BCL,website (9 Jan 2013),C,,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,19.505586,0.68,
 Botswana,Selebi North,,,BCL,website (9 Jan 2013),C,,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,5.946671,1.09,
 Russia,Serovskoe (Serov),,,unknown,Berger et al (2011); Herrington et al (2005),NC,NC,Laterite,Hydrous Mg silicate-Clay silicate,,Inferred,770.0,0.77,0.043
-USA,Serpentine,,,unknown,"Miller et al (2002), Miller (2015)",NC,,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,192.3264,0.14528301886792455,
+USA,Serpentine,47.94613,-81.26026,unknown,"Miller et al (2002), Miller (2015)",NC,,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,192.3264,0.14528301886792455,
 Brazil,Serra do Quatipuru,,,unknown,Tech Rep (2010-01),C,,Laterite,Oxide-Hydrous Mg silicate,,Inferred,13.0,1.3,
 Brazil,Serra do Tapa,,,Horizonte Minerals,Tech Rep (2019-09),C,C,Laterite,Hydrous Mg silicate-oxide,,Measured,14.296,1.31,0.05
 Brazil,Serra do Tapa,,,Horizonte Minerals,Tech Rep (2019-09),C,C,Laterite,Hydrous Mg silicate-oxide,,Indicated,55.971,1.2,0.05
@@ -1023,7 +1023,7 @@ South Africa,Smokey Hills,,,Aberdeen International,AIF 2018,C,,Magmatic Sulphide
 South Africa,Smokey Hills,,,Aberdeen International,AIF 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Proven,1.909887,0.11240231217618901,
 South Africa,Smokey Hills,,,Aberdeen International,AIF 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Probable,0.979178,0.11240231217618901,
 Australia,Snake Hill-Cullens,,,Mt Ida Gold,WA MINEDEX,C,,Magmatic Sulphide,Archean Komatiite,,Inferred,0.35,0.9,
-USA,Snipe Bay,,,unknown,Szumigala et al (2011),NC,,Magmatic Sulphide,Small M-UM Intrusion-related,Associated with Wrangellia/Nikolai LIP?,Inferred,0.390096,0.3,
+USA,Snipe Bay,56.42213,-134.95753,unknown,Szumigala et al (2011),NC,,Magmatic Sulphide,Small M-UM Intrusion-related,Associated with Wrangellia/Nikolai LIP?,Inferred,0.390096,0.3,
 Indonesia,Sorowako,,,Vale,AR 2018,C,,Laterite,Hydrous Mg silicate-oxide,Hydrous Mg silicate-oxide,Measured,101.8,1.76,
 Indonesia,Sorowako,,,Vale,AR 2018,C,,Laterite,Hydrous Mg silicate-oxide,Hydrous Mg silicate-oxide,Indicated,14.7,1.64,
 Indonesia,Sorowako,,,Vale,AR 2018,C,,Laterite,Hydrous Mg silicate-oxide,Hydrous Mg silicate-oxide,Proven,101.8,1.76,
@@ -1039,15 +1039,15 @@ Australia,Spotted Quoll-Beautiful Sunday,,,Western Areas,AR 2018,C,,Magmatic Sul
 Australia,Spotted Quoll-Beautiful Sunday,,,Western Areas,AR 2018,C,,Magmatic Sulphide,Archean Komatiite,,Inferred,0.181013,5.6,
 Australia,Spotted Quoll-Beautiful Sunday,,,Western Areas,AR 2018,C,,Magmatic Sulphide,Archean Komatiite,,Proven,0.0896,3.8,
 Australia,Spotted Quoll-Beautiful Sunday,,,Western Areas,AR 2018,C,,Magmatic Sulphide,Archean Komatiite,,Probable,1.7085,4,
-USA,Spruce Road,,,Antofagasta (through Twin Metals),AR 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,435.5,0.16,
+USA,Spruce Road,47.83,-91.7,Antofagasta (through Twin Metals),AR 2018,C,,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,435.5,0.16,
 Australia,Stanton,,,Northern Cobalt,Ahmad & Khan (2013),NC,NC,Hydrothermal Ni,Sediment-hosted Stratiform Cu,,Indicated,0.692,0.06653179190751446,0.14479768786127167
 Australia,Stanton,,,Northern Cobalt,Ahmad & Khan (2013),NC,NC,Hydrothermal Ni,Sediment-hosted Stratiform Cu,,Inferred,0.25,0.03968,0.07904
 Australia,State Forest Lot 3,,,unclear,NSW Exploration Report,NC,NC,Laterite,Oxide,Oxide,Inferred,1.3181644,0.44,0.08
-USA,Stillwater-East Boulder,,,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Measured,9.0,0.10076278475729883,
-USA,Stillwater-East Boulder,,,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Indicated,55.4,0.10076278475729883,
-USA,Stillwater-East Boulder,,,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,87.3,0.10076278475729883,
-USA,Stillwater-East Boulder,,,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Proven,6.3,0.10076278475729883,
-USA,Stillwater-East Boulder,,,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Probable,40.2,0.10076278475729883,
+USA,Stillwater-East Boulder,45.39,-109.9,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Measured,9.0,0.10076278475729883,
+USA,Stillwater-East Boulder,45.39,-109.9,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Indicated,55.4,0.10076278475729883,
+USA,Stillwater-East Boulder,45.39,-109.9,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Inferred,87.3,0.10076278475729883,
+USA,Stillwater-East Boulder,45.39,-109.9,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Proven,6.3,0.10076278475729883,
+USA,Stillwater-East Boulder,45.39,-109.9,Sibanye-Stillwater,ResV-ResC 2018,C,,Magmatic Sulphide,Layered Intrusive,Stratabound Stratiform Reef-type,Probable,40.2,0.10076278475729883,
 Norway,Stormyra,,,unknown,Tech Rep (2009-02),C,C,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,1.013,1.09,0.04
 Canada,Sudbury Group (Glencore),46.58103333333333,-80.79985,Glencore,ResV-ResC 2018,C,C,Magmatic Sulphide,Impact-related,Impact-related,Measured,5.68,1.59,0.04
 Canada,Sudbury Group (Glencore),46.58103333333333,-80.79985,Glencore,ResV-ResC 2018,C,C,Magmatic Sulphide,Impact-related,Impact-related,Indicated,23.25,2.1,0.05
@@ -1097,8 +1097,8 @@ Russia,Taimyr Peninsula (Nor’ilsk-Talnakh),,,Norilsk Nickel,AR 2018,C,EQH,Magm
 Russia,Taimyr Peninsula (Nor’ilsk-Talnakh),,,Norilsk Nickel,AR 2018,C,EQH,Magmatic Sulphide,Small M-UM Intrusion-related,Siberian Traps LIP,Probable,311.622,1.14,0.025610342871319074
 Finland,Tallas-Tuliniemi,,,unknown,Eilu et al (2012),NC,,Magmatic Sulphide,Small M-UM Intrusion-related,,Inferred,0.09,0.34,
 Finland,Talvivaara (Kolmisoppi-Kuusilampi),,,Terrafame,AR 2018,C,C,Hydrothermal Ni,Sediment-hosted Pb-Zn/VMS,Sedex/VMS,Inferred,1525.0,0.267,0.021
-USA,Tamarack North,,,Talon Metals,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,3.639,1.83,0.05
-USA,Tamarack North,,,Talon Metals,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,4.382,1.58,0.04
+USA,Tamarack North,46.67296,-93.11959,Talon Metals,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Indicated,3.639,1.83,0.05
+USA,Tamarack North,46.67296,-93.11959,Talon Metals,AIF 2018,C,C,Magmatic Sulphide,Small M-UM Intrusion-related,Duluth Complex - Keweenawan LIP,Inferred,4.382,1.58,0.04
 Botswana,Tati-Phoenix,,,Norilsk Nickel,AR 2014,C,,Magmatic Sulphide,Small M-UM Intrusion-related,,Indicated,106.0,0.21,
 Botswana,Tati-Selkirk,,,Norilsk Nickel,AR 2014,C,,Magmatic Sulphide,Layered Intrusive,,Indicated,124.0,0.23,
 Botswana,Tati-Selkirk,,,Norilsk Nickel,AR 2014,C,,Magmatic Sulphide,Layered Intrusive,,Inferred,11.3,0.27,
