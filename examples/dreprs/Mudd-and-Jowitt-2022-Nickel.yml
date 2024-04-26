@@ -20,6 +20,7 @@ preprocessing:
         return "https://minmod.isi.edu/resource/" + value
   - type: pmap
     path: [1.., 11]
+    output: category_uri
     code: |
       return "https://minmod.isi.edu/resource/" + value
   - type: pmap
@@ -156,7 +157,7 @@ semantic_model:
   mndr:MineralInventory:Ni:
     properties:
       - [drepr:uri, ni_uri, true]
-      - [mndr:category, category, drepr:uri]
+      - [mndr:category, category_uri, drepr:uri]
     static_properties:
       - [mndr:commodity, mndr:Q578, drepr:uri]
     links:
@@ -167,7 +168,7 @@ semantic_model:
   mndr:MineralInventory:Co:
     properties:
       - [drepr:uri, co_uri, true]
-      - [mndr:category, category, drepr:uri]
+      - [mndr:category, category_uri, drepr:uri]
     static_properties:
       - [mndr:commodity, mndr:Q537, drepr:uri]
     links:
