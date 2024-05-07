@@ -55,7 +55,8 @@ preprocessing:
     path: [1, 1]
     output: document_uri
     code: |
-      return "https://doi.org/10.5382/econgeo.2018.4590"
+      from slugify import slugify
+      return "https://minmod.isi.edu/resource/doc__" + slugify("10.5382/econgeo.2018.4590")
 attributes:
   deposit: [1.., 0]
   country: [1.., 1]
