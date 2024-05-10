@@ -136,6 +136,8 @@ semantic_model:
       - [drepr:blank, loc_id]
       - [mndr:location, lat_long, geo:wktLiteral]
       - [mndr:country, country]
+    static_properties:
+      - [mndr:crs, "EPSG:4326"]
 
   mndr:Reference:1:
     properties:
