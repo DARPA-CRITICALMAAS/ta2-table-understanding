@@ -49,11 +49,20 @@ preprocessing:
         str(row), slugify(mineral_site), "Q589"
       ])
       return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1.., 3]
+    output: deposit_type_uri
+    code: |
+      if value.lower().find("mvt") != -1:
+        return "https://minmod.isi.edu/resource/Q380"
 attributes:
   deposit: [1.., 0]
   country: [1.., 1]
-  deposit_type:
-    path: [1.., 2..4]
+  primary_deposit_type:
+    path: [1.., 2]
+    missing_values: [""]
+  secondary_deposit_type:
+    path: [1.., 3]
     missing_values: [""]
   ore:
     path: [1.., 4]
@@ -80,14 +89,24 @@ semantic_model:
       - [mndr:source_id, "https://doi.org/10.1016/j.oregeorev.2016.08.010"]
     links:
       - [mndr:deposit_type_candidate, mndr:DepositTypeCandidate:1]
+      - [mndr:deposit_type_candidate, mndr:DepositTypeCandidate:2]
       - [mndr:location_info, mndr:LocationInfo:1]
       - [mndr:mineral_inventory, mndr:MineralInventory:1]
       - [mndr:mineral_inventory, mndr:MineralInventory:2]
 
   mndr:DepositTypeCandidate:1:
     properties:
-      - [drepr:blank, deposit_type]
-      - [mndr:observed_name, deposit_type, xsd:string, true]
+      - [drepr:blank, primary_deposit_type]
+      - [mndr:observed_name, primary_deposit_type, xsd:string, true]
+    static_properties:
+      - [mndr:confidence, 0.5]
+      - [mndr:source, "sand"]
+
+  mndr:DepositTypeCandidate:2:
+    properties:
+      - [drepr:blank, secondary_deposit_type]
+      - [mndr:observed_name, secondary_deposit_type, xsd:string, true]
+      - [mndr:normalized_uri, deposit_type_uri, drepr:uri]
     static_properties:
       - [mndr:confidence, 0.5]
       - [mndr:source, "sand"]
