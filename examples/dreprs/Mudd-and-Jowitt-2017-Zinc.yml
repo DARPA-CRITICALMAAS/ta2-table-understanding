@@ -55,6 +55,16 @@ preprocessing:
     code: |
       if value.lower().find("mvt") != -1:
         return "https://minmod.isi.edu/resource/Q380"
+  - type: pmap
+    path: [1.., 1]
+    output: country_uri
+    code: |
+      from tum.lib.entity_linking import EntityLinking
+
+      el = EntityLinking.get_instance("country")
+      res = el.link(value)
+      assert res is not None
+      return res[0].id
 attributes:
   deposit: [1.., 0]
   country: [1.., 1]
@@ -113,7 +123,8 @@ semantic_model:
 
   mndr:LocationInfo:1:
     properties:
-      - [mndr:country, country]
+      - [mndr:country, country_uri, drepr:uri]
+      - [mndr:extracted_country, country]
 
   mndr:Reference:1:
     properties:
@@ -125,10 +136,7 @@ semantic_model:
     properties:
       - [drepr:uri, document_uri]
     static_properties:
-      - [
-          mndr:title,
-          "The world's lead-zinc mineral resources: Scarcity, data, issues and opportunities",
-        ]
+      - [mndr:title, "The world's lead-zinc mineral resources: Scarcity, data, issues and opportunities"]
       - [mndr:doi, "10.1016/j.oregeorev.2016.08.010"]
       - [mndr:uri, "http://dx.doi.org/10.1016/j.oregeorev.2016.08.010"]
 

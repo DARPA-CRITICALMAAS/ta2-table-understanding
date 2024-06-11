@@ -3,11 +3,12 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, Optional
+from typing import Iterable, Literal, Optional
 
 import numpy as np
 import strsim
 from rdflib import RDFS, SKOS, Graph, URIRef
+from tum.config import CRITICAL_MAAS_DIR
 
 
 @dataclass
@@ -18,6 +19,8 @@ class Doc:
 
 
 class EntityLinking:
+    instances = {}
+
     def __init__(self, data_file: Path | str, format: str):
         self.data_file = Path(data_file)
         self.g = Graph()
@@ -47,6 +50,28 @@ class EntityLinking:
             )
         self.id2doc = {doc.id: doc for doc in self.docs}
         self.feat_extractor = FeatExtractor()
+
+    @staticmethod
+    def get_instance(name: Literal["crs", "country", "state_or_province"]):
+        entdir = CRITICAL_MAAS_DIR / "kgdata/data/predefined-entities"
+        if name == "crs":
+            EntityLinking.instances[name] = EntityLinking(entdir / "epsg.ttl", "turtle")
+        elif name == "country":
+            EntityLinking.instances[name] = EntityLinking(
+                entdir / "country.ttl", "turtle"
+            )
+        elif name == "state_or_province":
+            EntityLinking.instances[name] = EntityLinking(
+                entdir / "state_or_province.ttl", "turtle"
+            )
+            name2country = {
+                doc.labels[0]: doc for doc in EntityLinking.get_instance("country").docs
+            }
+            for doc in EntityLinking.instances[name].docs:
+                doc.props["https://minmod.isi.edu/resource/country"] = name2country[
+                    doc.props["https://minmod.isi.edu/resource/country"]
+                ].id
+        return EntityLinking.instances[name]
 
     def link(
         self, query: str, has_props: Optional[dict[str, str]] = None

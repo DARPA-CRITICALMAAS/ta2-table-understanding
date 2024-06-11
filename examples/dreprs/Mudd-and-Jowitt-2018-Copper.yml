@@ -57,6 +57,16 @@ preprocessing:
     code: |
       from slugify import slugify
       return "https://minmod.isi.edu/resource/doc__" + slugify("10.5382/econgeo.2018.4590")
+  - type: pmap
+    path: [1.., 1]
+    output: country_uri
+    code: |
+      from tum.lib.entity_linking import EntityLinking
+
+      el = EntityLinking.get_instance("country")
+      res = el.link(value)
+      assert res is not None
+      return res[0].id
 attributes:
   deposit: [1.., 0]
   country: [1.., 1]
@@ -105,7 +115,8 @@ semantic_model:
 
   mndr:LocationInfo:1:
     properties:
-      - [mndr:country, country]
+      - [mndr:extracted_country, country]
+      - [mndr:country, country_uri, drepr:uri]
 
   mndr:Reference:1:
     properties:
@@ -117,10 +128,7 @@ semantic_model:
     properties:
       - [drepr:uri, document_uri]
     static_properties:
-      - [
-          mndr:title,
-          "Growing Global Copper Resources, Reserves and Production: Discovery Is Not the Only Control on Supply",
-        ]
+      - [mndr:title, "Growing Global Copper Resources, Reserves and Production: Discovery Is Not the Only Control on Supply"]
       - [mndr:doi, "10.5382/econgeo.2018.4590"]
       - [mndr:uri, "https://doi.org/10.5382/econgeo.2018.4590"]
 
