@@ -20,7 +20,7 @@ from kgdata.models.entity import Entity
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.models.ont_class import OntologyClass
 from kgdata.models.ont_property import OntologyProperty
-from rdflib import RDF, RDFS, XSD, Graph
+from rdflib import OWL, RDF, RDFS, XSD, Graph, URIRef
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.outputs.semantic_model import SemanticType
 
@@ -108,10 +108,11 @@ class MNDRDB(GenericDB):
                     parents=[],
                     related_properties=[],
                     equivalent_properties=[],
-                    subjects=[],
                     inverse_properties=[],
                     instanceof=[str(RDF.Property)],
                     ancestors={},
+                    domains=[],
+                    ranges=[],
                 )
             }
         )
@@ -162,7 +163,6 @@ class MNDRDB(GenericDB):
                 parents=[],
                 related_properties=[],
                 equivalent_properties=[],
-                subjects=[],
                 inverse_properties=[],
                 instanceof=[],
                 ancestors={},
@@ -182,6 +182,8 @@ class MNDRDB(GenericDB):
                     )
                     for edge in row["graph"].split(",")
                 ],
+                domains=[],
+                ranges=[],
             )
             prop.equivalent_properties.append(prop.get_equivalent_property())
             props[prop.id] = prop
@@ -197,14 +199,20 @@ class MNDRDB(GenericDB):
         g = Graph()
         g.parse(ontology_file)
 
+        classes = {}
+        props = {}
+        ents = {}
+
+        # parse classes
         source2triples = defaultdict(list)
         for s, p, o in g:
             source2triples[s].append((s, p, o))
 
-        resources = [aggregated_triples(x) for x in source2triples.items()]
-        classes = {}
-        props = {}
-        ents = {}
+        resources = [
+            aggregated_triples(x)
+            for x in source2triples.items()
+            if isinstance(x[0], URIRef)
+        ]
 
         rdf_type = str(RDF.type)
 
@@ -212,8 +220,7 @@ class MNDRDB(GenericDB):
             ent = to_entity(resource, "en")
 
             (stmt,) = ent.props[rdf_type]
-            if stmt.value == RDF.Property:
-                # TODO: improve me -- fix me!!!
+            if stmt.value in {RDF.Property, OWL.DatatypeProperty, OWL.ObjectProperty}:
                 ranges = ent.props.get(str(RDFS.range), [])
                 if len(ranges) == 0:
                     datatype = ""
@@ -233,10 +240,11 @@ class MNDRDB(GenericDB):
                     parents=[],
                     related_properties=[],
                     equivalent_properties=[],
-                    subjects=[],
                     inverse_properties=[],
                     instanceof=[str(RDF.Property)],
                     ancestors={},
+                    domains=[],
+                    ranges=[],
                 )
             elif stmt.value == RDFS.Class:
                 classes[ent.id] = OntologyClass(

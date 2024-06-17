@@ -7,33 +7,28 @@ preprocessing:
       return "https://minmod.isi.edu/resource/" + value
   - type: pmap
     path: [1.., 2]
+    output: aliases
     code: |
       return [s.strip() for s in value.split("|")]
 attributes:
   id: [1.., 0]
   label: [1.., 1]
-  aliases:
-    path: [1.., 2]
-    value_type: str
 alignments:
   - type: dimension
     value: id:0 <-> label:0
   - type: dimension
     value: id:0 <-> aliases:0
 semantic_model:
-  mndr:Unit:1:
+  mno:Unit:1:
     properties:
       - [drepr:uri, id]
-      - [rdfs:label, label, xsd:string]
-      - [schema:alternativeName, aliases, xsd:string]
-    static_properties: []
-    inverse_static_properties: []
-    links: []
+      - [rdfs:label, label]
+      - [skos:altLabel, aliases]
 
   prefixes:
-    mndr: https://minmod.isi.edu/resource/
+    mno: https://minmod.isi.edu/ontology/
     rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     rdfs: http://www.w3.org/2000/01/rdf-schema#
     owl: http://www.w3.org/2002/07/owl#
     gkbi: https://geokb.wikibase.cloud/entity/
-    schema: http://schema.org/
+    skos: http://www.w3.org/2004/02/skos/core#

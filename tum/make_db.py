@@ -3,10 +3,10 @@ from collections import defaultdict
 from functools import partial
 from io import StringIO
 from pathlib import Path
+from typing import cast
 
 import orjson
-from drepr.engine import MemoryOutput, OutputFormat, execute
-from drepr.models import DRepr
+from drepr.models.prelude import DRepr
 from kgdata.dataset import Dataset
 from kgdata.db import GenericDB, build_database, deser_from_dict, ser_to_dict
 from kgdata.dbpedia.datasets.ontology_dump import aggregated_triples
@@ -14,30 +14,32 @@ from kgdata.misc.resource import RDFResource, assert_not_bnode
 from kgdata.models.entity import Entity, EntityLabel, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
-from rdflib import RDFS, Graph
+from rdflib import RDFS, SKOS, Graph
 from tum.config import CRITICAL_MAAS_DIR
 from tum.db import MNDRDB
 
-MINMOD_ENTITIES = CRITICAL_MAAS_DIR / "ta2-minmod-data/data/entities"
-MINMOD_ONTOLOGY_FILE = CRITICAL_MAAS_DIR / "ta2-minmod-data/data/ontology.ttl"
+from statickg.main import ETLPipelineRunner
+from statickg.models.etl import ETLOutput
+from statickg.models.repository import GitRepository
+from statickg.services.drepr import DReprService, DReprServiceInvokeArgs
 
-SchemaAlternateName = "http://schema.org/alternateName"
-
-
-def get_ttl(indir: Path) -> str:
-    (csvfile,) = list(indir.glob("*.csv"))
-    (dreprfile,) = list(indir.glob("*.yml"))
-
-    ds_model = DRepr.parse_from_file(str(dreprfile))
-    res = execute(ds_model, str(csvfile), MemoryOutput(OutputFormat.TTL), False)
-    assert isinstance(res, str)
-    return res
+MINMOD_ONTOLOGY_FILE = CRITICAL_MAAS_DIR / "ta2-minmod-kg/schema/ontology.ttl"
+MINMOD_DATA_REPO = CRITICAL_MAAS_DIR / "ta2-minmod-data"
+MINMOD_KG_CONFIG = CRITICAL_MAAS_DIR / "ta2-minmod-kg/etl.yml"
+MINMOD_KG_WORKDIR = CRITICAL_MAAS_DIR / "kgdata"
 
 
-def get_rdf_resources(indir: Path) -> list[RDFResource]:
+kgbuilder = ETLPipelineRunner.from_config_file(
+    MINMOD_KG_CONFIG,
+    MINMOD_KG_WORKDIR,
+    GitRepository(MINMOD_DATA_REPO),
+    overwrite_config=False,
+)
+
+
+def get_rdf_resources(ttl_file: Path) -> list[RDFResource]:
     g = Graph()
-    s = StringIO(get_ttl(indir))
-    g.parse(s, format="ttl")
+    g.parse(ttl_file, format="ttl")
 
     source2triples = defaultdict(list)
     for s, p, o in g:
@@ -56,12 +58,21 @@ def entities():
     )
 
     if not ds.has_complete_data():
+        # execute task that generates entities
+        (task,) = [
+            task
+            for task in kgbuilder.etl.pipeline
+            if task.service == "predefined entities"
+        ]
+        args: DReprServiceInvokeArgs = cast(DReprServiceInvokeArgs, task.args)
+        kgbuilder.services[task.service](kgbuilder.repo, args, ETLOutput())
+
         entities = []
-        for dpath in MINMOD_ENTITIES.iterdir():
+        for dpath in args["output"].get_path().iterdir():
             for resource in get_rdf_resources(dpath):
                 (label,) = resource.props.pop(str(RDFS.label))
                 (description,) = resource.props.pop(str(RDFS.comment), [""])
-                aliases = [str(x) for x in resource.props.pop(SchemaAlternateName, [])]
+                aliases = [str(x) for x in resource.props.pop(str(SKOS.altLabel), [])]
 
                 entities.append(
                     Entity(
