@@ -8,9 +8,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-sem-desc = "^6.0.0"
+sem-desc = "^6.11.3"
 serde2 = "^1.6.2"
-ream2 = "^3.8.0"
+ream2 = "^4.3.2"
 kgdata = "^7.0.0"
 drepr-v2 = "^1.3.4"
 steiner-tree = "^1.1.3"

@@ -30,7 +30,7 @@ Check out the [demo notebook](examples/demo.ipynb) on how to use the library pro
 Alternatively, you can use the [SAND UI](https://github.com/usc-isi-i2/sand) to interactively load a table, create the semantic description, and extract data from the table.
 
 1. Setup SAND (run only once): `poetry run python -m sand init -d <DARPA-CRITICALMAAS-DIR>/data/sand.db`
-2. Start SAND: `poetry run python -m start -d <DARPA-CRITICALMAAS-DIR>/data/sand.db -c <DARPA-CRITICALMAAS-DIR>/ta2-table-understanding/config.sand.yml`
+2. Start SAND: `poetry run python -m sand start -d <DARPA-CRITICALMAAS-DIR>/data/sand.db -c <DARPA-CRITICALMAAS-DIR>/ta2-table-understanding/config.sand.yml`
 
 ## Configuration
 

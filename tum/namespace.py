@@ -6,6 +6,8 @@ from sm.namespaces.utils import register_kgns
 
 MNDR = "mndr"
 MNDR_NS = "https://minmod.isi.edu/resource/"
+MNO = "mno"
+MNO_NS = "https://minmod.isi.edu/ontology/"
 GEOKB = "geokb"
 GEOKB_NS = "https://geokb.wikibase.cloud/entity/"
 DREPR_NS = "http://purl.org/drepr/1.0/"
@@ -17,6 +19,7 @@ class MNDRNamespace(DefaultKnowledgeGraphNamespace):
     entity_label: str = "rdfs:Resource"
     statement_uri: str = MNDR_NS + "Statement"
     main_namespaces: list[str] = [
+        MNO_NS,
         MNDR_NS,
         GEOKB_NS,
         str(RDF),
@@ -31,6 +34,7 @@ class MNDRNamespace(DefaultKnowledgeGraphNamespace):
         return cls.from_prefix2ns(
             {
                 MNDR: MNDR_NS,
+                MNO: MNO_NS,
                 GEOKB: GEOKB_NS,
                 "rdf": str(RDF),
                 "rdfs": str(RDFS),

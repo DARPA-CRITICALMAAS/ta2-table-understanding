@@ -20,7 +20,7 @@ from kgdata.models.entity import Entity
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.models.ont_class import OntologyClass
 from kgdata.models.ont_property import OntologyProperty
-from rdflib import OWL, RDF, RDFS, XSD, Graph, URIRef
+from rdflib import OWL, RDF, RDFS, XSD, BNode, Graph, URIRef
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.outputs.semantic_model import SemanticType
 
@@ -206,6 +206,8 @@ class MNDRDB(GenericDB):
         # parse classes
         source2triples = defaultdict(list)
         for s, p, o in g:
+            if isinstance(o, BNode):
+                continue
             source2triples[s].append((s, p, o))
 
         resources = [
@@ -246,7 +248,7 @@ class MNDRDB(GenericDB):
                     domains=[],
                     ranges=[],
                 )
-            elif stmt.value == RDFS.Class:
+            elif stmt.value in {RDFS.Class, OWL.Class}:
                 classes[ent.id] = OntologyClass(
                     id=ent.id,
                     label=ent.label,
