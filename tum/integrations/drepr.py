@@ -2,8 +2,9 @@ from collections import defaultdict
 from io import BytesIO, StringIO
 
 import sm.outputs.semantic_model as O
-from drepr.engine import MemoryOutput, OutputFormat, ResourceDataString, execute
-from drepr.models import (
+
+# from drepr.engine import MemoryOutput, OutputFormat, ResourceDataString, execute
+from drepr.models.prelude import (
     AlignedStep,
     Attr,
     CSVProp,
@@ -20,8 +21,10 @@ from drepr.models import (
 )
 from kgdata.dbpedia.datasets.ontology_dump import aggregated_triples
 from rdflib import BNode, Graph, URIRef
-from sand.extensions.export.drepr.main import DreprExport
 from sand.models.table import Table, TableRow
+from sand_drepr.main import DreprExport
+
+OutputFormat = str
 
 
 class CustomizedDReprExport(DreprExport):
