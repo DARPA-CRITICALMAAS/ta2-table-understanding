@@ -6,7 +6,7 @@ from typing import Optional
 
 import orjson
 import serde.json
-from minmodkg.entity_linking import EntityLinking
+from minmodkg.entity_linking import Doc, EntityLinking, IEntityLinking
 from sm.misc.funcs import assert_not_null
 from symspellpy import SymSpell
 from tum.config import CRITICAL_MAAS_DIR
@@ -225,6 +225,34 @@ class UnitAndCommodityTrustedLinker(UnitAndCommodityLinker):
         )
 
 
+class UnitCompatibleLinker(IEntityLinking):
+    def __init__(self, unit_and_commodity_linker: UnitAndCommodityLinker):
+        self.unit_and_commodity_linker = unit_and_commodity_linker
+
+    def link(
+        self, query: str, has_props: Optional[dict[str, str]] = None
+    ) -> Optional[tuple[Doc, float]]:
+        assert has_props is None
+        res = self.unit_and_commodity_linker.link(query)
+        if res.unit is not None:
+            return Doc(id=res.unit, labels=[], props={}), res.unit_score
+        return None
+
+
+class CommodityCompatibleLinker(IEntityLinking):
+    def __init__(self, unit_and_commodity_linker: UnitAndCommodityLinker):
+        self.unit_and_commodity_linker = unit_and_commodity_linker
+
+    def link(
+        self, query: str, has_props: Optional[dict[str, str]] = None
+    ) -> Optional[tuple[Doc, float]]:
+        assert has_props is None
+        res = self.unit_and_commodity_linker.link(query)
+        if res.commodity is not None:
+            return Doc(id=res.commodity, labels=[], props={}), res.commodity_score
+        return None
+
+
 if __name__ == "__main__":
     linker = UnitAndCommodityTrustedLinker.get_instance(
         CRITICAL_MAAS_DIR / "kgdata/data/predefined-entities",
@@ -269,27 +297,30 @@ if __name__ == "__main__":
         # "%SiO2",
         # "g/t Sc",
         # "%Mn",
-        "% Cu",
-        "g/t Au",
-        "g/t Ag",
-        "% Ni",
-        "% Co",
-        "% Mo",
-        "% Pb",
-        "% Zn",
-        "g/t Re",
-        "g/t Se",
-        "g/t Te",
-        "g/t Pt",
-        "g/t Pd",
-        "g/t Rh",
-        "g/t Ru",
-        "g/t Ir",
-        "% Fe",
-        "% Sn",
-        "g/t In",
-        "% W",
-        "% U3O8",
+        # "% Cu",
+        # "g/t Au",
+        # "g/t Ag",
+        # "% Ni",
+        # "% Co",
+        # "% Mo",
+        # "% Pb",
+        # "% Zn",
+        # "g/t Re",
+        # "g/t Se",
+        # "g/t Te",
+        # "g/t Pt",
+        # "g/t Pd",
+        # "g/t Rh",
+        # "g/t Ru",
+        # "g/t Ir",
+        # "% Fe",
+        # "% Sn",
+        # "g/t In",
+        # "% W",
+        # "% U3O8",
+        # "Lithium",
+        # "Mt"
+        "ppm"
     ]
     for ex in examples:
         linker.link(ex, must_be_in_trusted=False, save_link=save_link).explain(linker)
