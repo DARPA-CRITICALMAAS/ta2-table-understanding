@@ -320,7 +320,57 @@ if __name__ == "__main__":
         # "% U3O8",
         # "Lithium",
         # "Mt"
-        "ppm"
+        # "ppm"
+        # "La ppm",
+        # "Ce ppm",
+        # "Pr ppm",
+        # "Nd ppm",
+        # "Sm ppm",
+        # "Eu ppm",
+        # "Gd ppm",
+        # "Tb ppm",
+        # "Dy ppm",
+        # "Ho ppm",
+        # "Er ppm",
+        # "Tm ppm",
+        # "Yb ppm",
+        # "Lu ppm",
+        # "Y ppm",
+        # "Sc ppm",
+        # "Sn"
+        # "million metric tons"
+        # "percent"
+        # "WO3",
+        # "metric tons"
+        # "Bi"
+        # "Sn",
+        # "SnO2",
+        # "W",
+        # "WO3",
+        # "Zn",
+        # "Ag",
+        # "MoS2",
+        # "Mo",
+        # "Cu",
+        # "In",
+        # "Ta2O5",
+        # "Nb2O5",
+        # "CaF2",
+        # "Bi",
+        # "Au",
+        # "Pb",
+        # "Sb",
+        # "BeO",
+        # "Be",
+        # "As",
+        # "Ta",
+        # "sphalerite",
+        # "wolframite",
+        # "topaz",
+        "grams/metric ton",
+        "kilograms/metric ton",
+        "grams/cubic metre",
+        "kilograms/cubic metre",
     ]
     for ex in examples:
         linker.link(ex, must_be_in_trusted=False, save_link=save_link).explain(linker)
