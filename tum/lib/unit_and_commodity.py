@@ -367,10 +367,13 @@ if __name__ == "__main__":
         # "sphalerite",
         # "wolframite",
         # "topaz",
-        "grams/metric ton",
-        "kilograms/metric ton",
-        "grams/cubic metre",
-        "kilograms/cubic metre",
+        # "grams/metric ton",
+        # "kilograms/metric ton",
+        # "grams/cubic metre",
+        # "kilograms/cubic metre",
+        # "Ge",
+        # "Ga",
+        "%"
     ]
     for ex in examples:
         linker.link(ex, must_be_in_trusted=False, save_link=save_link).explain(linker)
