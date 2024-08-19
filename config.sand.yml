@@ -1,4 +1,4 @@
-kgns: tum.integrations.sand.WrappedMNDRNamespace.create
+kgns: tum.namespace.MNDRNamespace.create
 entity:
   constructor: tum.integrations.sand.get_entity_db
   args:
@@ -32,7 +32,7 @@ search:
   ontology: tum.integrations.sand.dummy_search
 export:
   default: drepr
-  drepr: tum.integrations.drepr.CustomizedDReprExport
+  drepr: sand_drepr.main.DreprExport
 assistant:
   default: grams+minmod
   grams+minmod: tum.integrations.sand.GramsMinModAssistant

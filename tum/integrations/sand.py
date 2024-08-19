@@ -34,14 +34,7 @@ from sm.prelude import I, M, O
 from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
 
-
-class WrappedMNDRNamespace(MNDRNamespace):
-
-    def uri_to_id(self, uri: str) -> str:
-        return self.get_rel_uri(uri)
-
-
-kgns = WrappedMNDRNamespace.create()
+kgns = MNDRNamespace.create()
 
 
 @dataclass
@@ -103,14 +96,14 @@ class WrappedOntProp(OntProperty):
     @staticmethod
     def from_kg_prop(obj: KGOntologyProperty):
         return WrappedOntProp(
-            id=kgns.get_rel_uri(obj.id),
+            id=kgns.uri_to_id(obj.id),
             uri=obj.id,
             label=obj.label,
             description=obj.description,
             aliases=obj.aliases,
             datatype=PropDataTypeMapping.get(obj.datatype, "unknown"),
-            parents=[kgns.get_rel_uri(p) for p in obj.parents],
-            ancestors={kgns.get_rel_uri(k): v for k, v in obj.ancestors.items()},
+            parents=[kgns.uri_to_id(p) for p in obj.parents],
+            ancestors={kgns.uri_to_id(k): v for k, v in obj.ancestors.items()},
         )
 
 
@@ -156,7 +149,7 @@ def dummy_search(
 def value_deser(val: URIRef | Literal):
     if isinstance(val, URIRef):
         if kgns.is_uri_in_main_ns(val):
-            return Value(type="entityid", value=kgns.get_rel_uri(val))
+            return Value(type="entityid", value=kgns.uri_to_id(val))
         return Value(type="entityid", value=val)
     else:
         # TODO: fix me, treat everything as string...

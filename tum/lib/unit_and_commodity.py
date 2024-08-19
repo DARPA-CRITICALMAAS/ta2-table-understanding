@@ -10,7 +10,7 @@ from minmodkg.entity_linking import Doc, EntityLinking, IEntityLinking
 from sm.misc.funcs import assert_not_null
 from symspellpy import SymSpell
 from tum.config import CRITICAL_MAAS_DIR
-from tum.namespace import MNDR_NS, MNO_NS
+from tum.namespace import MNO_NS, MNR_NS
 
 
 @dataclass
@@ -30,21 +30,21 @@ class UnitAndCommodityLinkingResult:
         print(f"Link {self.value} to:")
         if self.unit is not None:
             print(
-                f"  - unit: {self.unit_observed_value} - {self.unit[len(MNDR_NS):]} | score = {self.unit_score:.3f} | labels = {', '.join(linker.unit_linker.id2doc[self.unit].labels)}"
+                f"  - unit: {self.unit_observed_value} - {self.unit[len(MNR_NS):]} | score = {self.unit_score:.3f} | labels = {', '.join(linker.unit_linker.id2doc[self.unit].labels)}"
             )
         else:
             print("  - unit: None")
 
         if self.commodity is not None:
             print(
-                f"  - commodity: {self.commodity_observed_value} - {self.commodity[len(MNDR_NS):]} | score = {self.commodity_score:.3f} | labels = {', '.join(linker.commodity_linker.id2doc[self.commodity].labels)}"
+                f"  - commodity: {self.commodity_observed_value} - {self.commodity[len(MNR_NS):]} | score = {self.commodity_score:.3f} | labels = {', '.join(linker.commodity_linker.id2doc[self.commodity].labels)}"
             )
         else:
             print("  - commodity: None")
 
         if self.material_form is not None:
             print(
-                f"  - material_form: {self.material_form_observed_value} - {self.material_form[len(MNDR_NS):]} | score = {self.material_form_score:.3f} | labels = {', '.join(linker.material_form_linker.id2doc[self.material_form].labels)}"
+                f"  - material_form: {self.material_form_observed_value} - {self.material_form[len(MNR_NS):]} | score = {self.material_form_score:.3f} | labels = {', '.join(linker.material_form_linker.id2doc[self.material_form].labels)}"
             )
         else:
             print("  - material_form: None")
@@ -67,17 +67,17 @@ class UnitAndCommodityLinkingResult:
             obj.update(
                 {
                     "unit_text": (
-                        f"{self.unit_observed_value} - {self.unit[len(MNDR_NS):]} | score = {self.unit_score:.3f} | labels = {', '.join(linker.unit_linker.id2doc[self.unit].labels)}"
+                        f"{self.unit_observed_value} - {self.unit[len(MNR_NS):]} | score = {self.unit_score:.3f} | labels = {', '.join(linker.unit_linker.id2doc[self.unit].labels)}"
                         if self.unit is not None
                         else ""
                     ),
                     "commodity_text": (
-                        f"{self.commodity_observed_value} - {self.commodity[len(MNDR_NS):]} | score = {self.commodity_score:.3f} | labels = {', '.join(linker.commodity_linker.id2doc[self.commodity].labels)}"
+                        f"{self.commodity_observed_value} - {self.commodity[len(MNR_NS):]} | score = {self.commodity_score:.3f} | labels = {', '.join(linker.commodity_linker.id2doc[self.commodity].labels)}"
                         if self.commodity is not None
                         else ""
                     ),
                     "material_form_text": (
-                        f"{self.material_form_observed_value} - {self.material_form[len(MNDR_NS):]} | score = {self.material_form_score:.3f} | labels = {', '.join(linker.material_form_linker.id2doc[self.material_form].labels)}"
+                        f"{self.material_form_observed_value} - {self.material_form[len(MNR_NS):]} | score = {self.material_form_score:.3f} | labels = {', '.join(linker.material_form_linker.id2doc[self.material_form].labels)}"
                         if self.material_form is not None
                         else ""
                     ),

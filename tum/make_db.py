@@ -24,6 +24,9 @@ from statickg.models.repository import GitRepository
 from statickg.services.drepr import DReprService, DReprServiceInvokeArgs
 
 MINMOD_ONTOLOGY_FILE = CRITICAL_MAAS_DIR / "ta2-minmod-kg/schema/ontology.ttl"
+MINMOD_SIMPLE_ONTOLOGY_FILE = (
+    CRITICAL_MAAS_DIR / "ta2-table-understanding/schema/mos.ttl"
+)
 MINMOD_DATA_REPO = CRITICAL_MAAS_DIR / "ta2-minmod-data"
 MINMOD_KG_CONFIG = CRITICAL_MAAS_DIR / "ta2-minmod-kg/etl.yml"
 MINMOD_KG_WORKDIR = CRITICAL_MAAS_DIR / "kgdata"
@@ -106,7 +109,7 @@ def classes():
     )
 
     if not ds.has_complete_data():
-        classes, props, _ = MNDRDB.parse_ontology(MINMOD_ONTOLOGY_FILE)
+        classes, props, _ = MNDRDB.parse_ontology(MINMOD_SIMPLE_ONTOLOGY_FILE)
         classes = [orjson.dumps(e.to_dict()) for e in classes.values()]
         ExtendedRDD.parallelize(classes).save_like_dataset(
             ds, trust_dataset_dependencies=True
@@ -124,7 +127,7 @@ def props():
     )
 
     if not ds.has_complete_data():
-        classes, props, _ = MNDRDB.parse_ontology(MINMOD_ONTOLOGY_FILE)
+        classes, props, _ = MNDRDB.parse_ontology(MINMOD_SIMPLE_ONTOLOGY_FILE)
         props = [orjson.dumps(e.to_dict()) for e in props.values()]
         ExtendedRDD.parallelize(props).save_like_dataset(
             ds, trust_dataset_dependencies=True

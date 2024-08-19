@@ -23,6 +23,8 @@ from kgdata.models.ont_property import OntologyProperty
 from rdflib import OWL, RDF, RDFS, XSD, BNode, Graph, URIRef
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.outputs.semantic_model import SemanticType
+from tum.config import CRITICAL_MAAS_DIR
+from tum.namespace import DREPR_NS, MNDRNamespace
 
 get_entity_db = make_get_rocksdb(
     ser_value=ser_to_dict,
@@ -96,32 +98,33 @@ class MNDRDB(GenericDB):
         return get_prop_db(self.database_dir / "props.db", read_only=self.read_only)
 
     def get_default_props(self):
+        extra_props = [
+            OntologyProperty(
+                id=f"{DREPR_NS}unknown",
+                label=MultiLingualString.en("unknown"),
+                description=MultiLingualString.en(
+                    "the relationship between columns is unknown"
+                ),
+                aliases=MultiLingualStringList({"en": ["unknown"]}, "en"),
+                datatype=str(XSD.string),
+                parents=[],
+                related_properties=[],
+                equivalent_properties=[],
+                inverse_properties=[],
+                instanceof=[str(RDF.Property)],
+                ancestors={},
+                domains=[],
+                ranges=[],
+            )
+        ]
         props = super().get_default_props()
-        props.update(
-            {
-                "http://purl.org/drepr/1.0/unknown": OntologyProperty(
-                    id="http://purl.org/drepr/1.0/unknown",
-                    label=MultiLingualString.en("unknown"),
-                    description=MultiLingualString.en("type of an column is unknown"),
-                    aliases=MultiLingualStringList({"en": ["unknown"]}, "en"),
-                    datatype=str(XSD.string),
-                    parents=[],
-                    related_properties=[],
-                    equivalent_properties=[],
-                    inverse_properties=[],
-                    instanceof=[str(RDF.Property)],
-                    ancestors={},
-                    domains=[],
-                    ranges=[],
-                )
-            }
-        )
+        props.update({p.id: p for p in extra_props})
         return props
 
     def get_default_classes(self):
-        return {
-            "http://purl.org/drepr/1.0/Unknown": OntologyClass(
-                id="http://purl.org/drepr/1.0/Unknown",
+        extra_clses = [
+            OntologyClass(
+                id=f"{DREPR_NS}Unknown",
                 label=MultiLingualString.en("Unknown"),
                 description=MultiLingualString.en("type of an column is unknown"),
                 aliases=MultiLingualStringList({"en": ["unknown"]}, "en"),
@@ -131,7 +134,7 @@ class MNDRDB(GenericDB):
                 equivalent_classes=[],
                 ancestors={},
             ),
-            str(RDFS.Resource): OntologyClass(
+            OntologyClass(
                 id=str(RDFS.Resource),
                 label=MultiLingualString.en("Resource"),
                 description=MultiLingualString.en("Resource"),
@@ -142,11 +145,13 @@ class MNDRDB(GenericDB):
                 equivalent_classes=[],
                 ancestors={},
             ),
-        }
+        ]
+        return {c.id: c for c in extra_clses}
 
     def get_meta_properties(
         self, kgns: KnowledgeGraphNamespace, meta_prop_file: Path
     ) -> dict[str, OntologyProperty]:
+        raise Exception("Deprecated")
         props = {}
         df = pd.read_csv(str(meta_prop_file))
 
@@ -264,3 +269,9 @@ class MNDRDB(GenericDB):
                 ents[ent.id] = ent
 
         return classes, props, ents
+
+
+if __name__ == "__main__":
+    db = MNDRDB(CRITICAL_MAAS_DIR / "data/databases")
+    for prop in db.props.items():
+        print(prop)
