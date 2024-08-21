@@ -4,8 +4,6 @@ This library provides algorithms for creating semantic descriptions of mineral-r
 
 ## Installation
 
-We use [poetry](https://python-poetry.org/) as our package manager (you need to have it installed on your machine first). To install the library and its dependencies, run `poetry install` in the root directory of this repository. Then, you can run `poetry shell` to activate the virtual environment or use `poetry run <command>` to run the commands in the virtual environment.
-
 ### MinMod KG Setup
 
 To work with [MinMod KG](https://minmod.isi.edu/), we need the [ta2-minmod-data](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data), and the default folder structure is:
@@ -15,7 +13,25 @@ To work with [MinMod KG](https://minmod.isi.edu/), we need the [ta2-minmod-data]
     ├── ta2-minmod-data           # ta2-minmod-data repository
     └── ta2-table-understanding   # ta2-table-understanding repository
 
+To setup the above structure, you can run:
+
+```
+git clone --depth 1 https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data
+git clone --depth 1 https://github.com/DARPA-CRITICALMAAS/ta2-table-understanding
+mkdir data
+```
+
 Note: The folder structure is fully customizable. Please see the [Configuration Section](#Configuration) for more information.
+
+### Setup dependencies
+
+We use [poetry](https://python-poetry.org/) as our package manager (you need to have it installed on your machine first). To install the library and its dependencies, run `poetry install` in the root directory of this repository. Then, you can run `poetry shell` to activate the virtual environment or use `poetry run <command>` to run the commands in the virtual environment.
+
+```
+cd ta2-table-understanding
+python -m venv .venv
+poetry install
+```
 
 With the working folder structure setup, we can build the necessary databases (entities, ontology classes, and properties) by running `poetry run python -m tum.make_db`
 
