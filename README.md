@@ -17,6 +17,7 @@ To setup the above structure, you can run:
 
 ```
 git clone --depth 1 https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data
+git clone --depth 1 https://github.com/DARPA-CRITICALMAAS/ta2-minmod-kg
 git clone --depth 1 https://github.com/DARPA-CRITICALMAAS/ta2-table-understanding
 mkdir data
 ```
