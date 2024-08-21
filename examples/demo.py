@@ -6,8 +6,9 @@ import serde.csv
 from sm.dataset import Dataset
 from sm.namespaces.utils import KGName
 from sm.prelude import O
+
 from tum.actors.entry import *
-from tum.make_db import CRITICAL_MAAS_DIR
+from tum.config import CRITICAL_MAAS_DIR
 
 meta_prop_file = (
     CRITICAL_MAAS_DIR / "ta2-table-understanding/data/meta_property/data.csv"

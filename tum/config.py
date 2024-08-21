@@ -8,4 +8,8 @@ CRITICAL_MAAS_DIR = Path(
     )
 )
 
+PROJECT_DIR = Path(
+    os.environ.get("PROJECT_DIR", str(Path(__file__).parent.parent))
+).absolute()
+
 REAM_DIR = Path(os.environ.get("REAM_DIR", CRITICAL_MAAS_DIR / "data/ream")).absolute()

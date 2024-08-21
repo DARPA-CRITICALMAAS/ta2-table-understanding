@@ -31,6 +31,7 @@ from sm.dataset import Dataset, Example, FullTable
 from sm.misc.funcs import identity_func
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.prelude import I, M, O
+
 from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
 
@@ -169,6 +170,7 @@ class GramsMinModAssistant(IAssistant):
         self.props = props
 
         from sm.namespaces.utils import KGName
+
         from tum.actors.entry import (
             DataActorArgs,
             DBActorArgs,
@@ -178,18 +180,11 @@ class GramsMinModAssistant(IAssistant):
             MinmodGraphInferenceActorArgs,
             MinmodTableTransformationActor,
         )
-        from tum.make_db import CRITICAL_MAAS_DIR
+        from tum.config import CRITICAL_MAAS_DIR
 
         self.meta_prop_file = (
             CRITICAL_MAAS_DIR / "ta2-table-understanding/data/meta_property/data.csv"
         )
-
-        self.id2graph = {}
-        for x in serde.csv.deser(self.meta_prop_file)[1:]:
-            self.id2graph["https://minmod.isi.edu/resource/" + x[0]] = [
-                [kgns.get_abs_uri(z) if z != "[target]" else z for z in y.split("--")]
-                for y in x[-1].split(",")
-            ]
 
         self.actor = G.create_actor(
             MinmodTableTransformationActor,
@@ -205,7 +200,7 @@ class GramsMinModAssistant(IAssistant):
                 ),
                 DataActorArgs(skip_unk_ont_ent=True, skip_no_sm=True),
                 MinmodGraphGenerationActorArgs(
-                    train_dsquery="darpa-criticalmaas",
+                    train_dsquery="dsl-semtype",
                     meta_prop_file=self.meta_prop_file,
                     top_n_stypes=2,
                 ),
@@ -213,28 +208,9 @@ class GramsMinModAssistant(IAssistant):
             ],
         )
 
-        self.train_examples = (
-            Dataset(
-                CRITICAL_MAAS_DIR / "ta2-table-understanding/data/known_models"
-            ).load()
-            + Dataset(CRITICAL_MAAS_DIR / "ta2-table-understanding/examples").load()
-        )
-
     def predict(self, table: Table, rows: list[TableRow]):
         full_table = self.convert_table(table, rows)
-
-        with self.actor.data_actor.use_examples(
-            "darpa-criticalmaas",
-            self.train_examples,
-            prefix="",
-        ):
-            with self.actor.data_actor.use_example(
-                full_table.table.table_id,
-                Example(full_table.table.table_id, sms=[], table=full_table),
-            ) as testquery:
-                sm = self.actor.graphinfer_actor(testquery)[0]
-                self.unpack_meta_property(sm)
-
+        sm = self.actor.graphinfer_actor(full_table)
         rows = copy.deepcopy(rows)
         return sm, rows
 
@@ -255,91 +231,3 @@ class GramsMinModAssistant(IAssistant):
             context=I.Context(),
             links=links,
         )
-
-    def unpack_meta_property(self, sm: O.SemanticModel):
-        for e in sm.edges():
-            if e.abs_uri not in self.id2graph:
-                continue
-
-            triples = self.id2graph[e.abs_uri]
-            source2triples = defaultdict(list)
-            for triple in triples:
-                source2triples[triple[0]].append(triple)
-
-            u = sm.get_node(e.source)
-            v = sm.get_node(e.target)
-
-            sm.remove_edge(e.id)
-
-            assert isinstance(u, O.ClassNode)
-
-            uri2newnode = {u.abs_uri: u.id}
-            n_edges = 0
-
-            for triple in triples:
-                if triple[0] not in uri2newnode:
-                    sourceid = kgns.uri_to_id(triple[0])
-                    if sourceid not in self.classes:
-                        if sm.has_literal_node(triple[0]):
-                            uri2newnode[triple[0]] = sm.get_literal_node(triple[0]).id
-                        else:
-                            sourcenode = O.LiteralNode(
-                                value=triple[0],
-                                readable_label=self.entities[sourceid].readable_label,
-                                datatype=O.LiteralNodeDataType.Entity,
-                            )
-                            uri2newnode[triple[0]] = sm.add_node(sourcenode)
-                    else:
-                        sourcenode = O.ClassNode(
-                            abs_uri=triple[0],
-                            rel_uri=kgns.get_rel_uri(triple[0]),
-                        )
-                        uri2newnode[triple[0]] = sm.add_node(sourcenode)
-
-                if triple[2] != "[target]" and triple[2] not in uri2newnode:
-                    targetid = kgns.uri_to_id(triple[2])
-                    if targetid not in self.classes:
-                        if sm.has_literal_node(triple[2]):
-                            uri2newnode[triple[2]] = sm.get_literal_node(triple[2]).id
-                        else:
-                            targetnode = O.LiteralNode(
-                                value=triple[2],
-                                readable_label=self.entities[targetid].readable_label,
-                                datatype=O.LiteralNodeDataType.Entity,
-                            )
-                            uri2newnode[triple[2]] = sm.add_node(targetnode)
-                    else:
-                        targetnode = O.ClassNode(
-                            abs_uri=triple[2],
-                            rel_uri=kgns.get_rel_uri(triple[2]),
-                        )
-                        uri2newnode[triple[2]] = sm.add_node(targetnode)
-
-                if triple[2] == "[target]":
-                    if not sm.has_edge_between_nodes(
-                        uri2newnode[triple[0]], e.target, triple[1]
-                    ):
-                        sm.add_edge(
-                            O.Edge(
-                                source=uri2newnode[triple[0]],
-                                target=e.target,
-                                abs_uri=triple[1],
-                                rel_uri=kgns.get_rel_uri(triple[1]),
-                            )
-                        )
-                        n_edges += 1
-                else:
-                    if not sm.has_edge_between_nodes(
-                        uri2newnode[triple[0]], uri2newnode[triple[2]], triple[1]
-                    ):
-                        sm.add_edge(
-                            O.Edge(
-                                source=uri2newnode[triple[0]],
-                                target=uri2newnode[triple[2]],
-                                abs_uri=triple[1],
-                                rel_uri=kgns.get_rel_uri(triple[1]),
-                            )
-                        )
-                        n_edges += 1
-
-            # assert n_edges == len(triples), (n_edges, len(triples))

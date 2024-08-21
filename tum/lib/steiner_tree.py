@@ -6,6 +6,7 @@ from typing import Optional, cast
 
 from graph.retworkx.api import dag_longest_path, has_cycle
 from sm.dataset import FullTable
+from sm.inputs.table import ColumnBasedTable
 from steiner_tree.bank.solver import PSEUDO_ROOT_ID, BankSolver
 from steiner_tree.bank.struct import (
     BankEdge,
@@ -27,7 +28,7 @@ from tum.lib.postprocessing import (
 class SteinerTree:
     def __init__(
         self,
-        table: FullTable,
+        table: ColumnBasedTable,
         cg: CGraph,
         edge_probs: dict[CGEdgeTriple, float],
         threshold: float,
@@ -217,9 +218,9 @@ class BankSteinerTree(BankSolver[CGNode, CGEdge]):
                         update_graph = False
                         for n in pg.iter_nodes():
                             if pg.in_degree(n.id) >= 2:
-                                grand_parents: dict[
-                                    str, list[tuple[BankEdge, ...]]
-                                ] = defaultdict(list)
+                                grand_parents: dict[str, list[tuple[BankEdge, ...]]] = (
+                                    defaultdict(list)
+                                )
                                 for inedge in pg.in_edges(n.id):
                                     grand_parents[inedge.source].append((inedge,))
                                     for grand_inedge in pg.in_edges(inedge.source):
@@ -233,9 +234,11 @@ class BankSteinerTree(BankSolver[CGNode, CGEdge]):
                                         # they have the same length, so we select the one has smaller weight
                                         edges = sorted(
                                             edges,
-                                            key=lambda x: x[0].weight + x[1].weight
-                                            if len(x) == 2
-                                            else x[0].weight * 2,
+                                            key=lambda x: (
+                                                x[0].weight + x[1].weight
+                                                if len(x) == 2
+                                                else x[0].weight * 2
+                                            ),
                                         )
 
                                         for lst in edges[1:]:

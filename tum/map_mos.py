@@ -44,7 +44,8 @@ class MosMapping:
         )
         self.unit_commodity_linker = UnitAndCommodityTrustedLinker.get_instance(
             CRITICAL_MAAS_DIR / "kgdata/data/predefined-entities",
-            CRITICAL_MAAS_DIR / "sources/units_and_commodities.json",
+            CRITICAL_MAAS_DIR
+            / "ta2-table-understanding/data/units_and_commodities.json",
         )
 
         self.unit_linker = UnitCompatibleLinker(self.unit_commodity_linker)
@@ -221,9 +222,17 @@ class MosMapping:
                 ),
             }
             if self.has(inv, mos.category):
+                # handle Measure+Indicated
+                inv_cat_lst = []
+                for cat in self.g.objects(inv, mos.category):
+                    if isinstance(cat, rdflib.term.Literal) and "+" in str(cat):
+                        inv_cat_lst.extend(
+                            (rdflib.term.Literal(x) for x in str(cat).split("+"))
+                        )
+                    else:
+                        inv_cat_lst.append(cat)
                 base["category"] = [
-                    self.get_candidate(cat, self.category_linker)
-                    for cat in self.g.objects(inv, mos.category)
+                    self.get_candidate(cat, self.category_linker) for cat in inv_cat_lst
                 ]
             if self.has(inv, mos.grade):
                 base["grade"] = {

@@ -1,0 +1,31 @@
+mos:MineralInventory---mos:category
+
+--------------------
+category
+
+estimated reserves
+speculative reserves
+estimated reserves - El-Karoussa
+unspecified
+inferred resource
+indicated and inferred resource
+estimated resources
+proven and probable reserves
+mineral resource
+geological resource
+possible reserves
+inferred reserves
+indicated reserves
+geological resource - Foley zone
+geological resource - Doradilla
+potential resource
+reserves - soft rock and alluvial
+possible resource
+mineable reserves
+estimated resources - Mount Alexander
+indicated reserves - lower dyke
+indicated resource
+potential reserves
+indicated reserves - Hill deposit
+mineable reserves - underground
+probable reserves

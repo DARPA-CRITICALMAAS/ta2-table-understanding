@@ -256,7 +256,7 @@ class CommodityCompatibleLinker(IEntityLinking):
 if __name__ == "__main__":
     linker = UnitAndCommodityTrustedLinker.get_instance(
         CRITICAL_MAAS_DIR / "kgdata/data/predefined-entities",
-        CRITICAL_MAAS_DIR / "sources/units_and_commodities.json",
+        CRITICAL_MAAS_DIR / "ta2-table-understanding/data/units_and_commodities.json",
     )
 
     save_link = True
@@ -373,7 +373,19 @@ if __name__ == "__main__":
         # "kilograms/cubic metre",
         # "Ge",
         # "Ga",
-        "%"
+        # "%",
+        # "Zr",
+        # "Fe"
+        # "Co"
+        # "U"
+        # "Nb",
+        # "Mn",
+        # "Li",
+        # "Zn"
+        # "Cd",
+        # "beryl",
+        # "Ni",
+        "PGE"
     ]
     for ex in examples:
         linker.link(ex, must_be_in_trusted=False, save_link=save_link).explain(linker)

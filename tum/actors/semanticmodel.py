@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Mapping, Optional, Sequence
 
-from drepr.models import (
+from drepr.models.prelude import (
     Alignment,
     Attr,
     CSVProp,
@@ -13,7 +13,7 @@ from drepr.models import (
     Resource,
     ResourceType,
 )
-from drepr.models import SemanticModel as DReprSemanticModel
+from drepr.models.prelude import SemanticModel as DReprSemanticModel
 from dsl.dsl import DSL
 from dsl.generate_train_data import DefaultSemanticTypeComparator
 from dsl.input import DSLTable
@@ -28,7 +28,7 @@ from ream.cache_helper import Cache, MemBackend
 from ream.params_helper import NoParams
 from sand_drepr.dreprmodel import get_drepr_model
 from sm.dataset import Example, FullTable
-from sm.misc.funcs import assert_not_null
+from sm.misc.funcs import assert_not_null, assert_one_item
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.outputs.semantic_model import (
     ClassNode,
@@ -37,6 +37,8 @@ from sm.outputs.semantic_model import (
     SemanticModel,
     SemanticType,
 )
+
+import tum.sm.dsl.main as dsl_main
 from tum.actors.data import DataActor
 from tum.actors.db import KGDB
 from tum.db import MetaProperty
@@ -64,40 +66,13 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
     def __init__(self, params: MinmodGraphGenerationActorArgs, data_actor: DataActor):
         super().__init__(params, dep_actors=[data_actor])
         self.data_actor = data_actor
+        self.kgdb = assert_one_item(list(data_actor.db_actor.kgdbs.values()))
 
-    def __call__(self, dsquery: str):
-        kgns = self.data_actor.get_kgdb(dsquery).kgns
-
-        examples = self.data_actor(dsquery)
-        example_stypes = self.get_dsl()(
-            [ex.replace_table(DSLTable.from_full_table(ex.table)) for ex in examples],
-            top_n=self.params.top_n_stypes,
-        )
-
-        output: list[MinmodCanGraphExtractedResult] = []
-        for ei, ex in enumerate(examples):
-            output.append(
-                self.gen_graph(
-                    ex,
-                    [
-                        [
-                            SemanticTypePrediction(
-                                stype.semantic_type,
-                                stype.score,
-                                col.index,
-                            )
-                            for stype in example_stypes[ei][ci]
-                        ]
-                        for ci, col in enumerate(ex.table.table.columns)
-                        # if top 1 semantic type is unknown, then we remove them
-                        if example_stypes[ei][ci][0].semantic_type.class_abs_uri
-                        != "http://purl.org/drepr/1.0/Unknown"
-                    ],
-                    kgns,
-                )
-            )
-
-        return output
+    def __call__(self, table: FullTable):
+        kgns = self.kgdb.kgns
+        dsl = self.get_dsl()
+        ex_stypes = dsl_main.get_semantic_types(dsl, table.table, top_n=2)
+        return dsl_main.gen_can_graph(ex_stypes, kgns)
 
     def gen_graph(
         self,
@@ -151,20 +126,18 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
     @Cache.cache(backend=MemBackend())
     def get_dsl(self):
         """Get a trained DSL model for the given dataset query."""
-        examples = self.data_actor(self.params.train_dsquery)
-        examples = [
-            Example(id=ex.id, sms=ex.sms, table=DSLTable.from_full_table(ex.table))
-            for ex in examples
-        ]
-
         kgdb = self.data_actor.get_kgdb(self.params.train_dsquery)
-        db = kgdb.pydb
 
+        examples = dsl_main.get_training_data(self.params.train_dsquery, kgdb.kgns)
+
+        db = kgdb.pydb
         classes = {}
         classes.update(db.get_default_classes())
         classes = ChainedMapping(db.classes.cache(), classes)
 
-        props = self.get_props()
+        props = {}
+        props.update(db.get_default_props())
+        props = ChainedMapping(db.props.cache(), props)
 
         dsl = DSL(
             examples,
@@ -174,19 +147,9 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
         )
         dsl.get_model(
             train_if_not_exist=True,
-            stype_cmp=SemanticTypeMetaComparator(classes, props, kgdb.kgns),
             save_train_data=True,
         )
         return dsl
-
-    def get_props(self):
-        kgdb = self.data_actor.get_kgdb(self.params.train_dsquery)
-        db = kgdb.pydb
-        props = {}
-        props.update(db.get_default_props())
-        props.update(db.get_meta_properties(kgdb.kgns, self.params.meta_prop_file))
-        props = ChainedMapping(db.props.cache(), props)
-        return props
 
 
 class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
@@ -200,77 +163,11 @@ class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
         super().__init__(params, dep_actors=[cangraph_actor])
         self.cangraph_actor = cangraph_actor
         self.data_actor = cangraph_actor.data_actor
+        self.kgdb = cangraph_actor.kgdb
 
-    def __call__(self, dsquery: str):
-        examples = self.data_actor(dsquery)
-        cangraphs = self.cangraph_actor(dsquery)
-        kgns = self.data_actor.get_kgdb(dsquery).kgns
-
-        return [
-            self.predict_sm(ex, cangraphs[ei], kgns) for ei, ex in enumerate(examples)
-        ]
-
-    def predict_sm(
-        self,
-        ex: Example[FullTable],
-        cgraph: MinmodCanGraphExtractedResult,
-        kgns: KnowledgeGraphNamespace,
-    ):
-        edge_probs = {}
-        for edge in cgraph.iter_edges():
-            edge_probs[(edge.source, edge.target, edge.key)] = (
-                edge.score
-                # * cangraph.nodes[edge["source"]]["score"]
-                # * cangraph.nodes[edge["target"]]["score"]
-            )
-
-        st = SteinerTree(
-            ex.table,
-            cgraph,
-            edge_probs=edge_probs,
-            threshold=0.0,
-            additional_terminal_nodes=None,
-        )
-        pred_cg = st.get_result()
-
-        sm = SemanticModel()
-        idmap = {}
-        for e in pred_cg.iter_edges():
-            source = cgraph.get_node(e.source)
-            target = cgraph.get_node(e.target)
-
-            for node in [source, target]:
-                if node.id not in idmap:
-                    if node.is_column_node:
-                        assert node.column_index is not None
-                        idmap[node.id] = sm.add_node(
-                            DataNode(
-                                col_index=node.column_index,
-                                label=assert_not_null(
-                                    ex.table.table.get_column_by_index(
-                                        node.column_index
-                                    ).clean_multiline_name
-                                ),
-                            )
-                        )
-                    else:
-                        assert node.value is not None and node.is_class_node
-                        idmap[node.id] = sm.add_node(
-                            ClassNode(
-                                abs_uri=node.value,
-                                rel_uri=kgns.get_rel_uri(node.value),
-                            )
-                        )
-
-            sm.add_edge(
-                Edge(
-                    source=idmap[e.source],
-                    target=idmap[e.target],
-                    abs_uri=e.key,
-                    rel_uri=kgns.get_rel_uri(e.key),
-                )
-            )
-        return sm
+    def __call__(self, table: FullTable):
+        cg = self.cangraph_actor(table)
+        return dsl_main.pred_sm(table.table, cg, self.kgdb.kgns)
 
 
 class MinmodTableTransformationActor(BaseActor[MinmodTableTransformationActorArgs]):
@@ -294,48 +191,3 @@ class MinmodTableTransformationActor(BaseActor[MinmodTableTransformationActorArg
             ontprop_ar=self.graphinfer_actor.cangraph_actor.get_props(),
             ident_props=[str(RDFS.label)],
         )
-
-
-class SemanticTypeMetaComparator(DefaultSemanticTypeComparator):
-    def __init__(
-        self,
-        classes: Mapping[str, OntologyClass],
-        props: Mapping[str, OntologyProperty],
-        kgns: KnowledgeGraphNamespace,
-    ):
-        super().__init__(classes, props)
-        self.kgns = kgns
-
-    def __call__(self, stype1: SemanticType, stype2: SemanticType):
-        score = super().__call__(stype1, stype2)
-        if score == 1.0:
-            return score
-
-        stype1_prop = self.props[stype1.predicate_abs_uri]
-        stype2_prop = self.props[stype2.predicate_abs_uri]
-
-        need_recal = False
-
-        if isinstance(stype1_prop, MetaProperty):
-            newstype = stype1_prop.get_target_semantic_type()
-            stype1 = SemanticType(
-                class_abs_uri=newstype[0],
-                class_rel_uri=self.kgns.get_rel_uri(newstype[0]),
-                predicate_abs_uri=newstype[1],
-                predicate_rel_uri=self.kgns.get_rel_uri(newstype[1]),
-            )
-            need_recal = True
-
-        if isinstance(stype2_prop, MetaProperty):
-            newstype = stype2_prop.get_target_semantic_type()
-            stype2 = SemanticType(
-                class_abs_uri=newstype[0],
-                class_rel_uri=self.kgns.get_rel_uri(newstype[0]),
-                predicate_abs_uri=newstype[1],
-                predicate_rel_uri=self.kgns.get_rel_uri(newstype[1]),
-            )
-            need_recal = True
-
-        if need_recal:
-            score = max(score, self.__call__(stype1, stype2))
-        return score

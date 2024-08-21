@@ -1,0 +1,168 @@
+mos:MineralSite---rdfs:label
+
+--------------------
+Deposit/Project Name
+
+Ajo
+Alder Pond
+Allard
+Ambler
+Andersonville (Zone 18-24)
+Ann Mason
+Antler (Vendetta)
+B&C Springs
+Babbit-Minnamax
+Back Forty
+Bagdad
+Bald Mountain (Kirwin)
+Barrett
+Baultoff
+Bear-Lagomarsino
+Beavertown
+Benbow
+Bend
+Big Hill
+Bingham Canyon
+Birch Lake
+Black Butte-Johnyy Lee
+Blue Hill
+Blue Moon
+Bobcat Gulch
+Bohemia Basin (Basin-Takanis-Flapjack)
+Bond Creek
+Boss-Bixby
+BT
+Buckingham-Copper Basin (Nevada)
+Butte Group
+C.O.D.-Kingman Tailings
+Caribou Dome (Denali)
+Carl Creek
+Carlota
+Cashin
+Catheart Mountain
+Cave Peak
+Chilito
+Chino (Santa Rita)
+Christmas
+Coal Creek
+Cobre 
+Cochise/Bisbee
+Contact
+Continental (Hanover Mountain)
+Copper Basin (Arizona)
+Copper Bullion (Rua Cove)
+Copper Creek
+Copper Flat
+Copper King
+Copperwood
+Crescent Creek
+Creta
+Crypto
+Cumo
+Delta (DD North)
+Dragoon
+Dry Creek North
+Dunka Pit
+Dunka Road (underground)
+DW-LP
+Dynamite
+Eagle (USA)
+Eisenbrey (Thornapple)
+Emerald Isle
+Emigrant Gulch
+Emigrant-DUV
+Empire
+Florence (Poston Butte)
+Four Metals
+Funter Bay
+Gabbs Group
+Galena (AgCu)
+Gibson (Summit)
+Glacier Peak
+Gold Mountain
+Golden Dream-Elkhorn
+Gunnison-North Star
+Haines Creek-Palmer
+Heddleston
+Hermosa-Central
+Hermosa-Taylor
+Higdon
+Horsfield
+Idaho Cobalt (Ram)
+Iron Creek
+JF
+Johnson Camp
+Kasaan Peninsula
+Kay
+Kelsey
+Keweenaw-543S Copper
+Keweenaw Group
+Kona Dolomite
+Korn Kob
+Ledre Ridge
+Liberty (Hall-Tonopah)
+Lights Creek (Superior-Moonlight-Engels)
+Lisbon Valley
+Local Boy
+Lone Mountain (Upper Lake Valley)
+Lone Mountain (Lower Paleozoic)
+Lone Star (Freeport)
+Lone Star (Huakan)
+Longshot Ridge-Copper Queen
+Lonesome Pine-Esther
+Lynne
+MacArthur
+Mangum
+Margerie Glacier
+
+--------------------
+Deposit
+
+Thacker Pass
+Rhyolite Ridge
+Silver Peak
+Clayton
+Bonnie Claire
+Tonopah Flats
+TLC
+Horizon Lithium
+McGee
+Clayton Valley
+Nevada North
+Clayton
+West Tonopah Project
+Gemini
+Clayton Ridge Project
+Zeus
+
+--------------------
+Project
+
+Babbit-Minnamax
+Benbow
+Birch Lake
+Bohemia Basin (Basin-Takanis-Flapjack)
+Crescent Creek
+Dunka Pit
+Eagle-Eagle East (USA)
+Funter Bay
+Gap
+Gasquet Mountain
+Higdon
+Local Boy
+Maturi (incl. Nokomis)
+Maturi Southwest
+Mesaba (Babbit)
+Mine LaMotte-Fredericktown
+Mirror Harbor
+Mouat
+NorthMet (Dunka Road)
+Nye Basin
+Red Flat Mountain
+Riddle (Nickel Mountain)
+Serpentine
+Snipe Bay
+Spruce Road
+Stillwater-East Boulder
+Tamarack North
+Wetlegs

@@ -31,6 +31,12 @@ mos:commodity rdf:type owl:DatatypeProperty ;
               rdfs:label "commodity"@en .
 
 
+
+###  https://minmod.isi.edu/ontology-simple/category
+mos:category rdf:type owl:DatatypeProperty ;
+            rdfs:domain mos:MineralSite ;
+            rdfs:label "category"@en .
+
 ###  https://minmod.isi.edu/ontology-simple/country
 mos:country rdf:type owl:DatatypeProperty ;
             rdfs:domain mos:MineralSite ;
@@ -52,7 +58,33 @@ mos:doi rdf:type owl:DatatypeProperty ;
 ###  https://minmod.isi.edu/ontology-simple/grade
 mos:grade rdf:type owl:DatatypeProperty ;
           rdfs:domain mos:MineralInventory ;
-          rdfs:label "grade"@en .
+          rdfs:label "grade"@en ;
+          rdfs:range xsd:float .
+
+
+###  https://minmod.isi.edu/ontology-simple/grade_unit
+mos:grade_unit rdf:type owl:DatatypeProperty ;
+          rdfs:domain mos:MineralInventory ;
+          rdfs:label "grade unit"@en .
+
+
+###  https://minmod.isi.edu/ontology-simple/date
+mos:date rdf:type owl:DatatypeProperty ;
+          rdfs:domain mos:MineralInventory ;
+          rdfs:label "date"@en .
+
+###  https://minmod.isi.edu/ontology-simple/latitude
+mos:latitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain mos:MineralSite ;
+             rdfs:label "latitude"@en ;
+             rdfs:range xsd:float .
+
+
+###  https://minmod.isi.edu/ontology-simple/longitude
+mos:longitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain mos:MineralSite ;
+              rdfs:label "longitude"@en ;
+              rdfs:range xsd:float .
 
 
 ###  https://minmod.isi.edu/ontology-simple/record_id
@@ -61,15 +93,18 @@ mos:record_id rdf:type owl:DatatypeProperty ;
               rdfs:label "record id"@en .
 
 
+###  https://minmod.isi.edu/ontology-simple/record_type
 mos:record_type rdf:type owl:DatatypeProperty ;
-              rdfs:domain mos:Document ;
-              rdfs:label "record type"@en .
+                rdfs:domain mos:Document ;
+                rdfs:label "record type"@en .
 
 
 ###  https://minmod.isi.edu/ontology-simple/reserve_grade
 mos:reserve_grade rdf:type owl:DatatypeProperty ;
                   rdfs:domain mos:MineralInventory ;
-                  rdfs:label "reserve grade"@en .
+                  rdfs:label "reserve grade"@en ;
+                  rdfs:range xsd:float .
+
 
 
 ###  https://minmod.isi.edu/ontology-simple/reserve_grade_unit
@@ -78,10 +113,23 @@ mos:reserve_grade_unit rdf:type owl:DatatypeProperty ;
                        rdfs:label "reserve grade unit"@en .
 
 
+###  https://minmod.isi.edu/ontology-simple/cutoff_grade
+mos:cutoff_grade rdf:type owl:DatatypeProperty ;
+                  rdfs:domain mos:MineralInventory ;
+                  rdfs:label "cutoff grade"@en ;
+                  rdfs:range xsd:float .
+
+
+###  https://minmod.isi.edu/ontology-simple/cutoff_grade_unit
+mos:cutoff_grade_unit rdf:type owl:DatatypeProperty ;
+                       rdfs:domain mos:MineralInventory ;
+                       rdfs:label "cutoff grade unit"@en .
+
 ###  https://minmod.isi.edu/ontology-simple/reserve_tonnage
 mos:reserve_tonnage rdf:type owl:DatatypeProperty ;
                     rdfs:domain mos:MineralInventory ;
-                    rdfs:label "reserve tonnage"@en .
+                    rdfs:label "reserve tonnage"@en ;
+                    rdfs:range xsd:float .
 
 
 ###  https://minmod.isi.edu/ontology-simple/reserve_tonnage_unit
@@ -93,7 +141,8 @@ mos:reserve_tonnage_unit rdf:type owl:DatatypeProperty ;
 ###  https://minmod.isi.edu/ontology-simple/resource_grade
 mos:resource_grade rdf:type owl:DatatypeProperty ;
                    rdfs:domain mos:MineralInventory ;
-                   rdfs:label "resource_grade"@en .
+                   rdfs:label "resource_grade"@en ;
+                   rdfs:range xsd:float .
 
 
 ###  https://minmod.isi.edu/ontology-simple/resource_grade_unit
@@ -105,7 +154,8 @@ mos:resource_grade_unit rdf:type owl:DatatypeProperty ;
 ###  https://minmod.isi.edu/ontology-simple/resource_tonnage
 mos:resource_tonnage rdf:type owl:DatatypeProperty ;
                      rdfs:domain mos:MineralInventory ;
-                     rdfs:label "resource tonnage"@en .
+                     rdfs:label "resource tonnage"@en ;
+                     rdfs:range xsd:float .
 
 
 ###  https://minmod.isi.edu/ontology-simple/resource_tonnage_unit
@@ -129,7 +179,8 @@ mos:title rdf:type owl:DatatypeProperty ;
 ###  https://minmod.isi.edu/ontology-simple/tonnage
 mos:tonnage rdf:type owl:DatatypeProperty ;
             rdfs:domain mos:MineralInventory ;
-            rdfs:label "tonnage"@en .
+            rdfs:label "tonnage"@en ;
+            rdfs:range xsd:float .
 
 
 ###  https://minmod.isi.edu/ontology-simple/tonnage_unit

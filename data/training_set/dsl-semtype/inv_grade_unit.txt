@@ -1,0 +1,26 @@
+mos:MineralInventory---mos:grade_unit
+
+--------------------
+commodity
+
+% Cu
+g/t Au
+g/t Ag
+% Ni
+% Co
+% Mo
+% Pb
+% Zn
+g/t Re
+g/t Se
+g/t Te
+g/t Pt
+g/t Pd
+g/t Rh
+g/t Ru
+g/t Ir
+% Fe
+% Sn
+g/t In
+% W
+% U3O8

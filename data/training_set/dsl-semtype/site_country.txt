@@ -1,0 +1,27 @@
+mos:MineralSite---mos:country
+
+--------------------
+Country
+
+Afghanistan
+Albania
+Algeria
+Angola
+Argentina
+Armenia
+Australia
+Azerbaijan
+Belgium
+Bolivia
+Bosnia
+Botswana
+Brazil
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Canada
+Chile
+China
+Colombia
+Congo-RoC

@@ -4,8 +4,9 @@ import pandas as pd
 import serde.csv
 from sm.dataset import Dataset
 from sm.namespaces.utils import KGName
+
 from tum.actors.entry import *
-from tum.make_db import CRITICAL_MAAS_DIR
+from tum.config import CRITICAL_MAAS_DIR
 
 test_exs = Dataset(CRITICAL_MAAS_DIR / "ta2-table-understanding/examples").load()
 version = 112

@@ -1,0 +1,23 @@
+mos:MineralInventory---mos:tonnage_unit
+
+--------------------
+tonnage_unit
+
+metric tons
+metric tons
+metric tons
+million metric tons
+metric tons
+metric tons
+million metric tons
+metric tons
+metric tons
+metric tons
+metric tons
+metric tons
+million metric tons
+metric tons
+metric tons
+metric tons
+metric tons
+metric tons

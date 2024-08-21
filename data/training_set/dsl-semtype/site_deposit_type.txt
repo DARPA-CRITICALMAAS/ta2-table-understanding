@@ -1,0 +1,90 @@
+mos:MineralSite---mos:deposit_type
+
+--------------------
+Primary Mineral deposit Type
+
+Sediment-hosted Stratiform/Stratabound Cu
+VMS
+VMS
+Sediment-hosted Stratiform/Stratabound Cu
+Porphyry
+Porphyry
+VMS
+Sediment-hosted Pb-Zn
+Porphyry
+Sediment-hosted Stratiform/Stratabound Cu
+Sediment-hosted Pb-Zn
+Sediment-hosted Stratiform/Stratabound Cu
+IOCG
+Porphyry
+
+--------------------
+Secondary Mineral deposit Type
+
+Intermediate sulphidation?
+Impact-related
+Cu, Kiruna-type
+High sulphidation
+Magmatic feeder
+
+--------------------
+Other Mineral deposit Type
+
+Sudbury Event
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratiform Contact-type?
+Great Dyke
+
+--------------------
+Mineral Deposit Type Primary
+
+Laterite
+Magmatic Sulphide
+Laterite
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Hydrothermal Ni
+Laterite
+
+--------------------
+Mineral Deposit Type Secondary
+
+Oxide-Clay silicate
+Layered Intrusive
+Hydrous Mg silicate-oxide
+Oxide
+Hydrous Mg silicate-oxide
+Small M-UM Intrusion-related
+Archean Komatiite
+Oxide-Hydrous Mg silicate
+Layered Intrusive
+Layered Intrusive
+Sediment-hosted polymetallic
+Hydrous Mg silicate-oxide-clay silicate
+
+--------------------
+Principal Deposit type
+
+Carbonatite
+Alkaline
+Alluvial/Placer
+Carbonatite -Related Skarn
+Felsic Volcanic
+Granite -Related Skarn
+Heavy Mineral Sands
+Hydrothermal Undifferentiated
+IOCG
+Sedimentary Undifferentiated
+Tailings
+Carbonatite 
+Alkaline 
+Shale-hosted
+Laterite / Soil / Clay
