@@ -15,7 +15,14 @@ from kgdata.models.entity import Entity, EntityLabel, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
 from rdflib import RDFS, SKOS, Graph
-from tum.config import CRITICAL_MAAS_DIR
+from tum.config import (
+    CRITICAL_MAAS_DIR,
+    DATA_DIR,
+    DATA_REPO,
+    KG_ETL_FILE,
+    KG_OUTDIR,
+    ONTOLOGY_FILE,
+)
 from tum.db import MNDRDB
 
 from statickg.main import ETLPipelineRunner
@@ -23,19 +30,10 @@ from statickg.models.etl import ETLOutput
 from statickg.models.repository import GitRepository
 from statickg.services.drepr import DReprService, DReprServiceInvokeArgs
 
-MINMOD_ONTOLOGY_FILE = CRITICAL_MAAS_DIR / "ta2-minmod-kg/schema/ontology.ttl"
-MINMOD_SIMPLE_ONTOLOGY_FILE = (
-    CRITICAL_MAAS_DIR / "ta2-table-understanding/schema/mos.ttl"
-)
-MINMOD_DATA_REPO = CRITICAL_MAAS_DIR / "ta2-minmod-data"
-MINMOD_KG_CONFIG = CRITICAL_MAAS_DIR / "ta2-minmod-kg/etl.yml"
-MINMOD_KG_WORKDIR = CRITICAL_MAAS_DIR / "kgdata"
-
-
 kgbuilder = ETLPipelineRunner.from_config_file(
-    MINMOD_KG_CONFIG,
-    MINMOD_KG_WORKDIR,
-    GitRepository(MINMOD_DATA_REPO),
+    KG_ETL_FILE,
+    KG_OUTDIR,
+    GitRepository(DATA_REPO),
     overwrite_config=False,
 )
 
@@ -54,7 +52,7 @@ def get_rdf_resources(ttl_file: Path) -> list[RDFResource]:
 
 def entities():
     ds = Dataset(
-        CRITICAL_MAAS_DIR / "data/entities/*.gz",
+        DATA_DIR / "entities/*.gz",
         deserialize=partial(deser_from_dict, Entity),
         name="entities",
         dependencies=[],
@@ -102,14 +100,14 @@ def entities():
 
 def classes():
     ds = Dataset(
-        CRITICAL_MAAS_DIR / "data/classes/*.gz",
+        DATA_DIR / "classes/*.gz",
         deserialize=partial(deser_from_dict, Entity),
         name="classes",
         dependencies=[],
     )
 
     if not ds.has_complete_data():
-        classes, props, _ = MNDRDB.parse_ontology(MINMOD_SIMPLE_ONTOLOGY_FILE)
+        classes, props, _ = MNDRDB.parse_ontology(ONTOLOGY_FILE)
         classes = [orjson.dumps(e.to_dict()) for e in classes.values()]
         ExtendedRDD.parallelize(classes).save_like_dataset(
             ds, trust_dataset_dependencies=True
@@ -120,14 +118,14 @@ def classes():
 
 def props():
     ds = Dataset(
-        CRITICAL_MAAS_DIR / "data/props/*.gz",
+        DATA_DIR / "props/*.gz",
         deserialize=partial(deser_from_dict, Entity),
         name="props",
         dependencies=[],
     )
 
     if not ds.has_complete_data():
-        classes, props, _ = MNDRDB.parse_ontology(MINMOD_SIMPLE_ONTOLOGY_FILE)
+        classes, props, _ = MNDRDB.parse_ontology(ONTOLOGY_FILE)
         props = [orjson.dumps(e.to_dict()) for e in props.values()]
         ExtendedRDD.parallelize(props).save_like_dataset(
             ds, trust_dataset_dependencies=True
@@ -138,7 +136,7 @@ def props():
 
 def entity_labels() -> Dataset[EntityLabel]:
     ds = Dataset(
-        CRITICAL_MAAS_DIR / "data/entity_labels/*.gz",
+        DATA_DIR / "entity_labels/*.gz",
         deserialize=partial(deser_from_dict, EntityLabel),
         name="entity-labels",
         dependencies=[entities()],
@@ -156,11 +154,15 @@ def entity_labels() -> Dataset[EntityLabel]:
 
 
 if __name__ == "__main__":
+    # import dotenv
+
+    # dotenv.load_dotenv(
+    #     Path(__file__).parent.parent / "scripts/geochem.env", override=True
+    # )
+
     for ds in ["entities", "classes", "props", "entity_labels"]:
         build_database(
             f"tum.make_db.{ds}",
-            lambda: getattr(
-                GenericDB(CRITICAL_MAAS_DIR / "data/databases", read_only=False), ds
-            ),
+            lambda: getattr(GenericDB(DATA_DIR / "databases", read_only=False), ds),
             compact=True,
         )

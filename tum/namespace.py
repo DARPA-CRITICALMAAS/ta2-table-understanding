@@ -10,6 +10,12 @@ MNO = "mno"
 MNO_NS = "https://minmod.isi.edu/ontology/"
 MOS = "mos"
 MOS_NS = "https://minmod.isi.edu/ontology-simple/"
+
+GEMR = "gemr"
+GEMR_NS = "https://geochemistry.isi.edu/resource/"
+GEMO = "gemo"
+GEMO_NS = "https://geochemistry.isi.edu/ontology/"
+
 GEOKB = "geokb"
 GEOKB_NS = "https://geokb.wikibase.cloud/entity/"
 DREPR_NS = "http://purl.org/drepr/1.0/"
@@ -24,6 +30,8 @@ class MNDRNamespace(DefaultKnowledgeGraphNamespace):
         MNO_NS,
         MOS_NS,
         MNR_NS,
+        GEMR_NS,
+        GEMO_NS,
         GEOKB_NS,
         str(RDF),
         str(RDFS),
@@ -40,6 +48,8 @@ class MNDRNamespace(DefaultKnowledgeGraphNamespace):
                 MNO: MNO_NS,
                 MOS: MOS_NS,
                 GEOKB: GEOKB_NS,
+                GEMR: GEMR_NS,
+                GEMO: GEMO_NS,
                 "rdf": str(RDF),
                 "rdfs": str(RDFS),
                 "xsd": str(XSD),
