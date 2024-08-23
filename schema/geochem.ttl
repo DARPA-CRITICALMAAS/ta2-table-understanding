@@ -90,11 +90,17 @@
       rdfs:label "unit"@en .
 
 
-###  https://geochemistry.isi.edu/ontology/value
-:value rdf:type owl:DatatypeProperty ;
+###  https://geochemistry.isi.edu/ontology/measurement
+:measurement rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :Analysis ;
-       rdfs:label "value"@en .
+       rdfs:label "measurement"@en .
+
+###  https://geochemistry.isi.edu/ontology/mineral
+:mineral rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Sample ;
+       rdfs:label "mineral"@en .
 
 
 #################################################################
