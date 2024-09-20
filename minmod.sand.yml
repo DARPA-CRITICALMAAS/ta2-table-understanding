@@ -2,7 +2,7 @@ kgns: tum.namespace.MNDRNamespace.create
 entity:
   constructor: tum.integrations.sand.get_entity_db
   args:
-    dbfile: ::RELPATH::../data/databases/entities.db
+    dbfile: ::RELPATH::../data/minmod/databases/entities.db
   default: builtins.dict
   instanceof:
     https://minmod.isi.edu/resource/: http://www.w3.org/1999/02/22-rdf-syntax-ns#type
@@ -13,12 +13,12 @@ entity:
 class:
   constructor: tum.integrations.sand.get_ontclass_db
   args:
-    dbfile: ::RELPATH::../data/databases/classes.db
+    dbfile: ::RELPATH::../data/minmod/databases/classes.db
   default: builtins.dict
 property:
   constructor: tum.integrations.sand.get_ontprop_db
   args:
-    dbfile: ::RELPATH::../data/databases/properties.db
+    dbfile: ::RELPATH::../data/minmod/databases/properties.db
   default: builtins.dict
 semantic_model:
   identifiers:
@@ -35,4 +35,7 @@ export:
   drepr: sand_drepr.main.DreprExport
 assistant:
   default: grams+minmod
-  grams+minmod: tum.integrations.sand.GramsMinModAssistant
+  grams+minmod:
+    constructor: tum.integrations.sand.GramsMinModAssistant
+    args:
+      dbpath: ::RELPATH::../data/minmod/databases

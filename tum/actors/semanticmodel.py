@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import random
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Mapping, Optional, Sequence
 
+import tum.sm.dsl.main as dsl_main
 from drepr.models.prelude import (
     Alignment,
     Attr,
@@ -17,6 +19,7 @@ from drepr.models.prelude import SemanticModel as DReprSemanticModel
 from dsl.dsl import DSL
 from dsl.generate_train_data import DefaultSemanticTypeComparator
 from dsl.input import DSLTable
+from dsl.sm_type_db_v2 import SemanticTypeDBV2
 from hugedict.chained_mapping import ChainedMapping
 from kgdata.models.ont_class import OntologyClass
 from kgdata.models.ont_property import OntologyProperty
@@ -37,8 +40,6 @@ from sm.outputs.semantic_model import (
     SemanticModel,
     SemanticType,
 )
-
-import tum.sm.dsl.main as dsl_main
 from tum.actors.data import DataActor
 from tum.actors.db import KGDB
 from tum.db import MetaProperty
@@ -50,8 +51,8 @@ from tum.misc import SemanticTypePrediction
 
 @dataclass
 class MinmodGraphGenerationActorArgs:
+    model: str
     train_dsquery: str
-    meta_prop_file: Path
     top_n_stypes: int = 4
 
 
@@ -61,7 +62,7 @@ MinmodTableTransformationActorArgs = NoParams
 
 
 class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
-    VERSION = ActorVersion.create(110, [DSL])
+    VERSION = ActorVersion.create(113, [DSL])
 
     def __init__(self, params: MinmodGraphGenerationActorArgs, data_actor: DataActor):
         super().__init__(params, dep_actors=[data_actor])
@@ -74,61 +75,15 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
         ex_stypes = dsl_main.get_semantic_types(dsl, table.table, top_n=2)
         return dsl_main.gen_can_graph(ex_stypes, kgns)
 
-    def gen_graph(
-        self,
-        ex: Example[FullTable],
-        ex_stypes: list[list[SemanticTypePrediction]],
-        kgns: KnowledgeGraphNamespace,
-    ) -> MinmodCanGraphExtractedResult:
-        gen = GraphGeneration(
-            {
-                kgns.get_abs_uri("mndr:MineralSite"): 1,
-                kgns.get_abs_uri("mndr:LocationInfo"): 1,
-                kgns.get_abs_uri("mndr:MineralInventory"): 1,
-                kgns.get_abs_uri("mndr:Grade"): None,
-                kgns.get_abs_uri("mndr:Ore"): 1,
-            },
-            {
-                (
-                    kgns.get_abs_uri("mndr:MineralSite"),
-                    kgns.get_abs_uri("mndr:MineralInventory"),
-                ): {kgns.get_abs_uri("mndr:mineral_inventory"): 1.0},
-                (
-                    kgns.get_abs_uri("mndr:MineralSite"),
-                    kgns.get_abs_uri("mndr:LocationInfo"),
-                ): {kgns.get_abs_uri("mndr:location_info"): 1.0},
-                (
-                    kgns.get_abs_uri("mndr:MineralInventory"),
-                    kgns.get_abs_uri("mndr:Grade"),
-                ): {kgns.get_abs_uri("mndr:grade"): 1.0},
-                (
-                    kgns.get_abs_uri("mndr:MineralInventory"),
-                    kgns.get_abs_uri("mndr:Ore"),
-                ): {kgns.get_abs_uri("mndr:ore"): 1.0},
-                (
-                    kgns.get_abs_uri("mndr:MineralInventory"),
-                    kgns.get_abs_uri("mndr:Reference"),
-                ): {kgns.get_abs_uri("mndr:reference"): 1.0},
-                (
-                    kgns.get_abs_uri("mndr:Reference"),
-                    kgns.get_abs_uri("mndr:Document"),
-                ): {kgns.get_abs_uri("mndr:document"): 1.0},
-            },
-        )
-        cg = gen(ex_stypes)
-        logger.info(
-            "Candidate Graph with: {} nodes and {} edges",
-            cg.num_nodes(),
-            cg.num_edges(),
-        )
-        return cg
-
     @Cache.cache(backend=MemBackend())
     def get_dsl(self):
         """Get a trained DSL model for the given dataset query."""
         kgdb = self.data_actor.get_kgdb(self.params.train_dsquery)
 
         examples = dsl_main.get_training_data(self.params.train_dsquery, kgdb.kgns)
+
+        random.seed(26)
+        random.shuffle(examples)
 
         db = kgdb.pydb
         classes = {}
@@ -144,6 +99,8 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
             self.get_working_fs().get("dsl").get_or_create(),
             classes,
             props,
+            model_name=self.params.model,
+            semtype_db=SemanticTypeDBV2,
         )
         dsl.get_model(
             train_if_not_exist=True,

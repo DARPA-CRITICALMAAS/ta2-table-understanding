@@ -1,10 +1,15 @@
 from __future__ import annotations
 
+import random
+import shutil
+from copy import deepcopy
+
+import requests
 from dsl.dsl import DSL, DSLTable
 from loguru import logger
-from sm.dataset import Example
+from sm.dataset import Dataset, Example, FullTable
 from sm.inputs.table import Column, ColumnBasedTable
-from sm.misc.funcs import assert_not_null
+from sm.misc.funcs import assert_not_null, assert_one_item
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.outputs.semantic_model import (
     ClassNode,
@@ -13,12 +18,12 @@ from sm.outputs.semantic_model import (
     SemanticModel,
     SemanticType,
 )
-
 from tum.config import PROJECT_DIR
 from tum.lib.cgraph import CGraph
 from tum.lib.graph_generation import GraphGeneration
 from tum.lib.steiner_tree import SteinerTree
 from tum.misc import SemanticTypePrediction
+from tum.namespace import MNDRNamespace
 
 DREPR_UNK = "http://purl.org/drepr/1.0/Unknown"
 
@@ -40,11 +45,12 @@ def get_training_data(ds: str, kgns: KnowledgeGraphNamespace):
 
             for i in range(1, len(chunks)):
                 chunk = chunks[i].splitlines()
-                assert chunk[1] == ""
+                assert chunk[0].startswith("::") and chunk[0].endswith("::")
+                assert chunk[2] == ""
                 tbl = DSLTable.from_column_based_table(
                     ColumnBasedTable(
-                        table_id=f"{file.stem}--{i}",
-                        columns=[Column(index=0, name=chunk[0], values=chunks[2:])],
+                        table_id=f"{chunk[0]}--{i}",
+                        columns=[Column(index=0, name=chunk[1], values=chunk[3:])],
                     )
                 )
                 sm = SemanticModel()
@@ -64,22 +70,43 @@ def get_training_data(ds: str, kgns: KnowledgeGraphNamespace):
     return examples
 
 
-def get_semantic_types(dsl: DSL, table: ColumnBasedTable, top_n: int):
-    ex = Example(
-        id=table.table_id, table=DSLTable.from_column_based_table(table), sms=[]
-    )
+def get_semantic_types(
+    dsl: DSL, table: ColumnBasedTable, top_n: int, ignore_empty_val: bool = True
+):
+    if ignore_empty_val:
+        table = deepcopy(table)
+        for col in table.columns:
+            col.values = [
+                v for v in col.values if v is not None and str(v).strip() != ""
+            ]
 
-    stypes = dsl([ex], top_n=top_n)[0]
+    dsl_tbl = DSLTable.from_column_based_table(table)
+
+    exs = []
+    for col in dsl_tbl.columns:
+        tblid = f"{table.table_id}---{col.col_index}"
+        exs.append(
+            Example(
+                id=tblid,
+                table=DSLTable(
+                    table=table.keep_columns([col.col_index]), columns=[col]
+                ),
+                sms=[],
+            )
+        )
+
+    stypes = [assert_one_item(ex_stypes) for ex_stypes in dsl(exs, top_n=top_n)]
     return [
         [
             SemanticTypePrediction(
                 stype.semantic_type,
                 stype.score,
                 col.index,
+                col.clean_multiline_name or "",
             )
             for stype in stypes[ci]
         ]
-        for ci, col in enumerate(ex.table.table.columns)
+        for ci, col in enumerate(table.columns)
         # if top 1 semantic type is unknown, then we remove them
         if stypes[ci][0].semantic_type.class_abs_uri != DREPR_UNK
     ]
@@ -167,3 +194,85 @@ def pred_sm(tbl: ColumnBasedTable, cgraph: CGraph, kgns: KnowledgeGraphNamespace
             )
         )
     return sm
+
+
+def save_training_data(
+    ds: str, exs: list[Example[FullTable]], kgns: KnowledgeGraphNamespace
+):
+    outdir = PROJECT_DIR / f"data/training_set/{ds}"
+    shutil.rmtree(outdir, ignore_errors=True)
+    outdir.mkdir(parents=True)
+
+    file_check = {}
+    random.seed(54)
+
+    for ex in exs:
+        for col in ex.table.table.columns:
+            stypes = {
+                stype
+                for sm in ex.sms
+                for stype in sm.get_semantic_types_of_column(col.index)
+            }
+            colvalues = [
+                v for v in col.values if v is not None and str(v).strip() != ""
+            ]
+            if len(colvalues) > 100:
+                colvalues = random.sample(colvalues, 100)
+            colvalues = "\n".join(str(x).replace("\n", "\\n") for x in colvalues)
+
+            for stype in stypes:
+                filepath = outdir / (
+                    stype.class_rel_uri.split(":")[1]
+                    + "__"
+                    + stype.predicate_rel_uri.split(":")[1]
+                    + ".txt"
+                )
+
+                semtype = f"{stype.class_rel_uri}---{stype.predicate_rel_uri}"
+
+                if not filepath.exists():
+                    with open(filepath, "w") as f:
+                        f.write(semtype)
+                        f.write("\n\n")
+                    file_check[filepath] = semtype
+
+                if filepath.exists() and filepath not in file_check:
+                    with open(filepath, "r") as f:
+                        line = f.readline().strip()
+                        assert line == semtype
+                    file_check[filepath] = semtype
+
+                with open(filepath, "a") as f:
+                    f.write("\n\n")
+                    f.write("--------------------\n")
+                    f.write(f"::{ex.id}::\n")
+                    f.write(col.clean_name or "")
+                    f.write("\n\n")
+                    f.write(colvalues)
+
+
+def make_training_data(
+    project: str,
+    kgns: KnowledgeGraphNamespace,
+    sand_endpoint: str = "http://localhost:5524",
+):
+    # download project data
+    resp = requests.get(sand_endpoint + "/api/project").json()
+    project_id = None
+    for record in resp["items"]:
+        if record["name"] == project:
+            project_id = record["id"]
+            break
+    assert project_id is not None
+
+    resp = requests.get(sand_endpoint + f"/api/project/{project_id}/export")
+    (PROJECT_DIR / f"data/training_set/{project}.zip").write_bytes(resp.content)
+
+    # make dsl-like dataset
+    examples = Dataset(PROJECT_DIR / f"data/training_set/{project}.zip").load()
+
+    save_training_data(f"dsl-{project}", examples, kgns)
+
+
+if __name__ == "__main__":
+    make_training_data("minmod", MNDRNamespace.create())

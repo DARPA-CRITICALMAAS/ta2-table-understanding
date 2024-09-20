@@ -20,7 +20,7 @@ class GraphGeneration:
         # construct classes
         class2cols = defaultdict(set)
         for stypes in ex_stypes:
-            col = stypes[0].column
+            col = stypes[0].col_index
             for clsid in {stype.stype.class_abs_uri for stype in stypes}:
                 class2cols[clsid].add(col)
 
@@ -52,7 +52,7 @@ class GraphGeneration:
                         )
 
         for stypes in ex_stypes:
-            col = stypes[0].column
+            col = stypes[0].col_index
             vid = cg.add_node(
                 CGNode(
                     id=f"col:{col}",

@@ -1,12 +1,11 @@
 from dataclasses import dataclass
 
-from sm.outputs.semantic_model import (
-    SemanticType,
-)
+from sm.outputs.semantic_model import SemanticType
 
 
 @dataclass
 class SemanticTypePrediction:
     stype: SemanticType
     score: float
-    column: int
+    col_index: int
+    col_name: str

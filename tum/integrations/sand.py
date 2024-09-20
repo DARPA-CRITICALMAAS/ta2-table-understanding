@@ -12,6 +12,7 @@ from kgdata.models.entity import Entity as KGEntity
 from kgdata.models.ont_class import OntologyClass as KGOntologyClass
 from kgdata.models.ont_property import OntologyProperty as KGOntologyProperty
 from rdflib import RDF, RDFS, XSD, Literal, URIRef
+from sand.config import AppConfig
 from sand.container import AppContainer
 from sand.extension_interface.assistant import IAssistant
 from sand.extensions.search.default_search import DefaultSearch
@@ -31,7 +32,6 @@ from sm.dataset import Dataset, Example, FullTable
 from sm.misc.funcs import identity_func
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.prelude import I, M, O
-
 from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
 
@@ -161,6 +161,7 @@ class GramsMinModAssistant(IAssistant):
     @autoinject
     def __init__(
         self,
+        dbpath: Path,
         entities: EntityAR = Provide[AppContainer.entities],
         classes: OntClassAR = Provide[AppContainer.classes],
         props: OntPropertyAR = Provide[AppContainer.properties],
@@ -170,7 +171,6 @@ class GramsMinModAssistant(IAssistant):
         self.props = props
 
         from sm.namespaces.utils import KGName
-
         from tum.actors.entry import (
             DataActorArgs,
             DBActorArgs,
@@ -182,10 +182,6 @@ class GramsMinModAssistant(IAssistant):
         )
         from tum.config import CRITICAL_MAAS_DIR
 
-        self.meta_prop_file = (
-            CRITICAL_MAAS_DIR / "ta2-table-understanding/data/meta_property/data.csv"
-        )
-
         self.actor = G.create_actor(
             MinmodTableTransformationActor,
             [
@@ -194,14 +190,13 @@ class GramsMinModAssistant(IAssistant):
                         KGDBArgs(
                             name=KGName.Generic,
                             version="20231130",
-                            datadir=CRITICAL_MAAS_DIR / "data/databases",
+                            datadir=dbpath,
                         )
                     ]
                 ),
                 DataActorArgs(skip_unk_ont_ent=True, skip_no_sm=True),
                 MinmodGraphGenerationActorArgs(
-                    train_dsquery="dsl-semtype",
-                    meta_prop_file=self.meta_prop_file,
+                    train_dsquery="dsl-minmod",
                     top_n_stypes=2,
                 ),
                 MinmodGraphInferenceActorArgs(),
@@ -214,12 +209,9 @@ class GramsMinModAssistant(IAssistant):
         rows = copy.deepcopy(rows)
         return sm, rows
 
-    def levenshtein(self, entity_mention: str, entity_label: str):
-        return sim.levenshtein_similarity(entity_mention, entity_label)
-
     def convert_table(self, table: Table, rows: list[TableRow]) -> FullTable:
         newtbl = I.ColumnBasedTable(
-            f"p{table.project_id}-t:{table.id}-{table.name}",
+            f"p{table.project_id}---t:{table.id}---{table.name}",
             columns=[
                 I.Column(index=ci, name=col, values=[row.row[ci] for row in rows])
                 for ci, col in enumerate(table.columns)

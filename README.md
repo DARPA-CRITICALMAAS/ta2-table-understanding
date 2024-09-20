@@ -52,11 +52,11 @@ To install SAND, you can run the following commands:
 pip install web-sand sand-drepr
 ```
 
-1. Setup SAND (run only once): `poetry run python -m sand init -d <DARPA-CRITICALMAAS-DIR>/data/sand.db`
-2. Start SAND: `poetry run python -m sand start -d <DARPA-CRITICALMAAS-DIR>/data/sand.db -c <DARPA-CRITICALMAAS-DIR>/ta2-table-understanding/config.sand.yml`
+1. Setup SAND (run only once): `poetry run python -m sand init -d <DARPA-CRITICALMAAS-DIR>/data/minmod/sand.db`
+2. Start SAND: `poetry run python -m sand start -d <DARPA-CRITICALMAAS-DIR>/data/minmod/sand.db -c <DARPA-CRITICALMAAS-DIR>/ta2-table-understanding/minmod.sand.yml`
 
 ## Configuration
 
 1. The working folder `<DARPA-CRITICALMAAS-DIR>` can be modified by setting the environment variable `CRITICAL_MAAS_DIR`.
-2. To customize SAND, you can update the file [config.sand.yaml](./config.sand.yaml)
-3. Training data to the model is stored under [data/known_models](./data/known_models) folder
+2. To customize SAND, you can update the file [minmod.sand.yaml](./minmod.sand.yaml)
+3. Training data to the model is stored under [data/training_set](./data/training_set) folder
