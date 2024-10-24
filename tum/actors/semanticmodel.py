@@ -124,7 +124,8 @@ class MinmodGraphInferenceActor(BaseActor[MinmodGraphInferenceActorArgs]):
 
     def __call__(self, table: FullTable):
         cg = self.cangraph_actor(table)
-        return dsl_main.pred_sm(table.table, cg, self.kgdb.kgns)
+        sm = dsl_main.pred_sm(table.table, cg, self.kgdb.kgns)
+        return sm
 
 
 class MinmodTableTransformationActor(BaseActor[MinmodTableTransformationActorArgs]):

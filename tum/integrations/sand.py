@@ -196,6 +196,7 @@ class GramsMinModAssistant(IAssistant):
                 ),
                 DataActorArgs(skip_unk_ont_ent=True, skip_no_sm=True),
                 MinmodGraphGenerationActorArgs(
+                    model="random-forest-200",
                     train_dsquery="dsl-minmod",
                     top_n_stypes=2,
                 ),

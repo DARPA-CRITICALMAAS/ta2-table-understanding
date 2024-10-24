@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from rdflib import OWL, RDF, RDFS, XSD
+from rdflib import OWL, RDF, RDFS, SKOS, XSD
 from sm.namespaces.namespace import DefaultKnowledgeGraphNamespace
 from sm.namespaces.utils import register_kgns
 
@@ -54,6 +54,8 @@ class MNDRNamespace(DefaultKnowledgeGraphNamespace):
                 "rdfs": str(RDFS),
                 "xsd": str(XSD),
                 "owl": str(OWL),
+                "skos": str(SKOS),
+                "geo": "http://www.opengis.net/ont/geosparql#",
                 "drepr": DREPR_NS,
             }
         )
