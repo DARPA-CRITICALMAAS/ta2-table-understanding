@@ -131,6 +131,7 @@ def props():
             ds, trust_dataset_dependencies=True
         )
 
+        print(props)
     return ds
 
 

@@ -52,14 +52,21 @@ class MosMapping:
         self.commodity_linker = CommodityCompatibleLinker(self.unit_commodity_linker)
 
     @staticmethod
-    def map(infile: Path, dup_record_ids: bool) -> dict:
+    def map(infile: Path, dup_record_ids: bool) -> list:
         g = Graph()
         g.parse(str(infile), format="turtle")
         return MosMapping(g)(dup_record_ids)
 
-    def __call__(self, dup_record_ids: bool) -> dict:
-        (doc_node,) = list(self.g.subjects(RDF.type, mos.Document))
-        doc = self.map_doc(doc_node)
+    def __call__(self, dup_record_ids: bool) -> list:
+        doc_nodes = list(self.g.subjects(RDF.type, mos.Document))
+        if len(doc_nodes) == 0:
+            # no document, they use `source_id`
+            doc_node = None
+            source_id = next(self.g.subject_objects(mos.source_id))[1]
+            doc = {"uri": source_id}
+        else:
+            doc_node = doc_nodes[0]
+            doc = self.map_doc(doc_node)
 
         sites = {}
         site_names = [
@@ -71,7 +78,7 @@ class MosMapping:
         ]
 
         record_type = None
-        if self.has(doc_node, mos.record_type):
+        if doc_node is not None and self.has(doc_node, mos.record_type):
             record_type = self.map_literal(self.object(doc_node, mos.record_type))
 
         for ri, (site_node, site_name) in tqdm(
@@ -95,6 +102,7 @@ class MosMapping:
                     record_id = f"{slugify(site_name)}__{slugify(country)}"
                 else:
                     record_id = slugify(site_name)
+                record_id += "__" + str(ri)
             else:
                 raise Exception("No record id")
 
@@ -125,7 +133,7 @@ class MosMapping:
                     "mineral_inventory": invs,
                 }
 
-        return {"MineralSite": list(sites.values())}
+        return list(sites.values())
 
     def map_doc(self, doc: rdflib.term.Node) -> dict:
         output = {}
@@ -153,14 +161,18 @@ class MosMapping:
     def map_location_info(self, site: rdflib.term.Node) -> Optional[dict]:
         output = {}
         if self.has(site, mos.country):
-            output["country"] = self.get_candidate(
-                self.object(site, mos.country), self.country_linker
-            )
+            output["country"] = [
+                self.get_candidate(obj, self.country_linker)
+                for obj in self.g.objects(site, mos.country)
+            ]
         if self.has(site, mos.state_or_province):
-            output["state_or_province"] = self.get_candidate(
-                self.object(site, mos.state_or_province),
-                self.state_or_province_linker,
-            )
+            output["state_or_province"] = [
+                self.get_candidate(
+                    obj,
+                    self.state_or_province_linker,
+                )
+                for obj in self.g.objects(site, mos.state_or_province)
+            ]
         if self.has(site, mos.location):
             output["location"] = assert_isinstance(
                 self.map_literal(self.object(site, mos.location)), str
@@ -366,7 +378,7 @@ class MosMapping:
             assert isinstance(val.value, Decimal), (val.value, type(val.value))
             return float(val.value)
 
-        if val.datatype == XSD.integer:
+        if val.datatype == XSD.int or val.datatype == XSD.integer:
             assert isinstance(val.value, int)
             return val.value
 

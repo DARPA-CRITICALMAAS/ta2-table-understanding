@@ -89,6 +89,7 @@ PropDataTypeMapping: dict[str, OntPropertyDataType] = {
     str(XSD.string): "string",
     str(XSD.float): "decimal-number",
     str(XSD.integer): "integer-number",
+    str(XSD.int): "integer-number",
 }
 
 

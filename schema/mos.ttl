@@ -104,6 +104,11 @@ mos:longitude rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:float .
 
 
+###  https://minmod.isi.edu/ontology-simple/source_id
+mos:source_id rdf:type owl:DatatypeProperty ;
+              rdfs:domain mos:MineralSite ;
+              rdfs:label "source id"@en .
+
 ###  https://minmod.isi.edu/ontology-simple/record_id
 mos:record_id rdf:type owl:DatatypeProperty ;
               rdfs:domain mos:MineralSite ;
