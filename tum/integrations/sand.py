@@ -32,6 +32,7 @@ from sm.dataset import Dataset, Example, FullTable
 from sm.misc.funcs import identity_func
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.prelude import I, M, O
+
 from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
 
@@ -172,6 +173,7 @@ class GramsMinModAssistant(IAssistant):
         self.props = props
 
         from sm.namespaces.utils import KGName
+
         from tum.actors.entry import (
             DataActorArgs,
             DBActorArgs,
@@ -197,7 +199,8 @@ class GramsMinModAssistant(IAssistant):
                 ),
                 DataActorArgs(skip_unk_ont_ent=True, skip_no_sm=True),
                 MinmodGraphGenerationActorArgs(
-                    model="random-forest-200",
+                    # model="random-forest-200",
+                    model="logistic-regression",
                     train_dsquery="dsl-minmod",
                     top_n_stypes=2,
                 ),

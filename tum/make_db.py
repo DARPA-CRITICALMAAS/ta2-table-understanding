@@ -15,6 +15,11 @@ from kgdata.models.entity import Entity, EntityLabel, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
 from rdflib import RDFS, SKOS, Graph
+from statickg.main import ETLPipelineRunner
+from statickg.models.etl import ETLOutput
+from statickg.models.repository import GitRepository
+from statickg.services.drepr import DReprService, DReprServiceInvokeArgs
+
 from tum.config import (
     CRITICAL_MAAS_DIR,
     DATA_DIR,
@@ -24,11 +29,6 @@ from tum.config import (
     ONTOLOGY_FILE,
 )
 from tum.db import MNDRDB
-
-from statickg.main import ETLPipelineRunner
-from statickg.models.etl import ETLOutput
-from statickg.models.repository import GitRepository
-from statickg.services.drepr import DReprService, DReprServiceInvokeArgs
 
 kgbuilder = ETLPipelineRunner.from_config_file(
     KG_ETL_FILE,
@@ -63,7 +63,7 @@ def entities():
         (task,) = [
             task
             for task in kgbuilder.etl.pipeline
-            if task.service == "predefined entities"
+            if task.service == "kg.data.entities"
         ]
         args: DReprServiceInvokeArgs = cast(DReprServiceInvokeArgs, task.args)
         kgbuilder.services[task.service](kgbuilder.repo, args, ETLOutput())

@@ -21,9 +21,14 @@ mos:mineral_inventory rdf:type owl:ObjectProperty ;
                       rdfs:label "mineral inventory"@en .
 
 
+mos:reference rdf:type owl:ObjectProperty ;
+              rdfs:label "reference"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
+
 
 ###  https://minmod.isi.edu/ontology-simple/commodity
 mos:commodity rdf:type owl:DatatypeProperty ;
@@ -72,6 +77,12 @@ mos:doi rdf:type owl:DatatypeProperty ;
         rdfs:label "doi"@en .
 
 
+###  https://minmod.isi.edu/ontology-simple/url
+mos:url rdf:type owl:DatatypeProperty ;
+        rdfs:domain mos:Document ;
+        rdfs:label "url"@en .
+
+
 ###  https://minmod.isi.edu/ontology-simple/grade
 mos:grade rdf:type owl:DatatypeProperty ;
           rdfs:domain mos:MineralInventory ;
@@ -108,6 +119,12 @@ mos:longitude rdf:type owl:DatatypeProperty ;
 mos:source_id rdf:type owl:DatatypeProperty ;
               rdfs:domain mos:MineralSite ;
               rdfs:label "source id"@en .
+
+
+###  https://minmod.isi.edu/ontology-simple/site_type
+mos:site_type rdf:type owl:DatatypeProperty ;
+              rdfs:domain mos:MineralSite ;
+              rdfs:label "site type"@en .
 
 ###  https://minmod.isi.edu/ontology-simple/record_id
 mos:record_id rdf:type owl:DatatypeProperty ;

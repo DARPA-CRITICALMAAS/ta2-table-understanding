@@ -5,7 +5,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Mapping, Optional, Sequence
 
-import tum.sm.dsl.main as dsl_main
 from drepr.models.prelude import (
     Alignment,
     Attr,
@@ -40,6 +39,8 @@ from sm.outputs.semantic_model import (
     SemanticModel,
     SemanticType,
 )
+
+import tum.sm.dsl.main as dsl_main
 from tum.actors.data import DataActor
 from tum.actors.db import KGDB
 from tum.db import MetaProperty
@@ -73,6 +74,13 @@ class MinmodGraphGenerationActor(BaseActor[MinmodGraphGenerationActorArgs]):
         kgns = self.kgdb.kgns
         dsl = self.get_dsl()
         ex_stypes = dsl_main.get_semantic_types(dsl, table.table, top_n=2)
+        for ci, col_stypes in enumerate(ex_stypes):
+            print(
+                f"[SType] Column {table.table.columns[ci].clean_multiline_name} ({ci}):"
+            )
+            for stype in col_stypes:
+                print("\t- ", stype.stype, stype.score)
+
         return dsl_main.gen_can_graph(ex_stypes, kgns)
 
     @Cache.cache(backend=MemBackend())

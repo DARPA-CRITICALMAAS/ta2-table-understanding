@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import glob
 from decimal import Decimal
+from io import StringIO
 from pathlib import Path
 from typing import Literal, Optional
 
+import httpx
 import rdflib.term
 import serde.json
 import typer
@@ -13,6 +15,7 @@ from rdflib import RDF, RDFS, XSD, Graph, Namespace, URIRef
 from slugify import slugify
 from sm.misc.funcs import assert_isinstance
 from tqdm.auto import tqdm
+
 from tum.config import CRITICAL_MAAS_DIR
 from tum.lib.unit_and_commodity import (
     CommodityCompatibleLinker,
@@ -52,9 +55,16 @@ class MosMapping:
         self.commodity_linker = CommodityCompatibleLinker(self.unit_commodity_linker)
 
     @staticmethod
-    def map(infile: Path, dup_record_ids: bool) -> list:
+    def map(infile: str, dup_record_ids: bool) -> list:
         g = Graph()
-        g.parse(str(infile), format="turtle")
+        if infile.startswith("http://") or infile.startswith("https://"):
+            # this is a URI
+            g.parse(
+                data=httpx.get(infile).raise_for_status().content.decode(),
+                format="turtle",
+            )
+        else:
+            g.parse(location=infile, format="turtle")
         return MosMapping(g)(dup_record_ids)
 
     def __call__(self, dup_record_ids: bool) -> list:
@@ -131,7 +141,13 @@ class MosMapping:
                         for deptyp in self.g.objects(site_node, mos.deposit_type)
                     ],
                     "mineral_inventory": invs,
+                    "reference": [{"document": doc, "page_info": []}],
                 }
+
+                if self.has(site_node, mos.site_type):
+                    sites[record_id]["site_type"] = assert_isinstance(
+                        self.map_literal(self.object(site_node, mos.site_type)), str
+                    )
 
         return list(sites.values())
 
@@ -148,6 +164,10 @@ class MosMapping:
                 self.map_literal(self.object(doc, mos.doi)), str
             )
             output["uri"] = "https://doi.org/" + output["doi"]
+        elif self.has(doc, mos.url):
+            output["uri"] = assert_isinstance(
+                self.map_literal(self.object(doc, mos.url)), str
+            )
         else:
             assert self.has(doc, mos.title)
             output["uri"] = "http://minmod.isi.edu/papers/" + slugify(output["title"])
@@ -226,7 +246,9 @@ class MosMapping:
             base["date"] = self.map_literal(self.object(inv, mos.date))
 
         # if they spell out grade/tonnage for different categories
-        if self.has(inv, mos.tonnage):
+        if self.has(inv, mos.tonnage) and self.is_valid_literal(
+            self.object(inv, mos.tonnage)
+        ):
             base["ore"] = {
                 "value": self.map_literal(self.object(inv, mos.tonnage)),
                 "unit": self.get_candidate(
@@ -246,7 +268,9 @@ class MosMapping:
                 base["category"] = [
                     self.get_candidate(cat, self.category_linker) for cat in inv_cat_lst
                 ]
-            if self.has(inv, mos.grade):
+            if self.has(inv, mos.grade) and self.is_valid_literal(
+                self.object(inv, mos.grade)
+            ):
                 base["grade"] = {
                     "value": self.map_literal(self.object(inv, mos.grade)),
                     "unit": self.get_candidate(
@@ -258,7 +282,9 @@ class MosMapping:
 
         output = []
         # if they only report the aggregated grade/tonnage
-        if self.has(inv, mos.resource_tonnage):
+        if self.has(inv, mos.resource_tonnage) and self.is_valid_literal(
+            self.object(inv, mos.resource_tonnage)
+        ):
             resource = base.copy()
             resource["ore"] = {
                 "value": self.map_literal(self.object(inv, mos.resource_tonnage)),
@@ -279,7 +305,9 @@ class MosMapping:
             ]
             output.append(resource)
 
-        if self.has(inv, mos.reserve_tonnage):
+        if self.has(inv, mos.reserve_tonnage) and self.is_valid_literal(
+            self.object(inv, mos.reserve_tonnage)
+        ):
             reserve = base.copy()
             reserve["ore"] = {
                 "value": self.map_literal(self.object(inv, mos.reserve_tonnage)),
@@ -287,7 +315,9 @@ class MosMapping:
                     self.object(inv, mos.reserve_tonnage_unit), self.unit_linker
                 ),
             }
-            if self.has(inv, mos.reserve_grade):
+            if self.has(inv, mos.reserve_grade) and self.is_valid_literal(
+                self.object(inv, mos.reserve_grade)
+            ):
                 reserve["grade"] = {
                     "value": self.map_literal(self.object(inv, mos.reserve_grade)),
                     "unit": self.get_candidate(
@@ -299,6 +329,8 @@ class MosMapping:
             ]
             output.append(reserve)
 
+        if len(output) == 0:
+            return [base]
         return output
 
     def get_candidate(
@@ -388,25 +420,66 @@ class MosMapping:
 
         raise NotImplementedError(val.datatype)
 
+    def is_valid_literal(self, val: rdflib.term.Node) -> bool:
+        if not isinstance(val, rdflib.term.Literal):
+            raise TypeError("argument of type %s is not a literal" % type(val))
+
+        if val.datatype is None:
+            assert isinstance(val.value, str)
+            return True
+
+        if val.datatype == XSD.double:
+            if val.value is None:
+                return False
+            assert isinstance(val.value, float), (val.value, type(val.value))
+            return True
+
+        if val.datatype == XSD.decimal:
+            if val.value is None:
+                return False
+            assert isinstance(val.value, Decimal), (val.value, type(val.value))
+            return True
+
+        if val.datatype == XSD.int or val.datatype == XSD.integer:
+            if val.value is None:
+                return False
+            assert isinstance(val.value, int)
+            return True
+
+        if val.datatype == XSD.string:
+            if val.value is None:
+                return False
+            assert isinstance(val.value, str)
+            return True
+
+        raise NotImplementedError(val.datatype)
+
 
 @app.command()
 def main(
     file: str,
     outdir: str,
     dup_record_id: bool = typer.Option(
-        False, help="Whether to allow duplicate record ids"
+        True, help="Whether to allow duplicate record ids"
     ),
 ):
     print("Mapping file", file)
     print("Expect duplicate record ids:", dup_record_id)
-    for infile in glob.glob(file):
-        infile = Path(infile)
+    if file.startswith("http://") or file.startswith("https://"):
         serde.json.ser(
-            MosMapping.map(infile, dup_record_id),
-            Path(outdir) / (infile.stem + ".json"),
+            MosMapping.map(file, dup_record_id),
+            Path(outdir) / "data.json",
             indent=2,
         )
+    else:
+        for infile in glob.glob(file):
+            serde.json.ser(
+                MosMapping.map(infile, dup_record_id),
+                Path(outdir) / (Path(infile).stem + ".json"),
+                indent=2,
+            )
 
 
 if __name__ == "__main__":
+    app()
     app()

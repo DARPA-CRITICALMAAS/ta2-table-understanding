@@ -29,3 +29,7 @@ KG_ETL_FILE = Path(
 )
 
 KG_OUTDIR = Path(os.environ.get("KG_OUTDIR", str(CRITICAL_MAAS_DIR / "kgdata")))
+
+# for azure access
+AZURE_DOC_INTEL_ENDPOINT = os.environ.get("AZURE_DOC_INTEL_ENDPOINT")
+AZURE_ACCESS_KEY = os.environ.get("AZURE_ACCESS_KEY")
