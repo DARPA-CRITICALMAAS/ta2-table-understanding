@@ -36,6 +36,14 @@ poetry install
 
 With the working folder structure setup, we can build the necessary databases (entities, ontology classes, and properties) by running `poetry run python -m tum.make_db`
 
+Alternatively, you can use Docker to install the library:
+
+```bash
+export USER_ID=$(id -u)
+export GROUP_ID=$(id -g)
+docker compose build
+```
+
 ## Usage
 
 ### API

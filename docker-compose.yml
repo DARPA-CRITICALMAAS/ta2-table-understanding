@@ -1,0 +1,11 @@
+name: tum
+
+services:
+  sand:
+    image: minmod-sand
+    build: 
+      context: ./containers/sand/
+      args:
+        UID: ${USER_ID}
+        GID: ${GROUP_ID}
+
