@@ -46,6 +46,8 @@ docker compose build
 
 ## Usage
 
+How to model and publish data to MinMod Knowledge Graph: https://www.youtube.com/watch?v=iAZeKYzepSg
+
 ### API
 
 Check out the [demo notebook](examples/demo.ipynb) on how to use the library programmatically.
