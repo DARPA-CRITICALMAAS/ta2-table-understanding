@@ -5,7 +5,6 @@ import shutil
 from copy import deepcopy
 
 import requests
-from dsl.dsl import DSL, DSLTable
 from loguru import logger
 from sm.dataset import Dataset, Example, FullTable
 from sm.inputs.table import Column, ColumnBasedTable
@@ -24,6 +23,8 @@ from tum.lib.graph_generation import GraphGeneration
 from tum.lib.steiner_tree import SteinerTree
 from tum.misc import SemanticTypePrediction
 from tum.namespace import MNDRNamespace
+
+from dsl.dsl import DSL, DSLTable
 
 DREPR_UNK = "http://purl.org/drepr/1.0/Unknown"
 

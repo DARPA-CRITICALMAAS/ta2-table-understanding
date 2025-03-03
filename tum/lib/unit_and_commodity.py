@@ -18,13 +18,13 @@ class UnitAndCommodityLinkingResult:
     value: str
     unit_observed_value: Optional[str] = None
     commodity_observed_value: Optional[str] = None
-    material_form_observed_value: Optional[str] = None
+    commodity_form_observed_value: Optional[str] = None
     unit: Optional[str] = None
     commodity: Optional[str] = None
-    material_form: Optional[str] = None
+    commodity_form: Optional[str] = None
     unit_score: float = 0.0
     commodity_score: float = 0.0
-    material_form_score: float = 0.0
+    commodity_form_score: float = 0.0
 
     def explain(self, linker: UnitAndCommodityLinker):
         print(f"Link {self.value} to:")
@@ -42,25 +42,25 @@ class UnitAndCommodityLinkingResult:
         else:
             print("  - commodity: None")
 
-        if self.material_form is not None:
+        if self.commodity_form is not None:
             print(
-                f"  - material_form: {self.material_form_observed_value} - {self.material_form[len(MNR_NS):]} | score = {self.material_form_score:.3f} | labels = {', '.join(linker.material_form_linker.id2doc[self.material_form].labels)}"
+                f"  - commodity_form: {self.commodity_form_observed_value} - {self.commodity_form[len(MNR_NS):]} | score = {self.commodity_form_score:.3f} | labels = {', '.join(linker.commodity_form_linker.id2doc[self.commodity_form].labels)}"
             )
         else:
-            print("  - material_form: None")
+            print("  - commodity_form: None")
 
     def to_dict(self, linker: Optional[UnitAndCommodityLinker] = None):
         obj = {
             "value": self.value,
             "unit_observed_value": self.unit_observed_value,
             "commodity_observed_value": self.commodity_observed_value,
-            "material_form_observed_value": self.material_form_observed_value,
+            "commodity_form_observed_value": self.commodity_form_observed_value,
             "unit": self.unit,
             "commodity": self.commodity,
-            "material_form": self.material_form,
+            "commodity_form": self.commodity_form,
             "unit_score": self.unit_score,
             "commodity_score": self.commodity_score,
-            "material_form_score": self.material_form_score,
+            "commodity_form_score": self.commodity_form_score,
         }
 
         if linker is not None:
@@ -76,9 +76,9 @@ class UnitAndCommodityLinkingResult:
                         if self.commodity is not None
                         else ""
                     ),
-                    "material_form_text": (
-                        f"{self.material_form_observed_value} - {self.material_form[len(MNR_NS):]} | score = {self.material_form_score:.3f} | labels = {', '.join(linker.material_form_linker.id2doc[self.material_form].labels)}"
-                        if self.material_form is not None
+                    "commodity_form_text": (
+                        f"{self.commodity_form_observed_value} - {self.commodity_form[len(MNR_NS):]} | score = {self.commodity_form_score:.3f} | labels = {', '.join(linker.commodity_form_linker.id2doc[self.commodity_form].labels)}"
+                        if self.commodity_form is not None
                         else ""
                     ),
                 }
@@ -94,14 +94,14 @@ class UnitAndCommodityLinker:
         self.entity_dir = Path(entity_dir)
         self.unit_linker = EntityLinking.get_instance(entity_dir, "unit")
         self.commodity_linker = EntityLinking.get_instance(entity_dir, "commodity")
-        self.material_form_linker = EntityLinking.get_instance(
-            entity_dir, "material_form"
+        self.commodity_form_linker = EntityLinking.get_instance(
+            entity_dir, "commodity_form"
         )
 
         self.linkers = {
             "unit": self.unit_linker,
             "commodity": self.commodity_linker,
-            "material_form": self.material_form_linker,
+            "commodity_form": self.commodity_form_linker,
         }
 
         # create dictionary
@@ -151,16 +151,16 @@ class UnitAndCommodityLinker:
                 out.commodity_observed_value = token
                 out.commodity = doc.id
                 out.commodity_score = score
-            elif lname == "material_form":
-                out.material_form_observed_value = token
-                out.material_form = doc.id
-                out.material_form_score = score
+            elif lname == "commodity_form":
+                out.commodity_form_observed_value = token
+                out.commodity_form = doc.id
+                out.commodity_form_score = score
 
-        if out.material_form is not None and out.commodity is None:
-            out.commodity = self.material_form_linker.id2doc[out.material_form].props[
+        if out.commodity_form is not None and out.commodity is None:
+            out.commodity = self.commodity_form_linker.id2doc[out.commodity_form].props[
                 f"{MNO_NS}commodity"
             ]
-            out.commodity_score = out.material_form_score
+            out.commodity_score = out.commodity_form_score
 
         return out
 
@@ -206,13 +206,13 @@ class UnitAndCommodityTrustedLinker(UnitAndCommodityLinker):
                 value=result["value"],
                 unit_observed_value=result["unit_observed_value"],
                 commodity_observed_value=result["commodity_observed_value"],
-                material_form_observed_value=result["material_form_observed_value"],
+                commodity_form_observed_value=result["commodity_form_observed_value"],
                 unit=result["unit"],
                 commodity=result["commodity"],
-                material_form=result["material_form"],
+                commodity_form=result["commodity_form"],
                 unit_score=result["unit_score"],
                 commodity_score=result["commodity_score"],
-                material_form_score=result["material_form_score"],
+                commodity_form_score=result["commodity_form_score"],
             )
             for result in linked_results
         }

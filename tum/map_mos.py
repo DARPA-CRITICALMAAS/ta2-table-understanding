@@ -13,9 +13,9 @@ import typer
 from minmodkg.entity_linking import EntityLinking, IEntityLinking
 from rdflib import RDF, RDFS, XSD, Graph, Namespace, URIRef
 from slugify import slugify
-from sm.misc.funcs import assert_isinstance
 from tqdm.auto import tqdm
 
+from sm.misc.funcs import assert_isinstance
 from tum.config import CRITICAL_MAAS_DIR
 from tum.lib.unit_and_commodity import (
     CommodityCompatibleLinker,
@@ -35,7 +35,7 @@ class MosMapping:
     def __init__(self, g: Graph):
         self.g = g
 
-        predefined_ent_dir = CRITICAL_MAAS_DIR / "kgdata/data/predefined-entities"
+        predefined_ent_dir = CRITICAL_MAAS_DIR / "kgdata/data/entities"
 
         self.country_linker = EntityLinking.get_instance(predefined_ent_dir, "country")
         self.state_or_province_linker = EntityLinking.get_instance(
@@ -46,7 +46,7 @@ class MosMapping:
             predefined_ent_dir, "category"
         )
         self.unit_commodity_linker = UnitAndCommodityTrustedLinker.get_instance(
-            CRITICAL_MAAS_DIR / "kgdata/data/predefined-entities",
+            predefined_ent_dir,
             CRITICAL_MAAS_DIR
             / "ta2-table-understanding/data/units_and_commodities.json",
         )
@@ -82,7 +82,7 @@ class MosMapping:
         site_names = [
             (
                 site,
-                assert_isinstance(self.map_literal(self.object(site, RDFS.label)), str),
+                assert_isinstance(self.map_literal(self.object(site, mos.name)), str),
             )
             for site in self.g.subjects(RDF.type, mos.MineralSite)
         ]
@@ -402,7 +402,7 @@ class MosMapping:
             assert isinstance(val.value, str)
             return val.value
 
-        if val.datatype == XSD.double:
+        if val.datatype == XSD.double or val.datatype == XSD.float:
             assert isinstance(val.value, float), (val.value, type(val.value))
             return val.value
 
@@ -428,7 +428,7 @@ class MosMapping:
             assert isinstance(val.value, str)
             return True
 
-        if val.datatype == XSD.double:
+        if val.datatype == XSD.double or val.datatype == XSD.float:
             if val.value is None:
                 return False
             assert isinstance(val.value, float), (val.value, type(val.value))

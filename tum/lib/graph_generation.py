@@ -20,6 +20,8 @@ class GraphGeneration:
         # construct classes
         class2cols = defaultdict(set)
         for stypes in ex_stypes:
+            if len(stypes) == 0:
+                continue
             col = stypes[0].col_index
             for clsid in {stype.stype.class_abs_uri for stype in stypes}:
                 class2cols[clsid].add(col)
@@ -52,6 +54,8 @@ class GraphGeneration:
                         )
 
         for stypes in ex_stypes:
+            if len(stypes) == 0:
+                continue
             col = stypes[0].col_index
             vid = cg.add_node(
                 CGNode(
