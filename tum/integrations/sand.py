@@ -32,7 +32,6 @@ from sm.dataset import Dataset, Example, FullTable
 from sm.misc.funcs import identity_func
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.prelude import I, M, O
-
 from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
 
@@ -173,7 +172,6 @@ class GramsMinModAssistant(IAssistant):
         self.props = props
 
         from sm.namespaces.utils import KGName
-
         from tum.actors.entry import (
             DataActorArgs,
             DBActorArgs,
