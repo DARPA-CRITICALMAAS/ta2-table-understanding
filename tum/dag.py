@@ -12,10 +12,12 @@ from duneflow.ops.formatter import to_column_based_table
 from duneflow.ops.matrix_to_relational import (
     TableMatrixToRelationalActor,
     TableMatrixToRelationalArgs,
+    matrix_to_relational_table,
 )
 from duneflow.ops.norm import NormTableActor, NormTableArgs
 from duneflow.ops.reader import read_table_from_file
-from duneflow.ops.select import TableRangeSelectActor, TableRangeSelectArgs
+from duneflow.ops.reader._table_file_reader import RawTable
+from duneflow.ops.select import table_range_select
 from duneflow.ops.writer import write_table_to_file
 from experiments.pipelines import get_type_conversions
 from git import Optional
@@ -45,6 +47,10 @@ from tum.namespace import MNDRNamespace
 
 def select_table(tables: Sequence[T], idx: int) -> T:
     return tables[idx]
+
+
+def always_fail(input: T) -> T:
+    raise Exception("Stopping here")
 
 
 def get_context():
@@ -113,6 +119,9 @@ def get_type_conversions():
     def table_to_ident(table: ColumnBasedTable) -> IdentObj[ColumnBasedTable]:
         return IdentObj(table.table_id, table)
 
+    def table_to_ident_2(table: RawTable) -> IdentObj[RawTable]:
+        return IdentObj(table.id, table)
+
     def extract_example(example: Example[FullTable]) -> FullTable:
         return example.table
 
@@ -130,6 +139,7 @@ def get_type_conversions():
         table_to_example,
         table_to_ident_example,
         table_to_ident,
+        table_to_ident_2,
         extract_example,
         example_to_ident_example,
         example_to_ident_example_2,
