@@ -5,6 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python Debugger: TUM Preprocessing",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "tum.preprocessing",
+            "args": [
+                "${workspaceFolder}/examples/tables/graphite/Graphite.pdf",
+                "extract_table{}"
+            ],
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
             "name": "Python Debugger: Module",
             "type": "debugpy",
             "request": "launch",
@@ -28,6 +39,6 @@
                 "examples/tables/Mudd-and-Jowitt-2018-Copper.csv",
                 "examples/ttls/Mudd-and-Jowitt-2018-Copper.ttl"
             ]
-        },
+        }
     ]
 }

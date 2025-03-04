@@ -1,0 +1,2411 @@
+[
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "bisset-creek__11",
+    "name": "Bisset Creek",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Ontario",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2661"
+        }
+      ],
+      "location": "POINT(-78.07000 46.23000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 4938000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 15.58,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Prospect"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "coronation__12",
+    "name": "Coronation",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Ontario",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2661"
+        }
+      ],
+      "location": "POINT(-77.94000 45.29000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Occurrence"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "doppl-muehldorf-zettlitz__6",
+    "name": "Doppl-Muehldorf-Zettlitz",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Austria",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1014"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Niederosterreich",
+          "confidence": 0.7347652347652348,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6693"
+        }
+      ],
+      "location": "POINT(15.45000 48.38000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 1000000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 10.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "graphex-graphico-orwell-mines__16",
+    "name": "Graphex-Graphico-Orwell Mines",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Quebec",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2663"
+        }
+      ],
+      "location": "POINT(-75.55000 46.14000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 2200000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 10.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "graphite-lake-ryerson-todd-area__13",
+    "name": "Graphite Lake-Ryerson-Todd area",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Ontario",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2661"
+        }
+      ],
+      "location": "POINT(-79.08000 45.73000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "haikou__21",
+    "name": "Haikou",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Hainan",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2753"
+        }
+      ],
+      "location": "POINT(110.42000 20.08000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 5000000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 3.7,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "heling__22",
+    "name": "Heling",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Heilongjiang [Heilungkiang]",
+          "confidence": 0.7314625850340136,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2755"
+        }
+      ],
+      "location": "POINT(129.55000 46.31000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "hohot__28",
+    "name": "Hohot",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Nei Mongol (Inner Mongolia)",
+          "confidence": 0.6647659989921895,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2760"
+        }
+      ],
+      "location": "POINT(111.62000 40.81000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "honan-deposits__25",
+    "name": "Honan deposits",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Henan [Honan]",
+          "confidence": 0.7149136577708006,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2756"
+        }
+      ],
+      "location": "POINT(113.88000 32.50000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "hunan__26",
+    "name": "Hunan",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Hunan",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2759"
+        }
+      ],
+      "location": "POINT(113.00000 26.00000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "itanhem__8",
+    "name": "Itanhem",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Brazil",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1030"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Bahia",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2489"
+        }
+      ],
+      "location": "POINT(-40.35000 -17.10000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 2778.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 40.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "itapacerica__9",
+    "name": "Itapacerica",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Brazil",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1030"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Minas Gerais",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2497"
+        }
+      ],
+      "location": "POINT(-45.13000 -20.43000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 383000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 15.7,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "jack-s-creek__3",
+    "name": "Jack's Creek",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Australia",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1013"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Queensland",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2209"
+        }
+      ],
+      "location": "POINT(147.87000 -20.67000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 2200.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 61.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Past producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "jixi-liu-mao__23",
+    "name": "Jixi (Liu Mao)",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Heilongjiang [Heilungkiang]",
+          "confidence": 0.7314625850340136,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2755"
+        }
+      ],
+      "location": "POINT(131.00000 45.28000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 300000000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 85.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Past producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "kaisersberg-trieben__7",
+    "name": "Kaisersberg-Trieben",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Austria",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1014"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Steiermark",
+          "confidence": 0.7822222222222223,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2218"
+        }
+      ],
+      "location": "POINT(15.07000 47.35000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 1000000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 85.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "kirkham-portland-timmins-area__14",
+    "name": "Kirkham-Portland-Timmins area",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Ontario",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2661"
+        }
+      ],
+      "location": "POINT(-76.57000 44.56000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 478000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 9.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "kolledeye__31",
+    "name": "Kolledeye",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Czech Republic",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1057"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "—",
+          "confidence": 0.1142857142857143,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q4968"
+        }
+      ],
+      "location": "POINT(14.45000 49.22000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Prospect"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "koppio-uley-mines__4",
+    "name": "Koppio-Uley mines",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Australia",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1013"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "South Australia",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2210"
+        }
+      ],
+      "location": "POINT(135.71000 -34.80000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 35030.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 15.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Past producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "kropfmuhl-cesky-krumlov__33",
+    "name": "Kropfmühl-Cesky Krumlov",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Germany and Czech Republic",
+          "confidence": 0.6581763474620618,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1057"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Bayern [Bavaria, Germany]",
+          "confidence": 0.6151657777848254,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q3546"
+        }
+      ],
+      "location": "POINT(14.32000 48.80000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "lac-knife__19",
+    "name": "Lac Knife",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Quebec",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2663"
+        }
+      ],
+      "location": "POINT(-61.18000 52.55000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 4900000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 15.8,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Prospect"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "liu-mao__24",
+    "name": "Liu Mao",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Heilongjiang [Heilungkiang]",
+          "confidence": 0.7314625850340136,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2755"
+        }
+      ],
+      "location": "POINT(131.07000 45.30000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 3000000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 18.5,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "munglinup-river__5",
+    "name": "Munglinup River",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Australia",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1013"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Western Australia",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2213"
+        }
+      ],
+      "location": "POINT(120.85000 -33.50000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 30000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 25.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Past producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "north-american-mine__17",
+    "name": "North American Mine",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Quebec",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2663"
+        }
+      ],
+      "location": "POINT(-75.55000 45.52000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Past producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "panshi__27",
+    "name": "Panshi",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Jilin [Kirin]",
+          "confidence": 0.702668759811617,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2763"
+        }
+      ],
+      "location": "POINT(125.97000 42.93000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "pedra-azul__10",
+    "name": "Pedra Azul",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Brazil",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1030"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Minas Gerais",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2497"
+        }
+      ],
+      "location": "POINT(45.13000 -15.88000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 26800000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 11.9,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "pollon-lake-area__20",
+    "name": "Pollon Lake area",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Saskatchewan",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2664"
+        }
+      ],
+      "location": "POINT(-103.13000 56.38000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 1663000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 10.3,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Past producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "quebrada-del-gato__1",
+    "name": "Quebrada Del Gato",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Argentina",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1010"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "San Juan",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q5347"
+        }
+      ],
+      "location": "POINT(-68.13000 -31.43000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "shandong-peninsula__29",
+    "name": "Shandong Peninsula",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Shandong [Shantung]",
+          "confidence": 0.7811925647451964,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q4758"
+        }
+      ],
+      "location": "POINT(120.32000 37.03000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 5900000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 5.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "st-amime-lac-des-iles__18",
+    "name": "St-Amime-Lac Des Iles",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Quebec",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2663"
+        }
+      ],
+      "location": "POINT(-75.53000 46.25000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "tagliamonte__15",
+    "name": "Tagliamonte",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Canada",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "Ontario",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2661"
+        }
+      ],
+      "location": "POINT(-78.07000 46.23000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Prospect"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "undercliff__2",
+    "name": "Undercliff",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Australia",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1013"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "New South Wales",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2207"
+        }
+      ],
+      "location": "POINT(152.21000 -28.66000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 793.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 32.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Past producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "velke-vbrno-konstantin-vvk__32",
+    "name": "Velke Vbrno-Konstantin Vvk",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "Czech Republic",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1057"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "—",
+          "confidence": 0.1142857142857143,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q4968"
+        }
+      ],
+      "location": "POINT(17.33000 50.13000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        },
+        "ore": {
+          "value": 200000.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "grade": {
+          "value": 50.0,
+          "unit": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        },
+        "category": [
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Inferred",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Indicated",
+            "confidence": 0.99,
+            "source": "SAND"
+          },
+          {
+            "normalized_uri": "https://minmod.isi.edu/resource/Measured",
+            "confidence": 0.99,
+            "source": "SAND"
+          }
+        ]
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  },
+  {
+    "source_id": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf",
+    "record_id": "xing-he__30",
+    "name": "Xing He",
+    "location_info": {
+      "country": [
+        {
+          "observed_name": "China",
+          "confidence": 1.0,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1044"
+        }
+      ],
+      "state_or_province": [
+        {
+          "observed_name": "—",
+          "confidence": 0.1142857142857143,
+          "source": "SAND",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q4968"
+        }
+      ],
+      "location": "POINT(113.88000 40.88000)",
+      "crs": {
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+        "confidence": 0.8,
+        "source": "SAND"
+      }
+    },
+    "deposit_type_candidate": [],
+    "mineral_inventory": [
+      {
+        "commodity": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q553",
+          "confidence": 0.99,
+          "source": "SAND"
+        },
+        "reference": {
+          "document": {
+            "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+          },
+          "page_info": []
+        }
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://pubs.usgs.gov/pp/1802/j/pp1802j.pdf"
+        },
+        "page_info": []
+      }
+    ],
+    "site_type": "Producer"
+  }
+]
