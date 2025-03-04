@@ -36,10 +36,10 @@ from libactor.dag import DAG, Flow, PartialFn
 from libactor.dag._dag import ComputeFn
 from libactor.storage import GlobalStorage
 from libactor.typing import T
-from timer import Timer
-
 from sm.dataset import ColumnBasedTable, Context, Example, FullTable, Matrix
 from sm.namespaces.prelude import KGName
+from timer import Timer
+
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
 from tum.namespace import MNDRNamespace
@@ -59,7 +59,7 @@ def get_context():
         ontology, entities = Ontology.from_ttl(
             KGName.Generic,
             MNDRNamespace.create(),
-            Path(__file__).parent.parent / "schema/mos_v3.ttl",
+            Path(__file__).parent.parent / "schema/mos.ttl",
         )
         ontkey = "mos-v3"
         schema = Schema.from_ontology(ontology)

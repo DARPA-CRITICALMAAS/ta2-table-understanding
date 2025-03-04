@@ -34,7 +34,12 @@ python -m venv .venv
 poetry install
 ```
 
-With the working folder structure setup, we can build the necessary databases (entities, ontology classes, and properties) by running `poetry run python -m tum.make_db`
+With the working folder structure setup, we can build the necessary databases (entities, ontology classes, and properties) by running:
+
+```bash
+export CFG_FILE=<DARPA-CRITICALMAAS-DIR>/ta2-minmod-kg/config.yml.template
+poetry run python -m tum.make_db [<project> = minmod]
+```
 
 Alternatively, you can use Docker to install the library:
 

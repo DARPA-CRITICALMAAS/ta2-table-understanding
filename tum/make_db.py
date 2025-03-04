@@ -15,11 +15,6 @@ from kgdata.models.entity import Entity, EntityLabel, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
 from rdflib import RDFS, SKOS, Graph
-from statickg.main import ETLPipelineRunner
-from statickg.models.etl import ETLOutput
-from statickg.models.repository import GitRepository
-from statickg.services.drepr import DReprService, DReprServiceInvokeArgs
-
 from tum.config import (
     CRITICAL_MAAS_DIR,
     DATA_DIR,
@@ -29,6 +24,11 @@ from tum.config import (
     ONTOLOGY_FILE,
 )
 from tum.db import MNDRDB
+
+from statickg.main import ETLPipelineRunner
+from statickg.models.etl import ETLOutput
+from statickg.models.repository import GitRepository
+from statickg.services.drepr import DReprService, DReprServiceInvokeArgs
 
 kgbuilder = ETLPipelineRunner.from_config_file(
     KG_ETL_FILE,
@@ -40,7 +40,7 @@ kgbuilder = ETLPipelineRunner.from_config_file(
 
 def get_rdf_resources(ttl_file: Path) -> list[RDFResource]:
     g = Graph()
-    g.parse(ttl_file, format="ttl")
+    g.parse(source=ttl_file, format="ttl")
 
     source2triples = defaultdict(list)
     for s, p, o in g:
@@ -50,9 +50,9 @@ def get_rdf_resources(ttl_file: Path) -> list[RDFResource]:
     return resources
 
 
-def entities():
+def entities(project: str):
     ds = Dataset(
-        DATA_DIR / "entities/*.gz",
+        DATA_DIR / project / "entities/*.gz",
         deserialize=partial(deser_from_dict, Entity),
         name="entities",
         dependencies=[],
@@ -63,13 +63,15 @@ def entities():
         (task,) = [
             task
             for task in kgbuilder.etl.pipeline
-            if task.service == "kg.data.entities"
+            if task.service == "kgrel.data.entities"
         ]
         args: DReprServiceInvokeArgs = cast(DReprServiceInvokeArgs, task.args)
         kgbuilder.services[task.service](kgbuilder.repo, args, ETLOutput())
 
         entities = []
         for dpath in args["output"].get_path().iterdir():
+            if dpath.suffix != ".ttl":
+                continue
             for resource in get_rdf_resources(dpath):
                 (label,) = resource.props.pop(str(RDFS.label))
                 (description,) = resource.props.pop(str(RDFS.comment), [""])
@@ -98,9 +100,9 @@ def entities():
     return ds
 
 
-def classes():
+def classes(project: str):
     ds = Dataset(
-        DATA_DIR / "classes/*.gz",
+        DATA_DIR / project / "classes/*.gz",
         deserialize=partial(deser_from_dict, Entity),
         name="classes",
         dependencies=[],
@@ -116,9 +118,9 @@ def classes():
     return ds
 
 
-def props():
+def props(project: str):
     ds = Dataset(
-        DATA_DIR / "props/*.gz",
+        DATA_DIR / project / "props/*.gz",
         deserialize=partial(deser_from_dict, Entity),
         name="props",
         dependencies=[],
@@ -130,22 +132,20 @@ def props():
         ExtendedRDD.parallelize(props).save_like_dataset(
             ds, trust_dataset_dependencies=True
         )
-
-        print(props)
     return ds
 
 
-def entity_labels() -> Dataset[EntityLabel]:
+def entity_labels(project: str) -> Dataset[EntityLabel]:
     ds = Dataset(
-        DATA_DIR / "entity_labels/*.gz",
+        DATA_DIR / project / "entity_labels/*.gz",
         deserialize=partial(deser_from_dict, EntityLabel),
         name="entity-labels",
-        dependencies=[entities()],
+        dependencies=[entities(project)],
     )
 
     if not ds.has_complete_data():
         (
-            entities()
+            entities(project)
             .get_extended_rdd()
             .map(lambda ent: EntityLabel(ent.id, str(ent.label)))
             .map(ser_to_dict)
@@ -155,15 +155,28 @@ def entity_labels() -> Dataset[EntityLabel]:
 
 
 if __name__ == "__main__":
+
     # import dotenv
 
     # dotenv.load_dotenv(
     #     Path(__file__).parent.parent / "scripts/geochem.env", override=True
     # )
 
-    for ds in ["entities", "classes", "props", "entity_labels"]:
-        build_database(
-            f"tum.make_db.{ds}",
-            lambda: getattr(GenericDB(DATA_DIR / "databases", read_only=False), ds),
-            compact=True,
-        )
+    import typer
+
+    app = typer.Typer(pretty_exceptions_short=True, pretty_exceptions_enable=False)
+
+    @app.command(help="Builds the database")
+    def cli(project: str = "minmod"):
+        (DATA_DIR / project).mkdir(parents=True, exist_ok=True)
+
+        for ds in ["entities", "classes", "props", "entity_labels"]:
+            build_database(
+                globals()[ds](project),
+                lambda: getattr(
+                    GenericDB(DATA_DIR / project / "databases", read_only=False), ds
+                ),
+                compact=True,
+            )
+
+    app()
