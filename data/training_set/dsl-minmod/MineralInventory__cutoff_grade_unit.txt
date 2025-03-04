@@ -1,0 +1,74 @@
+mos:MineralInventory---mos:cutoff_grade_unit
+
+
+
+--------------------
+::World_Tin_Tungsten_Deposit::
+cutoff_grade_unit
+
+kilograms/metric ton
+percent
+kilograms/metric ton
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+grams/metric ton
+grams/metric ton
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+percent
+grams/metric ton
+grams/metric ton

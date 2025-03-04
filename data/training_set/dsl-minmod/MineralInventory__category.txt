@@ -1,0 +1,213 @@
+mos:MineralInventory---mos:category
+
+
+
+--------------------
+::Mudd-and-Jowitt-2022-Nickel::
+Category
+
+Indicated
+Indicated
+Proven
+Indicated
+Inferred
+Indicated
+Indicated
+Probable
+Inferred
+Measured
+Indicated
+Indicated
+Indicated
+Measured
+Proven
+Probable
+Inferred
+Inferred
+Proven
+Inferred
+Measured
+Indicated
+Indicated
+Inferred
+Proven
+Probable
+Measured
+Indicated
+Inferred
+Measured
+Indicated
+Inferred
+Proven
+Inferred
+Proven
+Inferred
+Inferred
+Inferred
+Proven
+Proven
+Indicated
+Proven
+Measured
+Proven
+Probable
+Inferred
+Inferred
+Indicated
+Inferred
+Inferred
+Measured
+Indicated
+Inferred
+Proven
+Measured
+Inferred
+Probable
+Measured
+Proven
+Inferred
+Inferred
+Measured
+Inferred
+Inferred
+Probable
+Indicated
+Inferred
+Proven
+Inferred
+Measured
+Inferred
+Indicated
+Inferred
+Proven
+Probable
+Indicated
+Indicated
+Inferred
+Indicated
+Probable
+Measured
+Proven
+Indicated
+Indicated
+Inferred
+Measured
+Proven
+Inferred
+Probable
+Inferred
+Measured
+Measured
+Inferred
+Measured
+Indicated
+Measured
+Inferred
+Inferred
+Inferred
+Probable
+
+--------------------
+::World_Tin_Tungsten_Deposit::
+category
+
+Indicated
+Indicated
+Indicated + Inferred
+Probable
+Indicated
+Indicated
+Indicated
+Probable + Proven
+Indicated
+Probable
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated + Inferred
+Inferred
+Indicated
+Indicated + Inferred
+Indicated
+Indicated
+Indicated
+Indicated + Inferred
+Inferred
+Indicated + Inferred
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated + Inferred
+Indicated + Inferred
+Probable + Proven
+Indicated + Inferred
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated + Inferred
+Indicated
+Probable
+Indicated
+Inferred
+Indicated
+Indicated
+Indicated
+Measured
+Indicated
+Indicated + Inferred
+Proven + Probable
+Indicated
+Indicated + Inferred
+Indicated
+Proven
+Probable + Proven
+Indicated
+Inferred
+Inferred
+Inferred
+Indicated + Inferred
+Inferred
+Probable
+Indicated
+Indicated + Inferred
+Indicated
+Indicated + Inferred
+Indicated + Inferred
+Probable + Proven
+Indicated
+Indicated
+Indicated
+Inferred
+Indicated + Inferred
+Inferred
+Indicated + Inferred
+Inferred
+Indicated
+Indicated
+Probable
+Indicated
+Indicated
+Indicated + Inferred
+Measured
+Indicated
+Proven + Probable
+Indicated
+Indicated + Inferred
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated
+Indicated
+Measured
+Indicated
+Indicated
+Indicated + Inferred
+Indicated + Inferred
+Inferred

@@ -1,0 +1,108 @@
+mos:MineralInventory---mos:tonnage_unit
+
+
+
+--------------------
+::World_Tin_Tungsten_Deposit::
+tonnage_unit
+
+million metric tons
+metric tons
+metric tons
+million metric tons
+million metric tons
+short tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+million metric tons
+million metric tons
+metric tons
+metric tons
+million metric tons
+metric tons
+million metric tons
+million metric tons
+metric tons
+metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+metric tons
+metric tons
+million metric tons
+million metric tons
+metric tons
+million metric tons
+metric tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+million metric tons
+metric tons
+metric tons
+million metric tons
+metric tons
+metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+million short tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons
+million metric tons

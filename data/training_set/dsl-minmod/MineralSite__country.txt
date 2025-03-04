@@ -1,0 +1,633 @@
+mos:MineralSite---mos:country
+
+
+
+--------------------
+::CMMI::
+COUNTRY
+
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+USA
+
+--------------------
+::Mudd-and-Jowitt-2017-Zinc::
+Country
+
+Australia
+Canada
+Australia
+Canada
+Australia
+Canada
+Canada
+Russia
+Canada
+Australia
+Mexico
+Canada
+Australia
+Australia
+Iran
+Tunisia
+Australia
+Canada
+Canada
+India
+Canada
+Australia
+Ireland
+Canada
+Canada
+Canada
+Tunisia
+Kenya
+Philippines
+Canada
+Australia
+Australia
+Australia
+Australia
+Australia
+Australia
+Canada
+Finland
+Australia
+Australia
+Yemen
+Mexico
+Indonesia
+USA
+Armenia
+Peru
+Canada
+Canada
+Iran
+Mexico
+Canada
+Canada
+Canada
+Australia
+Australia
+Australia
+Australia
+North Korea
+North Korea
+Germany
+Mexico
+Peru
+Australia
+Mexico
+Greenland
+Russia
+Canada
+Canada
+Finland
+Russia
+Canada
+Australia
+China
+India
+Australia
+Canada
+Australia
+Australia
+Cuba
+Australia
+Nepal
+Australia
+Australia
+Peru
+Canada
+Kazakhstan
+Canada
+Australia
+Canada
+Peru
+Australia
+Peru
+Algeria
+Australia
+Canada
+Canada
+Australia
+India
+Australia
+Canada
+
+--------------------
+::Mudd-and-Jowitt-2018-Copper::
+Country
+
+South Africa
+USA
+China
+Russia
+Peru
+Mexico
+Turkey
+South Africa
+Tanzania
+Ireland
+Chile
+Canada
+Finland
+Greenland
+Philippines
+Australia
+Canada
+Romania
+Finland
+Canada
+Turkey
+Canada
+Congo-DRC
+South Africa
+Canada
+South Africa
+Mexico
+Zambia
+Canada
+Russia
+Canada
+Philippines
+Chile
+Russia
+Australia
+Indonesia
+Ecuador
+Canada
+Zimbabwe
+Canada
+Canada
+Chile
+Canada
+Finland
+Australia
+Mexico
+Russia
+South Africa
+Bulgaria
+Australia
+Mexico
+South Africa
+South Africa
+Chile
+Turkey
+Kazakhstan
+Australia
+China
+Australia
+South Africa
+Peru
+Russia
+Bolivia
+Ecuador
+USA
+South Africa
+Pakistan
+Australia
+USA
+Spain
+Kazakhstan
+South Africa
+Kazakhstan
+Ecuador
+Russia
+Australia
+USA
+Namibia
+Canada
+Russia
+Chile
+Sweden
+Chile
+South Africa
+Finland
+Sweden
+Congo-DRC
+South Africa
+Australia
+Kazakhstan
+Kazakhstan
+Mexico
+Canada
+Australia
+South Africa
+Russia
+South Africa
+Eritrea
+Australia
+Canada
+
+--------------------
+::Mudd-and-Jowitt-2022-Nickel::
+Country
+
+Australia
+Finland
+Canada
+Solomon Islands
+South Africa
+Russia
+Canada
+South Africa
+Australia
+South Africa
+Australia
+Philippines
+Canada
+Australia
+Australia
+Canada
+Russia
+Finland
+Russia
+South Africa
+Australia
+Canada
+Australia
+Botswana
+South Africa
+Russia
+South Africa
+Puerto Rico
+South Africa
+Canada
+South Africa
+Dominican Rep.
+South Africa
+South Africa
+Australia
+South Africa
+Zimbabwe
+Finland
+Australia
+Russia
+South Africa
+Finland
+South Africa
+Australia
+South Africa
+South Africa
+Canada
+South Africa
+Cuba
+Russia
+Finland
+Zimbabwe
+Indonesia
+Australia
+USA
+South Africa
+South Africa
+Canada
+South Africa
+Indonesia
+Philippines
+Russia
+Canada
+Canada
+Brazil
+USA
+Australia
+Australia
+South Africa
+South Africa
+Zimbabwe
+South Africa
+Brazil
+Finland
+South Africa
+South Africa
+Botswana
+Canada
+Australia
+Australia
+Spain
+South Africa
+Philippines
+South Africa
+Burundi
+South Africa
+Australia
+South Africa
+South Africa
+Australia
+Australia
+Spain
+Brazil
+Australia
+Canada
+South Africa
+Tanzania
+Australia
+Russia
+Zimbabwe
+
+--------------------
+::Weng_et_al_2015_REE::
+Country
+
+Australia
+Canada
+Malawi
+Canada
+USA
+South Africa
+Canada
+Canada
+Australia
+Australia
+Canada
+Malawi
+Brazil
+USA
+Canada
+Canada
+Canada
+Canada
+Greenland
+Canada
+Canada
+South Africa
+Australia
+Canada
+Australia
+South Africa
+Greenland
+Australia
+Kenya
+USA
+Malawi
+Kenya
+Canada
+Australia
+Australia
+Brazil
+Madagascar
+Canada
+Canada
+Greenland
+USA
+Australia
+USA
+South Africa
+Brazil
+Sweden
+Canada
+Canada
+South Africa
+Canada
+Saudi Arabia
+USA
+Greenland
+Turkey
+Australia
+Canada
+Greenland
+Greenland
+Turkey
+South Africa
+Canada
+USA
+Australia
+Australia
+Sweden
+Australia
+Canada
+Australia
+Canada
+Australia
+Canada
+China
+Saudi Arabia
+Greenland
+Australia
+Australia
+Greenland
+Australia
+Madagascar
+Canada
+Australia
+Brazil
+Malawi
+South Africa
+Kenya
+Canada
+USA
+Australia
+USA
+Kyrgyzstan
+Canada
+Turkey
+Canada
+South Africa
+Greenland
+USA
+Canada
+Canada
+Canada
+South Africa
+
+--------------------
+::World_Tin_Tungsten_Deposit::
+country
+
+Kazakhstan
+Russia
+Russia
+United Kingdom
+Malaysia
+Russia
+Kazakhstan
+Canada
+Brazil
+Russia
+China
+China
+United Kingdom
+Bolivia
+Canada
+Canada
+Canada
+Canada
+South Korea
+Canada
+China
+China
+Czech Republic
+Canada
+Russia
+Canada
+China
+Canada
+Bolivia
+Canada
+Canada
+Canada
+Canada
+Canada
+Canada
+Canada
+Canada
+Russia
+Australia
+United Kingdom
+United Kingdom
+Canada
+Russia
+Canada
+New Zealand
+Canada
+Canada
+Canada
+Canada
+Canada
+Kazakhstan
+China
+United States of America
+Canada
+Canada
+Canada
+Australia
+Brazil
+Canada
+Canada
+Canada
+Bolivia
+Canada
+China
+Russia
+Canada
+Canada
+China
+Russia
+Canada
+Algeria
+China
+Canada
+Russia
+Canada
+Canada
+Thailand
+Canada
+Canada
+Kalaallit Nunaat
+Canada
+Canada
+Sudan
+Canada
+Russia
+Canada
+Canada
+Russia
+Canada
+Canada
+Russia
+Canada
+United States of America
+South Korea
+China
+Mexico
+Kazakhstan
+Mongolia
+Russia
+Spain

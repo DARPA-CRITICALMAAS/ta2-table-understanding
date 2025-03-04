@@ -1,0 +1,330 @@
+mos:MineralSite---mos:state_or_province
+
+
+
+--------------------
+::CMMI::
+STATE
+
+US-MO
+US-KY
+US-TN
+US-KS
+US-MO
+US-MO
+US-MO
+US-TN
+US-TN
+US-MO
+US-MO
+US-MO
+US-MO
+US-TN
+US-MO
+US-KS
+US-MO
+US-MO
+US-TN
+US-WI
+US-TN
+US-OK
+US-MO
+US-TN
+US-TN
+US-MO
+US-MO
+US-MO
+US-PA
+US-MO
+US-MO
+US-PA
+US-OK
+US-TN
+US-MO
+US-MO
+US-PA
+US-MO
+US-MO
+US-TN
+US-AR
+US-TN
+US-TN
+US-MO
+US-KY
+US-MO
+US-MO
+US-PA
+US-WI
+US-PA
+US-TN
+US-KS
+US-MO
+US-PA
+US-TN
+US-KY
+US-PA
+US-KY
+US-PA
+US-AR
+US-AR
+US-MO
+US-KY
+US-TN
+US-KY
+US-MO
+US-MO
+US-TN
+US-TN
+US-MO
+US-TN
+US-TN
+US-MO
+US-MO
+US-TN
+US-AR
+US-PA
+US-MO
+US-TN
+US-AR
+US-MO
+US-PA
+US-PA
+US-MO
+US-MO
+US-MO
+US-MO
+US-TN
+US-MO
+US-TN
+US-TN
+US-PA
+US-MO
+US-MO
+US-MO
+US-MO
+US-TN
+US-PA
+US-PA
+US-MO
+
+--------------------
+::Weng_et_al_2015_REE::
+State/ Province
+
+Inner Mongolia
+South Australia
+Queensland
+Quebec
+Queensland
+Quebec
+Limpopo
+Wyoming
+Northern Cape
+Northern Territory
+Smaland 
+Chui
+Northern Territory
+Alberta
+Ontario
+Limpopo
+Quebec
+Western Australia
+Western Australia
+Western Australia
+Smaland 
+Western Australia
+Ontario
+Ontario
+Western Australia
+Northern Cape
+Texas
+Ontario
+Texas
+Quebec
+Alberta
+Quebec
+Northern Territory
+Western Cape
+Western Australia
+Western Australia
+Limpopo
+Wyoming
+Western Australia
+Western Australia
+Northern Territory
+Western Cape
+Quebec
+Saskatchewan
+Ontario
+Western Cape
+Texas
+Western Cape
+Ontario
+Alberta
+Quebec
+Inner Mongolia
+Labrador
+Western Australia
+Western Australia
+Queensland
+Quebec
+Alberta
+Alberta
+Northern Cape
+Ontario
+Quebec
+Minas Gerais
+Ontario
+Minas Gerais
+Northern Territory
+Saskatchewan
+Alaska
+Western Cape
+Western Australia
+Ontario
+Queensland
+Northern Territory
+Kujalleq
+Limpopo
+California
+Northern Territory
+Saskatchewan
+California
+Alaska
+South Australia
+Quebec
+Western Australia
+Western Australia
+Minas Gerais
+Texas
+South Australia
+Qaasuitsup
+California
+Chui
+Smaland 
+South Australia
+Western Australia
+California
+Ontario
+Quebec
+Quebec
+Limpopo
+Western Australia
+Chui
+
+--------------------
+::Augmentation_20250115::
+State/Province
+
+Hebei
+Shanxi
+Liaoning
+Jilin
+Heilongjiang
+Jiangsu
+Zhejiang
+Anhui
+Fujian
+Jiangxi
+Shandong
+Henan
+Hubei
+Hunan
+Guangdong
+Hainan
+Sichuan
+Guizhou
+Yunnan
+Shaanxi
+Gansu
+Qinghai
+Kinshasa
+Kongo Central
+Kwango
+Kwilu
+Mai-Ndombe
+Kasai
+Kasai-Central
+Kasai-Oriental
+Lomami
+Sankuru
+Maniema
+South Kivu
+North Kivu
+Ituri
+Haut-Uele
+Tshopo
+Bas-Uele
+Nord-Ubangi
+Mongala
+Sud-Ubangi
+Equateur
+Tshuapa
+Tanganyika
+Haut-Lomami
+Lualaba
+Haut-Katanga
+Baden-Wurttemberg
+Bavaria
+Berlin
+Brandenburg
+Bremen
+Hamburg
+Hesse
+Lower Saxony
+Mecklenburg-Vorpommern
+North Rhine-Westphalia
+Rhineland-Palatinate
+Saarland
+Saxony
+Saxony-Anhalt
+Schleswig-Holstein
+Thuringia
+North Chungcheong
+South Chungcheong
+Gangwon
+Gyeonggi
+North Gyeongsang
+South Gyeongsang
+North Jeolla
+South Jeolla
+Jeju
+Kouilou
+Niari
+Lekoumou
+Bouenza
+Pool
+Plateaux
+Cuvette
+Cuvette-Ouest
+Sangha
+Likouala
+Brazzaville
+Pointe-Noire
+Acre
+Alagoas
+Amapa
+Amazonas
+Bahia
+Ceara
+Distrito Federal
+Espírito Santo
+Goias
+Maranhao
+Mato Grosso
+Mato Grosso do Sul
+Minas Gerais
+Para
+Paraiba
+Parana
+Pernambuco
+Piaui
+Rio de Janeiro
+Rio Grande do Norte
+Rio Grande do Sul
+Rondonia
+Roraima
+Santa Catarina
+Sao Paulo
+Sergipe
+Tocantins

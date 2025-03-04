@@ -1,0 +1,756 @@
+mos:MineralSite---mos:name
+
+
+
+--------------------
+::CMMI::
+DEPOSIT_NAME
+
+Mascot-Jefferson City District
+Central Tennessee District
+Blue Goose
+Simpson
+Buick
+Magmont
+Indian Creek
+West Fork
+Blue Goose
+Sweetwater
+Buick
+Friedensville
+Mascot-Jefferson City District
+Young, Immel, Coy, New Market
+Friedensville
+Barr
+Buick
+Mascot-Jefferson City District
+West Fork
+Mascot-Jefferson City District
+Indian Creek
+Friedensville
+Young, Immel, Coy, New Market
+Indian Creek
+Hoppe
+Mascot-Jefferson City District
+Mineral Point
+Friedensville
+Magmont
+Mascot-Jefferson City District
+Magmont
+Tri-State District-USA-OK
+Buick
+Mascot-Jefferson City District
+Magmont
+Young, Immel, Coy, New Market
+Mascot-Jefferson City District
+West Fork
+Friedensville
+Friedensville
+Simpson
+Mascot-Jefferson City District
+Magmont
+Magmont
+Simpson
+Friedensville
+West Fork
+Mascot-Jefferson City District
+Magmont
+Indian Creek
+Burkesville
+Friedensville
+Magmont
+Tri-State District-USA-MO
+Central Tennessee District
+Davis
+Magmont
+Magmont
+Buick
+Lucky Dog
+Hoppe
+Buick
+Nashville
+Magmont
+Blue Goose
+Davis
+Buick
+Magmont
+Cumberland
+West Fork
+Magmont
+Burkesville
+Young, Immel, Coy, New Market
+Young, Immel, Coy, New Market
+Magmont
+Buick
+Buick
+Burkesville
+Cumberland
+Lucky Dog
+Hoppe
+Barr
+Tri-State District-USA-MO
+Davis
+Magmont
+Indian Creek
+Tri-State District-USA-OK
+Tri-State District-USA-OK
+Burkesville
+Burkesville
+Lucky Dog
+Friedensville
+Mascot-Jefferson City District
+Friedensville
+Sweetwater
+Indian Creek
+Magmont
+Magmont
+Burkesville
+West Fork
+
+--------------------
+::Mudd-and-Jowitt-2017-Zinc::
+Deposit
+
+Smith Copper
+Kokanee (Scranton/Sunset)
+Trilogy
+Degtyarskoe
+Rosebery-South Hercules
+Mehdiabad
+Rauhala
+Dugald River
+Riihilahti
+Lomero-Poyatos
+Railway Flat
+Railway Flat
+Emull-Lamboo
+Salt River-Main
+La Solución-Veta Hampaturi Sur
+Summit
+Grizzly (Dy)
+Kangiara
+GP4F
+Atacocha
+Ishkinino
+Bethumni
+Qiandongshan
+Virginia Silver
+Kvaisi
+Boquira
+Copper Crown
+Jackson-Stella-Chloe Trend
+Oued El Kebir
+Vuonos
+Bentley
+Yaman Kasy
+Sunny Corner
+Liberty-Indee (Evelyn)
+Sulphur Springs
+Berrigan South (Lac Taché)
+Walford Creek
+Boumadine
+Parlozi
+Cinco de Mayo (Upper Manto)
+Pilarica (Fresnillo Peru)
+DEB
+Madneuli
+Turner River-Orchard Well/Discovery
+Berrigan South (Lac Taché)
+Kainuu-Rautavaara
+Oceana
+Novoshirokinskoye
+Emull-Lamboo
+Sibay
+Peelwood North/South
+Emull-Lamboo
+Mt Angelo North
+Deri
+Fireweed
+Stockman
+Brskovo
+Logan
+Dugald River
+Tetagouche-Canoe Landing Lake
+Peelwood North/South
+Bumbo
+Porter-Idaho
+Plata
+Anamaray
+Letnye
+Rickardstown
+Zimnyee
+Ajari
+Mt Isa-Handle Bar Hill
+Canoas
+Domergue-Anomaly E
+Konimansur Kalon
+Mallay
+Tishinsky Tailings
+Francisco I Madero
+Keg Main Zone
+Degtyarskoe
+Gunga (Khuzdar)
+Mt Charter
+Blyklippen
+Wagga Tank
+Stemwinder
+Hudson Bay Mountain-Silver Lake 2
+Bali Hi
+Kokanee (Scranton/Sunset)
+Point Leamington
+Dambludi
+Ecstall
+Prairie Downs
+Boz Emchek
+Chakola-Harnett Central
+Bhilwara
+Mt Clement-Eastern Hills
+Woodlawn Underground
+Kangiara
+Develin Creek-Rookwood
+Ishkinino
+Paduna North Block
+Rautavaara
+
+--------------------
+::Mudd-and-Jowitt-2018-Copper::
+Deposit/Project Name
+
+Akkoy
+Marathon 
+Candelaria-Ojos del Salado
+Kabolela
+Chungar
+Muliashi South
+Kutcho
+Drmbon (Mehmana)
+Nkomati
+Funtana Raminosa
+Beatriz
+Khomanani
+Snow Lake-Talbot
+West Graham-Conwest (Lockerby)
+Geumryong
+Kalkanli
+Alpamarca
+Kenbridge
+Al Gehab
+Mogalakwena
+Pandora JV
+Loskop JV (Rietfontein/De Wagendrift)
+El Teniente
+Galena (AgCu)
+Tubatse (Eerste Geluk-Nooitverwacht)
+Dilong (Hale-Mayabo)
+Ash Sha'ib
+Bodennec
+Ali-Abad (Aliabad)
+Carmacks-Williams Creek
+Pine
+Napier Range-Wagon Pass
+Hudson Bay-Lalor
+Tongchankou
+Malasongduo
+Linda 2-RLM
+Masa Valverde
+Longjiangting
+Chebache
+Colquijirca
+Scotia (BC)
+Mototolo
+Los Quenuales (Iscaycruz-Yauliyacu)
+DW-LP
+Liger (Leeuwkop-Tigerpoort)
+Vysoká-Zlatno
+Emull-Lamboo
+Don Rouyn
+Hadayamet
+Pedra Branca (PGEs)
+Maturi-Maturi Southwest
+Boylen
+Alexo-Kelex
+Lora (Nakhtandjin)
+Cobre Panama-Valle Grande
+Hera
+Pumpkin Hollow (West/East)
+Hope Brook
+Abu Samar
+Develin Creek-Rookwood/Foresthome
+Overlander North/South
+Escalones
+Vindelgransele
+Srednaya Padma
+Masa Valverde
+El Barqueño
+La Zarza
+Ar Ridanyah
+Upper Kobuk-Arctic
+Huaron
+Turner River (Orchard Tank-Discovery)
+Kyzyltu
+Bučim
+Tumurtui South
+Phoenix (Tremblay-Twin Creek-Pit) Tailings
+Telfer Group
+Fierro Urcu
+Bend
+King-King (Kingking)
+Mareesburg
+Surdulica Group
+Asmara-Debarwa
+Prominent Hill
+Tominskoe
+Al Halahila
+Garatau (Garatouw/Hoepakrantz/De Kom)
+Vesennee (Vesenny)
+Kemess-Kemess East
+Rey de Plata
+San Jorge
+Boylen
+Ferguson Lake
+Las Bambas
+War Springs (Oorlogsfontein)
+Orange Hill
+Paramillos Norte / Sur
+Salo-Issakka
+Raglan
+Levimalmen (Levi)
+Mount Margaret
+
+--------------------
+::Mudd-and-Jowitt-2022-Nickel::
+Project
+
+Union North/South
+North Konawe Group (Limonite)
+Pana-Eastern
+Perttilahti
+Sedibelo Central
+Kambalda-Mincor Group
+Pomalaa (Saprolite)
+Marikana (PSA)
+Raglan
+Dumont
+Two Rivers
+Nickel King (Thye Lake)
+Junior Lake-B4-7 / Alpha
+Sedibelo Central
+Pomalaa (Limonite)
+Roughrider East/West
+Booysendal North / South-Everest
+Kambalda-Lanfranchi Group
+Shakespeare
+Shebandowan West
+Shebandowan West
+Impala-RBR JV
+Maturi (incl. Nokomis)
+Waite Kauri North / Extended
+Wildara-The Horn
+Rustenburg Group
+North Konawe Group (Limonite)
+Bucko Lake
+Zondereinde (Northam)
+Pyke Hill
+NiWest-Murrin North
+Arctic-Suhanko
+Shakespeare
+Duketon-Rosie
+Nkomati
+Eagle-Eagle East (USA)
+Cycloops (Cyclops)
+Kevitsa
+Rooderand (Platinum Australia)
+KNP West-Goongarrie: Big Four
+Kalumbila-Enterprise
+Zondereinde (Northam)
+Amandelbult-Tumela
+Kun-Manie Group
+Kurnalpi-Grey Dam
+Mirror Harbor
+West Musgrave-Nebo
+Afplats-Imbasa / Imkosi
+Marikana (Lonmin)
+Kola Peninsula
+Owendale
+NorthMet (Dunka Road)
+Rooipoort
+Chimimbe Hill
+Impala
+Union North/South
+Kuhmo-Vaara
+Raglan-Nunavik Group #1
+Norton Lake
+River Valley
+Koreppa (Waria Valley-Bovio Hill)
+Binti Binti
+Alpha
+Afplats-Leeuwkop
+Modikwa
+North Konawe Group (Hanking)
+Piaohechuan
+Ferguson Lake
+Booysendal North / South-Everest
+Häggån
+Bahodopi
+KNP West-Siberia: Black Range
+Marula
+Kroondal (PSA)
+Wildara-The Horn
+Mareesburg
+Fedorova Tundra
+Rustenburg Group
+Lac Levac-Nisk 1
+Nachingwea-Ntaka Hill
+Pilanesburg-East / West Pits
+Agata Group
+Leinster
+Zimplats
+Blue Ridge
+Outokumpu-Hautalampi (Keretti)
+Mine LaMotte-Fredericktown
+Doniambo-SLN Group
+Pomalaa (Saprolite)
+Raglan-Nunavik Group #1
+Mimosa
+Eagle-Eagle East (USA)
+Vammala-Soukko
+Hitura
+Outokumpu-Riihilahti
+Arctic-Suhanko
+Rooderand (Platinum Australia)
+Kuhmo-Hietaharju
+Panton
+Amandelbult-Dishaba
+
+--------------------
+::Nevada_Lithium_Resources_and_Reserves_March_2024_update::
+Deposit
+
+Thacker Pass
+Rhyolite Ridge
+Silver Peak
+Clayton
+Bonnie Claire
+Tonopah Flats
+TLC
+Horizon Lithium
+McGee
+Clayton Valley
+Nevada North
+Clayton
+West Tonopah Project
+Gemini
+Clayton Ridge Project
+Zeus
+
+--------------------
+::Weng_et_al_2015_REE::
+Project
+
+Steenkampskraal Upper Tailings Dam
+Steenkampskraal
+Steenkampskraal Lower Tailings Dam
+Ashram (Eldor)
+Bokan - Dotson
+Motzfeldt (Aries)
+Norra Kärr
+Songwe Hill
+Milo
+Bayan Obo
+Wolverine (Browns Range)
+Gambit West (Browns Range)
+Motzfeldt (Aries)
+Motzfeldt (Aries)
+Hastings-Brockman
+Songwe Hill
+Steenkampskraal Lower Tailings Dam
+Elliot Lake
+Araxá
+Port Pirie (Radium Hill)
+Two Tom
+Kangankunde
+Mount Weld Duncan
+Kangankunde
+Buckton south
+Montviel
+Gambit West (Browns Range)
+Wolverine (Browns Range)
+Glenover (JV)
+Thor Lake/ Nechalacho (Basal and Upper)
+Elliot Lake
+Motzfeldt (Aries)
+Ngualla
+Steenkampskraal Lower Tailings Dam
+Bayan Obo
+Tantalus
+Gambit West (Browns Range)
+Strange Lake
+Charley Creek (JV)
+Charley Creek (JV)
+Hoidas Lake (JAK Zone)
+Karrat
+Mountain Pass
+Mountain Pass
+Ashram (Eldor)
+Montviel
+Ngualla
+Lavergne-Springer
+Round Top
+Steenkampskraal
+Hastings-Brockman
+Eco Ridge - MCB
+Songwe Hill
+Mount Weld CLD
+Steenkampskraal
+Tantalus
+Milo
+Buckton south
+Eco Ridge - MCB
+Mountain Pass
+Niobec REE Zone
+Mrima Hill
+Area 5 (Browns Range)
+Clay - Howells
+Bayan Obo
+Wolverine (Browns Range)
+Steenkampskraal Lower Tailings Dam
+Montviel
+Thor Lake/ Nechalacho (Basal and Upper)
+Gambit West (Browns Range)
+Kutessay II
+Kipawa Lake (Zeus)
+Mrima Hill
+Mineville
+Foxtrot
+Wigu Hill
+Foxtrot
+Area 5 (Browns Range)
+Two Tom
+Steenkampskraal
+Ashram (Eldor)
+Canakli 1
+Bokan - Dotson
+Nolans Bore
+Charley Creek (JV)
+Saint-Honoré Complex
+Lavergne-Springer
+Kangankunde
+Charley Creek (JV)
+Niobec REE Zone
+Area 5 (Browns Range)
+Canakli 1
+Mrima Hill
+Buckton south
+Bayan Obo
+Port Pirie (Radium Hill)
+Gambit (Browns Range)
+Jabal Sa'id Zr deposit
+Kutessay II
+Nolans Bore
+
+--------------------
+::World_Tin_Tungsten_Deposit::
+deposit_name
+
+Restigouche
+Smirnovskoe; Stalinskoe
+Namyang
+Mount Pleasant
+Shizhuyuan
+Nizhnee
+Aonaodaba
+Akenobe
+Ekug
+Pine Creek
+Mount Pleasant
+Shizhuyuan
+Mount Pleasant
+Mount Pleasant
+Kellhuani; Kaluyo
+JC
+Mount Pleasant
+Mount Pleasant
+Lugu
+Mount Pleasant
+Shizhuyuan
+Laochang
+Yxsjoberg
+Desquites
+Salau
+Cheongyang
+Verkhnee-Kairakty
+Festivalnoe
+Mount Pleasant
+Festivalnoe
+Sangdong
+Brunswick No. 12
+Jiaoli
+Gyeongchang
+Ima
+Mount Pleasant
+Reconquistada
+Gilmore
+Canoe Landing Lake
+Mount Pleasant
+Mount Pleasant
+Flat Landing Brook
+Longtaoshan
+Naica
+Halfmile Lake
+Mount Pleasant
+Mount Pleasant
+Pyrkakay
+Mount Pleasant
+Silleda
+San Jose de Oruro; Itos
+Mount Pleasant
+Ippata
+Orvan Brook
+Bolivar
+Xingluokeng
+Mount Pleasant
+Mount Pleasant
+Bang Phra
+Bolsa Negra
+Relonggou
+Hyder district
+Bukit Besi
+Akchatau
+Bukuka
+Moina
+Mount Pleasant
+Bayan
+Igarape Preto
+Qatpar
+Tsentralny
+Mount Wells
+Heuicheon
+Titovskoe
+Serdtse-Kamen
+Flat Landing Brook
+Beardmore
+Mount Pleasant
+Alyaskitovoe
+Brunswick No. 12
+Caribou
+South Crofty
+Emerald Tungsten
+Mount Pleasant
+Zarmitan; Charmitan
+Lermontovskoe; Lermontov
+Mount Pleasant
+Flat Landing Brook
+Iultin
+Tresavean
+Mactung; MacMillan Tungsten
+Manono
+La Parrilla
+Qatpar
+Kafang; Karfang
+Kester
+Nurataldy
+Bayan
+Potosi ; Cerro Rico
+Cantung; Canada Tungsten
+
+--------------------
+::Augmentation_20250115::
+Name
+
+Shijiazhuang
+Taiyuan
+Shenyang
+Changchun
+Harbin
+Nanjing	Suzhou
+Hangzhou
+Hefei
+Fuzhou
+Quanzhou
+Nanchang
+Ganzhou
+Jinan
+Linyi
+Zhengzhou
+Wuhan
+Changsha
+Guangzhou
+Haikou
+Chengdu
+Guiyang
+Zunyi
+Kunming
+Xi'an
+Lanzhou
+Xining
+Matadi
+Kenge
+Bandundu
+Inongo
+Tshikapa
+Kananga
+Mbuji-Mayi
+Kabinda
+Lusambo
+Kindu
+Bukavu
+Goma
+Bunia
+Isiro
+Kisangani
+Buta
+Gbadolite
+Lisala
+Gemena
+Mbandaka
+Boende
+Kalemie
+Kamina
+Kolwezi
+Lubumbashi
+Cheongju
+Hongseong
+Chuncheon
+Suwon
+Andong
+Changwon
+Jeonju
+Muan
+Hinda
+Dolisie
+Sibiti
+Madingou
+Kinkala
+Djambala
+Owando
+Ewo
+Ouesso
+Impfondo
+Rio Branco
+Maceio
+Macapa
+Manaus
+Salvador
+Fortaleza
+Brasília
+Vitoria	Serra
+Goiania
+Sao Luis
+Cuiaba
+Campo Grande
+Belo Horizonte
+Belem
+Joao Pessoa
+Curitiba
+Recife
+Teresina
+Rio de Janeiro
+Natal
+Porto Alegre
+Porto Velho
+Boa Vista
+Florianopolis
+Joinville
+Sao Paulo
+Aracaju
+Palmas

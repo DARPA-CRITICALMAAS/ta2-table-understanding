@@ -1,0 +1,1074 @@
+mos:MineralSite---mos:deposit_type
+
+
+
+--------------------
+::CMMI::
+DEPOSIT_TYPE
+
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+MVT Zn-Pb
+
+--------------------
+::Mudd-and-Jowitt-2017-Zinc::
+Primary Deposit Type
+
+Orogenic Au?
+Sediment-hosted Pb-Zn
+Skarn
+Epithermal
+Skarn
+Epithermal
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+VMS
+Epithermal
+VMS
+Epithermal
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+VMS
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+VMS
+VMS
+Skarn
+Sediment-hosted Pb-Zn
+VMS
+VMS
+VMS
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Epithermal
+Orogenic Au?
+Sediment-hosted Pb-Zn
+Skarn
+Skarn
+Sediment-hosted Pb-Zn
+Orogenic Au?
+VMS
+Orogenic Au?
+VMS
+Epithermal?
+Epithermal
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Epithermal
+VMS
+Sediment-hosted Pb-Zn
+Epithermal?
+VMS
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Skarn
+VMS
+Sediment-hosted Pb-Zn
+VMS
+VMS
+VMS
+VMS
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Epithermal
+VMS
+Sediment-hosted Pb-Zn
+VMS
+Sediment-hosted Pb-Zn
+Skarn
+VMS
+VMS
+VMS
+Sediment-hosted Pb-Zn
+Sediment-hosted polymetallic
+Sediment-hosted Pb-Zn
+VMS
+Epithermal
+VMS
+Sediment-hosted Pb-Zn
+Epithermal?
+Porphyry
+Sediment-hosted Pb-Zn
+VMS
+Skarn
+Skarn Tailings
+Sediment-hosted Pb-Zn
+Epithermal
+VMS
+VMS
+Sediment-hosted Pb-Zn
+Sediment-hosted Pb-Zn
+Epithermal
+VMS
+VMS
+VMS
+Skarn
+VMS
+VMS
+Skarn?
+Sediment-hosted Pb-Zn
+Skarn
+Epithermal
+
+--------------------
+::Mudd-and-Jowitt-2017-Zinc::
+Secondary Deposit Type
+
+MVT
+Low sulfidation?
+Sedex
+MVT
+Sedex
+Sediment-hosted polymetallic
+Bolivian Polymetallic vein type?
+MVT?
+Sedex
+MVT
+Sedex
+Sedex
+MVT
+MVT
+MVT
+Low sulfidation
+MVT
+MVT
+MVT
+Sedex
+Sedex
+High to intermediate sulfidation
+MVT
+MVT
+MVT
+Low sulfidation
+MVT
+Sedex
+Non-sulfide Zinc deposit
+Low sulfidation?
+MVT
+Seafloor Massive sulfide
+Sedex?
+Sedex
+MVT
+MVT
+Sedex
+MVT
+Original skarn with epithermal overprint
+MVT
+Sedex
+Sedex
+Sedex
+????
+MVT
+Low sulfidation?
+Sedex
+High sulphidation
+Porpphyry Cu-Au
+MVT
+MVT
+Low sulfidation?
+Sedex
+Sedex
+MVT
+Sedex
+Low sulfidation?
+Sedex
+Low sulfidation
+Sedex
+Sedex
+Sedex
+Cu-Mo
+Sedex
+Sedex?
+Sedex
+Sedex
+Low sulfidation
+MVT
+MVT
+Sedex
+Sedex
+MVT
+Associated with Kundip
+High and low sulphidation
+Sedex
+High sulphidation
+Cu-Mo
+Low sulfidation
+MVT
+MVT
+Sedex
+Sedex
+Sedex
+MVT
+MVT
+Low sulfidation?
+Sedex
+Sedex
+Sedex
+Sedex
+MVT
+Sedex
+Basal U mineralisation
+Porphyry Cu-Au-Pb-Zn
+Sedex
+Sedex
+Seafloor Massive sulfide
+MVT
+MVT
+
+--------------------
+::Mudd-and-Jowitt-2018-Copper::
+Primary Mineral deposit Type
+
+Magmatic Sulphide
+Porphyry
+Porphyry
+VMS
+Magmatic Sulphide
+VMS
+Skarn
+IOCG
+Magmatic Sulphide
+Skarn
+VMS
+Epithermal
+Sediment-hosted Pb-Zn
+VMS
+Skarn
+VMS
+VMS
+Porphyry-Skarn
+IOCG
+VMS
+Sediment-hosted Pb-Zn
+Skarn-Porphyry
+Porphyry
+VMS
+Magmatic Sulphide
+Porphyry
+Sediment-hosted Stratiform/Stratabound Cu
+Sediment-hosted Stratiform/Stratabound Cu
+Porphyry
+Skarn
+Magmatic Sulphide
+Skarn
+Porphyry
+IOCG
+Sediment-hosted Pb-Zn
+Porphyry
+Magmatic Sulphide
+Porphyry
+IOCG?
+Epithermal
+Porphyry
+Magmatic Sulphide
+IOCG
+VMS
+Porphyry
+Magmatic Sulphide
+Magmatic Sulphide
+Sediment-hosted Pb-Zn
+Magmatic Sulphide
+Magmatic Sulphide
+Porphyry
+Epithermal
+IOCG
+VMS
+VMS
+IOCG?
+Porphyry
+Porphyry
+VMS
+Skarn
+VMS
+VMS
+VMS
+VMS
+Porphyry
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+VMS
+Sediment-hosted Stratiform/Stratabound Cu
+VMS
+Porphyry
+Sediment-hosted Pb-Zn
+VMS
+Porphyry/Skarn
+VMS
+Epithermal
+Porphyry
+Magmatic Sulphide
+VMS
+VMS
+VMS
+Epithermal
+VMS
+VMS
+Porphyry
+Magmatic Sulphide
+Tailings
+Porphyry
+VMS
+Porphyry
+Sediment-hosted Pb-Zn
+Porphyry
+VMS
+Porphyry
+Epithermal
+Epithermal
+VMS
+
+--------------------
+::Mudd-and-Jowitt-2018-Copper::
+Secondary Mineral deposit Type
+
+Au
+Layered Intrusive
+Layered Intrusive
+Besshi type
+Unclassified
+Layered Intrusive
+Kuroko type
+Layered Intrusive
+Cu
+Layered Intrusive
+Cu-Au
+Low sulphidation?
+Proterozoic Komatiite-related
+Cu-Au
+Cu
+Cu-Au
+Layered Intrusive
+Stratabound Stratiform Reef-type
+Layered Intrusive
+Layered Intrusive
+Cu-Au-Co
+Proterozoic Komatiite-related
+substantial skarn
+Cu-Au
+Layered Intrusive
+Impact-related
+Layered Intrusive
+Active seafloor black smoker
+Layered Intrusive
+Ferropicrite related
+Layered Intrusive
+High sulphidation
+Layered Intrusive
+Layered Intrusive
+Stratabound Stratiform Reef-type
+Cu-Mo
+Flood Basalt-related
+Low sulphidation
+Layered Intrusive
+Kuroko type ?
+Layered Intrusive
+Intrusion-related
+Cu-Au
+Low sulphidation
+Cu-Mo-Au
+Flood Basalt-related
+Magmatic Sulphide
+Layered Intrusive
+Layered Intrusive
+Flood Basalt-related
+High to intermediate sulphidation
+Kuroko type
+Layered Intrusive
+Cu
+Intrusion-related
+Intermediate sulphidation
+Layered Intrusive
+Layered Intrusive
+High sulphidation
+Cu
+Olympic Dam-type
+Kuroko-type
+Layered Intrusive
+Cu-Au
+Kuroko-type
+High sulphidation
+Kuroko-type
+High sulphidation
+Possibly porphyry
+Cu, Kiruna-type
+Proterozoic Komatiite-related?
+Olympic Dam-type
+Impact-related
+Cloncurry-type
+Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Intermediate sulphidation
+Layered Intrusive
+Intrusion-related
+Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Cu
+High to intermediate sulphidation
+High sulphidation
+Cu
+Cu-Co
+Cu
+High sulphidation
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Low/Intermediate sulphidation
+Cu-Au
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Low sulphidation
+Layered Intrusive
+
+--------------------
+::Mudd-and-Jowitt-2018-Copper::
+Other Mineral deposit Type
+
+Stratabound Stratiform Reef-type
+Pechenga camp
+Tsumeb-type
+Great Dyke
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Siberian Traps LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Great Dyke
+Stratabound Stratiform Reef-type
+May also be Flood-basalt Related
+Stratabound Stratiform Reef-type
+Clastic-hosted, Broken Hill-type
+Also skarn
+Stratabound Stratiform Reef-type
+Duluth Complex - Keweenawan LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Great Dyke
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Duluth Complex - Keweenawan LIP
+Stratabound Stratiform Reef-type
+Sudbury Event
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Mount Isa
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Great Dyke
+Stratabound Stratiform Reef-type
+Uitkomst Complex
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Sudbury Event
+Poorly characterised
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Sudbury Event
+Stratabound Contact-type
+Cu
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Great Dyke
+Stratabound Stratiform Reef-type
+Layered Intrusive
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Duluth Complex - Keweenawan LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Exoskarn?
+Stratabound Stratiform Reef-type
+May also be Flood-basalt Related
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Duluth Complex - Keweenawan LIP
+Associated with Wrangellia/Nikolai LIP?
+Layered Intrusion
+Duluth Complex - Keweenawan LIP
+Great Dyke
+Irish-type
+Shale-hosted Ni
+Stratabound Stratiform Reef-type
+Not a typical deposit. Maybe more "gabbro-related" than Komatiite-related. Certainly proterozoic
+Uitkomst Complex
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Duluth Complex - Keweenawan LIP
+Stratabound Stratiform Reef-type
+
+--------------------
+::Mudd-and-Jowitt-2022-Nickel::
+Mineral Deposit Type Primary
+
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Hydrothermal Ni
+Laterite
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Hydrothermal Ni
+Magmatic Sulphide
+
+--------------------
+::Mudd-and-Jowitt-2022-Nickel::
+Mineral Deposit Type Secondary
+
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Oxide-hydrous Mg silicate
+Layered Intrusive
+Layered Intrusive
+Archean Komatiite
+Small M-UM Intrusion-related
+VMS
+Hydrous Mg silicate-oxide
+Layered Intrusive
+Clay silicate-hydrous Mg silicate
+Layered Intrusive
+Proterozoic Komatiite-related
+Layered Intrusive
+Archean Komatiite
+Archean Komatiite
+Hydrous Mg silicate-oxide
+Layered Intrusive
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Oxide
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Oxide-hydrous Mg silicate
+Unconformity-related Uranium
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Oxide
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+VMS
+Layered Intrusive
+Oxide-Hydrous Mg silicate
+Magmatic Sulphide
+Layered Intrusive
+Layered Intrusive
+Hydrous Mg silicate-Oxide
+Oxide-clay silicate
+Impact-related
+Layered Intrusive
+Layered Intrusive
+Archean Komatiite
+Layered Intrusive
+Layered Intrusive
+Small M-UM Intrusion-related
+Impact-related
+Oxide-hydrous Mg silicate
+Small M-UM Intrusion-related
+Layered Intrusive
+Unconformity-related Uranium
+Oxide-Hydrous Mg silicate
+Oxide-hydrous Mg silicate
+Unconformity-related Uranium
+Layered Intrusive
+Archean Komatiite
+Small M-UM Intrusion-related
+Archean Komatiite
+Hydrous Mg silicate-clay silicate-oxide
+Proterozoic komatiite
+Layered Intrusive
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Archean komatiite
+Layered Intrusive
+Proterozoic Komatiite
+Layered Intrusive
+Archean Komatiite
+Layered Intrusive
+Small M-UM Intrusion-related
+Hydrous Mg silicate-oxide
+Layered Intrusive
+Proterozoic Komatiite-related
+Small M-UM Intrusion-related
+Archean Komatiite
+Sediment-hosted polymetallic
+Layered Intrusive
+Layered Intrusive
+Hydrous Mg silicate-oxide
+Impact-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Archean Komatiite
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+
+--------------------
+::Mudd-and-Jowitt-2022-Nickel::
+Mineral Deposit Type Other Notes
+
+Impact-related
+Clay silicate-oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Oxide-Mg silicate
+Oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Small M-UM Intrusion-related
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Pechenga camp
+Duluth Complex - Keweenawan LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Clay silicate-hydrous Mg silicate
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Small M-UM Intrusion-related
+Clay silicate
+Pechenga camp
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Impact-related
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Oxide-hydrous Mg silicate
+Oxide
+Siberian Traps LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Pechenga camp
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Thompson Belt
+Oxide
+Stratabound Stratiform Reef-type
+Thompson Belt
+MVT
+Stratabound Contact-type
+Oxide
+Duluth Complex - Keweenawan LIP
+Hydrous Mg silicate-oxide
+Small M-UM Intrusion-related
+Oxide
+Stratabound Stratiform Reef-type
+Oxide-hydrous Mg silicate
+Oxide-Hydrous Mg silicate
+Oxide
+Siberian Traps LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Sediment-hosted Pb-Zn/VMS
+Proterozoic Komatiite
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Pechenga camp
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Siberian Traps LIP
+Thompson Belt
+Stratabound Stratiform Reef-type
+Impact-related
+Clay silicate
+Duluth Complex - Keweenawan LIP
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Hydrous Mg silicate-oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+PGE-discordant intrusion
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Small M-UM Intrusion-related
+Stratabound Stratiform Reef-type
+Emeishan LIP
+Siberian Traps LIP
+Stratabound Stratiform Reef-type
+Hydrous Mg silicate-oxide
+Stratabound Contact-type
+Stratabound Contact-type
+Small M-UM Intrusion-related
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Impact-related
+Stratabound Stratiform Reef-type
+Impact-related
+Stratabound Contact-type
+Oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Oxide-hydrous Mg silicate
+Oxide-hydrous Mg silicate
+
+--------------------
+::Nevada_Lithium_Resources_and_Reserves_March_2024_update::
+Type
+
+Clay
+Clay
+Brine
+Clay
+Clay
+Clay
+Clay
+Clay
+Clay
+Brine
+Clay
+Brine
+Clay
+Clay
+Clay
+Clay
+
+--------------------
+::Weng_et_al_2015_REE::
+Principal Deposit type
+
+Carbonatite
+Carbonatite
+Laterite / Soil / Clay
+Carbonatite
+Carbonatite
+Carbonatite
+Granite -Related Skarn
+Carbonatite
+Shale-hosted
+Alluvial/Placer
+Alluvial/Placer
+Carbonatite
+Carbonatite
+Alluvial/Placer
+Granite -Related Skarn
+Carbonatite
+Alkaline 
+Tailings
+Carbonatite
+Carbonatite 
+Alluvial/Placer
+Alluvial/Placer
+Tailings
+Carbonatite
+Carbonatite
+Alkaline 
+Alkaline
+Carbonatite
+Carbonatite
+Alluvial/Placer
+Carbonatite 
+Laterite / Soil / Clay
+Shale-hosted
+Granite -Related Skarn
+Carbonatite
+Carbonatite
+Carbonatite 
+IOCG
+Alkaline
+Felsic Volcanic
+Shale-hosted
+Alkaline
+IOCG
+Heavy Mineral Sands
+Carbonatite 
+Granite -Related Skarn
+Carbonatite
+Alkaline 
+Granite -Related Skarn
+Alkaline
+Carbonatite
+Alkaline 
+Alluvial/Placer
+Carbonatite
+Shale-hosted
+Felsic Volcanic
+Carbonatite
+Carbonatite
+Tailings
+Alkaline
+Carbonatite
+Alkaline
+Alkaline
+Alkaline 
+Tailings
+IOCG
+Carbonatite 
+Carbonatite
+Alkaline
+Felsic Volcanic
+Alkaline 
+Carbonatite
+Granite -Related Skarn
+Alkaline
+Granite -Related Skarn
+Carbonatite
+Alkaline
+Alluvial/Placer
+Alluvial/Placer
+Alluvial/Placer
+Carbonatite
+Alkaline
+Carbonatite
+Carbonatite
+Shale-hosted
+Felsic Volcanic
+Alkaline
+Alkaline
+Tailings
+Alkaline
+Alkaline
+Carbonatite
+Carbonatite
+Alluvial/Placer
+Shale-hosted
+Carbonatite
+Carbonatite
+Carbonatite
+Carbonatite 
+Carbonatite

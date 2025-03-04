@@ -2,3 +2,4 @@ databases
 sand.sqlite
 training_set/*
 !training_set/dsl-semtype
+!training_set/dsl-minmod

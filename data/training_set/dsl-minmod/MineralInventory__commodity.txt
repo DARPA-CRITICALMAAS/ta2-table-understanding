@@ -1,0 +1,740 @@
+mos:MineralInventory---mos:commodity
+
+
+
+--------------------
+::CMMI::
+_attrs
+
+GA_PPM
+%Zn
+ZN_PPM
+%Zn
+GE_PPM
+%Cu
+GE_PPM
+ZN_PPM
+GE_PPM
+GE_PPM
+GE_PPM
+ZN_PPM
+GE_PPM
+GE_PPM
+GA_PPM
+GE_PPM
+GA_PPM
+GE_PPM
+ZN_PPM
+GE_PPM
+ZN_PPM
+GE_PPM
+%Pb
+GE_PPM
+%Zn
+ZN_PPM
+ZN_PPM
+GE_PPM
+%Pb
+GA_PPM
+%Zn
+GA_PPM
+ZN_PPM
+GA_PPM
+GA_PPM
+GA_PPM
+%Pb
+ZN_PPM
+%Zn
+GE_PPM
+GA_PPM
+GE_PPM
+%Zn
+%Cu
+GE_PPM
+GA_PPM
+GE_PPM
+%Pb
+GA_PPM
+%Zn
+%Pb
+%Pb
+ZN_PPM
+ZN_PPM
+ZN_PPM
+ZN_PPM
+ZN_PPM
+GA_PPM
+GE_PPM
+%Pb
+GA_PPM
+%Zn
+GE_PPM
+GA_PPM
+GE_PPM
+ZN_PPM
+%Zn
+%Cu
+%Zn
+GE_PPM
+%Zn
+GA_PPM
+ZN_PPM
+%Pb
+GA_PPM
+GA_PPM
+GE_PPM
+%Zn
+ZN_PPM
+ZN_PPM
+%Pb
+ZN_PPM
+GE_PPM
+GA_PPM
+GE_PPM
+ZN_PPM
+ZN_PPM
+GA_PPM
+GA_PPM
+ZN_PPM
+GA_PPM
+GA_PPM
+GE_PPM
+%Zn
+ZN_PPM
+ZN_PPM
+%Pb
+GA_PPM
+GA_PPM
+ZN_PPM
+
+--------------------
+::Mudd-and-Jowitt-2017-Zinc::
+_attrs
+
+%Cu
+g/t Ag
+%Cu
+%Pb
+g/t Ag
+%Pb
+%Zn
+%Zn
+%Pb
+%Pb
+%Cu
+%Pb
+%Cu
+%Zn
+g/t Ag
+%Pb
+%Zn
+%Cu
+%Pb
+%Pb
+%Zn
+g/t Ag
+%Zn
+%Pb
+g/t Ag
+%Cu
+%Cu
+g/t Ag
+%Pb
+%Cu
+g/t Au
+%Zn
+%Cu
+g/t Ag
+%Zn
+%Zn
+g/t Au
+%Pb
+g/t Au
+g/t Ag
+g/t Ag
+%Zn
+g/t Ag
+%Mo
+%Zn
+%Zn
+g/t Au
+%Pb
+g/t Ag
+%Zn
+%Zn
+%Zn
+%Pb
+g/t Au
+%Cu
+%Pb
+%Pb
+%Zn
+%Pb
+%Cu
+%Co
+g/t Ag
+%Pb
+%Zn
+%Cu
+%Pb
+%Pb
+%Pb
+g/t Ag
+g/t Au
+%Pb
+%Pb
+g/t Ag
+%Pb
+%Pb
+%Zn
+g/t Ag
+g/t Ag
+%Pb
+%Cu
+%Zn
+%Cu
+%Pb
+g/t Ag
+%Zn
+g/t Ag
+%Pb
+g/t Ag
+%Zn
+%Zn
+%Zn
+%Pb
+%Zn
+%Zn
+%Zn
+%Zn
+%Pb
+g/t Au
+%Zn
+%Zn
+
+--------------------
+::Mudd-and-Jowitt-2022-Nickel::
+Commodity
+
+g/t Pd
+%Ni
+%Ni
+%Cu
+g/t Au
+%Ni
+%Cr
+g/t Pt
+g/t Ir
+g/t Rh
+g/t Au
+%Cu
+%Cu
+g/t Rh
+%Co
+%Co
+%Ni
+%Cu
+g/t Rh
+%Cu
+%Co
+g/t Pt
+%Cr
+g/t Pt
+g/t Pd
+%Ni
+%Co
+%Ni
+%Cr
+%Ni
+g/t Pt
+g/t Pd
+g/t Pt
+%Ni
+g/t Pd
+g/t Pd
+g/t Pd
+%Co
+%Ni
+g/t Au
+%Cu
+%Ni
+g/t Pt
+%Cu
+%Ni
+%Ni
+%Ni
+%Mo
+%Ni
+%Ni
+g/t Pd
+%Cu
+%Cu
+%Ni
+%Cu
+%Co
+g/t Pd
+%Ni
+g/t Rh
+%Fe
+%Ni
+g/t Ag
+%Ni
+%Cu
+%Fe
+%Fe
+%Ni
+g/t Pd
+g/t Pt
+%Ni
+%Cu
+%Ni
+%Ni
+%Ni
+%Cu
+%Cu
+g/t Pd
+%Co
+%Co
+%Co
+%Ni
+g/t Ir
+g/t Pt
+g/t Rh
+%Cu
+%Ni
+g/t Rh
+g/t Pt
+%Ni
+g/t Rh
+g/t Pd
+g/t Au
+%Cu
+%Ni
+%Ni
+g/t Ag
+%Ni
+%Co
+%Ni
+g/t Au
+
+--------------------
+::Weng_et_al_2015_REE::
+_attrs
+
+Eu ppm
+Sm ppm
+Y ppm
+Ce ppm
+Gd ppm
+Dy ppm
+Yb ppm
+Ho ppm
+Lu ppm
+Lu ppm
+Lu ppm
+Eu ppm
+Tm ppm
+Nd ppm
+Dy ppm
+Sc ppm
+Pr ppm
+La ppm
+Y ppm
+La ppm
+La ppm
+Lu ppm
+Ce ppm
+Ho ppm
+Pr ppm
+Sm ppm
+Er ppm
+Gd ppm
+Sm ppm
+Tb ppm
+Yb ppm
+Lu ppm
+Ho ppm
+Dy ppm
+Yb ppm
+Sm ppm
+Lu ppm
+La ppm
+Eu ppm
+Ho ppm
+Lu ppm
+La ppm
+Y ppm
+Y ppm
+Tb ppm
+Pr ppm
+Dy ppm
+Eu ppm
+Ho ppm
+Tb ppm
+Yb ppm
+Er ppm
+Pr ppm
+Sm ppm
+Nd ppm
+Pr ppm
+Tm ppm
+Tm ppm
+Y ppm
+Y ppm
+Sm ppm
+Ho ppm
+Lu ppm
+Tm ppm
+La ppm
+Lu ppm
+Dy ppm
+Er ppm
+Tb ppm
+Tm ppm
+Dy ppm
+Dy ppm
+Yb ppm
+La ppm
+Tb ppm
+Tb ppm
+Gd ppm
+Er ppm
+Ce ppm
+Nd ppm
+Tb ppm
+Y ppm
+Y ppm
+Ce ppm
+Ho ppm
+Y ppm
+Nd ppm
+Ce ppm
+Tb ppm
+Y ppm
+Y ppm
+Gd ppm
+Eu ppm
+Er ppm
+Y ppm
+Lu ppm
+Tb ppm
+Gd ppm
+Ho ppm
+Y ppm
+
+--------------------
+::World_Tin_Tungsten_Deposit::
+commodity
+
+Ag
+WO3
+Bi
+Cu
+Zn
+Sn
+Zn
+Cu
+Cu
+In
+WO3
+Cu
+WO3
+Bi
+WO3
+Cu
+Sn
+Sn
+Ag
+Sn
+Pb
+W
+W
+Zn
+Sn
+Sn
+Zn
+Bi
+Zn
+WO3
+Pb
+WO3
+Mn
+In
+Cu
+Cu
+Zn
+W
+Sn
+Pb
+Sn
+Sn
+WO3
+Sn
+Ag
+Cu
+Mo
+Cu
+In
+In
+Ag
+Cu
+Zn
+Sn
+Zn
+Cu
+Zn
+Ag
+WO3
+Sn
+CaF2
+Pb
+Mo
+Sn
+Sn
+Sn
+WO3
+Pb
+Sn
+Sn
+WO3
+Pb
+W
+Bi
+Zn
+W
+W
+WO3
+Bi
+W
+W
+Mo
+WO3
+WO3
+Zn
+In
+Sn
+Zn
+Bi
+WO3
+W
+WO3
+Cu
+WO3
+WO3
+Zn
+Sn
+Cu
+Pb
+W
+
+
+--------------------
+::Mudd-and-Jowitt-2018-Copper::
+g1_attrs
+
+g/t Ag.1
+% Ni.1
+g/t Au.1
+g/t Au.1
+g/t Au.1
+% Cu.1
+% Cu.1
+g/t Ag.1
+% Cu.1
+g/t Au.1
+g/t Ag.1
+g/t Ag.1
+% Cu.1
+g/t Ru.1
+g/t Au.1
+% Ni.1
+% Cu.1
+g/t Ag.1
+% Mo.1
+% Mo.1
+% Cu.1
+% Ni.1
+% Ni.1
+% Cu.1
+% Cu.1
+% Cu.1
+g/t Au.1
+% Cu.1
+g/t Au.1
+% Cu.1
+g/t Au.1
+g/t Pt.1
+% Ni.1
+% Cu.1
+% Cu.1
+% Cu.1
+% Cu.1
+g/t Au.1
+% Pb.1
+g/t Ag.1
+g/t Ag.1
+% Cu.1
+g/t Ag.1
+% Cu.1
+% Ni.1
+% Pb.1
+% Cu.1
+g/t Ag.1
+% Ni.1
+g/t Rh.1
+g/t Pt.1
+g/t Au.1
+% Fe.1
+g/t Au.1
+g/t Au.1
+g/t Pd.1
+% Cu.1
+% Cu.1
+% Mo.1
+g/t Pt.1
+% Cu.1
+g/t Ru.1
+% Pb.1
+g/t Au.1
+% Zn.1
+% Cu.1
+g/t Pd.1
+% Cu.1
+g/t Pd.1
+% Ni.1
+% Ni.1
+% Cu.1
+% Mo.1
+% Mo.1
+g/t Pt.1
+% Zn.1
+% Co.1
+g/t Pt.1
+g/t Rh.1
+% Cu.1
+g/t Pt.1
+% Cu.1
+% Cu.1
+g/t Ag.1
+g/t Ir.1
+g/t Ag.1
+% Co.1
+% Mo.1
+g/t Ag.1
+g/t Au.1
+g/t Ag.1
+% Ni.1
+% Fe.1
+% Cu.1
+g/t Au.1
+% Cu.1
+g/t Au.1
+% Cu.1
+g/t Ag.1
+% Cu.1
+
+
+--------------------
+::Mudd-and-Jowitt-2018-Copper::
+g0_attrs
+
+% Cu
+g/t Ru
+% Cu
+% Cu
+% Cu
+% Cu
+g/t Au
+% Cu
+% Cu
+% Mo
+% Cu
+g/t Ru
+% Cu
+% Cu
+g/t Ag
+% Pb
+g/t Au
+% Cu
+% Cu
+% Cu
+% Zn
+g/t Au
+g/t Au
+% Cu
+% Cu
+% Cu
+% Mo
+% Zn
+g/t Au
+g/t Au
+g/t Au
+g/t Au
+g/t Ag
+g/t Au
+g/t Ir
+g/t Ag
+% Zn
+g/t Ag
+% Co
+% Cu
+% Cu
+% Pb
+% Zn
+% Cu
+% Cu
+% Zn
+% Zn
+g/t Pt
+g/t Ag
+g/t Au
+% Cu
+g/t Ag
+% Cu
+g/t Au
+g/t Pt
+% Mo
+% Cu
+% Co
+g/t Ag
+% Pb
+% Cu
+g/t Au
+% Zn
+% Mo
+% Pb
+g/t Ag
+% Ni
+g/t Au
+g/t Rh
+% Cu
+% Cu
+% Mo
+% Cu
+% Zn
+g/t Se
+g/t Re
+% Cu
+% Cu
+g/t Au
+% Cu
+g/t Ag
+% Zn
+g/t Au
+g/t Au
+g/t Ag
+% Zn
+% Pb
+% Cu
+g/t Pd
+g/t Ag
+% Zn
+% Cu
+g/t Au
+% Pb
+% Cu
+g/t Ag
+% Cu
+% Pb
+% Cu
+g/t Ag
