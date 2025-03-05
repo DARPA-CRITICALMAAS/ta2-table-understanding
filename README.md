@@ -6,11 +6,12 @@ This library provides algorithms for creating semantic descriptions of mineral-r
 
 ### MinMod KG Setup
 
-To work with [MinMod KG](https://minmod.isi.edu/), we need the [ta2-minmod-data](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data), and the default folder structure is:
+To work with [MinMod KG](https://minmod.isi.edu/), we need the [ta2-minmod-data](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data) and [ta2-minmod-kg](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-kg) repositories, and the default folder structure is:
 
     <DARPA-CRITICALMAAS-DIR>
     ├── data                      # for storing databases
     ├── ta2-minmod-data           # ta2-minmod-data repository
+    ├── ta2-minmod-kg             # ta2-minmod-kg repository
     └── ta2-table-understanding   # ta2-table-understanding repository
 
 To setup the above structure, you can run:
@@ -58,16 +59,10 @@ docker compose build
 cd ..
 ```
 
-Then, you can mount the folder and run the commands in the container such as
+Then, you can run the command in Docker:
 
 ```bash
-docker run -it --rm -v $MINMOD_DIR:/minmod minmod-sand python -m tum.make_db
-```
-
-If you need to set the environment variable, you can add `-e <NAME>=<VALUE>` to the `docker run` command as follow:
-
-```bash
-docker run -it --rm -v $MINMOD_DIR:/minmod -e CFG_FILE=/minmod/ta2-minmod-kg/config.yml.template minmod-sand python -m tum.make_db
+docker compose run --rm sand python -m tum.make_db
 ```
 
 ## Usage
@@ -94,11 +89,12 @@ pip install web-sand sand-drepr
 If you use Docker, you can run:
 
 ```bash
-
+docker compose run --rm sand python -m sand init -d /home/criticalmaas/data/minmod/sand.db
+docker compose up
+```
 
 ## Configuration
 
 1. The working folder `<DARPA-CRITICALMAAS-DIR>` can be modified by setting the environment variable `CRITICAL_MAAS_DIR`.
 2. To customize SAND, you can update the file [minmod.sand.yaml](./minmod.sand.yaml)
 3. Training data to the model is stored under [data/training_set](./data/training_set) folder
-```

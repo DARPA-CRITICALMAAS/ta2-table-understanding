@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 # install required system libraries
-RUN apt update && apt install -y ca-certificates curl git lz4
+RUN apt update && apt install -y ca-certificates curl git lz4 openjdk-17-jre
 
 ARG UID=1000
 ARG GID=1000
@@ -20,9 +20,7 @@ RUN mkdir -p /home/criticalmaas/tum/tum && \
 ADD pyproject.toml /home/criticalmaas/tum/
 ADD README.md /home/criticalmaas/tum/
 
-RUN cd /home/criticalmaas/tum && pip install -e .
-RUN pip install web-sand sand-drepr
-
-ADD --chown=criticalmaas:criticalmaas tum /home/criticalmaas/tum/tum
-
 RUN cd /home/criticalmaas/tum && pip install .
+RUN pip install web-sand sand-drepr 
+RUN pip uninstall -y tum
+RUN rm -rf /home/criticalmaas/tum
