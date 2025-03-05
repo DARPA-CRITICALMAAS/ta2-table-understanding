@@ -38,6 +38,7 @@ We use [poetry](https://python-poetry.org/) as our package manager (you need to 
 cd ta2-table-understanding
 python -m venv .venv
 poetry install
+cd ..
 ```
 
 With the working folder structure setup, we can build the necessary databases (entities, ontology classes, and properties) by running:
@@ -50,21 +51,23 @@ poetry run python -m tum.make_db [<project> = minmod]
 Alternatively, you can use Docker to install the library:
 
 ```bash
+cd ta2-table-understanding
 export USER_ID=$(id -u)
 export GROUP_ID=$(id -g)
 docker compose build
+cd ..
 ```
 
 Then, you can mount the folder and run the commands in the container such as
 
 ```bash
-docker run -it --rm -v <DARPA-CRITICALMAAS-DIR>:/minmod minmod-sand python -m tum.make_db
+docker run -it --rm -v $MINMOD_DIR:/minmod minmod-sand python -m tum.make_db
 ```
 
 If you need to set the environment variable, you can add `-e <NAME>=<VALUE>` to the `docker run` command as follow:
 
 ```bash
-docker run -it --rm -v <DARPA-CRITICALMAAS-DIR>:/minmod -e CFG_FILE=/minmod/ta2-minmod-kg/config.yml.template minmod-sand python -m tum.make_db
+docker run -it --rm -v $MINMOD_DIR:/minmod -e CFG_FILE=/minmod/ta2-minmod-kg/config.yml.template minmod-sand python -m tum.make_db
 ```
 
 ## Usage

@@ -20,7 +20,7 @@ RUN mkdir -p /home/criticalmaas/tum/tum && \
 ADD pyproject.toml /home/criticalmaas/tum/
 ADD README.md /home/criticalmaas/tum/
 
-RUN cd /home/criticalmaas/tum && pip install .
+RUN cd /home/criticalmaas/tum && pip install -e .
 RUN pip install web-sand sand-drepr
 
 ADD --chown=criticalmaas:criticalmaas tum /home/criticalmaas/tum/tum
