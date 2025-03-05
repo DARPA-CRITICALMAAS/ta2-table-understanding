@@ -22,6 +22,12 @@ git clone --depth 1 https://github.com/DARPA-CRITICALMAAS/ta2-table-understandin
 mkdir data
 ```
 
+To make it easier to run the next commands, we will use an environment variable `MINMOD_DIR` to denote the `<DARPA-CRITICALMAAS-DIR>` folder. If you are in the `<DARPA-CRITICALMAAS-DIR>` directory, you can run this command to set up the environment variable:
+
+```bash
+export MINMOD_DIR=$(pwd)
+```
+
 Note: The folder structure is fully customizable. Please see the [Configuration Section](#Configuration) for more information.
 
 ### Setup dependencies
@@ -37,7 +43,7 @@ poetry install
 With the working folder structure setup, we can build the necessary databases (entities, ontology classes, and properties) by running:
 
 ```bash
-export CFG_FILE=<DARPA-CRITICALMAAS-DIR>/ta2-minmod-kg/config.yml.template
+export CFG_FILE=$MINMOD_DIR/ta2-minmod-kg/config.yml.template
 poetry run python -m tum.make_db [<project> = minmod]
 ```
 
@@ -47,6 +53,18 @@ Alternatively, you can use Docker to install the library:
 export USER_ID=$(id -u)
 export GROUP_ID=$(id -g)
 docker compose build
+```
+
+Then, you can mount the folder and run the commands in the container such as
+
+```bash
+docker run -it --rm -v <DARPA-CRITICALMAAS-DIR>:/minmod minmod-sand python -m tum.make_db
+```
+
+If you need to set the environment variable, you can add `-e <NAME>=<VALUE>` to the `docker run` command as follow:
+
+```bash
+docker run -it --rm -v <DARPA-CRITICALMAAS-DIR>:/minmod -e CFG_FILE=/minmod/ta2-minmod-kg/config.yml.template minmod-sand python -m tum.make_db
 ```
 
 ## Usage
@@ -70,8 +88,14 @@ pip install web-sand sand-drepr
 1. Setup SAND (run only once): `poetry run python -m sand init -d <DARPA-CRITICALMAAS-DIR>/data/minmod/sand.db`
 2. Start SAND: `poetry run python -m sand start -d <DARPA-CRITICALMAAS-DIR>/data/minmod/sand.db -c <DARPA-CRITICALMAAS-DIR>/ta2-table-understanding/minmod.sand.yml`
 
+If you use Docker, you can run:
+
+```bash
+
+
 ## Configuration
 
 1. The working folder `<DARPA-CRITICALMAAS-DIR>` can be modified by setting the environment variable `CRITICAL_MAAS_DIR`.
 2. To customize SAND, you can update the file [minmod.sand.yaml](./minmod.sand.yaml)
 3. Training data to the model is stored under [data/training_set](./data/training_set) folder
+```
