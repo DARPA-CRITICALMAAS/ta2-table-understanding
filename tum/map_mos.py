@@ -13,9 +13,8 @@ import typer
 from minmodkg.entity_linking import EntityLinking, IEntityLinking
 from rdflib import RDF, RDFS, XSD, Graph, Namespace, URIRef
 from slugify import slugify
-from tqdm.auto import tqdm
-
 from sm.misc.funcs import assert_isinstance
+from tqdm.auto import tqdm
 from tum.config import CRITICAL_MAAS_DIR
 from tum.lib.unit_and_commodity import (
     CommodityCompatibleLinker,
@@ -87,6 +86,8 @@ class MosMapping:
             for site in self.g.subjects(RDF.type, mos.MineralSite)
         ]
 
+        is_site_name_uniques = len(site_names) == len(set([x[1] for x in site_names]))
+
         record_type = None
         if doc_node is not None and self.has(doc_node, mos.record_type):
             record_type = self.map_literal(self.object(doc_node, mos.record_type))
@@ -113,6 +114,9 @@ class MosMapping:
                 else:
                     record_id = slugify(site_name)
                 record_id += "__" + str(ri)
+            elif is_site_name_uniques:
+                # if the mineral site names are unique, then we can use the mineral site name as the record id
+                record_id = slugify(site_name)
             else:
                 raise Exception("No record id")
 
@@ -277,7 +281,6 @@ class MosMapping:
                         self.object(inv, mos.grade_unit), self.unit_linker
                     ),
                 }
-
             return [base]
 
         output = []

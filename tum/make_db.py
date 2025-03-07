@@ -70,7 +70,7 @@ def entities(project: str):
 
         entities = []
         for dpath in args["output"].get_path().iterdir():
-            if dpath.suffix != ".ttl":
+            if dpath.suffix != ".ttl" or dpath.stem in ["data_source"]:
                 continue
             for resource in get_rdf_resources(dpath):
                 (label,) = resource.props.pop(str(RDFS.label))

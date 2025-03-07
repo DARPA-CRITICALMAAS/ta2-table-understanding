@@ -36,7 +36,7 @@ mos:reference rdf:type owl:ObjectProperty ;
 
 ###  https://minmod.isi.edu/ontology-simple/deposit
 mos:name rdf:type owl:DatatypeProperty ;
-            rdfs:domain mos:MineralInventory ;
+            rdfs:domain mos:MineralSite ;
             rdfs:label "name"@en .
 
 

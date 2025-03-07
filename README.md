@@ -79,12 +79,12 @@ Alternatively, you can use the [SAND UI](https://github.com/usc-isi-i2/sand) to 
 
 To install SAND, you can run the following commands:
 
-```
+```bash
 pip install web-sand sand-drepr
 ```
 
-1. Setup SAND (run only once): `poetry run python -m sand init -d <DARPA-CRITICALMAAS-DIR>/data/minmod/sand.db`
-2. Start SAND: `poetry run python -m sand start -d <DARPA-CRITICALMAAS-DIR>/data/minmod/sand.db -c <DARPA-CRITICALMAAS-DIR>/ta2-table-understanding/minmod.sand.yml`
+1. Setup SAND (run only once): `poetry run python -m sand init -d $MINMOD_DIR/data/minmod/sand.db`
+2. Start SAND: `poetry run python -m sand start -d $MINMOD_DIR/data/minmod/sand.db -c $MINMOD_DIR/ta2-table-understanding/minmod.sand.yml`
 
 If you use Docker, you can run:
 
