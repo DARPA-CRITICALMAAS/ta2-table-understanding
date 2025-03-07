@@ -30,6 +30,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "g/t",
+    "unit_observed_value": "g/t",
+    "commodity_observed_value": null,
+    "commodity_form_observed_value": null,
+    "unit": "https://minmod.isi.edu/resource/Q203",
+    "commodity": null,
+    "commodity_form": null,
+    "unit_score": 1.0,
+    "commodity_score": 0.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "g/t - Q203 | score = 1.000 | labels = gram per tonne, g/t",
+    "commodity_text": "",
+    "commodity_form_text": ""
+  },
+  {
     "value": "g/t Ag",
     "unit_observed_value": "g/t",
     "commodity_observed_value": "Ag",
@@ -300,6 +315,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "Rh",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Rh",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q604",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
+    "commodity_text": "Rh - Q604 | score = 1.000 | labels = Rhodium, Rh, rhodium",
+    "commodity_form_text": ""
+  },
+  {
     "value": "g/t Ru",
     "unit_observed_value": "g/t",
     "commodity_observed_value": "Ru",
@@ -315,6 +345,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "Ru",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Ru",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q606",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
+    "commodity_text": "Ru - Q606 | score = 1.000 | labels = Ruthenium, Ru, ruthenium",
+    "commodity_form_text": ""
+  },
+  {
     "value": "g/t Ir",
     "unit_observed_value": "g/t",
     "commodity_observed_value": "Ir",
@@ -326,6 +371,21 @@
     "commodity_score": 1.0,
     "commodity_form_score": 0.0,
     "unit_text": "g/t - Q203 | score = 1.000 | labels = gram per tonne, g/t",
+    "commodity_text": "Ir - Q596 | score = 1.000 | labels = Iridium, Ir, iridium",
+    "commodity_form_text": ""
+  },
+  {
+    "value": "Ir",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Ir",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q596",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
     "commodity_text": "Ir - Q596 | score = 1.000 | labels = Iridium, Ir, iridium",
     "commodity_form_text": ""
   },
@@ -495,6 +555,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "Re",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Re",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q603",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
+    "commodity_text": "Re - Q603 | score = 1.000 | labels = Rhenium, Re, rhenium",
+    "commodity_form_text": ""
+  },
+  {
     "value": "g/t Se",
     "unit_observed_value": "g/t",
     "commodity_observed_value": "Se",
@@ -510,6 +585,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "Se",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Se",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q608",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
+    "commodity_text": "Se - Q608 | score = 1.000 | labels = Selenium, Se, selenium",
+    "commodity_form_text": ""
+  },
+  {
     "value": "g/t Te",
     "unit_observed_value": "g/t",
     "commodity_observed_value": "Te",
@@ -521,6 +611,21 @@
     "commodity_score": 1.0,
     "commodity_form_score": 0.0,
     "unit_text": "g/t - Q203 | score = 1.000 | labels = gram per tonne, g/t",
+    "commodity_text": "Te - Q611 | score = 1.000 | labels = Tellurium, Te, tellurium",
+    "commodity_form_text": ""
+  },
+  {
+    "value": "Te",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Te",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q611",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
     "commodity_text": "Te - Q611 | score = 1.000 | labels = Tellurium, Te, tellurium",
     "commodity_form_text": ""
   },
@@ -581,6 +686,21 @@
     "commodity_score": 1.0,
     "commodity_form_score": 1.0,
     "unit_text": "% - Q201 | score = 1.000 | labels = percent, %",
+    "commodity_text": "None - Q588 | score = 1.000 | labels = Uranium, U, uranium",
+    "commodity_form_text": "U3O8 - Q1305 | score = 1.000 | labels = Triuranium octoxide, U3O8"
+  },
+  {
+    "value": "U3O8",
+    "unit_observed_value": null,
+    "commodity_observed_value": null,
+    "commodity_form_observed_value": "U3O8",
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q588",
+    "commodity_form": "https://minmod.isi.edu/resource/Q1305",
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 1.0,
+    "unit_text": "",
     "commodity_text": "None - Q588 | score = 1.000 | labels = Uranium, U, uranium",
     "commodity_form_text": "U3O8 - Q1305 | score = 1.000 | labels = Triuranium octoxide, U3O8"
   },
@@ -1032,6 +1152,36 @@
     "commodity_form_score": 0.0,
     "unit_text": "",
     "commodity_text": "Ag - Q585 | score = 1.000 | labels = Silver, Ag, silver",
+    "commodity_form_text": ""
+  },
+  {
+    "value": "Pt",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Pt",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q601",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
+    "commodity_text": "Pt - Q601 | score = 1.000 | labels = Platinum, Pt, platinum",
+    "commodity_form_text": ""
+  },
+  {
+    "value": "Pd",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Pd",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q600",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
+    "commodity_text": "Pd - Q600 | score = 1.000 | labels = Palladium, Pd, palladium",
     "commodity_form_text": ""
   },
   {

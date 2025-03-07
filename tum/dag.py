@@ -9,11 +9,7 @@ from typing import Sequence
 from drepr.main import OutputFormat
 from duneflow.ops.curation import SemanticModelCuratorActor, SemanticModelCuratorArgs
 from duneflow.ops.formatter import to_column_based_table
-from duneflow.ops.matrix_to_relational import (
-    TableMatrixToRelationalActor,
-    TableMatrixToRelationalArgs,
-    matrix_to_relational_table,
-)
+from duneflow.ops.matrix_to_relational import matrix_to_relational_table
 from duneflow.ops.norm import NormTableActor, NormTableArgs
 from duneflow.ops.reader import read_table_from_file
 from duneflow.ops.reader._table_file_reader import RawTable
@@ -36,10 +32,10 @@ from libactor.dag import DAG, Flow, PartialFn
 from libactor.dag._dag import ComputeFn
 from libactor.storage import GlobalStorage
 from libactor.typing import T
-from sm.dataset import ColumnBasedTable, Context, Example, FullTable, Matrix
-from sm.namespaces.prelude import KGName
 from timer import Timer
 
+from sm.dataset import ColumnBasedTable, Context, Example, FullTable, Matrix
+from sm.namespaces.prelude import KGName
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
 from tum.namespace import MNDRNamespace
@@ -47,6 +43,14 @@ from tum.namespace import MNDRNamespace
 
 def select_table(tables: Sequence[T], idx: int) -> T:
     return tables[idx]
+
+
+def write_ttl(text: str, outdir: Path) -> str:
+    """Write a string to a file"""
+    filename = os.path.join(outdir, "data.ttl")
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(text)
+    return text
 
 
 def always_fail(input: T) -> T:
@@ -198,6 +202,7 @@ def get_dag(
                         source=["table", "sem_model"],
                         target=DReprActor(DReprArgs(output_dir, OutputFormat.TTL)),
                     ),
+                    PartialFn(write_ttl, outdir=output_dir),
                     PartialFn(mos_map, outdir=output_dir),
                 ],
             },

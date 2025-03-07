@@ -13,8 +13,9 @@ import typer
 from minmodkg.entity_linking import EntityLinking, IEntityLinking
 from rdflib import RDF, RDFS, XSD, Graph, Namespace, URIRef
 from slugify import slugify
-from sm.misc.funcs import assert_isinstance
 from tqdm.auto import tqdm
+
+from sm.misc.funcs import assert_isinstance
 from tum.config import CRITICAL_MAAS_DIR
 from tum.lib.unit_and_commodity import (
     CommodityCompatibleLinker,
@@ -104,6 +105,9 @@ class MosMapping:
                 record_id = f"{slugify(site_name)}__{ri}"
             elif self.has(site_node, mos.record_id):
                 record_id = self.map_literal(self.object(site_node, mos.record_id))
+            elif is_site_name_uniques:
+                # if the mineral site names are unique, then we can use the mineral site name as the record id
+                record_id = slugify(site_name)
             elif record_type == "multirow":
                 record_id = slugify(site_name)
             elif record_type == "row":
@@ -114,9 +118,6 @@ class MosMapping:
                 else:
                     record_id = slugify(site_name)
                 record_id += "__" + str(ri)
-            elif is_site_name_uniques:
-                # if the mineral site names are unique, then we can use the mineral site name as the record id
-                record_id = slugify(site_name)
             else:
                 raise Exception("No record id")
 
@@ -239,6 +240,9 @@ class MosMapping:
         )
 
     def map_mineral_inventory(self, inv: rdflib.term.Node, doc: dict) -> list[dict]:
+        if not self.has(inv, mos.commodity):
+            return []
+
         base: dict = {
             "commodity": self.get_candidate(
                 self.object(inv, mos.commodity), self.commodity_linker
@@ -253,6 +257,9 @@ class MosMapping:
         if self.has(inv, mos.tonnage) and self.is_valid_literal(
             self.object(inv, mos.tonnage)
         ):
+            if not self.has(inv, mos.tonnage_unit):
+                raise Exception("Tonnage unit is required when tonnage is provided")
+
             base["ore"] = {
                 "value": self.map_literal(self.object(inv, mos.tonnage)),
                 "unit": self.get_candidate(
@@ -272,9 +279,13 @@ class MosMapping:
                 base["category"] = [
                     self.get_candidate(cat, self.category_linker) for cat in inv_cat_lst
                 ]
+
             if self.has(inv, mos.grade) and self.is_valid_literal(
                 self.object(inv, mos.grade)
             ):
+                if not self.has(inv, mos.grade_unit):
+                    raise Exception("Grade unit is required when grade is provided")
+
                 base["grade"] = {
                     "value": self.map_literal(self.object(inv, mos.grade)),
                     "unit": self.get_candidate(
@@ -389,7 +400,7 @@ class MosMapping:
         try:
             (obj,) = list(self.g.objects(subj, prop))
         except:
-            print(subj, list(self.g.objects(subj, prop)))
+            print(subj, prop, list(self.g.objects(subj, prop)))
             raise
         return obj
 
