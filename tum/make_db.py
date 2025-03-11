@@ -8,10 +8,18 @@ from typing import cast
 import orjson
 from drepr.models.prelude import DRepr
 from kgdata.dataset import Dataset
-from kgdata.db import GenericDB, build_database, deser_from_dict, ser_to_dict
+from kgdata.db import (
+    GenericDB,
+    build_database,
+    deser_from_dict,
+    deser_from_tuple,
+    ser_to_dict,
+    ser_to_tuple,
+)
+from kgdata.dbpedia.datasets.entity_metadata import convert_to_entity_metadata
 from kgdata.dbpedia.datasets.ontology_dump import aggregated_triples
 from kgdata.misc.resource import RDFResource, assert_not_bnode
-from kgdata.models.entity import Entity, EntityLabel, Statement
+from kgdata.models.entity import Entity, EntityLabel, EntityMetadata, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
 from rdflib import RDFS, SKOS, Graph
@@ -154,6 +162,25 @@ def entity_labels(project: str) -> Dataset[EntityLabel]:
     return ds
 
 
+def entity_metadata(project: str) -> Dataset[EntityMetadata]:
+    ds = Dataset(
+        DATA_DIR / project / "entity_metadata/*.gz",
+        deserialize=partial(deser_from_tuple, EntityMetadata),
+        name="entity-metadata",
+        dependencies=[entities(project)],
+    )
+
+    if not ds.has_complete_data():
+        (
+            entities(project)
+            .get_extended_rdd()
+            .map(convert_to_entity_metadata)
+            .map(ser_to_tuple)
+            .save_like_dataset(ds, auto_coalesce=True, shuffle=True)
+        )
+    return ds
+
+
 if __name__ == "__main__":
 
     # import dotenv
@@ -170,12 +197,20 @@ if __name__ == "__main__":
     def cli(project: str = "minmod"):
         (DATA_DIR / project).mkdir(parents=True, exist_ok=True)
 
-        for ds in ["entities", "classes", "props", "entity_labels"]:
+        for ds in ["entities", "classes", "props", "entity_labels", "entity_metadata"]:
+            format = None
+            if ds == "entity_metadata":
+                format = {
+                    "record_type": {"type": "ndjson", "key": "0", "value": None},
+                    "is_sorted": False,
+                }
+
             build_database(
                 globals()[ds](project),
                 lambda: getattr(
                     GenericDB(DATA_DIR / project / "databases", read_only=False), ds
                 ),
+                format=format,
                 compact=True,
             )
 

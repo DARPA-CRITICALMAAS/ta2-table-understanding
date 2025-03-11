@@ -1,0 +1,238 @@
+[
+  {
+    "version": 1,
+    "nodes": [
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/MineralSite",
+        "rel_uri": "mos:MineralSite",
+        "approximation": false,
+        "readable_label": null,
+        "id": 0
+      },
+      {
+        "col_index": 0,
+        "label": "row index",
+        "id": 1
+      },
+      {
+        "col_index": 2,
+        "label": "Project",
+        "id": 2
+      },
+      {
+        "col_index": 5,
+        "label": "Location Long",
+        "id": 3
+      },
+      {
+        "col_index": 4,
+        "label": "Location Lat",
+        "id": 4
+      },
+      {
+        "col_index": 1,
+        "label": "Country",
+        "id": 5
+      },
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/MineralInventory",
+        "rel_uri": "mos:MineralInventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 6
+      },
+      {
+        "col_index": 10,
+        "label": "Column 9",
+        "id": 7
+      },
+      {
+        "col_index": 12,
+        "label": "Column 11",
+        "id": 8
+      },
+      {
+        "col_index": 11,
+        "label": "Mt",
+        "id": 9
+      },
+      {
+        "value": "Mt",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 10
+      },
+      {
+        "col_index": 13,
+        "label": "Column 12",
+        "id": 11
+      },
+      {
+        "value": "%",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 12
+      },
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/Document",
+        "rel_uri": "mos:Document",
+        "approximation": false,
+        "readable_label": null,
+        "id": 13
+      },
+      {
+        "value": "The New Century for Nickel Resources, Reserves, and Mining: Reassessing the Sustainability of the Devil’s Metal",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 14
+      },
+      {
+        "value": "10.5382/econgeo.4950",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 15
+      }
+    ],
+    "edges": [
+      {
+        "source": 0,
+        "target": 1,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/row_index",
+        "rel_uri": "mos:row_index",
+        "approximation": false,
+        "readable_label": null,
+        "id": 0
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/name",
+        "rel_uri": "mos:name",
+        "approximation": false,
+        "readable_label": null,
+        "id": 1
+      },
+      {
+        "source": 0,
+        "target": 3,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/longitude",
+        "rel_uri": "mos:longitude",
+        "approximation": false,
+        "readable_label": null,
+        "id": 2
+      },
+      {
+        "source": 0,
+        "target": 4,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/latitude",
+        "rel_uri": "mos:latitude",
+        "approximation": false,
+        "readable_label": null,
+        "id": 3
+      },
+      {
+        "source": 0,
+        "target": 5,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/country",
+        "rel_uri": "mos:country",
+        "approximation": false,
+        "readable_label": null,
+        "id": 4
+      },
+      {
+        "source": 6,
+        "target": 7,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/category",
+        "rel_uri": "mos:category",
+        "approximation": false,
+        "readable_label": null,
+        "id": 5
+      },
+      {
+        "source": 6,
+        "target": 8,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/commodity",
+        "rel_uri": "mos:commodity",
+        "approximation": false,
+        "readable_label": null,
+        "id": 6
+      },
+      {
+        "source": 6,
+        "target": 9,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage",
+        "rel_uri": "mos:tonnage",
+        "approximation": false,
+        "readable_label": null,
+        "id": 7
+      },
+      {
+        "source": 6,
+        "target": 10,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage_unit",
+        "rel_uri": "mos:tonnage_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 8
+      },
+      {
+        "source": 6,
+        "target": 11,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade",
+        "rel_uri": "mos:grade",
+        "approximation": false,
+        "readable_label": null,
+        "id": 9
+      },
+      {
+        "source": 6,
+        "target": 12,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade_unit",
+        "rel_uri": "mos:grade_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 10
+      },
+      {
+        "source": 0,
+        "target": 6,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/mineral_inventory",
+        "rel_uri": "mos:mineral_inventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 11
+      },
+      {
+        "source": 13,
+        "target": 14,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/title",
+        "rel_uri": "mos:title",
+        "approximation": false,
+        "readable_label": null,
+        "id": 12
+      },
+      {
+        "source": 13,
+        "target": 15,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/doi",
+        "rel_uri": "mos:doi",
+        "approximation": false,
+        "readable_label": null,
+        "id": 13
+      },
+      {
+        "source": 0,
+        "target": 13,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/reference",
+        "rel_uri": "mos:reference",
+        "approximation": false,
+        "readable_label": null,
+        "id": 14
+      }
+    ]
+  }
+]

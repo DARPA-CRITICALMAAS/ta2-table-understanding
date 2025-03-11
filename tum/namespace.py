@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from rdflib import OWL, RDF, RDFS, SKOS, XSD
+
 from sm.namespaces.namespace import DefaultKnowledgeGraphNamespace
 from sm.namespaces.utils import register_kgns
 

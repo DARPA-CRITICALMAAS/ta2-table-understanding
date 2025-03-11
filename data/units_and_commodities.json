@@ -15,6 +15,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "%H2O",
+    "unit_observed_value": "%",
+    "commodity_observed_value": "H2O",
+    "commodity_form_observed_value": null,
+    "unit": "https://minmod.isi.edu/resource/Q201",
+    "commodity": "https://minmod.isi.edu/resource/Q680",
+    "commodity_form": null,
+    "unit_score": 1.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "% - Q201 | score = 1.000 | labels = percent, %",
+    "commodity_text": "H2O - Q680 | score = 1.000 | labels = Water, H2O",
+    "commodity_form_text": ""
+  },
+  {
     "value": "%Zn",
     "unit_observed_value": "%",
     "commodity_observed_value": "Zn",

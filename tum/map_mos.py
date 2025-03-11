@@ -71,8 +71,13 @@ class MosMapping:
         doc_nodes = list(self.g.subjects(RDF.type, mos.Document))
         if len(doc_nodes) == 0:
             # no document, they use `source_id`
+            lst = list(self.g.subject_objects(mos.source_id))
+            if len(lst) == 0:
+                raise Exception(
+                    "No reference document provided. Either use `mos:reference` to a `mos:Document` or `mos:source_id`"
+                )
             doc_node = None
-            source_id = next(self.g.subject_objects(mos.source_id))[1]
+            source_id = self.g.subject_objects(mos.source_id)[0][1]
             doc = {"uri": source_id}
         else:
             doc_node = doc_nodes[0]

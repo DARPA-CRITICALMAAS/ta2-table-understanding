@@ -1,0 +1,317 @@
+[
+  {
+    "version": 1,
+    "nodes": [
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/MineralSite",
+        "rel_uri": "mos:MineralSite",
+        "approximation": false,
+        "readable_label": null,
+        "id": 0
+      },
+      {
+        "col_index": 0,
+        "label": "row index",
+        "id": 1
+      },
+      {
+        "col_index": 1,
+        "label": "Deposit/Project Name",
+        "id": 2
+      },
+      {
+        "col_index": 14,
+        "label": "Primary Mineral deposit Type",
+        "id": 3
+      },
+      {
+        "col_index": 15,
+        "label": "Secondary Mineral deposit Type",
+        "id": 4
+      },
+      {
+        "col_index": 16,
+        "label": "Other Mineral deposit Type",
+        "id": 5
+      },
+      {
+        "col_index": 2,
+        "label": "Country",
+        "id": 6
+      },
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/MineralInventory",
+        "rel_uri": "mos:MineralInventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 7
+      },
+      {
+        "col_index": 6,
+        "label": "Min. ResC Mt",
+        "id": 8
+      },
+      {
+        "value": "Mt",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 9
+      },
+      {
+        "col_index": 7,
+        "label": "Column 7",
+        "id": 10
+      },
+      {
+        "col_index": 8,
+        "label": "Column 8",
+        "id": 11
+      },
+      {
+        "col_index": 9,
+        "label": "Column 9",
+        "id": 12
+      },
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/MineralInventory",
+        "rel_uri": "mos:MineralInventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 13
+      },
+      {
+        "col_index": 10,
+        "label": "Min. ResV Mt",
+        "id": 14
+      },
+      {
+        "col_index": 11,
+        "label": "Column 11",
+        "id": 15
+      },
+      {
+        "col_index": 12,
+        "label": "Column 12",
+        "id": 16
+      },
+      {
+        "col_index": 13,
+        "label": "Column 13",
+        "id": 17
+      },
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/Document",
+        "rel_uri": "mos:Document",
+        "approximation": false,
+        "readable_label": null,
+        "id": 18
+      },
+      {
+        "value": "Growing Global Copper Resources, Reserves and Production: Discovery Is Not the Only Control on Supply",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 19
+      },
+      {
+        "value": "10.5382/econgeo.2018.4590",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 20
+      }
+    ],
+    "edges": [
+      {
+        "source": 0,
+        "target": 1,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/row_index",
+        "rel_uri": "mos:row_index",
+        "approximation": false,
+        "readable_label": null,
+        "id": 0
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/name",
+        "rel_uri": "mos:name",
+        "approximation": false,
+        "readable_label": null,
+        "id": 1
+      },
+      {
+        "source": 0,
+        "target": 3,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/deposit_type",
+        "rel_uri": "mos:deposit_type",
+        "approximation": false,
+        "readable_label": null,
+        "id": 2
+      },
+      {
+        "source": 0,
+        "target": 4,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/deposit_type",
+        "rel_uri": "mos:deposit_type",
+        "approximation": false,
+        "readable_label": null,
+        "id": 3
+      },
+      {
+        "source": 0,
+        "target": 5,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/deposit_type",
+        "rel_uri": "mos:deposit_type",
+        "approximation": false,
+        "readable_label": null,
+        "id": 4
+      },
+      {
+        "source": 0,
+        "target": 6,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/country",
+        "rel_uri": "mos:country",
+        "approximation": false,
+        "readable_label": null,
+        "id": 5
+      },
+      {
+        "source": 7,
+        "target": 8,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage",
+        "rel_uri": "mos:tonnage",
+        "approximation": false,
+        "readable_label": null,
+        "id": 6
+      },
+      {
+        "source": 7,
+        "target": 9,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage_unit",
+        "rel_uri": "mos:tonnage_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 7
+      },
+      {
+        "source": 7,
+        "target": 10,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/commodity",
+        "rel_uri": "mos:commodity",
+        "approximation": false,
+        "readable_label": null,
+        "id": 8
+      },
+      {
+        "source": 7,
+        "target": 11,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade_unit",
+        "rel_uri": "mos:grade_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 9
+      },
+      {
+        "source": 7,
+        "target": 12,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade",
+        "rel_uri": "mos:grade",
+        "approximation": false,
+        "readable_label": null,
+        "id": 10
+      },
+      {
+        "source": 13,
+        "target": 14,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage",
+        "rel_uri": "mos:tonnage",
+        "approximation": false,
+        "readable_label": null,
+        "id": 11
+      },
+      {
+        "source": 13,
+        "target": 9,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage_unit",
+        "rel_uri": "mos:tonnage_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 12
+      },
+      {
+        "source": 13,
+        "target": 15,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/commodity",
+        "rel_uri": "mos:commodity",
+        "approximation": false,
+        "readable_label": null,
+        "id": 13
+      },
+      {
+        "source": 13,
+        "target": 16,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade_unit",
+        "rel_uri": "mos:grade_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 14
+      },
+      {
+        "source": 13,
+        "target": 17,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade",
+        "rel_uri": "mos:grade",
+        "approximation": false,
+        "readable_label": null,
+        "id": 15
+      },
+      {
+        "source": 0,
+        "target": 7,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/mineral_inventory",
+        "rel_uri": "mos:mineral_inventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 16
+      },
+      {
+        "source": 0,
+        "target": 13,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/mineral_inventory",
+        "rel_uri": "mos:mineral_inventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 17
+      },
+      {
+        "source": 18,
+        "target": 19,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/title",
+        "rel_uri": "mos:title",
+        "approximation": false,
+        "readable_label": null,
+        "id": 18
+      },
+      {
+        "source": 18,
+        "target": 20,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/doi",
+        "rel_uri": "mos:doi",
+        "approximation": false,
+        "readable_label": null,
+        "id": 19
+      },
+      {
+        "source": 0,
+        "target": 18,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/reference",
+        "rel_uri": "mos:reference",
+        "approximation": false,
+        "readable_label": null,
+        "id": 20
+      }
+    ]
+  }
+]

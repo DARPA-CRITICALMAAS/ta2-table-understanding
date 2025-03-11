@@ -97,6 +97,10 @@ class MNDRDB(GenericDB):
     def props(self):
         return get_prop_db(self.database_dir / "props.db", read_only=self.read_only)
 
+    @cached_property
+    def entity_redirections(self):
+        return {}
+
     def get_default_props(self):
         extra_props = [
             OntologyProperty(

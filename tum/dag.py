@@ -10,12 +10,13 @@ from drepr.main import OutputFormat
 from duneflow.ops.curation import SemanticModelCuratorActor, SemanticModelCuratorArgs
 from duneflow.ops.formatter import to_column_based_table
 from duneflow.ops.matrix_to_relational import matrix_to_relational_table
+from duneflow.ops.matrix_to_relational_v2 import matrix_to_relational_table_v2
 from duneflow.ops.norm import NormTableActor, NormTableArgs
 from duneflow.ops.reader import read_table_from_file
 from duneflow.ops.reader._table_file_reader import RawTable
 from duneflow.ops.select import table_range_select
 from duneflow.ops.writer import write_table_to_file
-from experiments.pipelines import get_type_conversions
+from experiments.dag import get_type_conversions
 from git import Optional
 from gp.actors.data import GPExample
 from gpp.actors.gpp_sem_label_actor import GppSemLabelActor, GppSemLabelArgs
@@ -193,7 +194,7 @@ def get_dag(
                     Flow(
                         source=["table", ""],
                         target=SemanticModelCuratorActor(
-                            SemanticModelCuratorArgs(output_dir, "yaml")
+                            SemanticModelCuratorArgs(output_dir, "yml")
                         ),
                     ),
                 ],
