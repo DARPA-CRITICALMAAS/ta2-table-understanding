@@ -22,6 +22,7 @@ from kgdata.misc.resource import RDFResource, assert_not_bnode
 from kgdata.models.entity import Entity, EntityLabel, EntityMetadata, Statement
 from kgdata.models.multilingual import MultiLingualString, MultiLingualStringList
 from kgdata.spark.extended_rdd import ExtendedRDD
+from minmodkg.models.kg.base import NS_MO
 from rdflib import RDFS, SKOS, Graph
 from tum.config import (
     CRITICAL_MAAS_DIR,
@@ -83,7 +84,11 @@ def entities(project: str):
             for resource in get_rdf_resources(dpath):
                 (label,) = resource.props.pop(str(RDFS.label))
                 (description,) = resource.props.pop(str(RDFS.comment), [""])
-                aliases = [str(x) for x in resource.props.pop(str(SKOS.altLabel), [])]
+                aliases = [
+                    str(x)
+                    for x in resource.props.pop(str(SKOS.altLabel), [])
+                    + resource.props.pop(NS_MO.uristr("aliases"), [])
+                ]
 
                 entities.append(
                     Entity(
