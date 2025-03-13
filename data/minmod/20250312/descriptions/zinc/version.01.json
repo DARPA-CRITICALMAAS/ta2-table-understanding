@@ -42,68 +42,54 @@
         "id": 6
       },
       {
-        "value": "Measured",
+        "value": "Inferred+Measured+Indicated",
         "readable_label": null,
         "is_in_context": false,
         "datatype": "string",
         "id": 7
       },
       {
-        "value": "Indicated",
-        "readable_label": null,
-        "is_in_context": false,
-        "datatype": "string",
-        "id": 8
-      },
-      {
-        "value": "Inferred",
-        "readable_label": null,
-        "is_in_context": false,
-        "datatype": "string",
-        "id": 9
-      },
-      {
         "col_index": 9,
         "label": "Column 9",
-        "id": 10
+        "id": 8
       },
       {
         "col_index": 8,
         "label": "Mt ore",
-        "id": 11
+        "id": 9
       },
       {
         "value": "million tonnes",
         "readable_label": null,
         "is_in_context": false,
         "datatype": "string",
-        "id": 12
+        "id": 10
       },
       {
         "col_index": 10,
         "label": "Column 10",
-        "id": 13
+        "id": 11
       },
       {
         "abs_uri": "https://minmod.isi.edu/ontology-simple/Document",
         "rel_uri": "mos:Document",
         "approximation": false,
         "readable_label": null,
-        "id": 14
+        "id": 12
       },
       {
         "value": "10.1016/j.oregeorev.2016.08.010",
         "readable_label": null,
         "is_in_context": false,
         "datatype": "string",
-        "id": 15
+        "id": 13
       },
       {
         "value": "The world's lead-zinc mineral resources: Scarcity, data, issues and opportunities",
         "readable_label": null,
         "is_in_context": false,
         "datatype": "string",
-        "id": 16
+        "id": 14
       }
     ],
     "edges": [
@@ -164,8 +150,8 @@
       {
         "source": 6,
         "target": 8,
-        "abs_uri": "https://minmod.isi.edu/ontology-simple/category",
-        "rel_uri": "mos:category",
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/commodity",
+        "rel_uri": "mos:commodity",
         "approximation": false,
         "readable_label": null,
         "id": 6
@@ -173,8 +159,8 @@
       {
         "source": 6,
         "target": 9,
-        "abs_uri": "https://minmod.isi.edu/ontology-simple/category",
-        "rel_uri": "mos:category",
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage",
+        "rel_uri": "mos:tonnage",
         "approximation": false,
         "readable_label": null,
         "id": 7
@@ -182,8 +168,8 @@
       {
         "source": 6,
         "target": 10,
-        "abs_uri": "https://minmod.isi.edu/ontology-simple/commodity",
-        "rel_uri": "mos:commodity",
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage_unit",
+        "rel_uri": "mos:tonnage_unit",
         "approximation": false,
         "readable_label": null,
         "id": 8
@@ -191,38 +177,20 @@
       {
         "source": 6,
         "target": 11,
-        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage",
-        "rel_uri": "mos:tonnage",
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade",
+        "rel_uri": "mos:grade",
         "approximation": false,
         "readable_label": null,
         "id": 9
       },
       {
         "source": 6,
-        "target": 12,
-        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage_unit",
-        "rel_uri": "mos:tonnage_unit",
-        "approximation": false,
-        "readable_label": null,
-        "id": 10
-      },
-      {
-        "source": 6,
-        "target": 13,
-        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade",
-        "rel_uri": "mos:grade",
-        "approximation": false,
-        "readable_label": null,
-        "id": 11
-      },
-      {
-        "source": 6,
-        "target": 10,
+        "target": 8,
         "abs_uri": "https://minmod.isi.edu/ontology-simple/grade_unit",
         "rel_uri": "mos:grade_unit",
         "approximation": false,
         "readable_label": null,
-        "id": 12
+        "id": 10
       },
       {
         "source": 0,
@@ -231,34 +199,34 @@
         "rel_uri": "mos:mineral_inventory",
         "approximation": false,
         "readable_label": null,
-        "id": 13
+        "id": 11
       },
       {
-        "source": 14,
-        "target": 15,
+        "source": 12,
+        "target": 13,
         "abs_uri": "https://minmod.isi.edu/ontology-simple/doi",
         "rel_uri": "mos:doi",
         "approximation": false,
         "readable_label": null,
-        "id": 14
+        "id": 12
       },
       {
-        "source": 14,
-        "target": 16,
+        "source": 12,
+        "target": 14,
         "abs_uri": "https://minmod.isi.edu/ontology-simple/title",
         "rel_uri": "mos:title",
         "approximation": false,
         "readable_label": null,
-        "id": 15
+        "id": 13
       },
       {
         "source": 0,
-        "target": 14,
+        "target": 12,
         "abs_uri": "https://minmod.isi.edu/ontology-simple/reference",
         "rel_uri": "mos:reference",
         "approximation": false,
         "readable_label": null,
-        "id": 16
+        "id": 14
       }
     ]
   }

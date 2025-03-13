@@ -18,7 +18,7 @@ from duneflow.ops.select import table_range_select
 from duneflow.ops.writer import write_table_to_file
 from experiments.dag import get_type_conversions
 from git import Optional
-from gp.actors.data import GPExample
+from gp.actors.data import KGDB, GPExample, KGDBArgs
 from gpp.actors.gpp_sem_label_actor import GppSemLabelActor, GppSemLabelArgs
 from gpp.actors.gpp_sem_model_actor import GppSemModelActor, GppSemModelArgs
 from gpp.actors.graph_space_actor import (
@@ -36,10 +36,25 @@ from libactor.typing import T
 from timer import Timer
 
 from sm.dataset import ColumnBasedTable, Context, Example, FullTable, Matrix
-from sm.namespaces.prelude import KGName
+from sm.misc.prelude import get_classpath
+from sm.namespaces.prelude import KGName, register_kgns
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
+from tum.config import CRITICAL_MAAS_DIR, PROJECT_DIR
+from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
+
+
+class FixMNDRNamespace(MNDRNamespace):
+    def id_to_uri(self, id: str) -> str:
+        return str(id)
+
+    def uri_to_id(self, uri: str) -> str:
+        return str(uri)
+
+
+kgns = FixMNDRNamespace.create()
+register_kgns(KGName.Generic, kgns)
 
 
 def select_table(tables: Sequence[T], idx: int) -> T:
@@ -58,12 +73,16 @@ def always_fail(input: T) -> T:
     raise Exception("Stopping here")
 
 
-def get_context():
+def get_context(
+    cwd: Path,
+):
+    GlobalStorage.init(cwd / "storage")
+
     """Return context for the DAG"""
     with Timer().watch_and_report("get context"):
         ontology, entities = Ontology.from_ttl(
             KGName.Generic,
-            MNDRNamespace.create(),
+            kgns,
             Path(__file__).parent.parent / "schema/mos.ttl",
         )
         ontkey = "mos-v3"
@@ -100,6 +119,17 @@ def get_context():
             context["ontology"],
             IdentObj(ontkey, pconns),
         )
+
+        kgdb = KGDB(
+            KGDBArgs(
+                name=KGName.Generic,
+                version="20250311",
+                datadir=CRITICAL_MAAS_DIR / "data/minmod/databases",
+                clspath=get_classpath(MNDRDB),
+            )
+        )
+        kgdb.ontology = context["ontology"]
+        context["kgdb"] = IdentObj(kgdb.args.get_key(), kgdb)
     return context
 
 
@@ -157,6 +187,7 @@ def get_dag(
     table: list[Flow | ComputeFn],
     sem_label: Optional[Flow | ComputeFn] = None,
     sem_model: Optional[Flow | ComputeFn] = None,
+    without_json_export: bool = False,
 ):
     GlobalStorage.init(cwd / "storage")
     output_dir = cwd / "output"
@@ -198,14 +229,20 @@ def get_dag(
                         ),
                     ),
                 ],
-                "export": [
-                    Flow(
-                        source=["table", "sem_model"],
-                        target=DReprActor(DReprArgs(output_dir, OutputFormat.TTL)),
-                    ),
-                    PartialFn(write_ttl, outdir=output_dir),
-                    PartialFn(mos_map, outdir=output_dir),
-                ],
+                "export": (
+                    [
+                        Flow(
+                            source=["table", "sem_model"],
+                            target=DReprActor(DReprArgs(output_dir, OutputFormat.TTL)),
+                        ),
+                        PartialFn(write_ttl, outdir=output_dir),
+                    ]
+                    + (
+                        []
+                        if without_json_export
+                        else [PartialFn(mos_map, outdir=output_dir)]
+                    )
+                ),
             },
             type_conversions=get_type_conversions(),
         )

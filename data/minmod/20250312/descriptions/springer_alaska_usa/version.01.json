@@ -1,0 +1,164 @@
+[
+  {
+    "version": 1,
+    "nodes": [
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/MineralSite",
+        "rel_uri": "mos:MineralSite",
+        "approximation": false,
+        "readable_label": null,
+        "id": 0
+      },
+      {
+        "col_index": 0,
+        "label": "Name",
+        "id": 1
+      },
+      {
+        "col_index": 3,
+        "label": "Longitude",
+        "id": 2
+      },
+      {
+        "col_index": 2,
+        "label": "Latitude",
+        "id": 3
+      },
+      {
+        "col_index": 1,
+        "label": "Country",
+        "id": 4
+      },
+      {
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/MineralInventory",
+        "rel_uri": "mos:MineralInventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 5
+      },
+      {
+        "value": "Graphite",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 6
+      },
+      {
+        "col_index": 5,
+        "label": "Grade Cg (%)",
+        "id": 7
+      },
+      {
+        "value": "%",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 8
+      },
+      {
+        "col_index": 4,
+        "label": "Tonnage (Mt)",
+        "id": 9
+      },
+      {
+        "value": "Mt",
+        "readable_label": null,
+        "is_in_context": false,
+        "datatype": "string",
+        "id": 10
+      }
+    ],
+    "edges": [
+      {
+        "source": 0,
+        "target": 1,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/name",
+        "rel_uri": "mos:name",
+        "approximation": false,
+        "readable_label": null,
+        "id": 0
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/longitude",
+        "rel_uri": "mos:longitude",
+        "approximation": false,
+        "readable_label": null,
+        "id": 1
+      },
+      {
+        "source": 0,
+        "target": 3,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/latitude",
+        "rel_uri": "mos:latitude",
+        "approximation": false,
+        "readable_label": null,
+        "id": 2
+      },
+      {
+        "source": 0,
+        "target": 4,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/country",
+        "rel_uri": "mos:country",
+        "approximation": false,
+        "readable_label": null,
+        "id": 3
+      },
+      {
+        "source": 5,
+        "target": 6,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/commodity",
+        "rel_uri": "mos:commodity",
+        "approximation": false,
+        "readable_label": null,
+        "id": 4
+      },
+      {
+        "source": 5,
+        "target": 7,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade",
+        "rel_uri": "mos:grade",
+        "approximation": false,
+        "readable_label": null,
+        "id": 5
+      },
+      {
+        "source": 5,
+        "target": 8,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/grade_unit",
+        "rel_uri": "mos:grade_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 6
+      },
+      {
+        "source": 5,
+        "target": 9,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage",
+        "rel_uri": "mos:tonnage",
+        "approximation": false,
+        "readable_label": null,
+        "id": 7
+      },
+      {
+        "source": 5,
+        "target": 10,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/tonnage_unit",
+        "rel_uri": "mos:tonnage_unit",
+        "approximation": false,
+        "readable_label": null,
+        "id": 8
+      },
+      {
+        "source": 0,
+        "target": 5,
+        "abs_uri": "https://minmod.isi.edu/ontology-simple/mineral_inventory",
+        "rel_uri": "mos:mineral_inventory",
+        "approximation": false,
+        "readable_label": null,
+        "id": 9
+      }
+    ]
+  }
+]
