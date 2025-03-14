@@ -28,8 +28,6 @@ pypdf2 = "^3.0.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.27.1"
-black = "^23.11.0"
-autoflake = "^2.2.1"
 
 [build-system]
 requires = ["poetry-core"]
