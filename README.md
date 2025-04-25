@@ -46,7 +46,9 @@ With the working folder structure setup, we can build the necessary databases (e
 
 ```bash
 export CFG_FILE=$MINMOD_DIR/ta2-minmod-kg/config.yml.template
-poetry run python -m tum.make_db [<project> = minmod]
+cd ta2-table-understanding
+poetry run python -m tum.make_db [--project <project=minmod>]
+cd ..
 ```
 
 Alternatively, you can use Docker to install the library:
@@ -80,7 +82,7 @@ Alternatively, you can use the [SAND UI](https://github.com/usc-isi-i2/sand) to 
 To install SAND, you can run the following commands:
 
 ```bash
-pip install web-sand sand-drepr
+poetry run pip install web-sand sand-drepr
 ```
 
 1. Setup SAND (run only once): `poetry run python -m sand init -d $MINMOD_DIR/data/minmod/sand.db`

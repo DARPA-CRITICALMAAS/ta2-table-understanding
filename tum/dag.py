@@ -4,7 +4,7 @@ import os
 import shutil
 from functools import partial
 from pathlib import Path
-from typing import Sequence
+from typing import Optional, Sequence
 
 from drepr.main import OutputFormat
 from duneflow.ops.curation import SemanticModelCuratorActor, SemanticModelCuratorArgs
@@ -17,7 +17,6 @@ from duneflow.ops.reader._table_file_reader import RawTable
 from duneflow.ops.select import table_range_select
 from duneflow.ops.writer import write_table_to_file
 from experiments.dag import get_type_conversions
-from git import Optional
 from gp.actors.data import KGDB, GPExample, KGDBArgs
 from gpp.actors.gpp_sem_label_actor import GppSemLabelActor, GppSemLabelArgs
 from gpp.actors.gpp_sem_model_actor import GppSemModelActor, GppSemModelArgs
@@ -33,11 +32,10 @@ from libactor.dag import DAG, Flow, PartialFn
 from libactor.dag._dag import ComputeFn
 from libactor.storage import GlobalStorage
 from libactor.typing import T
-from timer import Timer
-
 from sm.dataset import ColumnBasedTable, Context, Example, FullTable, Matrix
 from sm.misc.prelude import get_classpath
 from sm.namespaces.prelude import KGName, register_kgns
+from timer import Timer
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
 from tum.config import CRITICAL_MAAS_DIR, PROJECT_DIR
