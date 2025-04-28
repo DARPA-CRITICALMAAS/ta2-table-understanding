@@ -1,22 +1,22 @@
 [tool.poetry]
 name = "tum"
-version = "1.0.3"
+version = "1.0.4"
 description = "TA2 Table Understanding"
 authors = ["Binh Vu <binh@toan2.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 sem-desc = "^6.16.1"
 serde2 = "^1.6.2"
 ream2 = "^4.3.2"
 kgdata = "^7.0.8"
 drepr-v2 = "^1.3.4"
-steiner-tree = "^1.2.1"
+steiner-tree = "^1.2.2"
 dsl2 = "^1.3.5"
 rltk = "^2.0.0a20"
-minmodkg = "^2.6.9"
+minmodkg = "^2.7.1"
 minmodapi = "^1.3.2"
 pyspark = "^3.5.2"
 ray = "^2.34.0"
@@ -25,6 +25,8 @@ symspellpy = "^6.7.7"
 azure-ai-formrecognizer = "^3.3.3"
 azure-core = "^1.32.0"
 pypdf2 = "^3.0.1"
+duneflow = "^1.0.1"
+gramsplus-2 = "^6.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.27.1"

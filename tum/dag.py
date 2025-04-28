@@ -16,7 +16,6 @@ from duneflow.ops.reader import read_table_from_file
 from duneflow.ops.reader._table_file_reader import RawTable
 from duneflow.ops.select import table_range_select
 from duneflow.ops.writer import write_table_to_file
-from experiments.dag import get_type_conversions
 from gp.actors.data import KGDB, GPExample, KGDBArgs
 from gpp.actors.gpp_sem_label_actor import GppSemLabelActor, GppSemLabelArgs
 from gpp.actors.gpp_sem_model_actor import GppSemModelActor, GppSemModelArgs
