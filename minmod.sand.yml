@@ -34,8 +34,15 @@ export:
   default: drepr
   drepr: sand_drepr.main.DreprExport
 assistant:
-  default: grams+minmod
-  grams+minmod:
-    constructor: tum.integrations.sand.GramsMinModAssistant
+  default: openai
+  dsl:
+    constructor: tum.integrations.sand.DSLMinModAssistant
     args:
       dbpath: ::RELPATH::../data/minmod/databases
+  openai:
+    constructor: tum.integrations.sand.OpenAIMinModAssistant
+    args:
+      dbpath: ::RELPATH::../data/minmod/databases
+      model: gpt-4.1
+      max_sampled_rows: 20
+      api_key: "YOUR_KEY"

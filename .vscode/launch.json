@@ -38,7 +38,10 @@
             "args": [
                 "examples/tables/Mudd-and-Jowitt-2018-Copper.csv",
                 "examples/ttls/Mudd-and-Jowitt-2018-Copper.ttl"
-            ]
+            ],
+            "env": {
+                "CACHE_GPP": "0"
+            }
         }
     ]
 }

@@ -10,7 +10,8 @@ from dsl.dsl import DSL, DSLTable
 from gpp.sem_label.isem_label import TableSemLabelAnnotation
 from loguru import logger
 from sm.dataset import Dataset, Example, FullTable
-from sm.inputs.table import Column, ColumnBasedTable
+from sm.inputs.column import Column
+from sm.inputs.table import ColumnBasedTable
 from sm.misc.funcs import assert_not_null, assert_one_item
 from sm.namespaces.namespace import KnowledgeGraphNamespace
 from sm.outputs.semantic_model import (

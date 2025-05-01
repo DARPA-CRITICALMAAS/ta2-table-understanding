@@ -89,6 +89,7 @@ def always_fail(input: T) -> T:
 
 def get_context(
     cwd: Path,
+    dbpath: Path = CRITICAL_MAAS_DIR / "data/minmod/databases",
 ):
     GlobalStorage.init(cwd / "storage")
 
@@ -138,7 +139,7 @@ def get_context(
             KGDBArgs(
                 name=KGName.Generic,
                 version="20250311",
-                datadir=CRITICAL_MAAS_DIR / "data/minmod/databases",
+                datadir=dbpath,
                 clspath=get_classpath(MNDRDB),
             )
         )
@@ -198,9 +199,10 @@ def get_type_conversions():
 
 def get_dag(
     cwd: Path,
-    table: list[Flow | ComputeFn],
+    table: Sequence[Flow | ComputeFn] | Flow | ComputeFn,
     sem_label: Optional[Flow | ComputeFn] = None,
     sem_model: Optional[Flow | ComputeFn] = None,
+    without_sm_curation: bool = False,
     without_json_export: bool = False,
     sand_endpoint: Optional[str] = None,
 ):
@@ -243,14 +245,15 @@ def get_dag(
                 ),
             )
         )
-    sem_model_pipeline.append(
-        Flow(
-            source=["table", ""],
-            target=SemanticModelCuratorActor(
-                SemanticModelCuratorArgs(output_dir, "yml")
+    if not without_sm_curation:
+        sem_model_pipeline.append(
+            Flow(
+                source=["table", ""],
+                target=SemanticModelCuratorActor(
+                    SemanticModelCuratorArgs(output_dir, "yml")
+                ),
             ),
-        ),
-    )
+        )
 
     with Timer().watch_and_report("create dag"):
         dag = DAG.from_dictmap(
