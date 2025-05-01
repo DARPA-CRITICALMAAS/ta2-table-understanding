@@ -1,0 +1,105 @@
+Primary Mineral deposit Type
+Magmatic Sulphide
+Porphyry
+Porphyry
+VMS
+Magmatic Sulphide
+VMS
+Skarn
+IOCG
+Magmatic Sulphide
+Skarn
+VMS
+Epithermal
+Sediment-hosted Pb-Zn
+VMS
+Skarn
+VMS
+VMS
+Porphyry-Skarn
+IOCG
+VMS
+Sediment-hosted Pb-Zn
+Skarn-Porphyry
+Porphyry
+VMS
+Magmatic Sulphide
+Porphyry
+Sediment-hosted Stratiform/Stratabound Cu
+Sediment-hosted Stratiform/Stratabound Cu
+Porphyry
+Skarn
+Magmatic Sulphide
+Skarn
+Porphyry
+IOCG
+Sediment-hosted Pb-Zn
+Porphyry
+Magmatic Sulphide
+Porphyry
+IOCG?
+Epithermal
+Porphyry
+Magmatic Sulphide
+IOCG
+VMS
+Porphyry
+Magmatic Sulphide
+Magmatic Sulphide
+Sediment-hosted Pb-Zn
+Magmatic Sulphide
+Magmatic Sulphide
+Porphyry
+Epithermal
+IOCG
+VMS
+VMS
+IOCG?
+Porphyry
+Porphyry
+VMS
+Skarn
+VMS
+VMS
+VMS
+VMS
+Porphyry
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+VMS
+Sediment-hosted Stratiform/Stratabound Cu
+VMS
+Porphyry
+Sediment-hosted Pb-Zn
+VMS
+Porphyry/Skarn
+VMS
+Epithermal
+Porphyry
+Magmatic Sulphide
+VMS
+VMS
+VMS
+Epithermal
+VMS
+VMS
+Porphyry
+Magmatic Sulphide
+Tailings
+Porphyry
+VMS
+Porphyry
+Sediment-hosted Pb-Zn
+Porphyry
+VMS
+Porphyry
+Epithermal
+Epithermal
+VMS
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

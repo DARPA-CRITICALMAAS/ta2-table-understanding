@@ -1,0 +1,7 @@
+version: simple-tree-1
+model:
+- type: mos:MineralInventory
+  props:
+    mos:tonnage: Total Mineral Resource Mt (Tonnes of Million)
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

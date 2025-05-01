@@ -1,0 +1,105 @@
+Mineral Deposit Type Other Notes
+Impact-related
+Clay silicate-oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Oxide-Mg silicate
+Oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Small M-UM Intrusion-related
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Pechenga camp
+Duluth Complex - Keweenawan LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Clay silicate-hydrous Mg silicate
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Small M-UM Intrusion-related
+Clay silicate
+Pechenga camp
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Impact-related
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Oxide-hydrous Mg silicate
+Oxide
+Siberian Traps LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Pechenga camp
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Thompson Belt
+Oxide
+Stratabound Stratiform Reef-type
+Thompson Belt
+MVT
+Stratabound Contact-type
+Oxide
+Duluth Complex - Keweenawan LIP
+Hydrous Mg silicate-oxide
+Small M-UM Intrusion-related
+Oxide
+Stratabound Stratiform Reef-type
+Oxide-hydrous Mg silicate
+Oxide-Hydrous Mg silicate
+Oxide
+Siberian Traps LIP
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Sediment-hosted Pb-Zn/VMS
+Proterozoic Komatiite
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Pechenga camp
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Siberian Traps LIP
+Thompson Belt
+Stratabound Stratiform Reef-type
+Impact-related
+Clay silicate
+Duluth Complex - Keweenawan LIP
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Hydrous Mg silicate-oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+PGE-discordant intrusion
+Stratabound Stratiform Reef-type
+Stratabound Contact-type
+Stratabound Stratiform Reef-type
+Small M-UM Intrusion-related
+Stratabound Stratiform Reef-type
+Emeishan LIP
+Siberian Traps LIP
+Stratabound Stratiform Reef-type
+Hydrous Mg silicate-oxide
+Stratabound Contact-type
+Stratabound Contact-type
+Small M-UM Intrusion-related
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Impact-related
+Stratabound Stratiform Reef-type
+Impact-related
+Stratabound Contact-type
+Oxide
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Stratabound Stratiform Reef-type
+Oxide-hydrous Mg silicate
+Oxide-hydrous Mg silicate
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

@@ -1,0 +1,105 @@
+Mineral Deposit Type Secondary
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Oxide-hydrous Mg silicate
+Layered Intrusive
+Layered Intrusive
+Archean Komatiite
+Small M-UM Intrusion-related
+VMS
+Hydrous Mg silicate-oxide
+Layered Intrusive
+Clay silicate-hydrous Mg silicate
+Layered Intrusive
+Proterozoic Komatiite-related
+Layered Intrusive
+Archean Komatiite
+Archean Komatiite
+Hydrous Mg silicate-oxide
+Layered Intrusive
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Oxide
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Oxide-hydrous Mg silicate
+Unconformity-related Uranium
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Oxide
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+VMS
+Layered Intrusive
+Oxide-Hydrous Mg silicate
+Magmatic Sulphide
+Layered Intrusive
+Layered Intrusive
+Hydrous Mg silicate-Oxide
+Oxide-clay silicate
+Impact-related
+Layered Intrusive
+Layered Intrusive
+Archean Komatiite
+Layered Intrusive
+Layered Intrusive
+Small M-UM Intrusion-related
+Impact-related
+Oxide-hydrous Mg silicate
+Small M-UM Intrusion-related
+Layered Intrusive
+Unconformity-related Uranium
+Oxide-Hydrous Mg silicate
+Oxide-hydrous Mg silicate
+Unconformity-related Uranium
+Layered Intrusive
+Archean Komatiite
+Small M-UM Intrusion-related
+Archean Komatiite
+Hydrous Mg silicate-clay silicate-oxide
+Proterozoic komatiite
+Layered Intrusive
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Archean komatiite
+Layered Intrusive
+Proterozoic Komatiite
+Layered Intrusive
+Archean Komatiite
+Layered Intrusive
+Small M-UM Intrusion-related
+Hydrous Mg silicate-oxide
+Layered Intrusive
+Proterozoic Komatiite-related
+Small M-UM Intrusion-related
+Archean Komatiite
+Sediment-hosted polymetallic
+Layered Intrusive
+Layered Intrusive
+Hydrous Mg silicate-oxide
+Impact-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Small M-UM Intrusion-related
+Archean Komatiite
+Small M-UM Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

@@ -1,0 +1,109 @@
+record_id,Mineral Site Name,Country,State/Province,Latitude,Longitude,Tonnage,Grade (% of carbon)
+1,Quebrada Del Gato,Argentina,San Juan,-31.43,-68.13,,
+2,Undercliff,Australia,New South Wales,-28.66,152.21,793,32
+3,Jack's Creek,Australia,Queensland,-20.67,147.87,"2,200",61
+4,Koppio-Uley mines,Australia,South Australia,-34.8,135.71,"35,030",15
+5,Munglinup River,Australia,Western Australia,-33.5,120.85,"30,000",25
+6,Doppl-Muehldorf-Zettlitz,Austria,Niederosterreich,48.38,15.45,"1,000,000",10
+7,Kaisersberg-Trieben,Austria,Steiermark,47.35,15.07,"1,000,000",85
+8,Itanhem,Brazil,Bahia,-17.1,40.35,"2,778",40
+9,Itapacerica,Brazil,Minas Gerais,-20.43,-45.13,"383,000",15.7
+10,Pedra Azul,Brazil,Minas Gerais,-15.88,-45.13,"26,800,000",11.9
+11,Bisset Creek,Canada,Ontario,46.23,-78.07,"4,938,000",15.58
+12,Coronation,Canada,Ontario,45.29,-77.94,,
+13,Graphite Lake-Ryerson-Todd area,Canada,Ontario,45.73,-79.08,,
+14,Kirkham-Portland-Timmins area,Canada,Ontario,44.56,-76.57,"478,000",9
+15,Tagliamonte,Canada,Ontario,46.23,-78.07,,
+16,Graphex-Graphico-Orwell Mines,Canada,Quebec,46.14,-75.55,"2,200,000",10
+17,North American Mine,Canada,Quebec,45.52,-75.55,,
+18,St-Amime-Lac Des Iles,Canada,Quebec,46.25,-75.53,,
+19,Lac Knife,Canada,Quebec,52.55,-61.18,"4,900,000",15.8
+20,Pollon Lake area,Canada,Saskatchewan,56.38,-103.13,"1,663,000",10.3
+21,Haikou,China,Hainan,20.08,110.42,"5,000,000",3.7
+22,Heling,China,Heilongjiang [Heilungkiang],46.31,129.55,,
+23,Jixi (Liu Mao),China,Heilongjiang [Heilungkiang],45.28,131,"300,000,000",85
+24,Liu Mao,China,Heilongjiang [Heilungkiang],45.3,131.07,"3,000,000",18.5
+25,Honan deposits,China,Henan [Honan],32.5,113.88,,
+26,Hunan,China,Hunan,26,113,,
+27,Panshi,China,Jilin [Kirin],42.93,125.97,,
+28,Hohot,China,Nei Mongol (Inner Mongolia),40.81,111.62,,
+29,Shandong Peninsula,China,Shandong [Shantung],37.03,120.32,"5,900,000",5
+30,Xing He,China,,40.88,113.88,,
+31,Kolledeye,Czech Republic,,49.22,14.45,,
+32,Velke Vbrno-Konstantin Vvk,Czech Republic,,50.13,17.33,"200,000",50
+33,Kropfmühl-Cesky Krumlov,Germany and Czech Republic,"Bayern [Bavaria, Germany]",48.8,14.32,,16
+34,East Godavari,India,Andhra Pradesh,17.38,81.85,,
+35,Khammam,India,Andhra Pradesh,17.38,81.33,,
+36,Srikakulam,India,Andhra Pradesh,18.33,83.1,,
+37,Visakhapatnam,India,Andhra Pradesh,18.02,82.93,,
+38,Khamdih,India,Bihar,23.97,84.22,,
+39,Sokra,India,Bihar,23.97,84.13,,
+40,Dandatapa area,India,Odisha,20.8,84.6,,
+41,Sargipali area,India,Odisha,20.9,83.08,,
+42,Titlagarh area,India,Odisha,20.2,83.37,,
+43,Tumdibandh-Phulbani area,India,Odisha,19.83,83.63,,
+44,Tamatia mines,India,Rajasthan,23.62,74.5,"1,120,000",14.1
+45,Madurai,India,Tamil Nadu [Madras],10.07,77.83,"130,000",19.5
+46,Chawia,Kenya,,-3.46,38.38,,
+47,Oldoinyo-Nyiro,Kenya,,0.75,37,"1,200,000",13
+48,Yonghung-Kaechon area,"Korea, North",Hamgyong-Namdo,39.83,127.43,,
+49,Songjin deposits,"Korea, North",Hwanghae-Namdo,40.67,129.2,,
+50,Wolmyong-Kaerim-Pongmyong,"Korea, Republic of",Ch'Ungch'Ong-Bukto,36.41,127.75,"12,000,000",80
+51,Yongwon-GunJa-Pyongtack-Shihung,"Korea, Republic of",Ch'Ungch'Ong-Namdo,36.91,127.67,"1,400,000",3.5
+52,Ampangadiatany,Madagascar,Toamasina,-19.41,48.89,,
+53,Ambatomitamba Sahanovo area,Madagascar,Toamasina,-18.35,49.1,"2,000,000",9
+54,Perinet-Ambatovy area,Madagascar,,-18.93,48.45,,
+55,Vatomandry area,Madagascar,,-19.34,48.94,"2,000,000",7
+56,Telixtlahuaca,Mexico,Oaxaca,17.33,-96.86,"13,400,000",4
+57,Las Trincheras,Mexico,Sonora,30.4,-111.53,,
+58,Lourdes area,Mexico,Sonora,28.6,-110.5,"2,000,000",80
+59,Tonichi,Mexico,Sonora,28.58,-109.57,"2,000,000",75
+60,Skaland-Senja,Norway,,69.45,17.29,"2,000,000",30
+61,La Galgada-La Limena-San Carlos Mines,Peru,Ancash,-8.46,-78.13,,
+62,Baia De Fier,Romania,,45.23,23.75,"58,000",70
+63,Botogolsk,Russia,Buryatiya,52.46,100.75,,
+64,Boyarsk,Russia,Buryatiya,51.85,106.1,,5
+65,Kureyka,Russia,Krasnodarskiy Kray,66.48,87.17,"87,000,000",88
+66,Noginskoje,Russia,Krasnodarskiy Kray,64.5,91.25,"10,000,000",85
+67,Soyusnoye,Russia,,47.91,130.93,"8,200,000",18
+68,Tayginsk,Russia,,55.63,60.65,"1,116,000",3
+69,Gumbu graphite mine,South Africa,,-22.32,30.67,,
+70,Malonga graphite mine,South Africa,,-22.65,30.88,"20,000,000",63.5
+71,Kahatagaha-Kolongaha mines,Sri Lanka,,7.57,80.53,"100,000",60
+72,Zavalyevskiy,Ukraine,,48.2,30.03,"100,000,000",5.5
+73,Clay-Coosa-Chilton graphite district,United States,Alabama,33.28,-85.84,"300,000",10
+74,Christophosen Creek,United States,Alaska,65.03,-165.63,"65,000",52
+75,Graphite Creek,United States,Alaska,65.04,-165.54,,
+76,Imuruk Basin Graphite,United States,Alaska,65.04,-165.55,,
+77,Kigluaik Mountains graphite district,United States,Alaska,65.04,-165.54,"10,000,000",10
+78,Southern California area,United States,California,34.65,-118.47,,
+79,Black Lady Nos. 1 and 2,United States,California,36.9,-118.07,,
+80,Eureka Plumbago-Morgan mines,United States,California,38.02,-120.38,,
+81,Skinner Ranch,United States,California,38.19,-122.59,,
+82,Unnamed,United States,California,36.28,-121.56,,
+83,Unnamed,United States,California,41.21,-123.77,,
+84,Wedge,United States,California,32.8,-115.98,,
+85,Graphite Basin,United States,Colorado,38.59,-106.38,,
+86,Unnamed graphite deposit,United States,Colorado,38.67,-105.98,,
+87,Graphite mines,United States,Connecticut,41.86,-73.37,,
+88,Lead Hill Mine graphite deposits,United States,Connecticut,41.94,-72.18,,
+89,Unnamed graphite mine,United States,Georgia,34.12,-84.74,,
+90,Detroit-Northern Graphite quarries,United States,Michigan,46.63,-88.35,,
+91,Black Diamond Carbon Graphite,United States,Montana,46.32,-111.63,,
+92,Crystal Graphite Mine,United States,Montana,45.1,-112.51,,
+93,Boston-Goshen-Osgood Mines area,United States,New Hampshire,43.27,-72.1,,
+94,Stone Mills Graphite Mine,United States,New Jersey,40.68,-74.88,,
+95,Adirondack Mining & Milling Mine,United States,New York,43.56,-73.46,,
+96,Essex-Warren area,United States,New York,43.9,-73.47,,
+97,Champlain Graphite Mine,United States,New York,43.54,-73.48,,
+98,M. B. Hooper Graphite Mine,United States,New York,43.55,-73.5,,
+99,Pope Mills-Rossie deposits,United States,New York,44.47,-75.55,,
+100,Rowland Graphite Mine area,United States,New York,43.6,-73.97,,
+101,Silver Leaf Graphite Co. Mine,United States,New York,43.59,-73.43,,
+102,Dillinger Mine and mill,United States,North Carolina,35.9,-82.18,,
+103,Cranston-Penners Ledge Mines,United States,Rhode Island,41.77,-71.46,,
+104,Copper Cliff Mine,United States,South Dakota,44.12,-103.84,,
+105,Burnet-Llano district,United States,Texas,30.78,-98.36,"400,000",5
+106,Rabbit Creek area,United States,Wyoming,42.21,-105.23,,
+107,Taskazgan,Uzbekistan,,40.81,63.38,"2,300,000",15
+108,Lynx Mine,Zimbabwe,,-16.43,29.3,"6,700,000",26.2

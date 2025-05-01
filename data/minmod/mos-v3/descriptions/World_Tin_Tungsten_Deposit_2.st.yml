@@ -1,0 +1,7 @@
+version: simple-tree-1
+model:
+- type: mos:MineralInventory
+  props:
+    mos:date: year
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

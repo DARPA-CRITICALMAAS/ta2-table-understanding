@@ -10,7 +10,7 @@
 
 <https://minmod.isi.edu/ontology-simple/> rdf:type owl:Ontology ;
                                            rdfs:comment "A simplified version of the Minmod Knowledge Graph Ontology"@en ;
-                                           owl:versionInfo "2.0.0" .
+                                           owl:versionInfo "3.0.0" .
 
 #################################################################
 #    Object Properties

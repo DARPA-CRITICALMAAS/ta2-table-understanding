@@ -1,0 +1,105 @@
+Secondary Deposit Type
+MVT
+Low sulfidation?
+Sedex
+MVT
+Sedex
+Sediment-hosted polymetallic
+Bolivian Polymetallic vein type?
+MVT?
+Sedex
+MVT
+Sedex
+Sedex
+MVT
+MVT
+MVT
+Low sulfidation
+MVT
+MVT
+MVT
+Sedex
+Sedex
+High to intermediate sulfidation
+MVT
+MVT
+MVT
+Low sulfidation
+MVT
+Sedex
+Non-sulfide Zinc deposit
+Low sulfidation?
+MVT
+Seafloor Massive sulfide
+Sedex?
+Sedex
+MVT
+MVT
+Sedex
+MVT
+Original skarn with epithermal overprint
+MVT
+Sedex
+Sedex
+Sedex
+????
+MVT
+Low sulfidation?
+Sedex
+High sulphidation
+Porpphyry Cu-Au
+MVT
+MVT
+Low sulfidation?
+Sedex
+Sedex
+MVT
+Sedex
+Low sulfidation?
+Sedex
+Low sulfidation
+Sedex
+Sedex
+Sedex
+Cu-Mo
+Sedex
+Sedex?
+Sedex
+Sedex
+Low sulfidation
+MVT
+MVT
+Sedex
+Sedex
+MVT
+Associated with Kundip
+High and low sulphidation
+Sedex
+High sulphidation
+Cu-Mo
+Low sulfidation
+MVT
+MVT
+Sedex
+Sedex
+Sedex
+MVT
+MVT
+Low sulfidation?
+Sedex
+Sedex
+Sedex
+Sedex
+MVT
+Sedex
+Basal U mineralisation
+Porphyry Cu-Au-Pb-Zn
+Sedex
+Sedex
+Seafloor Massive sulfide
+MVT
+MVT
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

@@ -1,11 +1,17 @@
 from __future__ import annotations
 
+import base64
+import hashlib
 import os
 import shutil
+from dataclasses import asdict
 from functools import partial
 from pathlib import Path
 from typing import Optional, Sequence
 
+import httpx
+import orjson
+import sm.outputs as O
 from drepr.main import OutputFormat
 from duneflow.ops.curation import SemanticModelCuratorActor, SemanticModelCuratorArgs
 from duneflow.ops.formatter import to_column_based_table
@@ -31,10 +37,13 @@ from libactor.dag import DAG, Flow, PartialFn
 from libactor.dag._dag import ComputeFn
 from libactor.storage import GlobalStorage
 from libactor.typing import T
+from slugify import slugify
 from sm.dataset import ColumnBasedTable, Context, Example, FullTable, Matrix
 from sm.misc.prelude import get_classpath
 from sm.namespaces.prelude import KGName, register_kgns
+from sm.outputs.semantic_model import SemanticModel
 from timer import Timer
+
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
 from tum.config import CRITICAL_MAAS_DIR, PROJECT_DIR
@@ -52,6 +61,14 @@ class FixMNDRNamespace(MNDRNamespace):
 
 kgns = FixMNDRNamespace.create()
 register_kgns(KGName.Generic, kgns)
+
+
+def get_ontology():
+    return Ontology.from_ttl(
+        KGName.Generic,
+        kgns,
+        Path(__file__).parent.parent / "schema/mos.ttl",
+    )[0]
 
 
 def select_table(tables: Sequence[T], idx: int) -> T:
@@ -185,6 +202,7 @@ def get_dag(
     sem_label: Optional[Flow | ComputeFn] = None,
     sem_model: Optional[Flow | ComputeFn] = None,
     without_json_export: bool = False,
+    sand_endpoint: Optional[str] = None,
 ):
     GlobalStorage.init(cwd / "storage")
     output_dir = cwd / "output"
@@ -212,20 +230,34 @@ def get_dag(
             ),
         )
 
+    sem_model_pipeline = [sem_model]
+    # add sand curator to the pipeline
+    if sand_endpoint is not None:
+        sem_model_pipeline.append(
+            Flow(
+                source=["table", ""],
+                target=PartialFn(
+                    sand_curator,
+                    sand_endpoint=sand_endpoint,
+                    output_dir=output_dir,
+                ),
+            )
+        )
+    sem_model_pipeline.append(
+        Flow(
+            source=["table", ""],
+            target=SemanticModelCuratorActor(
+                SemanticModelCuratorArgs(output_dir, "yml")
+            ),
+        ),
+    )
+
     with Timer().watch_and_report("create dag"):
         dag = DAG.from_dictmap(
             {
                 "table": table,
                 "sem_label": sem_label,
-                "sem_model": [
-                    sem_model,
-                    Flow(
-                        source=["table", ""],
-                        target=SemanticModelCuratorActor(
-                            SemanticModelCuratorArgs(output_dir, "yml")
-                        ),
-                    ),
-                ],
+                "sem_model": sem_model_pipeline,
                 "export": (
                     [
                         Flow(
@@ -243,4 +275,193 @@ def get_dag(
             },
             type_conversions=get_type_conversions(),
         )
+
     return dag
+
+
+def sand_curator(
+    table: IdentObj[ColumnBasedTable],
+    sm: IdentObj[SemanticModel],
+    sand_endpoint: str,
+    output_dir: Path,
+) -> IdentObj[SemanticModel]:
+    from sand.client import Client
+
+    client = Client(sand_endpoint)
+
+    project_name = "Default"
+    project_id = client.get_project_id(project_name)
+
+    # TODO: we can warn about the conflict if we store the table key in the description
+    # retrieve or create table if it doesn't exist
+    table_name = slugify(table.value.table_id) + "__" + shorten_key(table.key)
+    if not client.tables.has({"project": project_id, "name": table_name}):
+        # create table if it does not exist
+        resp = httpx.post(
+            client.projects.endpoint + f"/{project_id}/upload",
+            files={
+                table_name: (
+                    table_name + ".csv",
+                    table.value.df.to_csv(index=False, sep=","),
+                )
+            },
+            data={"selected_tables": "[0]"},
+        )
+        if resp.status_code != 200:
+            raise Exception(f"Failed to upload table: {resp.text}")
+
+    table_id = client.get_table_id(project_name, table_name)
+
+    # we create the semantic models if they do not exist in SAND
+    if not client.semantic_models.has({"table": table_id, "name": "sm-auto-0"}):
+        client.semantic_models.create(
+            {
+                "table": table_id,
+                "name": "sm-auto-0",
+                "description": "",
+                "version": 0,
+                "data": to_sand_sm(sm.value),
+            }
+        )
+
+    print(
+        "Edit the semantic model in SAND at this URL:",
+        f"{sand_endpoint}/table/{table_id}",
+    )
+
+    # we download the semantic model
+    resp = client.semantic_models.get_one({"table": table_id, "name": "sm-auto-0"})
+    curated_sm = from_sand_sm(resp["data"])
+
+    if resp["version"] > 0:
+        # this means that the semantic model has been updated
+        O.ser_simple_tree_yaml(
+            table.value,
+            curated_sm,
+            kgns,
+            output_dir / f"description.yml",
+        )
+    return IdentObj(key=hash_dict(resp["data"]), value=curated_sm)
+
+
+def to_sand_sm(sm: SemanticModel) -> dict:
+    """Convert a SemanticModel to a dictionary suitable for SAND."""
+
+    def serialize_classnode(node: O.ClassNode) -> dict:
+        return {
+            "id": node.id,
+            "type": "class_node",
+            "uri": node.abs_uri,
+            "label": node.label,
+            "approximation": node.approximation,
+        }
+
+    def serialize_datanode(node: O.DataNode) -> dict:
+        return {
+            "id": node.id,
+            "type": "data_node",
+            "column_index": node.col_index,
+            "label": node.label,
+        }
+
+    def serialize_literalnode(node: O.LiteralNode) -> dict:
+        return {
+            "id": node.id,
+            "type": "literal_node",
+            "value": {"value": node.value, "type": node.datatype.value},
+            "is_in_context": node.is_in_context,
+            "label": node.label,
+        }
+
+    return {
+        "nodes": [
+            (
+                serialize_classnode(node)
+                if isinstance(node, O.ClassNode)
+                else (
+                    serialize_datanode(node)
+                    if isinstance(node, O.DataNode)
+                    else serialize_literalnode(node)
+                )
+            )
+            for node in sm.iter_nodes()
+        ],
+        "edges": [
+            {
+                "label": edge.label,
+                "uri": edge.abs_uri,
+                "source": edge.source,
+                "target": edge.target,
+                "approximation": edge.approximation,
+            }
+            for edge in sm.iter_edges()
+        ],
+    }
+
+
+def from_sand_sm(obj: dict) -> SemanticModel:
+    """Convert a dictionary from SAND to a SemanticModel."""
+    nodes = []
+    for node in obj["nodes"]:
+        if node["type"] == "class_node":
+            nodes.append(
+                asdict(
+                    O.ClassNode(
+                        id=node["id"],
+                        abs_uri=node["uri"],
+                        rel_uri=node["uri"],
+                        approximation=node["approximation"],
+                        readable_label=node["label"],
+                    )
+                )
+            )
+        elif node["type"] == "data_node":
+            nodes.append(
+                asdict(
+                    O.DataNode(
+                        id=node["id"],
+                        col_index=node["column_index"],
+                        label=node["label"],
+                    )
+                )
+            )
+        elif node["type"] == "literal_node":
+            nodes.append(
+                asdict(
+                    O.LiteralNode(
+                        id=node["id"],
+                        value=node["value"]["value"],
+                        datatype=O.LiteralNodeDataType(node["value"]["type"]),
+                        is_in_context=node["is_in_context"],
+                        readable_label=node["label"],
+                    )
+                )
+            )
+
+    edges = [
+        asdict(
+            O.Edge(
+                source=edge["source"],
+                target=edge["target"],
+                abs_uri=edge["uri"],
+                rel_uri=edge["uri"],
+                readable_label=edge["label"],
+                approximation=edge.get("approximation", False),
+            )
+        )
+        for edge in obj["edges"]
+    ]
+
+    return SemanticModel.from_dict({"nodes": nodes, "edges": edges})
+
+
+def shorten_key(key: str) -> str:
+    """Shorten a key using SHA-256 and return base64 digest."""
+    return base64.b64encode(hashlib.sha256(key.encode()).digest()).decode("utf-8")[:8]
+
+
+def hash_dict(d: dict) -> str:
+    """Hash a dictionary using SHA-256 and return base64 digest."""
+    return base64.b64encode(hashlib.sha256(orjson.dumps(d)).digest()).decode("utf-8")[
+        :8
+    ]

@@ -1,0 +1,105 @@
+Mineral Deposit Type Primary
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Magmatic Sulphide
+Laterite
+Laterite
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Hydrothermal Ni
+Laterite
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Laterite
+Hydrothermal Ni
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Magmatic Sulphide
+Hydrothermal Ni
+Magmatic Sulphide
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

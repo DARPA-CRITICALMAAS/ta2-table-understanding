@@ -1,0 +1,7 @@
+version: simple-tree-1
+model:
+- type: mos:MineralSite
+  props:
+    mos:longitude: Longitude (decimal degrees)
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

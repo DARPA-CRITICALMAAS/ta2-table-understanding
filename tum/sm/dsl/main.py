@@ -3,8 +3,11 @@ from __future__ import annotations
 import random
 import shutil
 from copy import deepcopy
+from pathlib import Path
 
 import requests
+from dsl.dsl import DSL, DSLTable
+from gpp.sem_label.isem_label import TableSemLabelAnnotation
 from loguru import logger
 from sm.dataset import Dataset, Example, FullTable
 from sm.inputs.table import Column, ColumnBasedTable
@@ -17,6 +20,9 @@ from sm.outputs.semantic_model import (
     SemanticModel,
     SemanticType,
 )
+from sm.typing import ColumnIndex, ExampleId, InternalID
+from smml.dataset import ColumnarDataset
+
 from tum.config import PROJECT_DIR
 from tum.lib.cgraph import CGraph
 from tum.lib.graph_generation import GraphGeneration
@@ -24,13 +30,11 @@ from tum.lib.steiner_tree import SteinerTree
 from tum.misc import SemanticTypePrediction
 from tum.namespace import MNDRNamespace
 
-from dsl.dsl import DSL, DSLTable
-
 DREPR_UNK = "http://purl.org/drepr/1.0/Unknown"
 
 
 def get_training_data(ds: str, kgns: KnowledgeGraphNamespace):
-    examples = []
+    examples: list[Example[DSLTable]] = []
     for file in (PROJECT_DIR / f"data/training_set/{ds}").iterdir():
         if file.name.endswith(".txt"):
             file.read_text()

@@ -1,0 +1,847 @@
+row index,Project,State/ Province,Country,Principal Deposit type,Total Mineral Resource Mt (Tonnes of Million),Column 6,Column 7
+3,Dubbo Zirconia (Toongi),New South Wales,Australia,Alkaline,73.2,Y ppm,1102.4073122774698
+4,Narraburra,New South Wales,Australia,Alkaline,73.0,Y ppm,57.482666997325204
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,La ppm,44.99146404892021
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Ce ppm,96.30515485254428
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Pr ppm,10.247637701015908
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Nd ppm,37.37683016329958
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Sm ppm,7.101020565349738
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Eu ppm,1.4878308126892204
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Gd ppm,6.054757379947159
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Tb ppm,0.9386612259584378
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Dy ppm,5.368379260153067
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Ho ppm,1.0451263478391652
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Er ppm,3.064329008497542
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Tm ppm,0.4090846706795449
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Yb ppm,2.641286658601906
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Lu ppm,0.3851708893318678
+5,Charley Creek (JV),Northern Territory,Australia,Alluvial/Placer,805.302,Y ppm,29.66128523672225
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,La ppm,19810.430091310518
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Ce ppm,39496.89503798658
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Pr ppm,4289.615234960591
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Nd ppm,15122.655969821883
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Sm ppm,2047.1473204997014
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Eu ppm,445.31263266995336
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Gd ppm,920.0532230457118
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Tb ppm,76.0741787512408
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Dy ppm,211.92800606960898
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Ho ppm,25.47967025960568
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Er ppm,51.04967782859505
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Tm ppm,8.518847268397202
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Yb ppm,25.632276341265538
+7,Mount Weld CLD,Western Australia,Australia,Carbonatite,14.949,Y ppm,582.2392195316116
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,La ppm,10257.068435223591
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Ce ppm,16262.077722589718
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Pr ppm,1963.1348512004395
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Nd ppm,7418.711710836119
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Sm ppm,1180.4119363848718
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Eu ppm,321.63829924095194
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Gd ppm,835.0787174238969
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Tb ppm,109.25869205206583
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Dy ppm,535.2293867825109
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Ho ppm,80.22579613651646
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Er ppm,173.42571670910135
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Tm ppm,16.940596928971676
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Yb ppm,76.45859495807608
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Lu ppm,8.506828703349886
+8,Mount Weld Duncan,Western Australia,Australia,Carbonatite,8.992999999999999,Y ppm,1969.093292952386
+9,Coors and Crown ,Western Australia,Australia,Carbonatite,37.7,Y ppm,70.86904150355154
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,La ppm,28.991099380025783
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Ce ppm,108.42822325127956
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Pr ppm,16.23485537565945
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Nd ppm,62.58630527817404
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Sm ppm,39.6682725395733
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Eu ppm,2.5908160945669465
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Gd ppm,65.06896551724138
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Tb ppm,20.851254578253975
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Dy ppm,162.06434316353887
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Ho ppm,37.53765945059017
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Er ppm,151.29133117222628
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Tm ppm,19.263256103249883
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Yb ppm,122.0694275274056
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Lu ppm,15.828818414836409
+18,Hastings-Brockman,Western Australia,Australia,Felsic Volcanic,36.2,Y ppm,881.9258498219758
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,La ppm,4193.121583714688
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Ce ppm,10692.582694558048
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Pr ppm,1302.5254997440466
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Nd ppm,4535.639639536393
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Sm ppm,509.8589067744945
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Eu ppm,86.57981556446377
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Gd ppm,220.79261908580597
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Tb ppm,17.866836111133907
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Dy ppm,71.67393115644255
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Ho ppm,8.976260411224267
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Er ppm,20.232389081508874
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Tm ppm,2.2508353926524634
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Yb ppm,13.545033257539277
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Lu ppm,2.2605426721399566
+19,Nolans Bore,Northern Territory,Australia,Granite -Related Skarn,47.3,Y ppm,273.26533054176036
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,La ppm,151.3335387637346
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Ce ppm,344.15288813063614
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Pr ppm,46.3262351927633
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Nd ppm,206.86059914407986
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Sm ppm,64.7713902271163
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Eu ppm,9.767376676517388
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Gd ppm,118.252
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Tb ppm,23.423321564221897
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Dy ppm,156.91487935656838
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Ho ppm,36.2020171492087
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Er ppm,100.93667886646448
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Tm ppm,13.458011195770485
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Yb ppm,76.40316686967113
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Lu ppm,10.45581394180027
+20,Area 5 (Browns Range),Western Australia,Australia,Granite -Related Skarn,1.52,Y ppm,1007.7341471666697
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,La ppm,66.48341231354735
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Ce ppm,163.04360467950275
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Pr ppm,0.0020576562567305623
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Nd ppm,124.97542082738944
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Sm ppm,163.70923606331726
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Eu ppm,38.05908842918845
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Gd ppm,521.558124137931
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Tb ppm,113.36717594821589
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Dy ppm,840.8351206434314
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Ho ppm,201.23677340814058
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Er ppm,604.780537488236
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Tm ppm,87.06991758668946
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Yb ppm,515.0363824604141
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Lu ppm,69.55886314519776
+21,Gambit (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.11,Y ppm,5268.50691176731
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,La ppm,187.03522497084276
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Ce ppm,458.59162076529367
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Pr ppm,62.88018737884989
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Nd ppm,303.64646219686165
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Sm ppm,179.93011011699932
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Eu ppm,35.114194135030694
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Gd ppm,476.22674482758623
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Tb ppm,102.79904937677206
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Dy ppm,790.5951742627348
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Ho ppm,191.48571163923145
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Er ppm,591.382946774025
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Tm ppm,87.13120976519983
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Yb ppm,529.0348477466505
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Lu ppm,73.3929547167915
+22,Gambit West (Browns Range),Western Australia,Australia,Granite -Related Skarn,0.39,Y ppm,4748.635246311091
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,La ppm,156.19381130685653
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Ce ppm,388.4120935900561
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Pr ppm,52.67467585612751
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Nd ppm,247.73888730385164
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Sm ppm,160.93245698554713
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Eu ppm,33.42152761991362
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Gd ppm,436.48262068965516
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Tb ppm,94.32244262558177
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Dy ppm,645.1729222520107
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Ho ppm,138.13858677817183
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Er ppm,399.35664331276786
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Tm ppm,55.72334629140102
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Yb ppm,327.0231181485993
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Lu ppm,44.61968035382218
+23,Wolverine (Browns Range),Western Australia,Australia,Granite -Related Skarn,4.46,Y ppm,3854.5829160540625
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,La ppm,2.322
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Ce ppm,4.946400000000001
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Pr ppm,0.5724
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Nd ppm,2.0088
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Sm ppm,0.3348
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Eu ppm,0.0864
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Gd ppm,0.1944
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Tb ppm,0.032400000000000005
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Dy ppm,0.06480000000000001
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Ho ppm,0.0108
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Er ppm,0.0216
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Yb ppm,0.0108
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Lu ppm,0.0108
+86,North Stradbroke,Queensland,Australia,Heavy Mineral Sands,1195.7288401253918,Y ppm,0.22680000000000003
+108,Milo,Queensland,Australia,IOCG,187.2,La ppm,127.90190902952551
+108,Milo,Queensland,Australia,IOCG,187.2,Ce ppm,221.979039727029
+108,Milo,Queensland,Australia,IOCG,187.2,Pr ppm,20.507185737675094
+108,Milo,Queensland,Australia,IOCG,187.2,Nd ppm,68.58773181169758
+108,Milo,Queensland,Australia,IOCG,187.2,Sm ppm,10.348245010323467
+108,Milo,Queensland,Australia,IOCG,187.2,Eu ppm,3.454421459422596
+108,Milo,Queensland,Australia,IOCG,187.2,Gd ppm,8.675862068965518
+108,Milo,Queensland,Australia,IOCG,187.2,Dy ppm,6.970509383378016
+108,Milo,Queensland,Australia,IOCG,187.2,Er ppm,4.372581825786887
+108,Milo,Queensland,Australia,IOCG,187.2,Y ppm,40.94655731316316
+109,Olympic Dam,South Australia,Australia,IOCG,9576.0,La ppm,1705.35878706034
+109,Olympic Dam,South Australia,Australia,IOCG,9576.0,Ce ppm,2561.2966122349503
+110,Korella ,Queensland,Australia,Sedimentary Undifferentiated,13.72,Y ppm,551.2036561387348
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,La ppm,3208.1006885293527
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Ce ppm,2028.7497918692675
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Pr ppm,59.2204208596228
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Nd ppm,152.7944520557619
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Sm ppm,17.076311898223548
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Eu ppm,5.985383716821328
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Gd ppm,34.359849778081255
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Tb ppm,43.01001356900573
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Dy ppm,284.68664560826056
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Ho ppm,60.50278981214164
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Er ppm,329.0259591681222
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Tm ppm,60.685325257762905
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Yb ppm,565.1764932887929
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Lu ppm,52.240324801440295
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Y ppm,1247.4198724497535
+112,Port Pirie (Radium Hill),South Australia,Australia,Tailings,0.1515,Sc ppm,193.649099813398
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,La ppm,10062.370360263936
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Ce ppm,17741.573801235372
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Pr ppm,1630.8250658654842
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Nd ppm,4994.703370279998
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Sm ppm,540.8229143783404
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Eu ppm,122.01959264658224
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Gd ppm,249.737557075121
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Tb ppm,26.17953999908446
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Dy ppm,105.27372568864983
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Ho ppm,14.52355980584377
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Er ppm,29.09861240190677
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Tm ppm,1.7923698720061711
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Yb ppm,14.651832917206468
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Lu ppm,0.19738619247910766
+113,Araxá,Minas Gerais,Brazil,Carbonatite ,28.29,Y ppm,373.6227224482518
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,La ppm,1612.1907813630887
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Ce ppm,4641.180612494234
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Pr ppm,609.4541626199234
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Nd ppm,2262.532192014982
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Sm ppm,446.12035652012446
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Eu ppm,52.59220911101867
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Gd ppm,368.9756460787892
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Tb ppm,47.42512047810635
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Dy ppm,215.88664944724982
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Ho ppm,35.6534807328324
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Er ppm,87.35478600266353
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Tm ppm,11.63048512760541
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Yb ppm,71.26234569999808
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Lu ppm,10.120332480964809
+118,Thor Lake/ Nechalacho (Basal and Upper),Northwest Territries,Canada,Alkaline,311.70000000000005,Y ppm,836.1410587759934
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,La ppm,3417.4531033745
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Ce ppm,7427.522313265561
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Pr ppm,952.1393452342944
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Nd ppm,3470.765610578681
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Sm ppm,494.85573809371766
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Eu ppm,93.41279354704422
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Gd ppm,223.41279354704423
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Tb ppm,19.999999999999996
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Dy ppm,59.99999999999999
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Er ppm,40.984924500185336
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Yb ppm,10.0
+119,Hoidas Lake (JAK Zone),Saskatchewan,Canada,Alkaline,4.823588000000001,Y ppm,200.98492450018531
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,La ppm,518.2023875829918
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Ce ppm,1052.4240325922426
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Pr ppm,131.95821851889468
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Nd ppm,478.1715049199361
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Sm ppm,107.30572808250894
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Eu ppm,13.960207213853677
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Gd ppm,107.95682109865312
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Tb ppm,19.88402358026476
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Dy ppm,132.13498577279233
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Ho ppm,28.466103047005543
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Er ppm,91.32883790563794
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Tm ppm,14.154142082111855
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Yb ppm,85.37550595438252
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Lu ppm,11.821800328953826
+120,Kipawa Lake (Zeus),Quebec,Canada,Alkaline,24.45,Y ppm,726.5534070236756
+121,Two Tom,Labrador,Canada,Alkaline,44.3,La ppm,2336.341538272666
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Ce ppm,4431.043139166464
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Pr ppm,461.41167909768967
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Nd ppm,1543.2239657631956
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Sm ppm,267.32966276668964
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Eu ppm,25.90816094566947
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Gd ppm,164.84137931034482
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Tb ppm,17.376045481878315
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Dy ppm,69.70509383378017
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Ho ppm,8.729688244323295
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Er ppm,17.49032730314755
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Yb ppm,8.781973203410475
+121,Two Tom,Labrador,Canada,Alkaline,44.3,Y ppm,29.135050395904557
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,La ppm,1033.6140759162438
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Ce ppm,2227.8089517998
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Pr ppm,247.73497901372573
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Nd ppm,953.5370353264649
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Sm ppm,207.41822869877103
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Eu ppm,8.987122006890758
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Gd ppm,201.4116532327547
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Tb ppm,40.19252300426614
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Dy ppm,275.693703181922
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Ho ppm,60.14722744012338
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Er ppm,190.57323243789284
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Tm ppm,28.047803462734187
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Yb ppm,192.0893808170417
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Lu ppm,27.811285998456285
+123,Strange Lake,Quebec,Canada,Alkaline ,492.479,Y ppm,1709.5612846669635
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,La ppm,406.3291539087632
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Ce ppm,718.1356924150226
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Pr ppm,70.88970001162747
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Nd ppm,235.80653850625947
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Sm ppm,39.532915390876326
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Eu ppm,1.625376923375063
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Gd ppm,25.00603077400101
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Tb ppm,3.050753846750126
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Dy ppm,13.703015387000503
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Ho ppm,2.150753846750126
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Er ppm,5.576130770125189
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Tm ppm,0.7253769233750631
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Yb ppm,4.450753846750127
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Lu ppm,0.625376923375063
+124,Elliot Lake,,Canada,Alluvial/Placer,51.602,Y ppm,57.23593077787684
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,La ppm,168.35577272186828
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Ce ppm,317.013889890227
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Pr ppm,31.615244678915772
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Nd ppm,101.78557817537138
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Sm ppm,17.24707501720578
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Eu ppm,0.863605364855649
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Gd ppm,10.780737698251322
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Tb ppm,1.7376045481878315
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Dy ppm,6.47048730548284
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Ho ppm,0.8729688244323295
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Er ppm,2.6235490954721317
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Yb ppm,2.1306195541100603
+125,Eco Ridge - HWZ,Ontario,Canada,Alluvial/Placer,49.18,Y ppm,4.272716960036436
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,La ppm,319.74246470472013
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Ce ppm,605.6225423265192
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Pr ppm,58.8911112912576
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Nd ppm,195.53336987447835
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Sm ppm,33.962513302181286
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Eu ppm,1.727210729711298
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Gd ppm,22.889965071255922
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Tb ppm,3.400845236184668
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Dy ppm,14.812332439678285
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Ho ppm,2.6189064732969882
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Er ppm,6.121614556101642
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Tm ppm,0.8756025501477219
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Yb ppm,4.3909866017052375
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Lu ppm,0.8793788008242449
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Y ppm,60.93438701224966
+126,Eco Ridge - MCB,Ontario,Canada,Alluvial/Placer,59.303,Sc ppm,5.117487105856732
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,La ppm,3451.6461850101286
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Ce ppm,6755.846697538387
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Pr ppm,741.6765508459159
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Sm ppm,293.2002752924983
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Eu ppm,60.45237553989543
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Gd ppm,139.68137931034482
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Tb ppm,10.860028426173947
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Dy ppm,39.993297587131366
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Ho ppm,4.364844122161648
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Er ppm,8.307905468995086
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Tm ppm,1.9263256103249884
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Lu ppm,0.703503040659396
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Y ppm,74.01877668148725
+127,Niobec REE Zone,Quebec,Canada,Carbonatite,466.8,Sc ppm,27.642763501363188
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,La ppm,3576.6746724583563
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Ce ppm,6801.279416718607
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Pr ppm,742.9597841498879
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Nd ppm,2572.99888783769
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Sm ppm,281.1644833654469
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Eu ppm,60.028325882383605
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Gd ppm,130.165970581143
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Tb ppm,11.29754943530705
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Dy ppm,35.73637615192575
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Ho ppm,4.364844122161648
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Er ppm,7.873787677824068
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Tm ppm,0.8756025501477219
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Yb ppm,0.8781973203410475
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Lu ppm,0.8793788008242449
+128,Saint-Honoré Complex,Quebec,Canada,Carbonatite,1058.2,Y ppm,513.3510245775157
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,La ppm,3171.7016046639383
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Ce ppm,6110.7505197859045
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Pr ppm,644.212181758867
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Nd ppm,2074.2735796428087
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Sm ppm,214.20474879559535
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Eu ppm,41.04916865129508
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Gd ppm,72.06574015466329
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Tb ppm,72.16675234452893
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Dy ppm,20.50403428554312
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Ho ppm,2.6189064732969882
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Er ppm,4.6053441624029965
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Tm ppm,0.8756025501477219
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Yb ppm,2.868334025136263
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Lu ppm,0.23405652839176833
+129,Montviel,Quebec,Canada,Carbonatite,250.60000000000002,Y ppm,57.952739206642015
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,La ppm,972.0545086243939
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Ce ppm,1750.2193516938826
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Pr ppm,179.43787520465708
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Nd ppm,643.0099857346647
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Sm ppm,103.4824501032347
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Eu ppm,25.90816094566947
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Gd ppm,69.40689655172415
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Tb ppm,26.064068222817472
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Dy ppm,43.5656836461126
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Ho ppm,8.729688244323295
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Er ppm,17.49032730314755
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Yb ppm,17.56394640682095
+130,Clay - Howells,Ontario,Canada,Carbonatite,11.971,Y ppm,196.85844862097673
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,La ppm,1921.9941982083606
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Ce ppm,3410.214992425732
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Pr ppm,566.4023779442665
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Nd ppm,1233.6391078721954
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Sm ppm,160.8151076715199
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Eu ppm,36.410730554683205
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Gd ppm,90.50886025079002
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Tb ppm,8.688022740939157
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Dy ppm,36.73572289431797
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Ho ppm,8.729688244323295
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Er ppm,10.635261628813804
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Yb ppm,8.781973203410475
+131,Lavergne-Springer,,Canada,Carbonatite,49.595,Y ppm,161.52562185959653
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,La ppm,3076.960456108417
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Ce ppm,5746.373625396686
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Pr ppm,618.2653655683146
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Nd ppm,2208.0000996150584
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Sm ppm,284.0192697585486
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Eu ppm,66.36735932546182
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Gd ppm,156.67625079734344
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Tb ppm,15.912559416253396
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Dy ppm,63.068154504869995
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Ho ppm,8.911947383378973
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Er ppm,18.734104138524426
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Tm ppm,1.8364579766830114
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Yb ppm,11.604029152198141
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Lu ppm,1.7628763744772544
+133,Ashram (Eldor),,Canada,Carbonatite ,422.74,Y ppm,10.404728521682063
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,La ppm,1563.6269916967194
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Ce ppm,3332.8413966153134
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Pr ppm,377.3971959366269
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Nd ppm,1370.9715643723002
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Sm ppm,249.2250867604563
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Eu ppm,12.334305329097146
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Gd ppm,196.6561283676628
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Tb ppm,32.07922927807504
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Dy ppm,184.38526385547152
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Ho ppm,35.72494823803925
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Er ppm,101.31011448747097
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Tm ppm,14.571050829827307
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Yb ppm,91.5804714273118
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Lu ppm,14.070060813187919
+134,Foxtrot,,Canada,Felsic Volcanic,14.393999999999998,Y ppm,1015.9605501855989
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,La ppm,41.43037669753313
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Ce ppm,71.7163051425786
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Pr ppm,8.957100084775432
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Nd ppm,34.40596104384757
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Sm ppm,6.797664394152278
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Eu ppm,1.4631451511603
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Gd ppm,5.797806757187827
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Tb ppm,0.8688022740939157
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Dy ppm,5.135722215585942
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Ho ppm,1.0475625893187954
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Er ppm,2.973355641535083
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Tm ppm,0.43780127507386096
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Yb ppm,2.9858708891595613
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Lu ppm,0.43968940041212246
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Y ppm,31.831991815663887
+135,Buckton,Alberta,Canada,Shale-hosted,4712.05,Sc ppm,11.957442512777101
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,La ppm,39.734859738505925
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Ce ppm,69.58189129904947
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Pr ppm,8.971893760232854
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Nd ppm,33.779457917261055
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Sm ppm,6.640123881624226
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Eu ppm,1.4681291202546032
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Gd ppm,5.812827586206897
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Tb ppm,0.9556825015033074
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Dy ppm,5.402144772117963
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Ho ppm,1.0475625893187954
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Er ppm,3.060807278050821
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Tm ppm,0.43780127507386096
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Yb ppm,3.0736906211936663
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Lu ppm,0.6155651605769714
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Y ppm,30.94614812321754
+136,Buckton south,Alberta,Canada,Shale-hosted,496.698,Sc ppm,14.277748129241836
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,La ppm,12628.336264062658
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Ce ppm,26012.380272813825
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Pr ppm,2784.7223677278516
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Nd ppm,7942.882899656626
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Sm ppm,661.4186990878004
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Eu ppm,206.7224949102586
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Gd ppm,309.9007058390618
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Tb ppm,45.21010581947641
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Dy ppm,140.88031855774085
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Er ppm,31.205109645943313
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Yb ppm,91.39799691340937
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Lu ppm,22.88023974277187
+143,Bayan Obo,Inner Mongolia,China,Carbonatite,1540.0,Y ppm,157.49384305577905
+152,Karrat,,Greenland,Alkaline,26.3,La ppm,2245.0
+152,Karrat,,Greenland,Alkaline,26.3,Ce ppm,5036.9
+152,Karrat,,Greenland,Alkaline,26.3,Pr ppm,470.1
+152,Karrat,,Greenland,Alkaline,26.3,Nd ppm,2003.6
+152,Karrat,,Greenland,Alkaline,26.3,Sm ppm,358.2
+152,Karrat,,Greenland,Alkaline,26.3,Eu ppm,106.0
+152,Karrat,,Greenland,Alkaline,26.3,Gd ppm,270.1
+152,Karrat,,Greenland,Alkaline,26.3,Tb ppm,38.8
+152,Karrat,,Greenland,Alkaline,26.3,Dy ppm,180.8
+152,Karrat,,Greenland,Alkaline,26.3,Ho ppm,28.2
+152,Karrat,,Greenland,Alkaline,26.3,Er ppm,69.1
+152,Karrat,,Greenland,Alkaline,26.3,Tm ppm,7.9
+152,Karrat,,Greenland,Alkaline,26.3,Yb ppm,42.6
+152,Karrat,,Greenland,Alkaline,26.3,Lu ppm,5.5
+152,Karrat,,Greenland,Alkaline,26.3,Y ppm,721.5
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,La ppm,529.854975139648
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Ce ppm,859.0588837436023
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Pr ppm,88.86447152992542
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Nd ppm,278.6376604850214
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Sm ppm,49.32663454920854
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Eu ppm,40.41673107524438
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Gd ppm,40.60303448275862
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Tb ppm,40.65994642759526
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Dy ppm,4.530831099195711
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Ho ppm,9.078875774096229
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Er ppm,4.547485098818363
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Tm ppm,4.553133260768155
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Yb ppm,25.11644336175396
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Lu ppm,4.5727697642860745
+153,Motzfeldt (Aries),,Greenland,Alkaline,340.0,Y ppm,243.6320160133208
+154,Tanbreez,,Greenland,Alkaline,4300.0,La ppm,1157.0
+154,Tanbreez,,Greenland,Alkaline,4300.0,Ce ppm,2145.0000000000005
+154,Tanbreez,,Greenland,Alkaline,4300.0,Pr ppm,208.00000000000003
+154,Tanbreez,,Greenland,Alkaline,4300.0,Nd ppm,780.0
+154,Tanbreez,,Greenland,Alkaline,4300.0,Sm ppm,149.5
+154,Tanbreez,,Greenland,Alkaline,4300.0,Eu ppm,19.5
+154,Tanbreez,,Greenland,Alkaline,4300.0,Gd ppm,162.5
+154,Tanbreez,,Greenland,Alkaline,4300.0,Tb ppm,32.5
+154,Tanbreez,,Greenland,Alkaline,4300.0,Dy ppm,188.50000000000003
+154,Tanbreez,,Greenland,Alkaline,4300.0,Ho ppm,39.0
+154,Tanbreez,,Greenland,Alkaline,4300.0,Er ppm,156.0
+154,Tanbreez,,Greenland,Alkaline,4300.0,Tm ppm,19.5
+154,Tanbreez,,Greenland,Alkaline,4300.0,Yb ppm,130.0
+154,Tanbreez,,Greenland,Alkaline,4300.0,Lu ppm,19.5
+154,Tanbreez,,Greenland,Alkaline,4300.0,Y ppm,1235.0000000000002
+155,Kvanefjeld,Kujalleq,Greenland,Alkaline,619.0,Y ppm,680.3427984340956
+156,Sørensen,,Greenland,Alkaline,242.0,Y ppm,704.7532460630968
+157,Zone 3,,Greenland,Alkaline,95.0,Y ppm,764.5982144438738
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,La ppm,2552.9233398970764
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Ce ppm,6010.888048086624
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Pr ppm,704.7676202155016
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Nd ppm,2328.0511386025305
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Sm ppm,231.8707540395839
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Eu ppm,51.57478215721862
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Gd ppm,126.5851651679997
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Tb ppm,10.203268185242877
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Dy ppm,24.822092784575464
+158,Sarfartoq ST-1 Zone,Qaasuitsup,Greenland,Carbonatite,12.421,Y ppm,46.97108198296432
+167,Mrima Hill,,Kenya,Carbonatite,159.4,La ppm,8657.572166225213
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Ce ppm,14134.836186210108
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Pr ppm,1428.319443119538
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Nd ppm,4968.79014653739
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Sm ppm,696.8981456615095
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Eu ppm,196.0617145792516
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Gd ppm,502.78906675896684
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Tb ppm,61.734728564379836
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Dy ppm,307.91263148334406
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Ho ppm,53.857357066185514
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Er ppm,133.33960596249318
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Tm ppm,16.636448452806718
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Yb ppm,90.18601653276522
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Lu ppm,12.311303211539427
+167,Mrima Hill,,Kenya,Carbonatite,159.4,Y ppm,1516.8410294938722
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,La ppm,367.7958892694997
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Ce ppm,437.35487014040814
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Pr ppm,84.00413664282229
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Nd ppm,181.7867295603932
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Sm ppm,91.11559794591835
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Eu ppm,5.111362811600298
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Gd ppm,79.781706494109
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Tb ppm,34.44614068687157
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Dy ppm,136.45116375315578
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Ho ppm,12.667290446139868
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Er ppm,72.22577885956943
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Tm ppm,5.555829143043803
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Yb ppm,73.11471152245643
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Lu ppm,11.111658286087605
+169,Kutessay II,Chui,Kyrgyzstan,Alkaline,18.011,Y ppm,594.0292519742433
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,La ppm,144.9554969001289
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Ce ppm,264.66731659761155
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Pr ppm,29.906312534109514
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Nd ppm,98.59486447931526
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Sm ppm,18.10942876806607
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Eu ppm,2.1590134121391227
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Gd ppm,14.74896551724138
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Tb ppm,2.258885912644181
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Dy ppm,13.06970509383378
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Ho ppm,2.7062033557402216
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Er ppm,7.870647286416396
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Tm ppm,1.1382833151920386
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Yb ppm,7.02557856272838
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Lu ppm,1.1431924410715184
+173,Tantalus,,Madagascar,Laterite / Soil / Clay,435.0,Y ppm,74.80621047597116
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,La ppm,2442.3957453905346
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Ce ppm,4433.972300058759
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Pr ppm,475.3331685481706
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Nd ppm,1636.2188343839784
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Sm ppm,240.59639117801825
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Eu ppm,63.003443467554526
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Gd ppm,150.85203166871162
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Tb ppm,18.443707968470623
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Dy ppm,88.37934019497152
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Ho ppm,14.526454676130891
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Er ppm,34.53000544025277
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Tm ppm,4.556264287766381
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Yb ppm,24.92407632967925
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Lu ppm,3.472215286313468
+174,Songwe Hill,,Malawi,Carbonatite,56.489999999999995,Y ppm,372.8588925678864
+175,Kangankunde,,Malawi,Carbonatite,2.53,La ppm,10773.774673132404
+175,Kangankunde,,Malawi,Carbonatite,2.53,Ce ppm,17991.230416768223
+175,Kangankunde,,Malawi,Carbonatite,2.53,Pr ppm,1702.7799890849556
+175,Kangankunde,,Malawi,Carbonatite,2.53,Nd ppm,5089.209700427961
+175,Kangankunde,,Malawi,Carbonatite,2.53,Sm ppm,383.91988988300074
+175,Kangankunde,,Malawi,Carbonatite,2.53,Eu ppm,69.57204819277108
+175,Kangankunde,,Malawi,Carbonatite,2.53,Gd ppm,132.42835862068964
+175,Kangankunde,,Malawi,Carbonatite,2.53,Tb ppm,25.786051495107422
+175,Kangankunde,,Malawi,Carbonatite,2.53,Dy ppm,295.54959785522794
+175,Kangankunde,,Malawi,Carbonatite,2.53,Ho ppm,3.701387815593077
+175,Kangankunde,,Malawi,Carbonatite,2.53,Er ppm,3.7079493882672803
+175,Kangankunde,,Malawi,Carbonatite,2.53,Tm ppm,3.7125548126263412
+175,Kangankunde,,Malawi,Carbonatite,2.53,Y ppm,3.3387192886117654
+193,Sæteråsen,,Norway,Alkaline,8.0,Y ppm,750.0
+212,Lesnoe,,Russia,Alkaline,1.511,Y ppm,4000.0
+219,Sakharjok,,Russia,Alkaline,35.8,Y ppm,270.0
+223,Umm al Birak,,Saudi Arabia,Alkaline,6.6,La ppm,371.0
+223,Umm al Birak,,Saudi Arabia,Alkaline,6.6,Ce ppm,800.0
+223,Umm al Birak,,Saudi Arabia,Alkaline,6.6,Y ppm,311.0
+224,Ghurayyah,,Saudi Arabia,Alkaline,385.0,La ppm,61.0
+224,Ghurayyah,,Saudi Arabia,Alkaline,385.0,Ce ppm,144.0
+224,Ghurayyah,,Saudi Arabia,Alkaline,385.0,Y ppm,1326.0
+225,Jabal Sa'id Zr deposit,,Saudi Arabia,Alkaline ,23.0,La ppm,587.0
+225,Jabal Sa'id Zr deposit,,Saudi Arabia,Alkaline ,23.0,Ce ppm,1301.0
+225,Jabal Sa'id Zr deposit,,Saudi Arabia,Alkaline ,23.0,Y ppm,4151.0
+226,Jabal Hamra,,Saudi Arabia,Alkaline ,18.0,La ppm,2593.0
+226,Jabal Hamra,,Saudi Arabia,Alkaline ,18.0,Ce ppm,3432.0
+226,Jabal Hamra,,Saudi Arabia,Alkaline ,18.0,Y ppm,1592.0
+227,Jabal Tawlah,,Saudi Arabia,Alkaline ,6.4,La ppm,19.0
+227,Jabal Tawlah,,Saudi Arabia,Alkaline ,6.4,Ce ppm,137.0
+227,Jabal Tawlah,,Saudi Arabia,Alkaline ,6.4,Y ppm,5216.0
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,La ppm,30333.23517068727
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Ce ppm,62531.948870647495
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Pr ppm,7257.268536533717
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Nd ppm,26461.731534268492
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Sm ppm,4156.193098023793
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Eu ppm,86.3605364855649
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Gd ppm,2880.969458128079
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Tb ppm,317.73202941905373
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Dy ppm,1442.4268366864176
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Ho ppm,223.9537068201546
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Er ppm,467.2835943956168
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Tm ppm,45.28326273753164
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Yb ppm,190.7153604438121
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Lu ppm,22.918744016679902
+228,Steenkampskraal,Western Cape,South Africa,Alkaline,0.4165,Y ppm,5474.281332393727
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,La ppm,4834.057870618429
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Ce ppm,8405.410147276372
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Pr ppm,886.5994937636062
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Nd ppm,3041.885280914271
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Sm ppm,437.063941996752
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Eu ppm,113.8462816193888
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Gd ppm,274.4905513345023
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Tb ppm,32.10968856703031
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Dy ppm,150.96206762494765
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Ho ppm,25.276639690484117
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Er ppm,62.17136117644256
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Tm ppm,7.6264817220964485
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Yb ppm,43.20697738966076
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Lu ppm,5.796282114660749
+230,Zandkopsdrift (Sandkopsdrif),Northern Cape,South Africa,Carbonatite,42.480000000000004,Y ppm,725.7069927976685
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,La ppm,1651.7551416176414
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Ce ppm,4560.049268763992
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Pr ppm,592.4373226146104
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Nd ppm,2259.3907151574554
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Sm ppm,362.83253950595105
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Eu ppm,92.46951854495903
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Gd ppm,211.82232145401957
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Tb ppm,21.018605385046428
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Dy ppm,80.26942236724896
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Ho ppm,10.941138581964235
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Er ppm,19.849902737180297
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Tm ppm,2.0737383361170347
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Yb ppm,9.316203417693671
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Lu ppm,1.0413409205639048
+231,Glenover (JV),Limpopo,South Africa,Carbonatite,26.243,Y ppm,233.59964727001844
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,La ppm,3149.5930366460007
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Ce ppm,7554.407755301
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Pr ppm,871.9313589230488
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Nd ppm,3489.503737517832
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Sm ppm,505.2358155540262
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Eu ppm,123.97918617867697
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Gd ppm,281.08057931034483
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Tb ppm,28.039968972342592
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Dy ppm,109.872654155496
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Ho ppm,15.242035674588474
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Er ppm,28.84154972289031
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Tm ppm,3.3973378945731607
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Yb ppm,15.333325213154687
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Lu ppm,1.7059948735990351
+232,Glenover Stockpile,Limpopo,South Africa,Carbonatite,1.329,Y ppm,351.3529590987192
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,La ppm,15433.49702289608
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Ce ppm,17683.818198308425
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Pr ppm,3845.0973258140807
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Nd ppm,13374.607703281028
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Sm ppm,2155.8843771507227
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Eu ppm,86.3605364855649
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Gd ppm,1561.6551724137933
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Tb ppm,173.76045481878316
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Dy ppm,871.3136729222521
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Ho ppm,87.29688244323295
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Er ppm,262.3549095472132
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Tm ppm,26.268076504431658
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Yb ppm,26.345919610231423
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Lu ppm,8.79378800824245
+234,Steenkampskraal Lower Tailings Dam,Western Cape,South Africa,Tailings,0.0286,Y ppm,3070.9917984872372
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,La ppm,15989.59227954619
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Ce ppm,18670.686203431418
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Pr ppm,3744.7904390537133
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Nd ppm,13702.635985858711
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Sm ppm,2110.8920075406204
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Eu ppm,80.72832758433242
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Gd ppm,1527.706146926537
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Tb ppm,173.76045481878316
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Dy ppm,859.9487119710924
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Ho ppm,87.29688244323295
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Er ppm,262.3549095472132
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Tm ppm,25.125986221630285
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Yb ppm,87.81973203410475
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Lu ppm,8.79378800824245
+235,Steenkampskraal Upper Tailings Dam,Western Cape,South Africa,Tailings,0.0092,Y ppm,3009.366545005888
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,La ppm,502.1151570865131
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Ce ppm,1129.0865547773071
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Pr ppm,143.75178355773468
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Nd ppm,570.5737856664072
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Sm ppm,150.87034718364166
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Eu ppm,18.83625863177322
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Gd ppm,161.0932874354561
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Tb ppm,32.43967127931803
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Dy ppm,217.69944581081887
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Ho ppm,47.963701916572845
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Er ppm,147.42599894206427
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Tm ppm,22.953747540085924
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Yb ppm,141.27035792377794
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Lu ppm,19.27141236057608
+237,Norra Kärr,Smaland ,Sweden,Alkaline ,58.1,Y ppm,1598.2059881778189
+238,Olserum,,Sweden,Alluvial/Placer,12.4,La ppm,576.8651155100481
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Ce ppm,1316.520229100658
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Pr ppm,160.28129712981277
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Nd ppm,629.3892365744788
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Sm ppm,144.51379792642587
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Gd ppm,154.06651835372637
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Tb ppm,26.064068222817475
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Dy ppm,154.728444175387
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Ho ppm,34.91875297729318
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Er ppm,90.76633564173747
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Tm ppm,12.074841618972618
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Yb ppm,82.36640996424502
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Lu ppm,8.79378800824245
+238,Olserum,,Sweden,Alluvial/Placer,12.4,Y ppm,845.7927990912223
+240,Ngualla,,Tanzania,Carbonatite,195.0,La ppm,5237.014284558567
+240,Ngualla,,Tanzania,Carbonatite,195.0,Ce ppm,9326.406884768494
+240,Ngualla,,Tanzania,Carbonatite,195.0,Pr ppm,902.2886142580229
+240,Ngualla,,Tanzania,Carbonatite,195.0,Nd ppm,3167.180088518235
+240,Ngualla,,Tanzania,Carbonatite,195.0,Sm ppm,326.38532810983463
+240,Ngualla,,Tanzania,Carbonatite,195.0,Eu ppm,68.50339191308048
+240,Ngualla,,Tanzania,Carbonatite,195.0,Gd ppm,149.43589573828473
+240,Ngualla,,Tanzania,Carbonatite,195.0,Tb ppm,13.488188212507907
+240,Ngualla,,Tanzania,Carbonatite,195.0,Dy ppm,31.59535299374442
+240,Ngualla,,Tanzania,Carbonatite,195.0,Ho ppm,3.956921459175628
+240,Ngualla,,Tanzania,Carbonatite,195.0,Er ppm,11.891808074389276
+240,Ngualla,,Tanzania,Carbonatite,195.0,Yb ppm,3.9806207564258727
+240,Ngualla,,Tanzania,Carbonatite,195.0,Y ppm,85.66116704842285
+241,Wigu Hill,Morogoro,Tanzania,Carbonatite,3.3,La ppm,8200.0
+241,Wigu Hill,Morogoro,Tanzania,Carbonatite,3.3,Ce ppm,10400.0
+241,Wigu Hill,Morogoro,Tanzania,Carbonatite,3.3,Pr ppm,800.0
+241,Wigu Hill,Morogoro,Tanzania,Carbonatite,3.3,Nd ppm,2100.0
+241,Wigu Hill,Morogoro,Tanzania,Carbonatite,3.3,Sm ppm,100.0
+242,Canakli 1,,Turkey,Alkaline ,80.0,La ppm,170.53587870603403
+242,Canakli 1,,Turkey,Alkaline ,80.0,Ce ppm,293.8840343946084
+242,Canakli 1,,Turkey,Alkaline ,80.0,Pr ppm,30.624811544260176
+242,Canakli 1,,Turkey,Alkaline ,80.0,Nd ppm,104.5962910128388
+242,Canakli 1,,Turkey,Alkaline ,80.0,Sm ppm,14.660013764624914
+242,Canakli 1,,Turkey,Alkaline ,80.0,Eu ppm,3.7135030688792905
+242,Canakli 1,,Turkey,Alkaline ,80.0,Gd ppm,9.543448275862069
+242,Canakli 1,,Turkey,Alkaline ,80.0,Tb ppm,1.1902958326646338
+242,Canakli 1,,Turkey,Alkaline ,80.0,Dy ppm,5.837801608579089
+242,Canakli 1,,Turkey,Alkaline ,80.0,Ho ppm,1.0475625893187954
+242,Canakli 1,,Turkey,Alkaline ,80.0,Er ppm,2.8859040050193454
+242,Canakli 1,,Turkey,Alkaline ,80.0,Tm ppm,0.43780127507386096
+242,Canakli 1,,Turkey,Alkaline ,80.0,Yb ppm,2.8102314250913523
+242,Canakli 1,,Turkey,Alkaline ,80.0,Lu ppm,0.4045142483791527
+242,Canakli 1,,Turkey,Alkaline ,80.0,Y ppm,31.49735177935628
+242,Canakli 1,,Turkey,Alkaline ,80.0,Sc ppm,10.431231509948374
+243,Canakli 2,,Turkey,Alkaline ,414.0,La ppm,145.80817629365907
+243,Canakli 2,,Turkey,Alkaline ,414.0,Ce ppm,244.22495933069953
+243,Canakli 2,,Turkey,Alkaline ,414.0,Pr ppm,24.830928279129875
+243,Canakli 2,,Turkey,Alkaline ,414.0,Nd ppm,83.16262482168331
+243,Canakli 2,,Turkey,Alkaline ,414.0,Sm ppm,12.072952512044047
+243,Canakli 2,,Turkey,Alkaline ,414.0,Eu ppm,2.9362582405092064
+243,Canakli 2,,Turkey,Alkaline ,414.0,Gd ppm,8.675862068965518
+243,Canakli 2,,Turkey,Alkaline ,414.0,Tb ppm,1.0202535708554004
+243,Canakli 2,,Turkey,Alkaline ,414.0,Dy ppm,5.315013404825737
+243,Canakli 2,,Turkey,Alkaline ,414.0,Ho ppm,0.9602657068755625
+243,Canakli 2,,Turkey,Alkaline ,414.0,Er ppm,2.71100073198787
+243,Canakli 2,,Turkey,Alkaline ,414.0,Tm ppm,0.4027771730679521
+243,Canakli 2,,Turkey,Alkaline ,414.0,Yb ppm,2.6345919610231423
+243,Canakli 2,,Turkey,Alkaline ,414.0,Lu ppm,0.38692667236266776
+243,Canakli 2,,Turkey,Alkaline ,414.0,Y ppm,27.560182806936744
+243,Canakli 2,,Turkey,Alkaline ,414.0,Sc ppm,11.083183479320146
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,La ppm,469.82
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Ce ppm,1425.63
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Pr ppm,175.95
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Nd ppm,692.69
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Sm ppm,183.57
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Eu ppm,18.53
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Gd ppm,187.42
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Tb ppm,34.08
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Dy ppm,211.85
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Ho ppm,41.43
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Er ppm,115.73
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Tm ppm,15.68
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Yb ppm,87.26
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Lu ppm,10.36
+246,Bokan - Dotson,Alaska,USA,Alkaline ,6.579,Y ppm,1216.0
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,La ppm,10165.733485392324
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Ce ppm,6119.252151827289
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Pr ppm,1176.914584988941
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Nd ppm,4187.010286057512
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Sm ppm,682.3487521280834
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Eu ppm,151.26729759155788
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Gd ppm,366.8976406533575
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Tb ppm,30.856198660977594
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Dy ppm,102.3105686468181
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Ho ppm,11.123460652371946
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Er ppm,20.311793260207924
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Tm ppm,2.4009943611945426
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Yb ppm,12.294762484774663
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Lu ppm,1.7587576016484898
+249,Bear Lodge,Wyoming,USA,Carbonatite,51.709545,Y ppm,287.0403400313442
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,La ppm,23003.47192947583
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Ce ppm,33802.75973739472
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Pr ppm,2810.6804258461125
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Nd ppm,7639.062768617936
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Sm ppm,585.2262693977601
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Eu ppm,72.39758184705344
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Gd ppm,145.46260590603575
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Tb ppm,11.098399701406425
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Dy ppm,23.65227262110729
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Ho ppm,2.787906186859719
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Er ppm,4.189272600629942
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Tm ppm,1.3981586160160806
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Yb ppm,1.4023019345819845
+253,Mountain Pass,California,USA,Carbonatite,16.713069255,Y ppm,81.72912169730543
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,La ppm,20.300000000000004
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Ce ppm,81.00000000000001
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Pr ppm,10.4
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Nd ppm,28.800000000000004
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Sm ppm,10.5
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Eu ppm,0.2065260077866177
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Gd ppm,10.6
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Tb ppm,3.6000000000000005
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Dy ppm,31.634739922133825
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Ho ppm,8.0
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Er ppm,32.8
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Tm ppm,7.1000000000000005
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Yb ppm,56.50000000000001
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Lu ppm,8.9
+256,Round Top,Texas,USA,Felsic Volcanic,1033.8249999999998,Y ppm,220.57369961066914
+264,Mineville,,USA,Tailings,9.0,La ppm,1196.7355288195938
+264,Mineville,,USA,Tailings,9.0,Ce ppm,2367.6094651609933
+264,Mineville,,USA,Tailings,9.0,Pr ppm,275.6355644492956
+264,Mineville,,USA,Tailings,9.0,Nd ppm,1181.1302773815187
+264,Mineville,,USA,Tailings,9.0,Sm ppm,225.9251846753843
+264,Mineville,,USA,Tailings,9.0,Eu ppm,30.013165113283318
+264,Mineville,,USA,Tailings,9.0,Gd ppm,272.1367295019157
+264,Mineville,,USA,Tailings,9.0,Tb ppm,144.00108092348623
+264,Mineville,,USA,Tailings,9.0,Dy ppm,144.41733690795354
+264,Mineville,,USA,Tailings,9.0,Ho ppm,45.89682092720996
+264,Mineville,,USA,Tailings,9.0,Er ppm,129.36234747347996
+264,Mineville,,USA,Tailings,9.0,Tm ppm,38.23269890633908
+264,Mineville,,USA,Tailings,9.0,Yb ppm,129.90685072404926
+264,Mineville,,USA,Tailings,9.0,Lu ppm,46.23382899711291
+264,Mineville,,USA,Tailings,9.0,Y ppm,1297.4266655251072

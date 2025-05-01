@@ -1,0 +1,7 @@
+version: simple-tree-1
+model:
+- type: mos:MineralInventory
+  props:
+    mos:grade: g0_attr_values
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

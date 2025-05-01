@@ -1,0 +1,20 @@
+version: simple-tree-1
+model:
+  - type: mos:MineralSite
+    props:
+      mos:row_index: row index
+      mos:name: Project
+      mos:deposit_type: Principal Deposit type
+      mos:country: Country
+      mos:state_or_province: State/ Province
+      mos:mineral_inventory:
+        type: mos:MineralInventory
+        props:
+          mos:commodity: Column 6
+          mos:category: { literal-string: Measured+Indicated+Inferred }
+          mos:tonnage: Total Mineral Resource Mt (Tonnes of Million)
+          mos:tonnage_unit: { literal-string: Mt }
+          mos:grade: Column 7
+          mos:grade_unit: Column 6
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

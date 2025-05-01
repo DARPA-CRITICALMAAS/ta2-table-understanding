@@ -1,0 +1,7 @@
+version: simple-tree-1
+model:
+- type: mos:MineralSite
+  props:
+    mos:deposit_type: Secondary Deposit Type
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

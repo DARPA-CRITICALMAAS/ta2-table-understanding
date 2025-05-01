@@ -1,0 +1,86 @@
+@prefix mnr: <https://minmod.isi.edu/resource/> .
+@prefix mno: <https://minmod.isi.edu/ontology/> .
+@prefix mos: <https://minmod.isi.edu/ontology-simple/> .
+@prefix geokb: <https://geokb.wikibase.cloud/entity/> .
+@prefix gemr: <https://geochemistry.isi.edu/resource/> .
+@prefix gemo: <https://geochemistry.isi.edu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix drepr: <https://purl.org/drepr/1.0/> .
+
+_:Naf9f5abcba6d494fb3fd727d2cf1f016 rdf:type mos:MineralInventory ;
+	mos:tonnage "1420000000.0"^^xsd:float ;
+	mos:grade "10.0"^^xsd:float ;
+	mos:cutoff_grade_unit "https://link.springer.com/article/10.1007/s00126-023-01161-3" .
+
+_:N9b8c91d670fa485d9946cf1e7448f8ed rdf:type mos:MineralInventory ;
+	mos:tonnage "212000000.0"^^xsd:float ;
+	mos:grade "7.8"^^xsd:float ;
+	mos:cutoff_grade_unit "https://link.springer.com/article/10.1007/s00126-023-01161-3" .
+
+_:Ndbad45037f11430bbe090e50351cab59 rdf:type mos:MineralInventory ;
+	mos:tonnage "174000000.0"^^xsd:float ;
+	mos:grade "5.4"^^xsd:float ;
+	mos:cutoff_grade_unit "https://link.springer.com/article/10.1007/s00126-023-01161-3" .
+
+_:N36fa71938d944794b3923dfda958c1df rdf:type mos:MineralInventory ;
+	mos:tonnage "141000000.0"^^xsd:float ;
+	mos:grade "6.1"^^xsd:float ;
+	mos:cutoff_grade_unit "https://link.springer.com/article/10.1007/s00126-023-01161-3" .
+
+_:N6ce6451dc1fd47b2a591b99db31900f1 rdf:type mos:MineralInventory ;
+	mos:tonnage "103000000.0"^^xsd:float ;
+	mos:grade "8.0"^^xsd:float ;
+	mos:cutoff_grade_unit "https://link.springer.com/article/10.1007/s00126-023-01161-3" .
+
+_:N7bdf0c9f45d34e95816f685aeb137e84 rdf:type mos:MineralInventory ;
+	mos:tonnage "100000000.0"^^xsd:float ;
+	mos:grade "5.5"^^xsd:float ;
+	mos:cutoff_grade_unit "https://link.springer.com/article/10.1007/s00126-023-01161-3" .
+
+_:Nd68a513b94304c89a918e5479e3c1777 rdf:type mos:MineralSite ;
+	mos:name "Balama" ;
+	mos:country "Mozambique" ;
+	mos:latitude "-13.32"^^xsd:float ;
+	mos:longitude "38.65"^^xsd:float ;
+	mos:mineral_inventory _:Naf9f5abcba6d494fb3fd727d2cf1f016 .
+
+_:N3281e021c5ed4e90ab73eb2622362340 rdf:type mos:MineralSite ;
+	mos:name "Mahengeb" ;
+	mos:country "Tanzania" ;
+	mos:latitude "-8.85"^^xsd:float ;
+	mos:longitude "36.72"^^xsd:float ;
+	mos:mineral_inventory _:N9b8c91d670fa485d9946cf1e7448f8ed .
+
+_:N63e2c5c1289442a790058bd0c59645b9 rdf:type mos:MineralSite ;
+	mos:name "Nachuc" ;
+	mos:country "Tanzania" ;
+	mos:latitude "-9.91"^^xsd:float ;
+	mos:longitude "38.87"^^xsd:float ;
+	mos:mineral_inventory _:Ndbad45037f11430bbe090e50351cab59 .
+
+_:Nbe20cfe4eb944fa39f9956cd701e9e06 rdf:type mos:MineralSite ;
+	mos:name "Molod" ;
+	mos:country "Madagascar" ;
+	mos:latitude "-23.99"^^xsd:float ;
+	mos:longitude "45.13"^^xsd:float ;
+	mos:mineral_inventory _:N36fa71938d944794b3923dfda958c1df .
+
+_:Nfb180b1968e34e9194f779368c100208 rdf:type mos:MineralSite ;
+	mos:name "Graphite Creeke" ;
+	mos:country "United States" ;
+	mos:latitude "65.04"^^xsd:float ;
+	mos:longitude "-165.54"^^xsd:float ;
+	mos:mineral_inventory _:N6ce6451dc1fd47b2a591b99db31900f1 .
+
+_:N8a071762b2bb4d34a7428797b8ffd858 rdf:type mos:MineralSite ;
+	mos:name "Zavalyevskiyf" ;
+	mos:country "Ukraine" ;
+	mos:latitude "48.2"^^xsd:float ;
+	mos:longitude "30.03"^^xsd:float ;
+	mos:mineral_inventory _:N7bdf0c9f45d34e95816f685aeb137e84 .
+

@@ -1,0 +1,105 @@
+Secondary Mineral deposit Type
+Au
+Layered Intrusive
+Layered Intrusive
+Besshi type
+Unclassified
+Layered Intrusive
+Kuroko type
+Layered Intrusive
+Cu
+Layered Intrusive
+Cu-Au
+Low sulphidation?
+Proterozoic Komatiite-related
+Cu-Au
+Cu
+Cu-Au
+Layered Intrusive
+Stratabound Stratiform Reef-type
+Layered Intrusive
+Layered Intrusive
+Cu-Au-Co
+Proterozoic Komatiite-related
+substantial skarn
+Cu-Au
+Layered Intrusive
+Impact-related
+Layered Intrusive
+Active seafloor black smoker
+Layered Intrusive
+Ferropicrite related
+Layered Intrusive
+High sulphidation
+Layered Intrusive
+Layered Intrusive
+Stratabound Stratiform Reef-type
+Cu-Mo
+Flood Basalt-related
+Low sulphidation
+Layered Intrusive
+Kuroko type ?
+Layered Intrusive
+Intrusion-related
+Cu-Au
+Low sulphidation
+Cu-Mo-Au
+Flood Basalt-related
+Magmatic Sulphide
+Layered Intrusive
+Layered Intrusive
+Flood Basalt-related
+High to intermediate sulphidation
+Kuroko type
+Layered Intrusive
+Cu
+Intrusion-related
+Intermediate sulphidation
+Layered Intrusive
+Layered Intrusive
+High sulphidation
+Cu
+Olympic Dam-type
+Kuroko-type
+Layered Intrusive
+Cu-Au
+Kuroko-type
+High sulphidation
+Kuroko-type
+High sulphidation
+Possibly porphyry
+"Cu, Kiruna-type"
+Proterozoic Komatiite-related?
+Olympic Dam-type
+Impact-related
+Cloncurry-type
+Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Intermediate sulphidation
+Layered Intrusive
+Intrusion-related
+Intrusion-related
+Layered Intrusive
+Layered Intrusive
+Cu
+High to intermediate sulphidation
+High sulphidation
+Cu
+Cu-Co
+Cu
+High sulphidation
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Low/Intermediate sulphidation
+Cu-Au
+Layered Intrusive
+Layered Intrusive
+Layered Intrusive
+Low sulphidation
+Layered Intrusive
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

@@ -1,0 +1,34 @@
+Identification number,Name,Country,State/Province,Latitude Decimal degrees WGS 84,Longitude Decimal degrees WGS 84,Record type,Ore type,Operation,Development status,Tonnage,Grade (% of carbon)
+1,Quebrada Del Gato,Argentina,San Juan,-31.43,-68.13,District,Crystalline (flake or lump?),Unknown,Producer,—,—
+2,Undercliff,Australia,New South Wales,-28.66,152.21,Site,Amorphous,Surface,Past producer,793,32
+3,Jack's Creek,Australia,Queensland,-20.67,147.87,Site,Amorphous,"Surface, underground",Past producer,2200,61
+4,Koppio-Uley mines,Australia,South Australia,-34.80,135.71,District,"Flake, weathering","Surface, underground",Past producer,35030,15
+5,Munglinup River,Australia,Western Australia,-33.50,120.85,District,Flake,"Surface, underground",Past producer,30000,25
+6,Doppl-Muehldorf-Zettlitz,Austria,Niederosterreich,48.38,15.45,District,Flake,Surface,Producer,1000000,10
+7,Kaisersberg-Trieben,Austria,Steiermark,47.35,15.07,District,Amorphous,Underground,Producer,1000000,85
+8,Itanhem,Brazil,Bahia,-17.10,-40.35,Site,Lump,Surface,Producer,2778,40
+9,Itapacerica,Brazil,Minas Gerais,-20.43,-45.13,Site,"Flake, weathering",Surface,Producer,383000,15.7
+10,Pedra Azul,Brazil,Minas Gerais,-15.88,45.13,Site,"Flake, weathering",Surface,Producer,26800000,11.9
+11,Bisset Creek,Canada,Ontario,46.23,-78.07,Site,Flake,Surface,Prospect,4938000,15.58
+12,Coronation,Canada,Ontario,45.29,-77.94,Site,Flake,Unknown,Occurrence,—,—
+13,Graphite Lake-Ryerson-Todd area,Canada,Ontario,45.73,-79.08,District,Flake,Surface,Producer,Large,—
+14,Kirkham-Portland-Timmins area,Canada,Ontario,44.56,-76.57,District,Flake,Surface,Producer,478000,9
+15,Tagliamonte,Canada,Ontario,46.23,-78.07,Site,Flake,Surface,Prospect,—,—
+16,Graphex-Graphico-Orwell Mines,Canada,Quebec,46.14,-75.55,District,Flake,Surface,Producer,2200000,10
+17,North American Mine,Canada,Quebec,45.52,-75.55,Site,Flake,Unknown,Past producer,—,—
+18,St-Amime-Lac Des Iles,Canada,Quebec,46.25,-75.53,Site,Flake,Surface,Producer,—,—
+19,Lac Knife,Canada,Quebec,52.55,-61.18,Site,Flake,Surface,Prospect,4900000,15.8
+20,Pollon Lake area,Canada,Saskatchewan,56.38,-103.13,District,Flake,Unknown,Past producer,1663000,10.3
+21,Haikou,China,Hainan,20.08,110.42,Site,Flake,Surface,Producer,5000000,3.7
+22,Heling,China,Heilongjiang [Heilungkiang],46.31,129.55,Site,Amorphous,Unknown,Producer,—,—
+23,Jixi (Liu Mao),China,Heilongjiang [Heilungkiang],45.28,131.00,Site,Amorphous,Surface,Past producer,300000000,85
+24,Liu Mao,China,Heilongjiang [Heilungkiang],45.30,131.07,Site,Flake,Unknown,Producer,3000000,18.5
+25,Honan deposits,China,Henan [Honan],32.50,113.88,District,Unknown,Unknown,Producer,—,—
+26,Hunan,China,Hunan,26.00,113.00,District,Amorphous,Underground,Producer,—,—
+27,Panshi,China,Jilin [Kirin],42.93,125.97,Site,Amorphous,Underground,Producer,—,—
+28,Hohot,China,Nei Mongol (Inner Mongolia),40.81,111.62,District,Crystalline (flake or lump?),Surface,Producer,—,—
+29,Shandong Peninsula,China,Shandong [Shantung],37.03,120.32,District,Flake,Surface,Producer,5900000,5
+30,Xing He,China,—,40.88,113.88,Site,Flake,Unknown,Producer,—,—
+31,Kolledeye,Czech Republic,—,49.22,14.45,District,Flake,"Surface, underground",Prospect,—,—
+32,Velke Vbrno-Konstantin Vvk,Czech Republic,—,50.13,17.33,Site,Amorphous,Surface,Producer,200000,50
+33,Kropfmühl-Cesky Krumlov,Germany and Czech Republic,"Bayern [Bavaria, Germany]",48.80,14.32,District,Flake,Underground,Producer,—,16

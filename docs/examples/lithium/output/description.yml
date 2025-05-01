@@ -1,0 +1,20 @@
+version: simple-tree-1
+model:
+  - type: mos:MineralSite
+    props:
+      mos:name: Deposit
+      mos:deposit_type: Type
+      mos:mineral_inventory:
+        type: mos:MineralInventory
+        props:
+          mos:date: Date
+          mos:cutoff_grade: Cutoff Grade (ppm)
+          mos:grade:
+            - Reserve Grade (ppm)
+            - Resource Grade (ppm)
+          mos:tonnage:
+            - Reserve Tonnage (Mt)
+            - Resource Tonnage (Mt)
+          mos:commodity: Type
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

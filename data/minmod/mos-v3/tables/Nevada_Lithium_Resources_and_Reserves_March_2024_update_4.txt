@@ -1,0 +1,9 @@
+Reserve Tonnage (Mt)
+217.3
+60.5
+1345.612
+213.0
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]]]}

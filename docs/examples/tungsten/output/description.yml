@@ -1,0 +1,23 @@
+version: simple-tree-1
+model:
+  - type: mos:MineralSite
+    props:
+      mos:row_index: deposit_no
+      mos:name: deposit_name
+      mos:category: category
+      mos:latitude: latdd
+      mos:longitude: longdd
+      mos:country: country
+      mos:mineral_inventory:
+        type: mos:MineralInventory
+        props:
+          mos:date: year
+          mos:cutoff_grade_unit: cutoff_grade_unit
+          mos:cutoff_grade: cutoff_grade
+          mos:grade_unit: grade_unit
+          mos:grade: grade
+          mos:commodity: commodity
+          mos:tonnage_unit: tonnage_unit
+          mos:tonnage: tonnage
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

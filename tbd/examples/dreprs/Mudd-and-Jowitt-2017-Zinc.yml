@@ -1,0 +1,195 @@
+version: "2"
+
+resources: csv
+
+preprocessing:
+  - type: pmap
+    path: [1.., 0]
+    output: deposit_uri
+    code: |
+      from slugify import slugify
+      row = context.get_index()[0]
+      value = "__".join(["site", slugify("10.1016/j.oregeorev.2016.08.010"), str(row), slugify(value)])
+      return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1, 1]
+    output: document_uri
+    code: |
+      from slugify import slugify
+      return "https://minmod.isi.edu/resource/doc__" + slugify("10.1016/j.oregeorev.2016.08.010")
+  - type: pmap
+    path: [1.., 5]
+    output: pb_uri
+    code: |
+      from slugify import slugify
+      if value == "" or value == "0.0":
+        return None
+
+      row = context.get_index()[0]
+      mineral_site = context.get_value((row, 0))
+
+      value = "__".join([
+        "inv", slugify("10.1016/j.oregeorev.2016.08.010"), 
+        str(row), slugify(mineral_site), "Q565"
+      ])
+      return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1.., 6]
+    output: zn_uri
+    code: |
+      from slugify import slugify
+      if value == "" or value == "0.0":
+        return None
+
+      row = context.get_index()[0]
+      mineral_site = context.get_value((row, 0))
+
+      value = "__".join([
+        "inv", slugify("10.1016/j.oregeorev.2016.08.010"), 
+        str(row), slugify(mineral_site), "Q589"
+      ])
+      return "https://minmod.isi.edu/resource/" + value
+  - type: pmap
+    path: [1.., 3]
+    output: deposit_type_uri
+    code: |
+      if value.lower().find("mvt") != -1:
+        return "https://minmod.isi.edu/resource/Q380"
+  - type: pmap
+    path: [1.., 1]
+    output: country_uri
+    code: |
+      from tum.lib.entity_linking import EntityLinking
+
+      el = EntityLinking.get_instance("country")
+      res = el.link(value)
+      assert res is not None
+      return res[0].id
+attributes:
+  deposit: [1.., 0]
+  country: [1.., 1]
+  primary_deposit_type:
+    path: [1.., 2]
+    missing_values: [""]
+  secondary_deposit_type:
+    path: [1.., 3]
+    missing_values: [""]
+  ore:
+    path: [1.., 4]
+    missing_values: ["", "0.0"]
+  pb:
+    path: [1.., 5]
+    missing_values: ["", "0.0"]
+  zn:
+    path: [1.., 6]
+    missing_values: ["", "0.0"]
+  refval: [0, 0]
+
+alignments:
+  - type: auto
+
+semantic_model:
+  mndr:MineralSite:1:
+    properties:
+      - [drepr:uri, deposit_uri]
+      - [rdfs:label, deposit]
+      - [mndr:name, deposit]
+      - [mndr:record_id, deposit_uri]
+    static_properties:
+      - [mndr:source_id, "https://doi.org/10.1016/j.oregeorev.2016.08.010"]
+    links:
+      - [mndr:deposit_type_candidate, mndr:DepositTypeCandidate:1]
+      - [mndr:deposit_type_candidate, mndr:DepositTypeCandidate:2]
+      - [mndr:location_info, mndr:LocationInfo:1]
+      - [mndr:mineral_inventory, mndr:MineralInventory:1]
+      - [mndr:mineral_inventory, mndr:MineralInventory:2]
+
+  mndr:DepositTypeCandidate:1:
+    properties:
+      - [drepr:blank, primary_deposit_type]
+      - [mndr:observed_name, primary_deposit_type, xsd:string, true]
+    static_properties:
+      - [mndr:confidence, 0.5]
+      - [mndr:source, "sand"]
+
+  mndr:DepositTypeCandidate:2:
+    properties:
+      - [drepr:blank, secondary_deposit_type]
+      - [mndr:observed_name, secondary_deposit_type, xsd:string, true]
+      - [mndr:normalized_uri, deposit_type_uri, drepr:uri]
+    static_properties:
+      - [mndr:confidence, 0.5]
+      - [mndr:source, "sand"]
+
+  mndr:LocationInfo:1:
+    properties:
+      - [mndr:country, country_uri, drepr:uri]
+      - [mndr:extracted_country, country]
+
+  mndr:Reference:1:
+    properties:
+      - [drepr:blank, refval]
+    links:
+      - [mndr:document, mndr:Document:1]
+
+  mndr:Document:1:
+    properties:
+      - [drepr:uri, document_uri]
+    static_properties:
+      - [mndr:title, "The world's lead-zinc mineral resources: Scarcity, data, issues and opportunities"]
+      - [mndr:doi, "10.1016/j.oregeorev.2016.08.010"]
+      - [mndr:uri, "http://dx.doi.org/10.1016/j.oregeorev.2016.08.010"]
+
+  mndr:MineralInventory:1:
+    properties:
+      - [drepr:uri, pb_uri, true]
+    static_properties:
+      - [mndr:commodity, mndr:Q565, drepr:uri]
+      - [mndr:category, mndr:Inferred, drepr:uri]
+      - [mndr:category, mndr:Indicated, drepr:uri]
+      - [mndr:category, mndr:Measured, drepr:uri]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:1, true]
+      - [mndr:reference, mndr:Reference:1]
+
+  mndr:MineralInventory:2:
+    properties:
+      - [drepr:uri, zn_uri, true]
+    static_properties:
+      - [mndr:commodity, mndr:Q589, drepr:uri]
+      - [mndr:category, mndr:Inferred, drepr:uri]
+      - [mndr:category, mndr:Indicated, drepr:uri]
+      - [mndr:category, mndr:Measured, drepr:uri]
+    links:
+      - [mndr:ore, mndr:Ore:1]
+      - [mndr:grade, mndr:Grade:2, true]
+      - [mndr:reference, mndr:Reference:1]
+
+  mndr:Ore:1:
+    properties:
+      - [mndr:ore_value, ore, xsd:decimal, true]
+    static_properties:
+      - [mndr:ore_unit, mndr:Q202, drepr:uri]
+
+  mndr:Grade:1:
+    properties:
+      - [mndr:grade_value, pb, xsd:decimal, true]
+    static_properties:
+      - [mndr:grade_unit, mndr:Q201, drepr:uri]
+
+  mndr:Grade:2:
+    properties:
+      - [mndr:grade_value, zn, xsd:decimal, true]
+    static_properties:
+      - [mndr:grade_unit, mndr:Q201, drepr:uri]
+
+  prefixes:
+    mndr: https://minmod.isi.edu/resource/
+    geokb: https://geokb.wikibase.cloud/entity/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    xsd: http://www.w3.org/2001/XMLSchema#
+    owl: http://www.w3.org/2002/07/owl#
+    drepr: https://purl.org/drepr/1.0/
+    geo: http://www.opengis.net/ont/geosparql#

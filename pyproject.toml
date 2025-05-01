@@ -7,10 +7,9 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.13"
+python = ">=3.12,<3.13"
 sem-desc = "^6.16.1"
 serde2 = "^1.6.2"
-ream2 = "^4.3.2"
 kgdata = "^7.0.8"
 drepr-v2 = "^1.3.4"
 steiner-tree = "^1.2.2"
@@ -27,6 +26,8 @@ azure-core = "^1.32.0"
 pypdf2 = "^3.0.1"
 duneflow = "^1.0.1"
 gramsplus-2 = "^6.0.0"
+smml = "^1.0.1"
+gramsplusplus = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.27.1"

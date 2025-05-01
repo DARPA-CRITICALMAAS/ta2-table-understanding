@@ -1,0 +1,29 @@
+version: simple-tree-1
+model:
+  - type: mos:MineralSite
+    props:
+      mos:row_index: row index
+      mos:name: Project
+      mos:longitude: Location Long
+      mos:latitude: Location Lat
+      mos:country: Country
+      mos:mineral_inventory:
+        type: mos:MineralInventory
+        props:
+          mos:category: Column 9
+          mos:commodity: Column 11
+          mos:tonnage: Mt
+          mos:tonnage_unit:
+            literal-string: Mt
+          mos:grade: Column 12
+          mos:grade_unit:
+            literal-string: "%"
+      mos:reference:
+        type: mos:Document
+        props:
+          mos:title:
+            literal-string: "The New Century for Nickel Resources, Reserves, and Mining: Reassessing the Sustainability of the Devil’s Metal"
+          mos:doi:
+            literal-string: "10.5382/econgeo.4950"
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

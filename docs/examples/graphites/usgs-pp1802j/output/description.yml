@@ -1,0 +1,20 @@
+version: simple-tree-1
+model:
+  - type: mos:MineralSite
+    props:
+      mos:longitude: Longitude
+      mos:latitude: Latitude
+      mos:state_or_province: State/Province
+      mos:country: Country
+      mos:name: Mineral Site Name
+      mos:row_index: record_id
+      mos:mineral_inventory:
+        type: mos:MineralInventory
+        props:
+          mos:grade: Grade (% of carbon)
+          mos:grade_unit: { literal-string: "%" }
+          mos:tonnage: Tonnage
+          mos:tonnage_unit: { literal-string: "tonnes" }
+          mos:commodity: { literal-string: Graphite }
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/

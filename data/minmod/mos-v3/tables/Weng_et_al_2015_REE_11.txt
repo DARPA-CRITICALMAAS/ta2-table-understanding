@@ -1,0 +1,105 @@
+Principal Deposit type
+Carbonatite
+Carbonatite
+Laterite / Soil / Clay
+Carbonatite
+Carbonatite
+Carbonatite
+Granite -Related Skarn
+Carbonatite
+Shale-hosted
+Alluvial/Placer
+Alluvial/Placer
+Carbonatite
+Carbonatite
+Alluvial/Placer
+Granite -Related Skarn
+Carbonatite
+Alkaline 
+Tailings
+Carbonatite
+Carbonatite 
+Alluvial/Placer
+Alluvial/Placer
+Tailings
+Carbonatite
+Carbonatite
+Alkaline 
+Alkaline
+Carbonatite
+Carbonatite
+Alluvial/Placer
+Carbonatite 
+Laterite / Soil / Clay
+Shale-hosted
+Granite -Related Skarn
+Carbonatite
+Carbonatite
+Carbonatite 
+IOCG
+Alkaline
+Felsic Volcanic
+Shale-hosted
+Alkaline
+IOCG
+Heavy Mineral Sands
+Carbonatite 
+Granite -Related Skarn
+Carbonatite
+Alkaline 
+Granite -Related Skarn
+Alkaline
+Carbonatite
+Alkaline 
+Alluvial/Placer
+Carbonatite
+Shale-hosted
+Felsic Volcanic
+Carbonatite
+Carbonatite
+Tailings
+Alkaline
+Carbonatite
+Alkaline
+Alkaline
+Alkaline 
+Tailings
+IOCG
+Carbonatite 
+Carbonatite
+Alkaline
+Felsic Volcanic
+Alkaline 
+Carbonatite
+Granite -Related Skarn
+Alkaline
+Granite -Related Skarn
+Carbonatite
+Alkaline
+Alluvial/Placer
+Alluvial/Placer
+Alluvial/Placer
+Carbonatite
+Alkaline
+Carbonatite
+Carbonatite
+Shale-hosted
+Felsic Volcanic
+Alkaline
+Alkaline
+Tailings
+Alkaline
+Alkaline
+Carbonatite
+Carbonatite
+Alluvial/Placer
+Shale-hosted
+Carbonatite
+Carbonatite
+Carbonatite
+Carbonatite 
+Carbonatite
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

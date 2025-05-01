@@ -1,0 +1,1275 @@
+@prefix mnr: <https://minmod.isi.edu/resource/> .
+@prefix mno: <https://minmod.isi.edu/ontology/> .
+@prefix mos: <https://minmod.isi.edu/ontology-simple/> .
+@prefix geokb: <https://geokb.wikibase.cloud/entity/> .
+@prefix gemr: <https://geochemistry.isi.edu/resource/> .
+@prefix gemo: <https://geochemistry.isi.edu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix drepr: <https://purl.org/drepr/1.0/> .
+
+_:N18d9a5b93c53447393cebc59e5694e3e rdf:type mos:MineralInventory .
+
+_:Nd52dca581191490faf115bbc36294141 rdf:type mos:MineralInventory ;
+	mos:tonnage "793.0"^^xsd:float ;
+	mos:grade "32.0"^^xsd:float .
+
+_:Nf062600bc43b46b28b455f4f025f9e63 rdf:type mos:MineralInventory ;
+	mos:tonnage "2200.0"^^xsd:float ;
+	mos:grade "61.0"^^xsd:float .
+
+_:N1c5b908ee47a4df9beb0238d2a80ce88 rdf:type mos:MineralInventory ;
+	mos:tonnage "35030.0"^^xsd:float ;
+	mos:grade "15.0"^^xsd:float .
+
+_:N02e02c3c65254fd5a18d72c90d7daa24 rdf:type mos:MineralInventory ;
+	mos:tonnage "30000.0"^^xsd:float ;
+	mos:grade "25.0"^^xsd:float .
+
+_:N9097f391f38b46998e40285c4047550f rdf:type mos:MineralInventory ;
+	mos:tonnage "1000000.0"^^xsd:float ;
+	mos:grade "10.0"^^xsd:float .
+
+_:N023a0430705e4edf9ab27d19ec6067e4 rdf:type mos:MineralInventory ;
+	mos:tonnage "1000000.0"^^xsd:float ;
+	mos:grade "85.0"^^xsd:float .
+
+_:N1376b8ee6d014fd1a3b377d247fb0d6c rdf:type mos:MineralInventory ;
+	mos:tonnage "2778.0"^^xsd:float ;
+	mos:grade "40.0"^^xsd:float .
+
+_:N65e1ccc5e6834430a4a09576b376deef rdf:type mos:MineralInventory ;
+	mos:tonnage "383000.0"^^xsd:float ;
+	mos:grade "15.7"^^xsd:float .
+
+_:N6117887df115481286ef3ccbb2c33f74 rdf:type mos:MineralInventory ;
+	mos:tonnage "26800000.0"^^xsd:float ;
+	mos:grade "11.9"^^xsd:float .
+
+_:N0ca27403a29443a29f1f7bf494d1d2f0 rdf:type mos:MineralInventory ;
+	mos:tonnage "4938000.0"^^xsd:float ;
+	mos:grade "15.58"^^xsd:float .
+
+_:Nefd0b58bed1e49bf9f48d06c8c8ffeaa rdf:type mos:MineralInventory .
+
+_:Nfe2a56a65ee94062a16d2595b67ad61e rdf:type mos:MineralInventory .
+
+_:N53272445a7f54ba0a707ede499a6c9b9 rdf:type mos:MineralInventory ;
+	mos:tonnage "478000.0"^^xsd:float ;
+	mos:grade "9.0"^^xsd:float .
+
+_:N12f682f2fd164f45ae96002f113db25a rdf:type mos:MineralInventory .
+
+_:N4165701dc4504471b5e65fd2bde47df3 rdf:type mos:MineralInventory ;
+	mos:tonnage "2200000.0"^^xsd:float ;
+	mos:grade "10.0"^^xsd:float .
+
+_:N1619e15db1494e9ca2c1e762323b1c3c rdf:type mos:MineralInventory .
+
+_:Nf1e2ee4d0246417e87fd3d0f6c912c30 rdf:type mos:MineralInventory .
+
+_:Nd5412c41ef2f454db46100111443ce7e rdf:type mos:MineralInventory ;
+	mos:tonnage "4900000.0"^^xsd:float ;
+	mos:grade "15.8"^^xsd:float .
+
+_:N6d9e29afc9bd4404a0807e8d92da5013 rdf:type mos:MineralInventory ;
+	mos:tonnage "1663000.0"^^xsd:float ;
+	mos:grade "10.3"^^xsd:float .
+
+_:Nc598069586e24732a65671a0f22b1d49 rdf:type mos:MineralInventory ;
+	mos:tonnage "5000000.0"^^xsd:float ;
+	mos:grade "3.7"^^xsd:float .
+
+_:N4b0a4a63c1ee4c2b919253da634ac79b rdf:type mos:MineralInventory .
+
+_:Na40bdf2932ef41849c965d48386a71a4 rdf:type mos:MineralInventory ;
+	mos:tonnage "300000000.0"^^xsd:float ;
+	mos:grade "85.0"^^xsd:float .
+
+_:N47f93a3449324c2a8d0ee34c369e3db6 rdf:type mos:MineralInventory ;
+	mos:tonnage "3000000.0"^^xsd:float ;
+	mos:grade "18.5"^^xsd:float .
+
+_:N39f0ce4a3bc94df2a734aa37bccc1d45 rdf:type mos:MineralInventory .
+
+_:N4aa48eca177444538ed2bfcd4d6d79e6 rdf:type mos:MineralInventory .
+
+_:N71b6baec2278405b966a08e85c7f5ea2 rdf:type mos:MineralInventory .
+
+_:Nad67da5875e34fdead7197900f0b77c8 rdf:type mos:MineralInventory .
+
+_:N8a2175f9eb174c6591fca14cc372625b rdf:type mos:MineralInventory ;
+	mos:tonnage "5900000.0"^^xsd:float ;
+	mos:grade "5.0"^^xsd:float .
+
+_:N8544f89b5629464098ff01bf6782ef99 rdf:type mos:MineralInventory .
+
+_:N98a5cb071fd7410eb4c60ffe5475f846 rdf:type mos:MineralInventory .
+
+_:Ndfa5e8ca83cf4ad3b5906fabf98a42b7 rdf:type mos:MineralInventory ;
+	mos:tonnage "200000.0"^^xsd:float ;
+	mos:grade "50.0"^^xsd:float .
+
+_:Nc43cf898f95f42f38f1bcd2b2137d6e6 rdf:type mos:MineralInventory ;
+	mos:grade "16.0"^^xsd:float .
+
+_:N9bb40fcb93c848d48a7ec398abb892bd rdf:type mos:MineralInventory .
+
+_:N0c19e059052149b98347c4fa9820b921 rdf:type mos:MineralInventory .
+
+_:N347208e505b741c6a786b2273f820686 rdf:type mos:MineralInventory .
+
+_:N7162cc43a42343af95f6cba334409ac9 rdf:type mos:MineralInventory .
+
+_:Nee292e8b56f349d291ac60c163eb0adc rdf:type mos:MineralInventory .
+
+_:Nd8c50b6130b646cc8d357cbad92eed0d rdf:type mos:MineralInventory .
+
+_:Nc463dd00488440c3b0c695f9934f755c rdf:type mos:MineralInventory .
+
+_:Nac71126ffa0045dd864c92145ac953b7 rdf:type mos:MineralInventory .
+
+_:N028a1152cdbb48ec9b04c934969a1829 rdf:type mos:MineralInventory .
+
+_:Nf26d5f57c3a346a5a02568da1b34a5e3 rdf:type mos:MineralInventory .
+
+_:Na6e1754929c54a09bdd05239f4805e37 rdf:type mos:MineralInventory ;
+	mos:tonnage "1120000.0"^^xsd:float ;
+	mos:grade "14.1"^^xsd:float .
+
+_:N2f38b0dccfcb4dce9f6846ca5b4561ca rdf:type mos:MineralInventory ;
+	mos:tonnage "130000.0"^^xsd:float ;
+	mos:grade "19.5"^^xsd:float .
+
+_:N1d6e42ccb3cd4c208987d8b0f6b2c860 rdf:type mos:MineralInventory .
+
+_:N4af6b5c5ea9a4cd1966ccd888b58f4d9 rdf:type mos:MineralInventory ;
+	mos:tonnage "1200000.0"^^xsd:float ;
+	mos:grade "13.0"^^xsd:float .
+
+_:N238e1e1ce89f46558c1989aa94904bd8 rdf:type mos:MineralInventory .
+
+_:Ncd2c7c9322f9480b8b1925d7bf5251ee rdf:type mos:MineralInventory .
+
+_:N734dd6aa451f471999d12e6294b1e063 rdf:type mos:MineralInventory ;
+	mos:tonnage "12000000.0"^^xsd:float ;
+	mos:grade "80.0"^^xsd:float .
+
+_:Nbc488987c63e465e8360419bea80e177 rdf:type mos:MineralInventory ;
+	mos:tonnage "1400000.0"^^xsd:float ;
+	mos:grade "3.5"^^xsd:float .
+
+_:N79cbc229826642cb8f693e4d7169652f rdf:type mos:MineralInventory .
+
+_:N7ab2198ba9a444e0a287a3a515ee93b3 rdf:type mos:MineralInventory ;
+	mos:tonnage "2000000.0"^^xsd:float ;
+	mos:grade "9.0"^^xsd:float .
+
+_:N68e2bbecd5374f03afb3ff6405f5987b rdf:type mos:MineralInventory .
+
+_:N33b802ea9d834354ae189e42c87d1403 rdf:type mos:MineralInventory ;
+	mos:tonnage "2000000.0"^^xsd:float ;
+	mos:grade "7.0"^^xsd:float .
+
+_:N40323e93b2cc4d5fb44ddf111eff68cc rdf:type mos:MineralInventory ;
+	mos:tonnage "13400000.0"^^xsd:float ;
+	mos:grade "4.0"^^xsd:float .
+
+_:Nd43b04702b534f0a8e55be4137967dd4 rdf:type mos:MineralInventory .
+
+_:N2beb9e89664b450a892a9b9d31a43303 rdf:type mos:MineralInventory ;
+	mos:tonnage "2000000.0"^^xsd:float ;
+	mos:grade "80.0"^^xsd:float .
+
+_:N4f076329265543f19e57abb7f4a9b429 rdf:type mos:MineralInventory ;
+	mos:tonnage "2000000.0"^^xsd:float ;
+	mos:grade "75.0"^^xsd:float .
+
+_:N8473fcd079054cabbcfda712cf501a0e rdf:type mos:MineralInventory ;
+	mos:tonnage "2000000.0"^^xsd:float ;
+	mos:grade "30.0"^^xsd:float .
+
+_:N4918a5d7d4ca4d658abe9eb32c7c6901 rdf:type mos:MineralInventory .
+
+_:Ne51f2f7920aa4ca9b83e051470aa1dfb rdf:type mos:MineralInventory ;
+	mos:tonnage "58000.0"^^xsd:float ;
+	mos:grade "70.0"^^xsd:float .
+
+_:N61ee11fc76b14d0b83d9f5009b5156be rdf:type mos:MineralInventory .
+
+_:N091811a93f0f4cb7ac7fd838709b8c56 rdf:type mos:MineralInventory ;
+	mos:grade "5.0"^^xsd:float .
+
+_:N497f0b5074564fbca654a42f54c6be1d rdf:type mos:MineralInventory ;
+	mos:tonnage "87000000.0"^^xsd:float ;
+	mos:grade "88.0"^^xsd:float .
+
+_:Nb6d37b6cddcb48a09292c9f7df52baf3 rdf:type mos:MineralInventory ;
+	mos:tonnage "10000000.0"^^xsd:float ;
+	mos:grade "85.0"^^xsd:float .
+
+_:N882e94fdeb5b4db8802b19cebceb0d3d rdf:type mos:MineralInventory ;
+	mos:tonnage "8200000.0"^^xsd:float ;
+	mos:grade "18.0"^^xsd:float .
+
+_:Nb232bd27ca6d404389937f734ee5c7b7 rdf:type mos:MineralInventory ;
+	mos:tonnage "1116000.0"^^xsd:float ;
+	mos:grade "3.0"^^xsd:float .
+
+_:Ne2c591b044ef445481580f3ca8495171 rdf:type mos:MineralInventory .
+
+_:N28a6e67f72b34c43891dcae27d15ae39 rdf:type mos:MineralInventory ;
+	mos:tonnage "20000000.0"^^xsd:float ;
+	mos:grade "63.5"^^xsd:float .
+
+_:Nf6ba233e71aa4cd0ad13bb1a6e3e1202 rdf:type mos:MineralInventory ;
+	mos:tonnage "100000.0"^^xsd:float ;
+	mos:grade "60.0"^^xsd:float .
+
+_:N02732b10fe734087809eb7895e212215 rdf:type mos:MineralInventory ;
+	mos:tonnage "100000000.0"^^xsd:float ;
+	mos:grade "5.5"^^xsd:float .
+
+_:N477206b2acd844f9968f8de1fd84fd2c rdf:type mos:MineralInventory ;
+	mos:tonnage "300000.0"^^xsd:float ;
+	mos:grade "10.0"^^xsd:float .
+
+_:Ne4f0e570dd564c4c81fed993a91d3a82 rdf:type mos:MineralInventory ;
+	mos:tonnage "65000.0"^^xsd:float ;
+	mos:grade "52.0"^^xsd:float .
+
+_:N8e38c0ad43ce4da9b13713f2d0286c8b rdf:type mos:MineralInventory .
+
+_:N0ee17926bfc54542b43740313b631176 rdf:type mos:MineralInventory .
+
+_:Nbaa52c7e08894713bd4bb4743ca6ad9f rdf:type mos:MineralInventory ;
+	mos:tonnage "10000000.0"^^xsd:float ;
+	mos:grade "10.0"^^xsd:float .
+
+_:Ncfaca7083c2b496d96b66a0bf7f810a2 rdf:type mos:MineralInventory .
+
+_:N5ed5178671e64c29b428c4d0adb7d597 rdf:type mos:MineralInventory .
+
+_:N2628462676d1455a819e104ab4d358c1 rdf:type mos:MineralInventory .
+
+_:N1592291e629d442e8e6b282a7171fc6b rdf:type mos:MineralInventory .
+
+_:N2084a2746ff94f9d9fe757540858ce75 rdf:type mos:MineralInventory .
+
+_:Nef88ad048da64c82a1022f0fc76a7a2f rdf:type mos:MineralInventory .
+
+_:N69f9699adef246c9a8a99d219cfa18f0 rdf:type mos:MineralInventory .
+
+_:N204ed76ee78045f3949a78c179b37d58 rdf:type mos:MineralInventory .
+
+_:Nd7e3cd167d434d6eb3e14ce9a3a0717d rdf:type mos:MineralInventory .
+
+_:N95f668c23d764347a0bf041aefbc8992 rdf:type mos:MineralInventory .
+
+_:Nf8a94839154c401b827d409ca9eac64c rdf:type mos:MineralInventory .
+
+_:N3c3b417432ed4dd48964b90c116d01e2 rdf:type mos:MineralInventory .
+
+_:N8851f83b7ea8478fa649009cba4e9248 rdf:type mos:MineralInventory .
+
+_:N0e7e9ca9deba44129fa1c46ab119b517 rdf:type mos:MineralInventory .
+
+_:N94539f8d73214ce988c0744e3bcb0bb2 rdf:type mos:MineralInventory .
+
+_:N342dc9b8af374ae6a56f746d2de7f869 rdf:type mos:MineralInventory .
+
+_:Nf3e4ef3b063f41e988c6256365dcaf6b rdf:type mos:MineralInventory .
+
+_:N748fca6593b644e4bda8d0c71ee2b52b rdf:type mos:MineralInventory .
+
+_:N398f8f532c33408285a1842a1054571f rdf:type mos:MineralInventory .
+
+_:N6719e946a9894a778cb719b4b1414673 rdf:type mos:MineralInventory .
+
+_:N234443191a024ad984931c77a967d1ba rdf:type mos:MineralInventory .
+
+_:N8d6ba66121c44879acae2c78e6e13ced rdf:type mos:MineralInventory .
+
+_:N4b2f8d1137fe47ca881b23e84e1ca00f rdf:type mos:MineralInventory .
+
+_:Nd6007d4e3a1b48799d57e857f31f4f3f rdf:type mos:MineralInventory .
+
+_:N0c4363aefce9420d9d4549954ac17c39 rdf:type mos:MineralInventory .
+
+_:N7958197fe6624b818f74dcdf4b550622 rdf:type mos:MineralInventory .
+
+_:N01e9ce5f047c4b47aaea53e84c7543b6 rdf:type mos:MineralInventory .
+
+_:Nb470494c6e044b2dace4a31e4e4863c6 rdf:type mos:MineralInventory ;
+	mos:tonnage "400000.0"^^xsd:float ;
+	mos:grade "5.0"^^xsd:float .
+
+_:N195d96ce13974d118564b1cb83e3ac82 rdf:type mos:MineralInventory .
+
+_:Ncde33ad6580a4e33be4d5b4d7c397449 rdf:type mos:MineralInventory ;
+	mos:tonnage "2300000.0"^^xsd:float ;
+	mos:grade "15.0"^^xsd:float .
+
+_:N883599f509ca4afaa56e17026d4c5cba rdf:type mos:MineralInventory ;
+	mos:tonnage "6700000.0"^^xsd:float ;
+	mos:grade "26.2"^^xsd:float .
+
+_:N701f1e50f5ec4c78bd4d8de7b946cf37 rdf:type mos:MineralSite ;
+	mos:row_index "1" ;
+	mos:deposit_type "Quebrada Del Gato" ;
+	mos:country "Argentina" ;
+	mos:state_or_province "San Juan" ;
+	mos:latitude "-31.43"^^xsd:float ;
+	mos:longitude "-68.13"^^xsd:float ;
+	mos:mineral_inventory _:N18d9a5b93c53447393cebc59e5694e3e .
+
+_:N07b97149ef7b4831802fb8f89bc9fdfa rdf:type mos:MineralSite ;
+	mos:row_index "2" ;
+	mos:deposit_type "Undercliff" ;
+	mos:country "Australia" ;
+	mos:state_or_province "New South Wales" ;
+	mos:latitude "-28.66"^^xsd:float ;
+	mos:longitude "152.21"^^xsd:float ;
+	mos:mineral_inventory _:Nd52dca581191490faf115bbc36294141 .
+
+_:N2ebb45a618f14d43b2fd6fd11daf3d01 rdf:type mos:MineralSite ;
+	mos:row_index "3" ;
+	mos:deposit_type "Jack's Creek" ;
+	mos:country "Australia" ;
+	mos:state_or_province "Queensland" ;
+	mos:latitude "-20.67"^^xsd:float ;
+	mos:longitude "147.87"^^xsd:float ;
+	mos:mineral_inventory _:Nf062600bc43b46b28b455f4f025f9e63 .
+
+_:N95adca2633a44e4eb6d164cc21f50ca1 rdf:type mos:MineralSite ;
+	mos:row_index "4" ;
+	mos:deposit_type "Koppio-Uley mines" ;
+	mos:country "Australia" ;
+	mos:state_or_province "South Australia" ;
+	mos:latitude "-34.8"^^xsd:float ;
+	mos:longitude "135.71"^^xsd:float ;
+	mos:mineral_inventory _:N1c5b908ee47a4df9beb0238d2a80ce88 .
+
+_:N4a28e5f574c1420e8c7d69f3d97f9b09 rdf:type mos:MineralSite ;
+	mos:row_index "5" ;
+	mos:deposit_type "Munglinup River" ;
+	mos:country "Australia" ;
+	mos:state_or_province "Western Australia" ;
+	mos:latitude "-33.5"^^xsd:float ;
+	mos:longitude "120.85"^^xsd:float ;
+	mos:mineral_inventory _:N02e02c3c65254fd5a18d72c90d7daa24 .
+
+_:N56a05090d24d4c8295d530053dfc7787 rdf:type mos:MineralSite ;
+	mos:row_index "6" ;
+	mos:deposit_type "Doppl-Muehldorf-Zettlitz" ;
+	mos:country "Austria" ;
+	mos:state_or_province "Niederosterreich" ;
+	mos:latitude "48.38"^^xsd:float ;
+	mos:longitude "15.45"^^xsd:float ;
+	mos:mineral_inventory _:N9097f391f38b46998e40285c4047550f .
+
+_:Nb45cbe8a39b24434aef50506d6825468 rdf:type mos:MineralSite ;
+	mos:row_index "7" ;
+	mos:deposit_type "Kaisersberg-Trieben" ;
+	mos:country "Austria" ;
+	mos:state_or_province "Steiermark" ;
+	mos:latitude "47.35"^^xsd:float ;
+	mos:longitude "15.07"^^xsd:float ;
+	mos:mineral_inventory _:N023a0430705e4edf9ab27d19ec6067e4 .
+
+_:N6cc642e383154b829dbd6c539fcecb7b rdf:type mos:MineralSite ;
+	mos:row_index "8" ;
+	mos:deposit_type "Itanhem" ;
+	mos:country "Brazil" ;
+	mos:state_or_province "Bahia" ;
+	mos:latitude "-17.1"^^xsd:float ;
+	mos:longitude "40.35"^^xsd:float ;
+	mos:mineral_inventory _:N1376b8ee6d014fd1a3b377d247fb0d6c .
+
+_:N8fbc57ffd2b84f14bc1471ded28ab620 rdf:type mos:MineralSite ;
+	mos:row_index "9" ;
+	mos:deposit_type "Itapacerica" ;
+	mos:country "Brazil" ;
+	mos:state_or_province "Minas Gerais" ;
+	mos:latitude "-20.43"^^xsd:float ;
+	mos:longitude "-45.13"^^xsd:float ;
+	mos:mineral_inventory _:N65e1ccc5e6834430a4a09576b376deef .
+
+_:N4fad1a866a5848dcb0fe198085878013 rdf:type mos:MineralSite ;
+	mos:row_index "10" ;
+	mos:deposit_type "Pedra Azul" ;
+	mos:country "Brazil" ;
+	mos:state_or_province "Minas Gerais" ;
+	mos:latitude "-15.88"^^xsd:float ;
+	mos:longitude "-45.13"^^xsd:float ;
+	mos:mineral_inventory _:N6117887df115481286ef3ccbb2c33f74 .
+
+_:N3c1766099c7943ab9aab0ee2c32edb6a rdf:type mos:MineralSite ;
+	mos:row_index "11" ;
+	mos:deposit_type "Bisset Creek" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Ontario" ;
+	mos:latitude "46.23"^^xsd:float ;
+	mos:longitude "-78.07"^^xsd:float ;
+	mos:mineral_inventory _:N0ca27403a29443a29f1f7bf494d1d2f0 .
+
+_:Nbd7621867d834d3d8c24116075bed4e3 rdf:type mos:MineralSite ;
+	mos:row_index "12" ;
+	mos:deposit_type "Coronation" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Ontario" ;
+	mos:latitude "45.29"^^xsd:float ;
+	mos:longitude "-77.94"^^xsd:float ;
+	mos:mineral_inventory _:Nefd0b58bed1e49bf9f48d06c8c8ffeaa .
+
+_:N9ea9b0d1967340bf82a23b86e9d8e243 rdf:type mos:MineralSite ;
+	mos:row_index "13" ;
+	mos:deposit_type "Graphite Lake-Ryerson-Todd area" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Ontario" ;
+	mos:latitude "45.73"^^xsd:float ;
+	mos:longitude "-79.08"^^xsd:float ;
+	mos:mineral_inventory _:Nfe2a56a65ee94062a16d2595b67ad61e .
+
+_:N0975ac738a024d68bbe8618ef2434a04 rdf:type mos:MineralSite ;
+	mos:row_index "14" ;
+	mos:deposit_type "Kirkham-Portland-Timmins area" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Ontario" ;
+	mos:latitude "44.56"^^xsd:float ;
+	mos:longitude "-76.57"^^xsd:float ;
+	mos:mineral_inventory _:N53272445a7f54ba0a707ede499a6c9b9 .
+
+_:N816b2fdfff9e41a6b8c21cca903a5e2f rdf:type mos:MineralSite ;
+	mos:row_index "15" ;
+	mos:deposit_type "Tagliamonte" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Ontario" ;
+	mos:latitude "46.23"^^xsd:float ;
+	mos:longitude "-78.07"^^xsd:float ;
+	mos:mineral_inventory _:N12f682f2fd164f45ae96002f113db25a .
+
+_:N069fab6a21124e90a13c55426da98b0e rdf:type mos:MineralSite ;
+	mos:row_index "16" ;
+	mos:deposit_type "Graphex-Graphico-Orwell Mines" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Quebec" ;
+	mos:latitude "46.14"^^xsd:float ;
+	mos:longitude "-75.55"^^xsd:float ;
+	mos:mineral_inventory _:N4165701dc4504471b5e65fd2bde47df3 .
+
+_:Nc0f5297c699f4bc3b245aeb83b36aec5 rdf:type mos:MineralSite ;
+	mos:row_index "17" ;
+	mos:deposit_type "North American Mine" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Quebec" ;
+	mos:latitude "45.52"^^xsd:float ;
+	mos:longitude "-75.55"^^xsd:float ;
+	mos:mineral_inventory _:N1619e15db1494e9ca2c1e762323b1c3c .
+
+_:Nbf08b15078694d04bb5c8fb1a9e04ced rdf:type mos:MineralSite ;
+	mos:row_index "18" ;
+	mos:deposit_type "St-Amime-Lac Des Iles" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Quebec" ;
+	mos:latitude "46.25"^^xsd:float ;
+	mos:longitude "-75.53"^^xsd:float ;
+	mos:mineral_inventory _:Nf1e2ee4d0246417e87fd3d0f6c912c30 .
+
+_:N828e7515b84e4a71b3ac44b3dc150ed8 rdf:type mos:MineralSite ;
+	mos:row_index "19" ;
+	mos:deposit_type "Lac Knife" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Quebec" ;
+	mos:latitude "52.55"^^xsd:float ;
+	mos:longitude "-61.18"^^xsd:float ;
+	mos:mineral_inventory _:Nd5412c41ef2f454db46100111443ce7e .
+
+_:N38f640e85246419886e71af1d2ea886f rdf:type mos:MineralSite ;
+	mos:row_index "20" ;
+	mos:deposit_type "Pollon Lake area" ;
+	mos:country "Canada" ;
+	mos:state_or_province "Saskatchewan" ;
+	mos:latitude "56.38"^^xsd:float ;
+	mos:longitude "-103.13"^^xsd:float ;
+	mos:mineral_inventory _:N6d9e29afc9bd4404a0807e8d92da5013 .
+
+_:N90393ff36071431bb26b605d272d115c rdf:type mos:MineralSite ;
+	mos:row_index "21" ;
+	mos:deposit_type "Haikou" ;
+	mos:country "China" ;
+	mos:state_or_province "Hainan" ;
+	mos:latitude "20.08"^^xsd:float ;
+	mos:longitude "110.42"^^xsd:float ;
+	mos:mineral_inventory _:Nc598069586e24732a65671a0f22b1d49 .
+
+_:Nb94e8f997d794414bb4b1319a1a98cc9 rdf:type mos:MineralSite ;
+	mos:row_index "22" ;
+	mos:deposit_type "Heling" ;
+	mos:country "China" ;
+	mos:state_or_province "Heilongjiang [Heilungkiang]" ;
+	mos:latitude "46.31"^^xsd:float ;
+	mos:longitude "129.55"^^xsd:float ;
+	mos:mineral_inventory _:N4b0a4a63c1ee4c2b919253da634ac79b .
+
+_:N4189b681e6144555b7ebc8f1d18c4a38 rdf:type mos:MineralSite ;
+	mos:row_index "23" ;
+	mos:deposit_type "Jixi (Liu Mao)" ;
+	mos:country "China" ;
+	mos:state_or_province "Heilongjiang [Heilungkiang]" ;
+	mos:latitude "45.28"^^xsd:float ;
+	mos:longitude "131.0"^^xsd:float ;
+	mos:mineral_inventory _:Na40bdf2932ef41849c965d48386a71a4 .
+
+_:Nbc520e6c7908429882cdf5fae34cb117 rdf:type mos:MineralSite ;
+	mos:row_index "24" ;
+	mos:deposit_type "Liu Mao" ;
+	mos:country "China" ;
+	mos:state_or_province "Heilongjiang [Heilungkiang]" ;
+	mos:latitude "45.3"^^xsd:float ;
+	mos:longitude "131.07"^^xsd:float ;
+	mos:mineral_inventory _:N47f93a3449324c2a8d0ee34c369e3db6 .
+
+_:N6eba4a40649f4daabae78f0fe6a04a66 rdf:type mos:MineralSite ;
+	mos:row_index "25" ;
+	mos:deposit_type "Honan deposits" ;
+	mos:country "China" ;
+	mos:state_or_province "Henan [Honan]" ;
+	mos:latitude "32.5"^^xsd:float ;
+	mos:longitude "113.88"^^xsd:float ;
+	mos:mineral_inventory _:N39f0ce4a3bc94df2a734aa37bccc1d45 .
+
+_:Nc8316427e235461fbb2ddc8931642bd9 rdf:type mos:MineralSite ;
+	mos:row_index "26" ;
+	mos:deposit_type "Hunan" ;
+	mos:country "China" ;
+	mos:state_or_province "Hunan" ;
+	mos:latitude "26.0"^^xsd:float ;
+	mos:longitude "113.0"^^xsd:float ;
+	mos:mineral_inventory _:N4aa48eca177444538ed2bfcd4d6d79e6 .
+
+_:Nf8431307be1a4edbadf9a72ef9384a8e rdf:type mos:MineralSite ;
+	mos:row_index "27" ;
+	mos:deposit_type "Panshi" ;
+	mos:country "China" ;
+	mos:state_or_province "Jilin [Kirin]" ;
+	mos:latitude "42.93"^^xsd:float ;
+	mos:longitude "125.97"^^xsd:float ;
+	mos:mineral_inventory _:N71b6baec2278405b966a08e85c7f5ea2 .
+
+_:N1f4666a5f6134b8aa2aba383f7083f40 rdf:type mos:MineralSite ;
+	mos:row_index "28" ;
+	mos:deposit_type "Hohot" ;
+	mos:country "China" ;
+	mos:state_or_province "Nei Mongol (Inner Mongolia)" ;
+	mos:latitude "40.81"^^xsd:float ;
+	mos:longitude "111.62"^^xsd:float ;
+	mos:mineral_inventory _:Nad67da5875e34fdead7197900f0b77c8 .
+
+_:N21f33f0fbf9d403bac67e7ae3471104f rdf:type mos:MineralSite ;
+	mos:row_index "29" ;
+	mos:deposit_type "Shandong Peninsula" ;
+	mos:country "China" ;
+	mos:state_or_province "Shandong [Shantung]" ;
+	mos:latitude "37.03"^^xsd:float ;
+	mos:longitude "120.32"^^xsd:float ;
+	mos:mineral_inventory _:N8a2175f9eb174c6591fca14cc372625b .
+
+_:N8491e313b0c9432fa130d3f1ad4bdd52 rdf:type mos:MineralSite ;
+	mos:row_index "30" ;
+	mos:deposit_type "Xing He" ;
+	mos:country "China" ;
+	mos:latitude "40.88"^^xsd:float ;
+	mos:longitude "113.88"^^xsd:float ;
+	mos:mineral_inventory _:N8544f89b5629464098ff01bf6782ef99 .
+
+_:N03070db82388408eaf6a02253d854044 rdf:type mos:MineralSite ;
+	mos:row_index "31" ;
+	mos:deposit_type "Kolledeye" ;
+	mos:country "Czech Republic" ;
+	mos:latitude "49.22"^^xsd:float ;
+	mos:longitude "14.45"^^xsd:float ;
+	mos:mineral_inventory _:N98a5cb071fd7410eb4c60ffe5475f846 .
+
+_:N500d71b0ef5b477bbaa4ff3baf2c80d6 rdf:type mos:MineralSite ;
+	mos:row_index "32" ;
+	mos:deposit_type "Velke Vbrno-Konstantin Vvk" ;
+	mos:country "Czech Republic" ;
+	mos:latitude "50.13"^^xsd:float ;
+	mos:longitude "17.33"^^xsd:float ;
+	mos:mineral_inventory _:Ndfa5e8ca83cf4ad3b5906fabf98a42b7 .
+
+_:Nda65083c98e94c4da98fc942b31c68c3 rdf:type mos:MineralSite ;
+	mos:row_index "33" ;
+	mos:deposit_type "Kropfmühl-Cesky Krumlov" ;
+	mos:country "Germany and Czech Republic" ;
+	mos:state_or_province "Bayern [Bavaria, Germany]" ;
+	mos:latitude "48.8"^^xsd:float ;
+	mos:longitude "14.32"^^xsd:float ;
+	mos:mineral_inventory _:Nc43cf898f95f42f38f1bcd2b2137d6e6 .
+
+_:N7e800717d7e4432380ea8f77e8bbb414 rdf:type mos:MineralSite ;
+	mos:row_index "34" ;
+	mos:deposit_type "East Godavari" ;
+	mos:country "India" ;
+	mos:state_or_province "Andhra Pradesh" ;
+	mos:latitude "17.38"^^xsd:float ;
+	mos:longitude "81.85"^^xsd:float ;
+	mos:mineral_inventory _:N9bb40fcb93c848d48a7ec398abb892bd .
+
+_:Ne65d44d19a4c481c9d1d63b6fe444b3c rdf:type mos:MineralSite ;
+	mos:row_index "35" ;
+	mos:deposit_type "Khammam" ;
+	mos:country "India" ;
+	mos:state_or_province "Andhra Pradesh" ;
+	mos:latitude "17.38"^^xsd:float ;
+	mos:longitude "81.33"^^xsd:float ;
+	mos:mineral_inventory _:N0c19e059052149b98347c4fa9820b921 .
+
+_:Nc166dd400c04492fa97ce0863bcca87e rdf:type mos:MineralSite ;
+	mos:row_index "36" ;
+	mos:deposit_type "Srikakulam" ;
+	mos:country "India" ;
+	mos:state_or_province "Andhra Pradesh" ;
+	mos:latitude "18.33"^^xsd:float ;
+	mos:longitude "83.1"^^xsd:float ;
+	mos:mineral_inventory _:N347208e505b741c6a786b2273f820686 .
+
+_:N32ceab26a4804fbb8052bc34d6d75ec1 rdf:type mos:MineralSite ;
+	mos:row_index "37" ;
+	mos:deposit_type "Visakhapatnam" ;
+	mos:country "India" ;
+	mos:state_or_province "Andhra Pradesh" ;
+	mos:latitude "18.02"^^xsd:float ;
+	mos:longitude "82.93"^^xsd:float ;
+	mos:mineral_inventory _:N7162cc43a42343af95f6cba334409ac9 .
+
+_:N182231073c2e4b28a174ac59ae14d1f3 rdf:type mos:MineralSite ;
+	mos:row_index "38" ;
+	mos:deposit_type "Khamdih" ;
+	mos:country "India" ;
+	mos:state_or_province "Bihar" ;
+	mos:latitude "23.97"^^xsd:float ;
+	mos:longitude "84.22"^^xsd:float ;
+	mos:mineral_inventory _:Nee292e8b56f349d291ac60c163eb0adc .
+
+_:N7718d2ab91e046cd9e19c08f81c90bde rdf:type mos:MineralSite ;
+	mos:row_index "39" ;
+	mos:deposit_type "Sokra" ;
+	mos:country "India" ;
+	mos:state_or_province "Bihar" ;
+	mos:latitude "23.97"^^xsd:float ;
+	mos:longitude "84.13"^^xsd:float ;
+	mos:mineral_inventory _:Nd8c50b6130b646cc8d357cbad92eed0d .
+
+_:Na3d8f55fe4134fa1a047fb4a65e01768 rdf:type mos:MineralSite ;
+	mos:row_index "40" ;
+	mos:deposit_type "Dandatapa area" ;
+	mos:country "India" ;
+	mos:state_or_province "Odisha" ;
+	mos:latitude "20.8"^^xsd:float ;
+	mos:longitude "84.6"^^xsd:float ;
+	mos:mineral_inventory _:Nc463dd00488440c3b0c695f9934f755c .
+
+_:N72b616657bd949b087164496c81e10f4 rdf:type mos:MineralSite ;
+	mos:row_index "41" ;
+	mos:deposit_type "Sargipali area" ;
+	mos:country "India" ;
+	mos:state_or_province "Odisha" ;
+	mos:latitude "20.9"^^xsd:float ;
+	mos:longitude "83.08"^^xsd:float ;
+	mos:mineral_inventory _:Nac71126ffa0045dd864c92145ac953b7 .
+
+_:Nbdf2b8a5a60140b59f0e8e050a6abc15 rdf:type mos:MineralSite ;
+	mos:row_index "42" ;
+	mos:deposit_type "Titlagarh area" ;
+	mos:country "India" ;
+	mos:state_or_province "Odisha" ;
+	mos:latitude "20.2"^^xsd:float ;
+	mos:longitude "83.37"^^xsd:float ;
+	mos:mineral_inventory _:N028a1152cdbb48ec9b04c934969a1829 .
+
+_:N2ed866cb703b4f1686b5485bf38d60ee rdf:type mos:MineralSite ;
+	mos:row_index "43" ;
+	mos:deposit_type "Tumdibandh-Phulbani area" ;
+	mos:country "India" ;
+	mos:state_or_province "Odisha" ;
+	mos:latitude "19.83"^^xsd:float ;
+	mos:longitude "83.63"^^xsd:float ;
+	mos:mineral_inventory _:Nf26d5f57c3a346a5a02568da1b34a5e3 .
+
+_:Nb4621b1bb0824967ae3db653e4f4e7fb rdf:type mos:MineralSite ;
+	mos:row_index "44" ;
+	mos:deposit_type "Tamatia mines" ;
+	mos:country "India" ;
+	mos:state_or_province "Rajasthan" ;
+	mos:latitude "23.62"^^xsd:float ;
+	mos:longitude "74.5"^^xsd:float ;
+	mos:mineral_inventory _:Na6e1754929c54a09bdd05239f4805e37 .
+
+_:Na6eab3cf77514ce4b89f6f5a541fbe97 rdf:type mos:MineralSite ;
+	mos:row_index "45" ;
+	mos:deposit_type "Madurai" ;
+	mos:country "India" ;
+	mos:state_or_province "Tamil Nadu [Madras]" ;
+	mos:latitude "10.07"^^xsd:float ;
+	mos:longitude "77.83"^^xsd:float ;
+	mos:mineral_inventory _:N2f38b0dccfcb4dce9f6846ca5b4561ca .
+
+_:Na2fdb46e97604fdb8a56ec708d9ea7e6 rdf:type mos:MineralSite ;
+	mos:row_index "46" ;
+	mos:deposit_type "Chawia" ;
+	mos:country "Kenya" ;
+	mos:latitude "-3.46"^^xsd:float ;
+	mos:longitude "38.38"^^xsd:float ;
+	mos:mineral_inventory _:N1d6e42ccb3cd4c208987d8b0f6b2c860 .
+
+_:N84ab312138cd4afeb135895ba59940b9 rdf:type mos:MineralSite ;
+	mos:row_index "47" ;
+	mos:deposit_type "Oldoinyo-Nyiro" ;
+	mos:country "Kenya" ;
+	mos:latitude "0.75"^^xsd:float ;
+	mos:longitude "37.0"^^xsd:float ;
+	mos:mineral_inventory _:N4af6b5c5ea9a4cd1966ccd888b58f4d9 .
+
+_:Naf6ddfbaa91349a182157590fe1d2b70 rdf:type mos:MineralSite ;
+	mos:row_index "48" ;
+	mos:deposit_type "Yonghung-Kaechon area" ;
+	mos:country "Korea, North" ;
+	mos:state_or_province "Hamgyong-Namdo" ;
+	mos:latitude "39.83"^^xsd:float ;
+	mos:longitude "127.43"^^xsd:float ;
+	mos:mineral_inventory _:N238e1e1ce89f46558c1989aa94904bd8 .
+
+_:N0ec2a45bfe6140c8a0eac0d3021dbc9a rdf:type mos:MineralSite ;
+	mos:row_index "49" ;
+	mos:deposit_type "Songjin deposits" ;
+	mos:country "Korea, North" ;
+	mos:state_or_province "Hwanghae-Namdo" ;
+	mos:latitude "40.67"^^xsd:float ;
+	mos:longitude "129.2"^^xsd:float ;
+	mos:mineral_inventory _:Ncd2c7c9322f9480b8b1925d7bf5251ee .
+
+_:Nd26c2933377043f1bc8c9ec939509b9e rdf:type mos:MineralSite ;
+	mos:row_index "50" ;
+	mos:deposit_type "Wolmyong-Kaerim-Pongmyong" ;
+	mos:country "Korea, Republic of" ;
+	mos:state_or_province "Ch'Ungch'Ong-Bukto" ;
+	mos:latitude "36.41"^^xsd:float ;
+	mos:longitude "127.75"^^xsd:float ;
+	mos:mineral_inventory _:N734dd6aa451f471999d12e6294b1e063 .
+
+_:N76311ed6e0c74206bde20da77075ca53 rdf:type mos:MineralSite ;
+	mos:row_index "51" ;
+	mos:deposit_type "Yongwon-GunJa-Pyongtack-Shihung" ;
+	mos:country "Korea, Republic of" ;
+	mos:state_or_province "Ch'Ungch'Ong-Namdo" ;
+	mos:latitude "36.91"^^xsd:float ;
+	mos:longitude "127.67"^^xsd:float ;
+	mos:mineral_inventory _:Nbc488987c63e465e8360419bea80e177 .
+
+_:N847bbe69c2f34a668a7648fb7652f078 rdf:type mos:MineralSite ;
+	mos:row_index "52" ;
+	mos:deposit_type "Ampangadiatany" ;
+	mos:country "Madagascar" ;
+	mos:state_or_province "Toamasina" ;
+	mos:latitude "-19.41"^^xsd:float ;
+	mos:longitude "48.89"^^xsd:float ;
+	mos:mineral_inventory _:N79cbc229826642cb8f693e4d7169652f .
+
+_:N3ecf8adb22ba46a4a4579309b4fd025b rdf:type mos:MineralSite ;
+	mos:row_index "53" ;
+	mos:deposit_type "Ambatomitamba Sahanovo area" ;
+	mos:country "Madagascar" ;
+	mos:state_or_province "Toamasina" ;
+	mos:latitude "-18.35"^^xsd:float ;
+	mos:longitude "49.1"^^xsd:float ;
+	mos:mineral_inventory _:N7ab2198ba9a444e0a287a3a515ee93b3 .
+
+_:N58b250b22f9d4476a922968f12ab2759 rdf:type mos:MineralSite ;
+	mos:row_index "54" ;
+	mos:deposit_type "Perinet-Ambatovy area" ;
+	mos:country "Madagascar" ;
+	mos:latitude "-18.93"^^xsd:float ;
+	mos:longitude "48.45"^^xsd:float ;
+	mos:mineral_inventory _:N68e2bbecd5374f03afb3ff6405f5987b .
+
+_:Na31fd8312aca4d629fff15f5709153f6 rdf:type mos:MineralSite ;
+	mos:row_index "55" ;
+	mos:deposit_type "Vatomandry area" ;
+	mos:country "Madagascar" ;
+	mos:latitude "-19.34"^^xsd:float ;
+	mos:longitude "48.94"^^xsd:float ;
+	mos:mineral_inventory _:N33b802ea9d834354ae189e42c87d1403 .
+
+_:N530711d6b4c64b1799b388dee33327e9 rdf:type mos:MineralSite ;
+	mos:row_index "56" ;
+	mos:deposit_type "Telixtlahuaca" ;
+	mos:country "Mexico" ;
+	mos:state_or_province "Oaxaca" ;
+	mos:latitude "17.33"^^xsd:float ;
+	mos:longitude "-96.86"^^xsd:float ;
+	mos:mineral_inventory _:N40323e93b2cc4d5fb44ddf111eff68cc .
+
+_:N52a6335dbacb4436a49beca33d219ca9 rdf:type mos:MineralSite ;
+	mos:row_index "57" ;
+	mos:deposit_type "Las Trincheras" ;
+	mos:country "Mexico" ;
+	mos:state_or_province "Sonora" ;
+	mos:latitude "30.4"^^xsd:float ;
+	mos:longitude "-111.53"^^xsd:float ;
+	mos:mineral_inventory _:Nd43b04702b534f0a8e55be4137967dd4 .
+
+_:N720cd70716824fceab3829780b387faa rdf:type mos:MineralSite ;
+	mos:row_index "58" ;
+	mos:deposit_type "Lourdes area" ;
+	mos:country "Mexico" ;
+	mos:state_or_province "Sonora" ;
+	mos:latitude "28.6"^^xsd:float ;
+	mos:longitude "-110.5"^^xsd:float ;
+	mos:mineral_inventory _:N2beb9e89664b450a892a9b9d31a43303 .
+
+_:Ne0f0b572d31d420687a3f7838f555cf5 rdf:type mos:MineralSite ;
+	mos:row_index "59" ;
+	mos:deposit_type "Tonichi" ;
+	mos:country "Mexico" ;
+	mos:state_or_province "Sonora" ;
+	mos:latitude "28.58"^^xsd:float ;
+	mos:longitude "-109.57"^^xsd:float ;
+	mos:mineral_inventory _:N4f076329265543f19e57abb7f4a9b429 .
+
+_:N1c030cf1a73c4e0c9696f86ef0c1dcf3 rdf:type mos:MineralSite ;
+	mos:row_index "60" ;
+	mos:deposit_type "Skaland-Senja" ;
+	mos:country "Norway" ;
+	mos:latitude "69.45"^^xsd:float ;
+	mos:longitude "17.29"^^xsd:float ;
+	mos:mineral_inventory _:N8473fcd079054cabbcfda712cf501a0e .
+
+_:N046bc8b16d65470a868c446b7a04c333 rdf:type mos:MineralSite ;
+	mos:row_index "61" ;
+	mos:deposit_type "La Galgada-La Limena-San Carlos Mines" ;
+	mos:country "Peru" ;
+	mos:state_or_province "Ancash" ;
+	mos:latitude "-8.46"^^xsd:float ;
+	mos:longitude "-78.13"^^xsd:float ;
+	mos:mineral_inventory _:N4918a5d7d4ca4d658abe9eb32c7c6901 .
+
+_:Nec3f6da1909c4a1ca8c831145d42c23e rdf:type mos:MineralSite ;
+	mos:row_index "62" ;
+	mos:deposit_type "Baia De Fier" ;
+	mos:country "Romania" ;
+	mos:latitude "45.23"^^xsd:float ;
+	mos:longitude "23.75"^^xsd:float ;
+	mos:mineral_inventory _:Ne51f2f7920aa4ca9b83e051470aa1dfb .
+
+_:N4d9c3dd874dc46ceaab35aeff059a095 rdf:type mos:MineralSite ;
+	mos:row_index "63" ;
+	mos:deposit_type "Botogolsk" ;
+	mos:country "Russia" ;
+	mos:state_or_province "Buryatiya" ;
+	mos:latitude "52.46"^^xsd:float ;
+	mos:longitude "100.75"^^xsd:float ;
+	mos:mineral_inventory _:N61ee11fc76b14d0b83d9f5009b5156be .
+
+_:N49b4e2fff6104b90bd329bf44a2e906c rdf:type mos:MineralSite ;
+	mos:row_index "64" ;
+	mos:deposit_type "Boyarsk" ;
+	mos:country "Russia" ;
+	mos:state_or_province "Buryatiya" ;
+	mos:latitude "51.85"^^xsd:float ;
+	mos:longitude "106.1"^^xsd:float ;
+	mos:mineral_inventory _:N091811a93f0f4cb7ac7fd838709b8c56 .
+
+_:Nfea5f3c501fb4e68a7b7a49ee1e57cb6 rdf:type mos:MineralSite ;
+	mos:row_index "65" ;
+	mos:deposit_type "Kureyka" ;
+	mos:country "Russia" ;
+	mos:state_or_province "Krasnodarskiy Kray" ;
+	mos:latitude "66.48"^^xsd:float ;
+	mos:longitude "87.17"^^xsd:float ;
+	mos:mineral_inventory _:N497f0b5074564fbca654a42f54c6be1d .
+
+_:Nf99bfd55c1444fe693d3822ca653fc16 rdf:type mos:MineralSite ;
+	mos:row_index "66" ;
+	mos:deposit_type "Noginskoje" ;
+	mos:country "Russia" ;
+	mos:state_or_province "Krasnodarskiy Kray" ;
+	mos:latitude "64.5"^^xsd:float ;
+	mos:longitude "91.25"^^xsd:float ;
+	mos:mineral_inventory _:Nb6d37b6cddcb48a09292c9f7df52baf3 .
+
+_:N412f3b03f97e467da63356aa97a262fc rdf:type mos:MineralSite ;
+	mos:row_index "67" ;
+	mos:deposit_type "Soyusnoye" ;
+	mos:country "Russia" ;
+	mos:latitude "47.91"^^xsd:float ;
+	mos:longitude "130.93"^^xsd:float ;
+	mos:mineral_inventory _:N882e94fdeb5b4db8802b19cebceb0d3d .
+
+_:N801eab8488aa4e929d01fc00f61d680f rdf:type mos:MineralSite ;
+	mos:row_index "68" ;
+	mos:deposit_type "Tayginsk" ;
+	mos:country "Russia" ;
+	mos:latitude "55.63"^^xsd:float ;
+	mos:longitude "60.65"^^xsd:float ;
+	mos:mineral_inventory _:Nb232bd27ca6d404389937f734ee5c7b7 .
+
+_:Na4cbcdfa4b85480da550504e6caa02e6 rdf:type mos:MineralSite ;
+	mos:row_index "69" ;
+	mos:deposit_type "Gumbu graphite mine" ;
+	mos:country "South Africa" ;
+	mos:latitude "-22.32"^^xsd:float ;
+	mos:longitude "30.67"^^xsd:float ;
+	mos:mineral_inventory _:Ne2c591b044ef445481580f3ca8495171 .
+
+_:N6fb865a4941e4356a3f4ed36fd186597 rdf:type mos:MineralSite ;
+	mos:row_index "70" ;
+	mos:deposit_type "Malonga graphite mine" ;
+	mos:country "South Africa" ;
+	mos:latitude "-22.65"^^xsd:float ;
+	mos:longitude "30.88"^^xsd:float ;
+	mos:mineral_inventory _:N28a6e67f72b34c43891dcae27d15ae39 .
+
+_:Nd8fd396850124c4dae9193c0cea2e2ed rdf:type mos:MineralSite ;
+	mos:row_index "71" ;
+	mos:deposit_type "Kahatagaha-Kolongaha mines" ;
+	mos:country "Sri Lanka" ;
+	mos:latitude "7.57"^^xsd:float ;
+	mos:longitude "80.53"^^xsd:float ;
+	mos:mineral_inventory _:Nf6ba233e71aa4cd0ad13bb1a6e3e1202 .
+
+_:Nfdedbe7cb9654443a5bb81d54a13c8b4 rdf:type mos:MineralSite ;
+	mos:row_index "72" ;
+	mos:deposit_type "Zavalyevskiy" ;
+	mos:country "Ukraine" ;
+	mos:latitude "48.2"^^xsd:float ;
+	mos:longitude "30.03"^^xsd:float ;
+	mos:mineral_inventory _:N02732b10fe734087809eb7895e212215 .
+
+_:N144b939da61b42d882b1e21d785dbd44 rdf:type mos:MineralSite ;
+	mos:row_index "73" ;
+	mos:deposit_type "Clay-Coosa-Chilton graphite district" ;
+	mos:country "United States" ;
+	mos:state_or_province "Alabama" ;
+	mos:latitude "33.28"^^xsd:float ;
+	mos:longitude "-85.84"^^xsd:float ;
+	mos:mineral_inventory _:N477206b2acd844f9968f8de1fd84fd2c .
+
+_:Nfa6cbe4c39b9479a9b13bf45384dd697 rdf:type mos:MineralSite ;
+	mos:row_index "74" ;
+	mos:deposit_type "Christophosen Creek" ;
+	mos:country "United States" ;
+	mos:state_or_province "Alaska" ;
+	mos:latitude "65.03"^^xsd:float ;
+	mos:longitude "-165.63"^^xsd:float ;
+	mos:mineral_inventory _:Ne4f0e570dd564c4c81fed993a91d3a82 .
+
+_:Ne1b845ee54aa4595a5213759e84c0526 rdf:type mos:MineralSite ;
+	mos:row_index "75" ;
+	mos:deposit_type "Graphite Creek" ;
+	mos:country "United States" ;
+	mos:state_or_province "Alaska" ;
+	mos:latitude "65.04"^^xsd:float ;
+	mos:longitude "-165.54"^^xsd:float ;
+	mos:mineral_inventory _:N8e38c0ad43ce4da9b13713f2d0286c8b .
+
+_:N272347225e724f9e82be28778f36e5e9 rdf:type mos:MineralSite ;
+	mos:row_index "76" ;
+	mos:deposit_type "Imuruk Basin Graphite" ;
+	mos:country "United States" ;
+	mos:state_or_province "Alaska" ;
+	mos:latitude "65.04"^^xsd:float ;
+	mos:longitude "-165.55"^^xsd:float ;
+	mos:mineral_inventory _:N0ee17926bfc54542b43740313b631176 .
+
+_:N1ec314570cdd402eae18d17ad093ca5b rdf:type mos:MineralSite ;
+	mos:row_index "77" ;
+	mos:deposit_type "Kigluaik Mountains graphite district" ;
+	mos:country "United States" ;
+	mos:state_or_province "Alaska" ;
+	mos:latitude "65.04"^^xsd:float ;
+	mos:longitude "-165.54"^^xsd:float ;
+	mos:mineral_inventory _:Nbaa52c7e08894713bd4bb4743ca6ad9f .
+
+_:Nb9329cfd1ad74e1b97a78017b06e6b40 rdf:type mos:MineralSite ;
+	mos:row_index "78" ;
+	mos:deposit_type "Southern California area" ;
+	mos:country "United States" ;
+	mos:state_or_province "California" ;
+	mos:latitude "34.65"^^xsd:float ;
+	mos:longitude "-118.47"^^xsd:float ;
+	mos:mineral_inventory _:Ncfaca7083c2b496d96b66a0bf7f810a2 .
+
+_:Ne6ebb312d6eb476aa993a5a0f3c32324 rdf:type mos:MineralSite ;
+	mos:row_index "79" ;
+	mos:deposit_type "Black Lady Nos. 1 and 2" ;
+	mos:country "United States" ;
+	mos:state_or_province "California" ;
+	mos:latitude "36.9"^^xsd:float ;
+	mos:longitude "-118.07"^^xsd:float ;
+	mos:mineral_inventory _:N5ed5178671e64c29b428c4d0adb7d597 .
+
+_:N35ccc534d83844a7896f38ae8b29e848 rdf:type mos:MineralSite ;
+	mos:row_index "80" ;
+	mos:deposit_type "Eureka Plumbago-Morgan mines" ;
+	mos:country "United States" ;
+	mos:state_or_province "California" ;
+	mos:latitude "38.02"^^xsd:float ;
+	mos:longitude "-120.38"^^xsd:float ;
+	mos:mineral_inventory _:N2628462676d1455a819e104ab4d358c1 .
+
+_:Nd1d0179427dd4228bd6a0b113e6b3303 rdf:type mos:MineralSite ;
+	mos:row_index "81" ;
+	mos:deposit_type "Skinner Ranch" ;
+	mos:country "United States" ;
+	mos:state_or_province "California" ;
+	mos:latitude "38.19"^^xsd:float ;
+	mos:longitude "-122.59"^^xsd:float ;
+	mos:mineral_inventory _:N1592291e629d442e8e6b282a7171fc6b .
+
+_:N714df4a9cc3543e2a790861f4c4d1852 rdf:type mos:MineralSite ;
+	mos:row_index "82" ;
+	mos:deposit_type "Unnamed" ;
+	mos:country "United States" ;
+	mos:state_or_province "California" ;
+	mos:latitude "36.28"^^xsd:float ;
+	mos:longitude "-121.56"^^xsd:float ;
+	mos:mineral_inventory _:N2084a2746ff94f9d9fe757540858ce75 .
+
+_:N77e44456983740d095de1d064b5f3fac rdf:type mos:MineralSite ;
+	mos:row_index "83" ;
+	mos:deposit_type "Unnamed" ;
+	mos:country "United States" ;
+	mos:state_or_province "California" ;
+	mos:latitude "41.21"^^xsd:float ;
+	mos:longitude "-123.77"^^xsd:float ;
+	mos:mineral_inventory _:Nef88ad048da64c82a1022f0fc76a7a2f .
+
+_:Naf4ee8b0f1544390902bc611774b8831 rdf:type mos:MineralSite ;
+	mos:row_index "84" ;
+	mos:deposit_type "Wedge" ;
+	mos:country "United States" ;
+	mos:state_or_province "California" ;
+	mos:latitude "32.8"^^xsd:float ;
+	mos:longitude "-115.98"^^xsd:float ;
+	mos:mineral_inventory _:N69f9699adef246c9a8a99d219cfa18f0 .
+
+_:Ndb5d05effdeb4244aedbd6620e3e92cc rdf:type mos:MineralSite ;
+	mos:row_index "85" ;
+	mos:deposit_type "Graphite Basin" ;
+	mos:country "United States" ;
+	mos:state_or_province "Colorado" ;
+	mos:latitude "38.59"^^xsd:float ;
+	mos:longitude "-106.38"^^xsd:float ;
+	mos:mineral_inventory _:N204ed76ee78045f3949a78c179b37d58 .
+
+_:N14e7099132e4448882087c1123fb9933 rdf:type mos:MineralSite ;
+	mos:row_index "86" ;
+	mos:deposit_type "Unnamed graphite deposit" ;
+	mos:country "United States" ;
+	mos:state_or_province "Colorado" ;
+	mos:latitude "38.67"^^xsd:float ;
+	mos:longitude "-105.98"^^xsd:float ;
+	mos:mineral_inventory _:Nd7e3cd167d434d6eb3e14ce9a3a0717d .
+
+_:N795a4ed713684b86b64ac154c46d5c5e rdf:type mos:MineralSite ;
+	mos:row_index "87" ;
+	mos:deposit_type "Graphite mines" ;
+	mos:country "United States" ;
+	mos:state_or_province "Connecticut" ;
+	mos:latitude "41.86"^^xsd:float ;
+	mos:longitude "-73.37"^^xsd:float ;
+	mos:mineral_inventory _:N95f668c23d764347a0bf041aefbc8992 .
+
+_:N828075b4883f4bfe8ff6e453d1da15aa rdf:type mos:MineralSite ;
+	mos:row_index "88" ;
+	mos:deposit_type "Lead Hill Mine graphite deposits" ;
+	mos:country "United States" ;
+	mos:state_or_province "Connecticut" ;
+	mos:latitude "41.94"^^xsd:float ;
+	mos:longitude "-72.18"^^xsd:float ;
+	mos:mineral_inventory _:Nf8a94839154c401b827d409ca9eac64c .
+
+_:N6124fcbecdc44208a0262e734576215a rdf:type mos:MineralSite ;
+	mos:row_index "89" ;
+	mos:deposit_type "Unnamed graphite mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "Georgia" ;
+	mos:latitude "34.12"^^xsd:float ;
+	mos:longitude "-84.74"^^xsd:float ;
+	mos:mineral_inventory _:N3c3b417432ed4dd48964b90c116d01e2 .
+
+_:Na281c49a06d84b8b992af3be91179016 rdf:type mos:MineralSite ;
+	mos:row_index "90" ;
+	mos:deposit_type "Detroit-Northern Graphite quarries" ;
+	mos:country "United States" ;
+	mos:state_or_province "Michigan" ;
+	mos:latitude "46.63"^^xsd:float ;
+	mos:longitude "-88.35"^^xsd:float ;
+	mos:mineral_inventory _:N8851f83b7ea8478fa649009cba4e9248 .
+
+_:N9be39a202b244a3f9b193bd36d26747a rdf:type mos:MineralSite ;
+	mos:row_index "91" ;
+	mos:deposit_type "Black Diamond Carbon Graphite" ;
+	mos:country "United States" ;
+	mos:state_or_province "Montana" ;
+	mos:latitude "46.32"^^xsd:float ;
+	mos:longitude "-111.63"^^xsd:float ;
+	mos:mineral_inventory _:N0e7e9ca9deba44129fa1c46ab119b517 .
+
+_:Nfdc22ff582874ef3943f4b81c206d6cc rdf:type mos:MineralSite ;
+	mos:row_index "92" ;
+	mos:deposit_type "Crystal Graphite Mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "Montana" ;
+	mos:latitude "45.1"^^xsd:float ;
+	mos:longitude "-112.51"^^xsd:float ;
+	mos:mineral_inventory _:N94539f8d73214ce988c0744e3bcb0bb2 .
+
+_:N7db9a40ef0aa4dc4876c3d4c325d72b1 rdf:type mos:MineralSite ;
+	mos:row_index "93" ;
+	mos:deposit_type "Boston-Goshen-Osgood Mines area" ;
+	mos:country "United States" ;
+	mos:state_or_province "New Hampshire" ;
+	mos:latitude "43.27"^^xsd:float ;
+	mos:longitude "-72.1"^^xsd:float ;
+	mos:mineral_inventory _:N342dc9b8af374ae6a56f746d2de7f869 .
+
+_:N3063f8f3be3e49039ab904cc070d167b rdf:type mos:MineralSite ;
+	mos:row_index "94" ;
+	mos:deposit_type "Stone Mills Graphite Mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "New Jersey" ;
+	mos:latitude "40.68"^^xsd:float ;
+	mos:longitude "-74.88"^^xsd:float ;
+	mos:mineral_inventory _:Nf3e4ef3b063f41e988c6256365dcaf6b .
+
+_:Nf0e8d775b131444bb457444c370f6c4c rdf:type mos:MineralSite ;
+	mos:row_index "95" ;
+	mos:deposit_type "Adirondack Mining & Milling Mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "New York" ;
+	mos:latitude "43.56"^^xsd:float ;
+	mos:longitude "-73.46"^^xsd:float ;
+	mos:mineral_inventory _:N748fca6593b644e4bda8d0c71ee2b52b .
+
+_:Nd538f79efdd54d498203dad9b83e714e rdf:type mos:MineralSite ;
+	mos:row_index "96" ;
+	mos:deposit_type "Essex-Warren area" ;
+	mos:country "United States" ;
+	mos:state_or_province "New York" ;
+	mos:latitude "43.9"^^xsd:float ;
+	mos:longitude "-73.47"^^xsd:float ;
+	mos:mineral_inventory _:N398f8f532c33408285a1842a1054571f .
+
+_:N4e08d1b48832465c93554de9b501559e rdf:type mos:MineralSite ;
+	mos:row_index "97" ;
+	mos:deposit_type "Champlain Graphite Mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "New York" ;
+	mos:latitude "43.54"^^xsd:float ;
+	mos:longitude "-73.48"^^xsd:float ;
+	mos:mineral_inventory _:N6719e946a9894a778cb719b4b1414673 .
+
+_:N2c6e1dee5d6f44549ee8ab13d6e95faf rdf:type mos:MineralSite ;
+	mos:row_index "98" ;
+	mos:deposit_type "M. B. Hooper Graphite Mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "New York" ;
+	mos:latitude "43.55"^^xsd:float ;
+	mos:longitude "-73.5"^^xsd:float ;
+	mos:mineral_inventory _:N234443191a024ad984931c77a967d1ba .
+
+_:Nf53d23d2d9d34808a750b1a5fcdc498e rdf:type mos:MineralSite ;
+	mos:row_index "99" ;
+	mos:deposit_type "Pope Mills-Rossie deposits" ;
+	mos:country "United States" ;
+	mos:state_or_province "New York" ;
+	mos:latitude "44.47"^^xsd:float ;
+	mos:longitude "-75.55"^^xsd:float ;
+	mos:mineral_inventory _:N8d6ba66121c44879acae2c78e6e13ced .
+
+_:N7ada4befed6a436f9b298ace91649924 rdf:type mos:MineralSite ;
+	mos:row_index "100" ;
+	mos:deposit_type "Rowland Graphite Mine area" ;
+	mos:country "United States" ;
+	mos:state_or_province "New York" ;
+	mos:latitude "43.6"^^xsd:float ;
+	mos:longitude "-73.97"^^xsd:float ;
+	mos:mineral_inventory _:N4b2f8d1137fe47ca881b23e84e1ca00f .
+
+_:Ne4d918b0c3844e4f8d0266979be40d8b rdf:type mos:MineralSite ;
+	mos:row_index "101" ;
+	mos:deposit_type "Silver Leaf Graphite Co. Mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "New York" ;
+	mos:latitude "43.59"^^xsd:float ;
+	mos:longitude "-73.43"^^xsd:float ;
+	mos:mineral_inventory _:Nd6007d4e3a1b48799d57e857f31f4f3f .
+
+_:Nc86e2c58ec1f456fa0d758a191eed249 rdf:type mos:MineralSite ;
+	mos:row_index "102" ;
+	mos:deposit_type "Dillinger Mine and mill" ;
+	mos:country "United States" ;
+	mos:state_or_province "North Carolina" ;
+	mos:latitude "35.9"^^xsd:float ;
+	mos:longitude "-82.18"^^xsd:float ;
+	mos:mineral_inventory _:N0c4363aefce9420d9d4549954ac17c39 .
+
+_:N18d7fa7868d448c7acfafd9119001014 rdf:type mos:MineralSite ;
+	mos:row_index "103" ;
+	mos:deposit_type "Cranston-Penners Ledge Mines" ;
+	mos:country "United States" ;
+	mos:state_or_province "Rhode Island" ;
+	mos:latitude "41.77"^^xsd:float ;
+	mos:longitude "-71.46"^^xsd:float ;
+	mos:mineral_inventory _:N7958197fe6624b818f74dcdf4b550622 .
+
+_:Ncb531f331e5e426a84fc5eced71e7d94 rdf:type mos:MineralSite ;
+	mos:row_index "104" ;
+	mos:deposit_type "Copper Cliff Mine" ;
+	mos:country "United States" ;
+	mos:state_or_province "South Dakota" ;
+	mos:latitude "44.12"^^xsd:float ;
+	mos:longitude "-103.84"^^xsd:float ;
+	mos:mineral_inventory _:N01e9ce5f047c4b47aaea53e84c7543b6 .
+
+_:Nf3dd981020864a6aaac75d1c465346ae rdf:type mos:MineralSite ;
+	mos:row_index "105" ;
+	mos:deposit_type "Burnet-Llano district" ;
+	mos:country "United States" ;
+	mos:state_or_province "Texas" ;
+	mos:latitude "30.78"^^xsd:float ;
+	mos:longitude "-98.36"^^xsd:float ;
+	mos:mineral_inventory _:Nb470494c6e044b2dace4a31e4e4863c6 .
+
+_:Nc86d2ce1687344e59557cb51a816e049 rdf:type mos:MineralSite ;
+	mos:row_index "106" ;
+	mos:deposit_type "Rabbit Creek area" ;
+	mos:country "United States" ;
+	mos:state_or_province "Wyoming" ;
+	mos:latitude "42.21"^^xsd:float ;
+	mos:longitude "-105.23"^^xsd:float ;
+	mos:mineral_inventory _:N195d96ce13974d118564b1cb83e3ac82 .
+
+_:Na0be5b9fed9342219e3611870fc6acda rdf:type mos:MineralSite ;
+	mos:row_index "107" ;
+	mos:deposit_type "Taskazgan" ;
+	mos:country "Uzbekistan" ;
+	mos:latitude "40.81"^^xsd:float ;
+	mos:longitude "63.38"^^xsd:float ;
+	mos:mineral_inventory _:Ncde33ad6580a4e33be4d5b4d7c397449 .
+
+_:Nb4a6b5354d9e45e6b6abbc8f56094565 rdf:type mos:MineralSite ;
+	mos:row_index "108" ;
+	mos:deposit_type "Lynx Mine" ;
+	mos:country "Zimbabwe" ;
+	mos:latitude "-16.43"^^xsd:float ;
+	mos:longitude "29.3"^^xsd:float ;
+	mos:mineral_inventory _:N883599f509ca4afaa56e17026d4c5cba .
+

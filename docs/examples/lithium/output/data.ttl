@@ -1,0 +1,192 @@
+@prefix mnr: <https://minmod.isi.edu/resource/> .
+@prefix mno: <https://minmod.isi.edu/ontology/> .
+@prefix mos: <https://minmod.isi.edu/ontology-simple/> .
+@prefix geokb: <https://geokb.wikibase.cloud/entity/> .
+@prefix gemr: <https://geochemistry.isi.edu/resource/> .
+@prefix gemo: <https://geochemistry.isi.edu/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix drepr: <https://purl.org/drepr/1.0/> .
+
+_:Ndf8aadda1c1e4dea9f6f6b65b960c54d rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "1754.4"^^xsd:float ;
+	mos:grade "2036.25398996808"^^xsd:float ;
+	mos:tonnage "217.3"^^xsd:float ;
+	mos:grade "3160.9111826967323"^^xsd:float ;
+	mos:cutoff_grade "1047.0"^^xsd:float ;
+	mos:date "2022" .
+
+_:N154b3672544f40e7bbb86f0630259d34 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "207.0"^^xsd:float ;
+	mos:grade "1129.95169"^^xsd:float ;
+	mos:tonnage "60.5"^^xsd:float ;
+	mos:grade "1795.86777"^^xsd:float ;
+	mos:date "2023-03-01 00:00:00" .
+
+_:N9d2ae3dbd47d44b2968f28d27ad361fd rdf:type mos:MineralInventory ;
+	mos:commodity "Brine" ;
+	mos:tonnage "2449.825"^^xsd:float ;
+	mos:grade "57.02449"^^xsd:float ;
+	mos:tonnage "1345.612"^^xsd:float ;
+	mos:grade "92.59728"^^xsd:float ;
+	mos:date "2022-09-30 00:00:00" .
+
+_:N4ed299f4a5ee4371966eca9c05ba6d3f rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "1540.4"^^xsd:float ;
+	mos:grade "882.685952"^^xsd:float ;
+	mos:tonnage "213.0"^^xsd:float ;
+	mos:grade "1129.0"^^xsd:float ;
+	mos:date "2020-08-05 00:00:00" .
+
+_:Nd3ad38103e8b45cca7c8bd1ed3ecaba0 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "3407.3"^^xsd:float ;
+	mos:grade "1013.0"^^xsd:float ;
+	mos:cutoff_grade "700.0"^^xsd:float ;
+	mos:date "2021-08-20 00:00:00" .
+
+_:Ne77cb2efcdf44f9db969c9858b9d87ba rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "6091.0"^^xsd:float ;
+	mos:grade "573.998851"^^xsd:float ;
+	mos:date "2024-01-18 00:00:00" .
+
+_:N50ea3cc2cb7d43508e131ad06ab41010 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "2538.0"^^xsd:float ;
+	mos:grade "791.0724980299449"^^xsd:float ;
+	mos:cutoff_grade "500.0"^^xsd:float ;
+	mos:date "2023-03-17 00:00:00" .
+
+_:N6324230f81be48e68f48bbb0fd7e2d17 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "2826.808"^^xsd:float ;
+	mos:grade "678.549143"^^xsd:float ;
+	mos:cutoff_grade "300.0"^^xsd:float ;
+	mos:date "2023-12-21 00:00:00" .
+
+_:Na14c3c36edd1413d82e80ccedd8a6203 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "477.0"^^xsd:float ;
+	mos:grade "823.406709"^^xsd:float ;
+	mos:cutoff_grade "300.0"^^xsd:float ;
+	mos:date "2022-06-14 00:00:00" .
+
+_:N258adf55e7e245989be8f719af0b7319 rdf:type mos:MineralInventory ;
+	mos:commodity "Brine" ;
+	mos:tonnage "357.6013893"^^xsd:float ;
+	mos:grade "114.52514"^^xsd:float ;
+	mos:date "2017-06-01 00:00:00" .
+
+_:N765f69c668124b5aa3984373f64f5697 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "310.3"^^xsd:float ;
+	mos:grade "2834.0"^^xsd:float ;
+	mos:cutoff_grade "1000.0"^^xsd:float ;
+	mos:date "2024-02-22 00:00:00" .
+
+_:N8b68c7b7dbac4c52ab2e20c6a34bbda7 rdf:type mos:MineralInventory ;
+	mos:commodity "Brine" ;
+	mos:tonnage "711.275"^^xsd:float ;
+	mos:grade "80.0"^^xsd:float ;
+	mos:date "2024-03-13 00:00:00" .
+
+_:Neb79babc152748ba9d7f03f01c459251 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "184.002"^^xsd:float ;
+	mos:grade "670.5961674329626"^^xsd:float ;
+	mos:cutoff_grade "400.0"^^xsd:float ;
+	mos:date "2023-11-01 00:00:00" .
+
+_:N8904550bb3d442249ea0adbfba8fe23d rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "1150.442"^^xsd:float ;
+	mos:grade "1130.0"^^xsd:float ;
+	mos:cutoff_grade "400.0"^^xsd:float ;
+	mos:date "2024-01-23 00:00:00" .
+
+_:Nf022b3a2a171489ba22b030bbb09a790 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "590.9258649999999"^^xsd:float ;
+	mos:grade "810.2505379418449"^^xsd:float ;
+	mos:cutoff_grade "500.0"^^xsd:float ;
+	mos:date "2023-12-21 00:00:00" .
+
+_:N1fd599998f6444c8ac90439d2e7d0fb2 rdf:type mos:MineralInventory ;
+	mos:commodity "Clay" ;
+	mos:tonnage "1276.79"^^xsd:float ;
+	mos:grade "924.1868514007786"^^xsd:float ;
+	mos:cutoff_grade "300.0"^^xsd:float ;
+	mos:date "2023" .
+
+_:N87ece7e7e51540cfb09e1d3e9708a950 rdf:type mos:MineralSite ;
+	mos:name "Thacker Pass" ;
+	mos:mineral_inventory _:Ndf8aadda1c1e4dea9f6f6b65b960c54d .
+
+_:N32cf4722203b44968dcea465f4ef3f6a rdf:type mos:MineralSite ;
+	mos:name "Rhyolite Ridge" ;
+	mos:mineral_inventory _:N154b3672544f40e7bbb86f0630259d34 .
+
+_:Nd6c5cad616fd4ee198bfa25740f07785 rdf:type mos:MineralSite ;
+	mos:name "Silver Peak" ;
+	mos:mineral_inventory _:N9d2ae3dbd47d44b2968f28d27ad361fd .
+
+_:Nfe5dd8a0853a4ee38c33f94b538a9ede rdf:type mos:MineralSite ;
+	mos:name "Clayton" ;
+	mos:mineral_inventory _:N4ed299f4a5ee4371966eca9c05ba6d3f .
+
+_:Nec8d0bbcb3b344ad9ae9ee658f79457e rdf:type mos:MineralSite ;
+	mos:name "Bonnie Claire" ;
+	mos:mineral_inventory _:Nd3ad38103e8b45cca7c8bd1ed3ecaba0 .
+
+_:N2c683a20e9b9413589a7646582c4821e rdf:type mos:MineralSite ;
+	mos:name "Tonopah Flats" ;
+	mos:mineral_inventory _:Ne77cb2efcdf44f9db969c9858b9d87ba .
+
+_:N59077705951348af97c0acb73e9ecb3a rdf:type mos:MineralSite ;
+	mos:name "TLC" ;
+	mos:mineral_inventory _:N50ea3cc2cb7d43508e131ad06ab41010 .
+
+_:N49f7b392e76c4314b3a181272a74705d rdf:type mos:MineralSite ;
+	mos:name "Horizon Lithium" ;
+	mos:mineral_inventory _:N6324230f81be48e68f48bbb0fd7e2d17 .
+
+_:Ncbf13a27cbc54965bda03a83e03726ac rdf:type mos:MineralSite ;
+	mos:name "McGee" ;
+	mos:mineral_inventory _:Na14c3c36edd1413d82e80ccedd8a6203 .
+
+_:N9b19e92a1ff94b5bb4b709fa4360ebab rdf:type mos:MineralSite ;
+	mos:name "Clayton Valley" ;
+	mos:mineral_inventory _:N258adf55e7e245989be8f719af0b7319 .
+
+_:Nfc35008b17a04c9dbdd55b4a389c47bd rdf:type mos:MineralSite ;
+	mos:name "Nevada North" ;
+	mos:mineral_inventory _:N765f69c668124b5aa3984373f64f5697 .
+
+_:Ne94d061cf13447049f58a8d468f8c798 rdf:type mos:MineralSite ;
+	mos:name "Clayton" ;
+	mos:mineral_inventory _:N8b68c7b7dbac4c52ab2e20c6a34bbda7 .
+
+_:Ndb1b100707124704a7c2bd29170162e9 rdf:type mos:MineralSite ;
+	mos:name "West Tonopah Project" ;
+	mos:mineral_inventory _:Neb79babc152748ba9d7f03f01c459251 .
+
+_:Nd31b820b14034e79ad967367b3659cd0 rdf:type mos:MineralSite ;
+	mos:name "Gemini" ;
+	mos:mineral_inventory _:N8904550bb3d442249ea0adbfba8fe23d .
+
+_:N1e084dae74ca4264ac7d37fdf2771df3 rdf:type mos:MineralSite ;
+	mos:name "Clayton Ridge Project" ;
+	mos:mineral_inventory _:Nf022b3a2a171489ba22b030bbb09a790 .
+
+_:N35c713569acf423abb5b11442da85a60 rdf:type mos:MineralSite ;
+	mos:name "Zeus" ;
+	mos:mineral_inventory _:N1fd599998f6444c8ac90439d2e7d0fb2 .
+

@@ -1,0 +1,57 @@
+prefixes:
+  mndr: https://minmod.isi.edu/resource/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  drepr: http://purl.org/drepr/1.0/
+models:
+  - nodes:
+      - id: col-deposit
+        col_index: 0
+        label: Deposit
+      - id: col-country
+        col_index: 1
+        label: Country
+      - id: col-primary-deposit-type
+        col_index: 2
+        label: Primary Deposit Type
+      - id: col-secondary-deposit-type
+        col_index: 3
+        label: Secondary Deposit Type
+      - id: col-empty
+        col_index: 4
+        label: ""
+      - id: col-company
+        col_index: 5
+        label: Company
+      - id: col-source
+        col_index: 6
+        label: Source
+      - id: col-mt-ore
+        col_index: 7
+        label: Mt ore
+      - id: col-zn
+        col_index: 8
+        label: "%Zn"
+      - id: mineral-site
+        uri: mndr:MineralSite
+      - id: mineral-inventory
+        uri: mndr:MineralInventory
+      - id: location-info
+        uri: mndr:LocationInfo
+      - id: document
+        uri: mndr:Document
+      - id: reference
+        uri: mndr:Reference
+      - id: drepr-unk
+        uri: drepr:Unknown
+    edges:
+      - drepr-unk---drepr:unknown---col-company
+      - mineral-site---rdfs:label---col-deposit
+      - mineral-site---mndr:deposit_type---col-primary-deposit-type
+      - mineral-site---mndr:deposit_type---col-secondary-deposit-type
+      - mineral-site---mndr:location_info---location-info
+      - mineral-site---mndr:reference---reference
+      - mineral-site---mndr:mineral_inventory---mineral-inventory
+      - reference---mndr:document---document
+      - document---mndr:title---col-source
+      - mineral-inventory---mndr:p_ore_Mt---col-mt-ore
+      - mineral-inventory---mndr:p_grade_zn---col-zn

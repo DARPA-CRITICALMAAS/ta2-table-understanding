@@ -1,0 +1,105 @@
+deposit_name
+Restigouche
+Smirnovskoe; Stalinskoe
+Namyang
+Mount Pleasant
+Shizhuyuan
+Nizhnee
+Aonaodaba
+Akenobe
+Ekug
+Pine Creek
+Mount Pleasant
+Shizhuyuan
+Mount Pleasant
+Mount Pleasant
+Kellhuani; Kaluyo
+JC
+Mount Pleasant
+Mount Pleasant
+Lugu
+Mount Pleasant
+Shizhuyuan
+Laochang
+Yxsjoberg
+Desquites
+Salau
+Cheongyang
+Verkhnee-Kairakty
+Festivalnoe
+Mount Pleasant
+Festivalnoe
+Sangdong
+Brunswick No. 12
+Jiaoli
+Gyeongchang
+Ima
+Mount Pleasant
+Reconquistada
+Gilmore
+Canoe Landing Lake
+Mount Pleasant
+Mount Pleasant
+Flat Landing Brook
+Longtaoshan
+Naica
+Halfmile Lake
+Mount Pleasant
+Mount Pleasant
+Pyrkakay
+Mount Pleasant
+Silleda
+San Jose de Oruro; Itos
+Mount Pleasant
+Ippata
+Orvan Brook
+Bolivar
+Xingluokeng
+Mount Pleasant
+Mount Pleasant
+Bang Phra
+Bolsa Negra
+Relonggou
+Hyder district
+Bukit Besi
+Akchatau
+Bukuka
+Moina
+Mount Pleasant
+Bayan
+Igarape Preto
+Qatpar
+Tsentralny
+Mount Wells
+Heuicheon
+Titovskoe
+Serdtse-Kamen
+Flat Landing Brook
+Beardmore
+Mount Pleasant
+Alyaskitovoe
+Brunswick No. 12
+Caribou
+South Crofty
+Emerald Tungsten
+Mount Pleasant
+Zarmitan; Charmitan
+Lermontovskoe; Lermontov
+Mount Pleasant
+Flat Landing Brook
+Iultin
+Tresavean
+Mactung; MacMillan Tungsten
+Manono
+La Parrilla
+Qatpar
+Kafang; Karfang
+Kester
+Nurataldy
+Bayan
+Potosi ; Cerro Rico
+Cantung; Canada Tungsten
+
+--------------------------------------------------------------------------------
+
+{"context":{"version":3,"page_title":null,"page_url":null,"entities":[],"literals":[],"content_hierarchy":[]},"links":[[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]]}

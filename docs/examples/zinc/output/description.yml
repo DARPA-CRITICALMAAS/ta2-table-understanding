@@ -1,0 +1,28 @@
+version: simple-tree-1
+model:
+  - type: mos:MineralSite
+    props:
+      mos:row_index: row index
+      mos:name: "2013"
+      mos:country: { "column": 2 }
+      mos:deposit_type:
+        - Primary Deposit Type
+        - Secondary Deposit Type
+      mos:mineral_inventory:
+        type: mos:MineralInventory
+        props:
+          mos:category: { literal-string: Inferred+Measured+Indicated }
+          mos:commodity: Column 9
+          mos:tonnage: Mt ore
+          mos:tonnage_unit: { literal-string: "million tonnes" }
+          mos:grade: Column 10
+          mos:grade_unit: Column 9
+      mos:reference:
+        type: mos:Document
+        props:
+          mos:doi:
+            literal-string: 10.1016/j.oregeorev.2016.08.010
+          mos:title:
+            literal-string: "The world's lead-zinc mineral resources: Scarcity, data, issues and opportunities"
+prefixes:
+  mos: https://minmod.isi.edu/ontology-simple/
