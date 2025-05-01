@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 from timer import Timer
+
 from tum.dag import (
     NormTableActor,
     NormTableArgs,
@@ -41,5 +42,5 @@ with Timer().watch_and_report("run dag"):
     output = dag.process(
         {"table": (infile,)},
         set(["sem_label"]),
-        get_context(),
+        get_context(cwd),
     )

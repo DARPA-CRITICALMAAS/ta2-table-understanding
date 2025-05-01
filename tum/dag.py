@@ -214,10 +214,14 @@ def get_dag(
             source="table",
             target=GppSemLabelActor(
                 GppSemLabelArgs(
-                    model="gpp.sem_label.models.llm.SimpleSemLabelQAModel",
-                    model_args={"model": "meta-llama/Llama-2-70b-chat-hf"},
-                    data="gpp.sem_label.models.llm.get_dataset",
-                    data_args={"sample_size": 20, "seed": 42},
+                    model="tum.sm.dsl.dsl_sem_label.DSLSemLabelModel",
+                    model_args={
+                        "model": "logistic-regression",
+                        "ontology_factory": "tum.dag.get_ontology",
+                        "data_dir": PROJECT_DIR / "data/minmod/mos-v3",
+                    },
+                    data="tum.sm.dsl.dsl_sem_label.get_dataset",
+                    data_args={},
                 )
             ),
         )
@@ -329,7 +333,7 @@ def sand_curator(
 
     print(
         "Edit the semantic model in SAND at this URL:",
-        f"{sand_endpoint}/table/{table_id}",
+        f"{sand_endpoint}/tables/{table_id}",
     )
 
     # we download the semantic model
