@@ -17,7 +17,7 @@ from duneflow.ops.curation import SemanticModelCuratorActor, SemanticModelCurato
 from duneflow.ops.formatter import to_column_based_table
 from duneflow.ops.matrix_to_relational import matrix_to_relational_table
 from duneflow.ops.matrix_to_relational_v2 import matrix_to_relational_table_v2
-from duneflow.ops.norm import NormTableActor, NormTableArgs
+from duneflow.ops.norm import NormTableActor, NormTableArgs, norm_column_based_table
 from duneflow.ops.reader import read_table_from_file
 from duneflow.ops.reader._table_file_reader import RawTable
 from duneflow.ops.select import table_range_select
@@ -43,12 +43,12 @@ from sm.misc.prelude import get_classpath
 from sm.namespaces.prelude import KGName, register_kgns
 from sm.outputs.semantic_model import SemanticModel
 from timer import Timer
-
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
 from tum.config import CRITICAL_MAAS_DIR, PROJECT_DIR
 from tum.db import MNDRDB
 from tum.namespace import MNDRNamespace
+from tum.preprocessing.extract_table import extract_table_from_pdf
 
 
 class FixMNDRNamespace(MNDRNamespace):

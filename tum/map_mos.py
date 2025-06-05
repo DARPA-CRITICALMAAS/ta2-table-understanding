@@ -13,9 +13,8 @@ import typer
 from minmodkg.entity_linking import EntityLinking, IEntityLinking
 from rdflib import RDF, RDFS, XSD, Graph, Namespace, URIRef
 from slugify import slugify
-from tqdm.auto import tqdm
-
 from sm.misc.funcs import assert_isinstance
+from tqdm.auto import tqdm
 from tum.config import CRITICAL_MAAS_DIR
 from tum.lib.unit_and_commodity import (
     CommodityCompatibleLinker,
@@ -77,7 +76,7 @@ class MosMapping:
                     "No reference document provided. Either use `mos:reference` to a `mos:Document` or `mos:source_id`"
                 )
             doc_node = None
-            source_id = self.g.subject_objects(mos.source_id)[0][1]
+            source_id = lst[0][1]
             doc = {"uri": source_id}
         else:
             doc_node = doc_nodes[0]

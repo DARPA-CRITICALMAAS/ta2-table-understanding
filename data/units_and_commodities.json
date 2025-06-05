@@ -735,6 +735,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "Graphite",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Graphite",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q553",
+    "commodity_form": null,
+    "unit_score": 0.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "",
+    "commodity_text": "Graphite - Q553 | score = 1.000 | labels = Graphite, C, graphite",
+    "commodity_form_text": ""
+  },
+  {
     "value": "Mt",
     "unit_observed_value": "Mt",
     "commodity_observed_value": null,
