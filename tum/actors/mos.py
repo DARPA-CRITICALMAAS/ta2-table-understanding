@@ -15,5 +15,5 @@ def mos_map(data: str | Path, outdir: Path) -> None:
         assert isinstance(data, Path)
         g.parse(location=str(data), format="turtle")
 
-    output = MosMapping(g)(dup_record_ids=True)
+    output = MosMapping(g, "https://minmod.isi.edu/users/s/usc")(dup_record_ids=True)
     serde.json.ser(output, outdir / "data.json", indent=2)

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import datetime
 import glob
 from decimal import Decimal
 from io import StringIO
@@ -31,7 +32,7 @@ JsonValue = str | int | float | bool
 class MosMapping:
     """Mapping from the simple ontology to the full ontology"""
 
-    def __init__(self, g: Graph):
+    def __init__(self, g: Graph, created_by: str):
         self.g = g
 
         predefined_ent_dir = CRITICAL_MAAS_DIR / "kgdata/data/entities"
@@ -52,9 +53,10 @@ class MosMapping:
 
         self.unit_linker = UnitCompatibleLinker(self.unit_commodity_linker)
         self.commodity_linker = CommodityCompatibleLinker(self.unit_commodity_linker)
+        self.created_by = created_by
 
     @staticmethod
-    def map(infile: str, dup_record_ids: bool) -> list:
+    def map(infile: str, dup_record_ids: bool, created_by: str) -> list:
         g = Graph()
         if infile.startswith("http://") or infile.startswith("https://"):
             # this is a URI
@@ -64,7 +66,7 @@ class MosMapping:
             )
         else:
             g.parse(location=infile, format="turtle")
-        return MosMapping(g)(dup_record_ids)
+        return MosMapping(g, created_by)(dup_record_ids)
 
     def __call__(self, dup_record_ids: bool) -> list:
         doc_nodes = list(self.g.subjects(RDF.type, mos.Document))
@@ -151,6 +153,10 @@ class MosMapping:
                     ],
                     "mineral_inventory": invs,
                     "reference": [{"document": doc, "page_info": []}],
+                    "modified_at": datetime.datetime.now(
+                        datetime.timezone.utc
+                    ).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "created_by": self.created_by,
                 }
 
                 if self.has(site_node, mos.site_type):
@@ -368,7 +374,7 @@ class MosMapping:
         if isinstance(value, rdflib.term.Literal):
             observed_name = assert_isinstance(self.map_literal(value), str)
             output = {
-                "observed_name": observed_name,
+                "observed_name": observed_name.strip(),
                 "confidence": 0.0,
                 "source": "SAND",
             }

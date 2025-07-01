@@ -39,6 +39,10 @@ assistant:
     constructor: tum.integrations.sand.DSLMinModAssistant
     args:
       dbpath: ::RELPATH::../data/minmod/databases
+  gpp:
+    constructor: tum.integrations.sand._grams.GppMinModAssistant
+    args:
+      dbpath: ::RELPATH::../data/minmod/databases
   openai:
     constructor: tum.integrations.sand.OpenAIMinModAssistant
     args:
