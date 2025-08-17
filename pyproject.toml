@@ -27,7 +27,7 @@ pypdf2 = "^3.0.1"
 duneflow = "^1.0.1"
 gramsplus-2 = "^6.0.0"
 smml = "^1.0.1"
-gramsplusplus = "^1.0.2"
+gramsplusplus = "^1.0.4"
 openai = "^1.76.2"
 
 [tool.poetry.group.dev.dependencies]

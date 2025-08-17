@@ -3,6 +3,7 @@ from tum.integrations.sand._db import (
     WrappedEntity,
     WrappedOntClass,
     WrappedOntProp,
+    dummy_search,
     get_entity_db,
     get_ontclass_db,
     get_ontprop_db,
@@ -20,4 +21,5 @@ __all__ = [
     "get_ontprop_db",
     "DSLMinModAssistant",
     "OpenAIMinModAssistant",
+    "dummy_search",
 ]
