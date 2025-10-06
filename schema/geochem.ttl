@@ -4,11 +4,13 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mos: <https://minmod.isi.edu/ontology-simple/> .
+
 @base <https://geochemistry.isi.edu/ontology/> .
 
 <https://geochemistry.isi.edu/ontology/> rdf:type owl:Ontology ;
                                           rdfs:comment "GeoChemistry ontology"@en ;
-                                          owl:versionInfo "1.0.0" .
+                                          owl:versionInfo "1.1.0" .
 
 #################################################################
 #    Object Properties
@@ -20,6 +22,11 @@
               rdfs:range :Analysis ;
               rdfs:label "has analysis"@en .
 
+###  https://geochemistry.isi.edu/ontology/from_deposit
+:from_deposit rdf:type owl:ObjectProperty ;
+              rdfs:domain :Sample ;
+              rdfs:range mos:Deposit ;
+              rdfs:label "from deposit"@en .
 
 #################################################################
 #    Data properties
@@ -102,6 +109,17 @@
        rdfs:domain :Sample ;
        rdfs:label "mineral"@en .
 
+###  https://geochemistry.isi.edu/ontology/number_of_samples
+:number_of_samples rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Sample ;
+       rdfs:label "number of samples"@en .
+
+###  https://geochemistry.isi.edu/ontology/number_of_analyses
+:number_of_analyses rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Sample ;
+       rdfs:label "number of analyses"@en .
 
 #################################################################
 #    Classes

@@ -8,6 +8,8 @@ services:
       args:
         UID: ${USER_ID}
         GID: ${GROUP_ID}
+        DATA_REPO_COMMIT_ID: ${DATA_REPO_COMMIT_ID}
+        KG_REPO_COMMIT_ID: ${KG_REPO_COMMIT_ID}
     ports:
       - 5524:5524
     environment:

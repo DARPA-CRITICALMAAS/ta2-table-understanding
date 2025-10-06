@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.12,<3.13"
+python = ">=3.12,<3.20"
 sem-desc = "^6.19.1"
 serde2 = "^1.9.1"
 kgdata = "^7.0.8"
@@ -29,6 +29,7 @@ gramsplus-2 = "^6.0.0"
 smml = "^1.0.1"
 gramsplusplus = "^1.0.4"
 openai = "^1.76.2"
+hugedict = "^2.14.6"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.27.1"

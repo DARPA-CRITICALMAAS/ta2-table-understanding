@@ -38,11 +38,13 @@ from libactor.dag._dag import ComputeFn
 from libactor.storage import GlobalStorage
 from libactor.typing import T
 from slugify import slugify
-from sm.dataset import ColumnBasedTable, Context, Example, FullTable, Matrix
-from sm.misc.prelude import get_classpath
+from sm.dataset import Example, FullTable
+from sm.inputs.prelude import ColumnBasedTable, Context
+from sm.misc.prelude import Matrix, get_classpath
 from sm.namespaces.prelude import KGName, register_kgns
 from sm.outputs.semantic_model import SemanticModel
 from timer import Timer
+
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
 from tum.config import CRITICAL_MAAS_DIR, PROJECT_DIR
@@ -205,6 +207,7 @@ def get_dag(
     without_sm_curation: bool = False,
     without_json_export: bool = False,
     sand_endpoint: Optional[str] = None,
+    extra_nodes: dict[str, Sequence[Flow | ComputeFn] | Flow | ComputeFn] = {},
 ):
     GlobalStorage.init(cwd / "storage")
     output_dir = cwd / "output"
@@ -279,6 +282,7 @@ def get_dag(
                         else [PartialFn(mos_map, outdir=output_dir)]
                     )
                 ),
+                **extra_nodes,
             },
             type_conversions=get_type_conversions(),
         )
