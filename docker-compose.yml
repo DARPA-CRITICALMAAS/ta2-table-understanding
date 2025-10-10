@@ -8,17 +8,13 @@ services:
       args:
         UID: ${USER_ID}
         GID: ${GROUP_ID}
+        DATA_REPO_COMMIT_ID: ${DATA_REPO_COMMIT_ID}
+        KG_REPO_COMMIT_ID: ${KG_REPO_COMMIT_ID}
     ports:
       - 5524:5524
-    environment:
-      - CFG_FILE=/home/criticalmaas/ta2-minmod-kg/config.yml.template
-      - PYTHONPATH=/home/criticalmaas/ta2-table-understanding
-    volumes:
-      - .:/home/criticalmaas/ta2-table-understanding
-      - ../ta2-minmod-data:/home/criticalmaas/ta2-minmod-data
-      - ../ta2-minmod-kg:/home/criticalmaas/ta2-minmod-kg
-      - ../data:/home/criticalmaas/data
+    env_file:
+      - .env
     command: >
-      python -m sand start 
-      -d /home/criticalmaas/data/minmod/sand.db 
-      -c /home/criticalmaas/ta2-table-understanding/minmod.sand.yml
+      uv run --project tum python -m sand start 
+      -d ./data/minmod/sand.db 
+      -c ./tum/minmod.sand.yml

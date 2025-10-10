@@ -33,12 +33,12 @@ Note: The folder structure is fully customizable. Please see the [Configuration 
 
 ### Setup dependencies
 
-We use [poetry](https://python-poetry.org/) as our package manager (you need to have it installed on your machine first). To install the library and its dependencies, run `poetry install` in the root directory of this repository. Then, you can run `poetry shell` to activate the virtual environment or use `poetry run <command>` to run the commands in the virtual environment.
+We use [uv](https://docs.astral.sh/uv/getting-started/installation/) as our package manager (you need to have it installed on your machine first). To install the library and its dependencies, run `uv sync` in the root directory of this repository. Then, you can run `source .venv/bin/activate` to activate the virtual environment or use `uv run <command>` to run the commands in the virtual environment.
 
 ```
 cd ta2-table-understanding
 python -m venv .venv
-poetry install
+uv sync
 cd ..
 ```
 
@@ -47,7 +47,7 @@ With the working folder structure setup, we can build the necessary databases (e
 ```bash
 export CFG_FILE=$MINMOD_DIR/ta2-minmod-kg/config.yml.template
 cd ta2-table-understanding
-poetry run python -m tum.make_db [--project <project=minmod>]
+uv run python -m tum.make_db [--project <project=minmod>]
 cd ..
 ```
 
@@ -82,11 +82,12 @@ Alternatively, you can use the [SAND UI](https://github.com/usc-isi-i2/sand) to 
 To install SAND, you can run the following commands:
 
 ```bash
-poetry run pip install web-sand sand-drepr
+source .venv/bin/activate
+pip install web-sand sand-drepr
 ```
 
-1. Setup SAND (run only once): `poetry run python -m sand init -d $MINMOD_DIR/data/minmod/sand.db`
-2. Start SAND: `poetry run python -m sand start -d $MINMOD_DIR/data/minmod/sand.db -c $MINMOD_DIR/ta2-table-understanding/minmod.sand.yml`
+1. Setup SAND (run only once): `uv run python -m sand init -d $MINMOD_DIR/data/minmod/sand.db`
+2. Start SAND: `uv run python -m sand start -d $MINMOD_DIR/data/minmod/sand.db -c $MINMOD_DIR/ta2-table-understanding/minmod.sand.yml`
 
 If you use Docker, you can run:
 

@@ -18,6 +18,7 @@ from sm.inputs.prelude import Column, ColumnBasedTable
 from sm.misc.prelude import Matrix, assert_not_null, filter_duplication
 from timer import Timer
 from tqdm import tqdm
+
 from tum.config import AZURE_ACCESS_KEY, AZURE_DOC_INTEL_ENDPOINT
 from tum.preprocessing.base import BasePipeOp
 
@@ -159,6 +160,18 @@ def analyze_pdf(
     return IdentObj(f"{data_fingerprint}_{page_start}_{page_end}", result)
 
 
+def write_analyze_result_to_file(
+    result: IdentObj[AnalyzeResult], outdir: Path
+) -> IdentObj[AnalyzeResult]:
+    """Write the AnalyzeResult to a JSON file."""
+    outdir.mkdir(exist_ok=True, parents=True)
+    outfile = outdir / f"analyzed_result_{result.key}.json"
+    outfile.write_bytes(
+        orjson.dumps(result.value.to_dict(), option=orjson.OPT_INDENT_2)
+    )
+    return result
+
+
 # @dataclass
 # class TableExtractionArgs:
 #     infile: Path
@@ -290,6 +303,8 @@ def analyze_pdf(
 #     else:
 #         print("Key '{}': Value:".format(kv_pair.key.content))
 
+# print("----------------------------------------")
+# print("----------------------------------------")
 # print("----------------------------------------")
 # print("----------------------------------------")
 # print("----------------------------------------")
