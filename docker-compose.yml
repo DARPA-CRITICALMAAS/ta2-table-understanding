@@ -7,6 +7,7 @@ services:
       context: ./containers/nginx/
     volumes:
       - ./volumes/certs:/certs/
+      - ./volumes/.htpasswd:/etc/apache2/.htpasswd:ro
     ports:
       - "80:80"
       - "443:443"
@@ -24,8 +25,8 @@ services:
         GID: ${GROUP_ID}
         DATA_REPO_COMMIT_ID: ${DATA_REPO_COMMIT_ID}
         KG_REPO_COMMIT_ID: ${KG_REPO_COMMIT_ID}
-    ports:
-      - 5524:5524
+    # ports:
+    #   - 5524:5524
     env_file:
       - .env
     networks:
