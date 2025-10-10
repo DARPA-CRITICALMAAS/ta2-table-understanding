@@ -32,7 +32,10 @@ search:
   ontology: tum.integrations.sand.dummy_search
 export:
   default: drepr
-  drepr: sand_drepr.main.DreprExport
+  drepr:
+    constructor: sand_drepr.main.DreprExport
+    args:
+      ignore_error_property: true
 assistant:
   default: openai
   dsl:
@@ -49,4 +52,4 @@ assistant:
       dbpath: ::RELPATH::../data/minmod/databases
       model: gpt-4.1
       max_sampled_rows: 20
-      api_key: "YOUR_KEY"
+      api_key: OPENAI_API_KEY

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import os
 import random
 from pathlib import Path
 
@@ -41,6 +42,9 @@ class OpenAIMinModAssistant(IAssistant):
         self.entities = entities
         self.classes = classes
         self.props = props
+
+        if len(api_key) < 24:
+            api_key = os.environ[api_key]
 
         cwd = PROJECT_DIR / "data/dag"
         self.dag = get_dag(
