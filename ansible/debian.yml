@@ -1,0 +1,62 @@
+- name: Setup Docker
+  hosts: remotevm
+  become: true
+  tasks:
+    - name: Install prerequisite packages
+      ansible.builtin.package:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg-agent
+          - software-properties-common
+        state: present
+    - name: Add Docker GPG key
+      ansible.builtin.apt_key:
+        url: https://download.docker.com/linux/{{ ansible_distribution | lower }}/gpg
+        state: present
+    - name: Add Docker APT repository
+      ansible.builtin.apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} stable
+        state: present
+        filename: docker
+    - name: Install Docker Engine and related packages
+      ansible.builtin.package:
+        name:
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+          - docker-buildx-plugin
+          - docker-compose-plugin
+        state: present
+    - name: Ensure Docker service is running and enabled
+      ansible.builtin.service:
+        name: docker
+        state: started
+        enabled: true
+    - name: Add current user to docker group (optional, for non-root access)
+      ansible.builtin.user:
+        name: "{{ ansible_user }}" # Or specify a different user
+        groups: docker
+        append: true
+
+- name: Setup repository
+  hosts: remotevm
+  tasks:
+    - name: Clone repository
+      ansible.builtin.git:
+        repo: https://github.com/DARPA-CRITICALMAAS/ta2-table-understanding.git
+        dest: /home/{{ ansible_user }}/ta2-table-understanding
+    - name: Pull latest changes in the repository
+      ansible.builtin.git:
+        repo: https://github.com/DARPA-CRITICALMAAS/ta2-table-understanding.git
+        dest: /home/{{ ansible_user }}/ta2-table-understanding
+        version: HEAD
+        force: true
+    - name: Copy .env file to the server ta2-table-understanding folder
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../.env"
+        dest: /home/{{ ansible_user }}/ta2-table-understanding/.env
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: "0644"

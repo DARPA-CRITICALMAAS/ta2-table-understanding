@@ -1,10 +1,24 @@
 name: tum
 
 services:
+  nginx:
+    image: minmod-nginx
+    build:
+      context: ./containers/nginx/
+    volumes:
+      - ./volumes/certs:/certs/
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - tum
+    cap_add:
+      - NET_BIND_SERVICE
   sand:
     image: minmod-sand
     build: 
       context: .
+      dockerfile: ./containers/sand/Dockerfile
       args:
         UID: ${USER_ID}
         GID: ${GROUP_ID}
@@ -14,7 +28,16 @@ services:
       - 5524:5524
     env_file:
       - .env
+    networks:
+      - tum
+    volumes:
+      - ./volumes/data:/home/criticalmaas/data
     command: >
       uv run --project tum python -m sand start 
       -d ./data/minmod/sand.db 
       -c ./tum/minmod.sand.yml
+
+networks:
+  tum:
+    name: tum
+    external: true
