@@ -5105,7 +5105,7 @@ provides-extras = ["dev"]
 [package.metadata.requires-dev]
 sand = [
     { name = "sand-drepr", specifier = ">=1.0.3" },
-    { name = "web-sand", specifier = ">=4.2.4" },
+    { name = "web-sand", specifier = ">=4.2.5" },
 ]
 
 [[package]]
@@ -5377,7 +5377,7 @@ wheels = [
 
 [[package]]
 name = "web-sand"
-version = "4.2.4"
+version = "4.2.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dependency-injector" },
@@ -5395,9 +5395,9 @@ dependencies = [
     { name = "sem-desc" },
     { name = "tornado" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e6/f0/e3756ab4fcfc0394980817771c5a3a392e5d0d726cc8a15b48236557081c/web_sand-4.2.4.tar.gz", hash = "sha256:3add5b29d73495887bdd8cf1c77cd1fa7af25fd0706af15e0958153137788047", size = 5615360, upload-time = "2025-10-10T15:48:34.391Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/12/e3eb1b0bba6b66828ce435ac955bff8c2c9dadc67be1a0193782b89aea7c/web_sand-4.2.5.tar.gz", hash = "sha256:8fe48447416bd281eee48b5559ceb333a5b6b0ea88a169ba98daa354879efbe0", size = 5615503, upload-time = "2025-10-11T14:14:49.911Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/35/a0d73104dfe613ac421a29c698acc244597194ea393c1a754aaaf322cc91/web_sand-4.2.4-py3-none-any.whl", hash = "sha256:e42e9664fffb87b559f94e41da19246991b84bab48cc4f6d1b2c730dd2502900", size = 5687338, upload-time = "2025-10-10T15:48:32.075Z" },
+    { url = "https://files.pythonhosted.org/packages/19/0d/0ac24370a7e6ff9fad1e046d7d0db718497194a0d00ba05c0475987993ca/web_sand-4.2.5-py3-none-any.whl", hash = "sha256:a3fcb6b8e9a220876f8ad91d7c742eb87903aa413296ede5f2e3a08a4f20b9e7", size = 5687495, upload-time = "2025-10-11T14:14:47.873Z" },
 ]
 
 [[package]]
