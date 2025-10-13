@@ -22,7 +22,6 @@ ENV PATH="/home/criticalmaas/.local/bin:/home/criticalmaas/.cargo/bin:${PATH}"
 ADD --chown=$UID:$GID pyproject.toml /home/criticalmaas/tum/
 ADD --chown=$UID:$GID uv.lock /home/criticalmaas/tum/
 ADD --chown=$UID:$GID README.md /home/criticalmaas/tum/
-ADD --chown=$UID:$GID minmod.sand.yml /home/criticalmaas/tum/
 
 RUN mkdir -p /home/criticalmaas/tum/tum && \
     touch /home/criticalmaas/tum/tum/__init__.py && \
@@ -50,6 +49,7 @@ ENV CFG_FILE=/home/criticalmaas/ta2-minmod-kg/config.yml.template
 # Setup necessary data for SAND to work with MinMod KG
 ADD --chown=$UID:$GID tum /home/criticalmaas/tum/tum
 ADD --chown=$UID:$GID schema /home/criticalmaas/tum/schema
+ADD --chown=$UID:$GID minmod.sand.yml /home/criticalmaas/tum/
 
 RUN uv run --project tum python -m tum.make_db --project minmod && \
     uv run --project tum python -m sand init -d ./data/minmod/sand.db
