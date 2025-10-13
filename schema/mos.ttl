@@ -10,7 +10,7 @@
 
 <https://minmod.isi.edu/ontology-simple/> rdf:type owl:Ontology ;
                                            rdfs:comment "A simplified version of the Minmod Knowledge Graph Ontology"@en ;
-                                           owl:versionInfo "3.0.0" .
+                                           owl:versionInfo "3.1.0" .
 
 #################################################################
 #    Object Properties
@@ -46,6 +46,12 @@ mos:commodity rdf:type owl:DatatypeProperty ;
               rdfs:label "commodity"@en .
 
 
+###  https://minmod.isi.edu/ontology-simple/commodity_grade
+mos:commodity_grade rdf:type owl:DatatypeProperty ;
+              rdfs:domain mos:MineralInventory ;
+              rdfs:label "commodity and grade"@en .
+
+
 ###  https://minmod.isi.edu/ontology-simple/category
 mos:category rdf:type owl:DatatypeProperty ;
             rdfs:domain mos:MineralSite ;
@@ -60,7 +66,7 @@ mos:country rdf:type owl:DatatypeProperty ;
 ###  https://minmod.isi.edu/ontology-simple/state_or_province
 mos:state_or_province rdf:type owl:DatatypeProperty ;
             rdfs:domain mos:MineralSite ;
-            rdfs:label "state of province"@en .
+            rdfs:label "state or province"@en .
 
 
 ###  https://minmod.isi.edu/ontology-simple/deposit_type

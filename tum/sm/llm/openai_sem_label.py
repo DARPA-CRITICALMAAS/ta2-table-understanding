@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Sequence
 
@@ -7,7 +8,12 @@ from gpp.actors.qa_llm_actor import InputTable
 from gpp.llm.qa_llm import ExplicitV100, Message, Schema, Thread
 from gpp.llm.qa_llm._hugging_face_agent import BaseInference
 from gpp.sem_label.isem_label import TableSemLabelAnnotation
-from gpp.sem_label.models.llm import MaxTokensExceededError, QueryResult, disk_slugify
+from gpp.sem_label.models.llm import (
+    HuggingFaceBasedAgent,
+    MaxTokensExceededError,
+    QueryResult,
+    disk_slugify,
+)
 from libactor.cache import IdentObj
 from openai import OpenAI
 from sm.dataset import Example, FullTable
@@ -183,6 +189,129 @@ Please keep your answer short with only the property or N/A if there is no suita
             cta[ci] = schema.prop_label_keys[classid]
 
         return cta, []
+
+
+class OpenAILiteralPrediction(HuggingFaceBasedAgent[Thread]):
+    name = "openai-literal-prediction"
+    system = "You are a skilled data scientist and you are asked to interpret a schema of the given table."
+    prompt_tonnage_unit = """Use the below csv table to answer the question.
+**Table:**\n{CSV_TABLE}\n\n
+**Question**: What is the unit of tonnage values of mineral inventories of the mineral sites/deposits in the table?
+Please keep your answer short with only the unit or N/A if there is no appropriate unit to all tonnage values. Also, please wrap your answer with backticks. For example, `Mt`.
+"""
+    prompt_grade_unit = """Use the below csv table to answer the question.
+**Table:**\n{CSV_TABLE}\n\n
+**Question**: What is the unit of grade values of mineral inventories of the mineral sites/deposits in the table?
+Please keep your answer short with only the unit or N/A if there is no appropriate unit to all grade values. Also, please wrap your answer with backticks. For example, `%`.
+"""
+    prompt_commodity = """Use the below csv table to answer the question.
+**Table:**\n{CSV_TABLE}\n\n
+**Question**: What is the commodity of all the mineral sites/deposits reported in the table?
+Please keep your answer short with only the unit or N/A if there is no reported commodity. Also, please wrap your answer with backticks. For example, `Copper`.
+"""
+
+    def __init__(
+        self,
+        model: str,
+        api_key: str,
+        outdir: Path,
+        max_sampled_rows: int,
+        max_new_tokens: int = 100,
+    ):
+        self.model = model
+        self.api_key = api_key
+        self.outdir = outdir
+        self.max_new_tokens = max_new_tokens
+        self.max_sampled_rows = max_sampled_rows
+        self.client = OpenAIAgent(model, api_key)
+
+    def query(
+        self,
+        table: InputTable,
+        schema: Schema,
+        entity_columns: list[int],
+    ) -> Thread:
+        raise NotImplementedError()
+
+    def extract(
+        self,
+        table: InputTable,
+        entity_columns: list[int],
+        schema: Schema,
+        output: Thread,
+        can_ask_for_correction: bool = False,
+    ):
+        raise NotImplementedError()
+
+    def extract_tonnage_unit(
+        self,
+        table: InputTable,
+    ):
+        name = table.id.replace("/", "_")
+        csv_table = table.removed_irrelevant_table
+        msgs = [
+            Message("system", self.system),
+            Message("user", self.prompt_tonnage_unit.format(CSV_TABLE=csv_table)),
+        ]
+        thread = Thread(
+            f"{name}/literal_tonnage_unit",
+            msgs,
+        )
+        thread = self.chat(thread)
+        return self.extract_answer(thread.messages[-1].content)
+
+    def extract_grade_unit(
+        self,
+        table: InputTable,
+    ):
+        name = table.id.replace("/", "_")
+        csv_table = table.removed_irrelevant_table
+        msgs = [
+            Message("system", self.system),
+            Message("user", self.prompt_grade_unit.format(CSV_TABLE=csv_table)),
+        ]
+        thread = Thread(
+            f"{name}/literal_grade_unit",
+            msgs,
+        )
+        thread = self.chat(thread)
+        return self.extract_answer(thread.messages[-1].content)
+
+    def extract_commodity(
+        self,
+        table: InputTable,
+    ):
+        name = table.id.replace("/", "_")
+        csv_table = table.removed_irrelevant_table
+        msgs = [
+            Message("system", self.system),
+            Message("user", self.prompt_commodity.format(CSV_TABLE=csv_table)),
+        ]
+        thread = Thread(
+            f"{name}/literal_commodity",
+            msgs,
+        )
+        thread = self.chat(thread)
+        return self.extract_answer(thread.messages[-1].content)
+
+    @classmethod
+    def extract_answer(cls, ans: str):
+        out = []
+        for colpattern in [r'"([^"]*)"', r"`([^`]*)`"]:
+            out.extend(list(re.finditer(colpattern, ans)))
+
+        # sort by the order found in the answer
+        out.sort(key=lambda x: x.span()[0])
+
+        no_answer_keywords = ["N/A", "n/a", "N/a"]
+
+        if any(item.group(1) in no_answer_keywords for item in out):
+            return None
+
+        if len(out) == 0:
+            return None
+
+        return out[0].group(1)
 
 
 def get_dataset():
