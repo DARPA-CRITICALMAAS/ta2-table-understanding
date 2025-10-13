@@ -53,4 +53,4 @@ assistant:
       model: gpt-4.1
       max_sampled_rows: 20
       api_key: OPENAI_API_KEY
-      example_dir: ::RELPATH::../tum-training-data/gpp-examples
+      example_dir: ::RELPATH::../data/gpp-examples
