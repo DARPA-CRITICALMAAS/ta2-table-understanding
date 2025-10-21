@@ -1,6 +1,6 @@
 [project]
 name = "tum"
-version = "1.0.5"
+version = "1.0.6"
 description = "TA2 Table Understanding"
 authors = [{ name = "Binh Vu", email = "bvu687@gmail.com" }]
 license = "MIT"

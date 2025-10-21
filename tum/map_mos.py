@@ -483,27 +483,39 @@ class MosMapping:
 def main(
     file: str,
     outdir: str,
+    created_by: str = typer.Option(
+        "s/usc",
+        help="The name of the creator of the data, s/xxx for system, u/xxx for user",
+    ),
     dup_record_id: bool = typer.Option(
         True, help="Whether to allow duplicate record ids"
     ),
 ):
+    assert (
+        created_by.startswith("s/")
+        or created_by.startswith("u/")
+        or created_by.startswith("a/")
+    ), "created_by must start with s/ or u/ or a/"
+    created_by = "https://minmod.isi.edu/users/" + created_by
+
     print("Mapping file", file)
     print("Expect duplicate record ids:", dup_record_id)
+    print("Created by:", created_by)
+
     if file.startswith("http://") or file.startswith("https://"):
         serde.json.ser(
-            MosMapping.map(file, dup_record_id),
+            MosMapping.map(file, dup_record_id, created_by),
             Path(outdir) / "data.json",
             indent=2,
         )
     else:
         for infile in glob.glob(file):
             serde.json.ser(
-                MosMapping.map(infile, dup_record_id),
+                MosMapping.map(infile, dup_record_id, created_by),
                 Path(outdir) / (Path(infile).stem + ".json"),
                 indent=2,
             )
 
 
 if __name__ == "__main__":
-    app()
     app()
