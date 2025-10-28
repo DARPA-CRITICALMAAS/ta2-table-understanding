@@ -26,7 +26,7 @@ from tum.dag import (
     get_context,
     get_dag,
 )
-from tum.integrations.sand._common import set_table
+from tum.integrations.sand._common import post_process_sm, set_table
 from tum.sm.llm.openai_sem_label import InputTable, OpenAILiteralPrediction
 
 
@@ -190,93 +190,3 @@ class ExampleRetriever:
             }
 
         return output
-
-
-def post_process_sm(
-    table: InputTable, sm: O.SemanticModel, literal_prediction: OpenAILiteralPrediction
-):
-    has_grade_unit = False
-    has_commodity = False
-    has_tonnage_unit = False
-
-    for edge in sm.iter_edges():
-        if edge.abs_uri == "https://minmod.isi.edu/ontology-simple/commodity_grade":
-            edge.abs_uri = "https://minmod.isi.edu/ontology-simple/commodity"
-            edge.rel_uri = "mos:commodity"
-            edge.readable_label = "commodity"
-            sm.add_edge(
-                O.Edge(
-                    source=edge.source,
-                    target=edge.target,
-                    abs_uri="https://minmod.isi.edu/ontology-simple/grade_unit",
-                    rel_uri="mos:grade_unit",
-                    readable_label="grade unit",
-                )
-            )
-
-            has_grade_unit = True
-            has_commodity = True
-
-        if edge.abs_uri == "https://minmod.isi.edu/ontology-simple/grade_unit":
-            has_grade_unit = True
-        if edge.abs_uri == "https://minmod.isi.edu/ontology-simple/commodity":
-            has_commodity = True
-        if edge.abs_uri == "https://minmod.isi.edu/ontology-simple/tonnage_unit":
-            has_tonnage_unit = True
-
-    if not has_grade_unit:
-        grade_unit = literal_prediction.extract_grade_unit(table)
-        if grade_unit is not None:
-            uid = sm.add_node(O.LiteralNode(grade_unit, is_in_context=True))
-            for node in sm.iter_nodes():
-                if (
-                    isinstance(node, O.ClassNode)
-                    and node.abs_uri
-                    == "https://minmod.isi.edu/ontology-simple/MineralInventory"
-                ):
-                    sm.add_edge(
-                        O.Edge(
-                            source=node.id,
-                            target=uid,
-                            abs_uri="https://minmod.isi.edu/ontology-simple/grade_unit",
-                            rel_uri="mos:grade_unit",
-                        )
-                    )
-
-    if not has_commodity:
-        commodity = literal_prediction.extract_commodity(table)
-        if commodity is not None:
-            uid = sm.add_node(O.LiteralNode(commodity, is_in_context=True))
-            for node in sm.iter_nodes():
-                if (
-                    isinstance(node, O.ClassNode)
-                    and node.abs_uri
-                    == "https://minmod.isi.edu/ontology-simple/MineralInventory"
-                ):
-                    sm.add_edge(
-                        O.Edge(
-                            source=node.id,
-                            target=uid,
-                            abs_uri="https://minmod.isi.edu/ontology-simple/commodity",
-                            rel_uri="mos:commodity",
-                        )
-                    )
-
-    if not has_tonnage_unit:
-        tonnage_unit = literal_prediction.extract_tonnage_unit(table)
-        if tonnage_unit is not None:
-            uid = sm.add_node(O.LiteralNode(tonnage_unit, is_in_context=True))
-            for node in sm.iter_nodes():
-                if (
-                    isinstance(node, O.ClassNode)
-                    and node.abs_uri
-                    == "https://minmod.isi.edu/ontology-simple/MineralInventory"
-                ):
-                    sm.add_edge(
-                        O.Edge(
-                            source=node.id,
-                            target=uid,
-                            abs_uri="https://minmod.isi.edu/ontology-simple/tonnage_unit",
-                            rel_uri="mos:tonnage_unit",
-                        )
-                    )

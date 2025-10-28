@@ -46,10 +46,10 @@ mos:commodity rdf:type owl:DatatypeProperty ;
               rdfs:label "commodity"@en .
 
 
-###  https://minmod.isi.edu/ontology-simple/commodity_grade
-mos:commodity_grade rdf:type owl:DatatypeProperty ;
+###  https://minmod.isi.edu/ontology-simple/commodity_and_grade_unit
+mos:commodity_and_grade_unit rdf:type owl:DatatypeProperty ;
               rdfs:domain mos:MineralInventory ;
-              rdfs:label "commodity and grade"@en .
+              rdfs:label "commodity and grade unit"@en .
 
 
 ###  https://minmod.isi.edu/ontology-simple/category
