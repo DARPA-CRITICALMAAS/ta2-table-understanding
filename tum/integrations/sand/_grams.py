@@ -42,6 +42,7 @@ from sm.prelude import I
 from smml.dataset import ColumnarDataset
 from tum.dag import PROJECT_DIR, GppSemLabelActor, GppSemLabelArgs, get_context, get_dag
 from tum.integrations.sand._common import InputTable, post_process_sm, set_table
+from tum.integrations.sand._openai import ExampleRetriever
 from tum.sm.llm.openai_sem_label import InputTable, OpenAILiteralPrediction
 
 
@@ -140,7 +141,7 @@ class GppMinModAssistant(IAssistant):
 
 
 def make_raw_dataset(
-    example_dir: Path,
+    example_retriever: ExampleRetriever,
     exs: Sequence[Example[FullTable]],
     kgdb: IdentObj[KGDB],
     ignore_no_type_column: bool = True,
@@ -153,8 +154,7 @@ def make_raw_dataset(
     ontology = kgdb.value.ontology.value
 
     id2ex = {}
-    for infile in example_dir.glob("*.json"):
-        obj = serde.json.deser(infile)
+    for obj in example_retriever.id2exs.values():
         id2ex[obj["id"]] = obj
 
     samples = get_sample_label(exs, ontology.kgns, ignore_no_type_column)
@@ -168,11 +168,21 @@ def make_raw_dataset(
         for alias in ex.get("aliases", []):
             if alias not in l["aliases"]:
                 l["aliases"].append(alias)
+        l["label"] = ", ".join(filter_duplication([l["label"].strip()] + l["aliases"]))
+
+    assert len(exs) == 1
+    indf = InputTable.from_full_table(
+        exs[0].table,
+        sample_size=20,
+        seed=42,
+    ).removed_irrelevant_table_df
+    cells = list(set(indf.values.ravel().tolist()))
+    tmpmap = example_retriever.get_topk_similar_examples(cells)
 
     target_label_examples = [
         {
             "id": l["id"],
-            "example": id2ex[l["id"]]["values"],
+            "example": tmpmap[l["id"]]["values"],
         }
         for l in target_labels
     ]
@@ -202,6 +212,7 @@ def get_dataset(
         n_examples_per_column=n_examples_per_column,
         n_examples_per_label=n_examples_per_label,
     )
+    example_retriever = ExampleRetriever(Path(example_dir))
 
     def func(
         examples: IdentObj[Sequence[Example[FullTable]]],
@@ -210,7 +221,7 @@ def get_dataset(
         name = str(uuid4())
         is_train = False
         dataset = make_raw_dataset(
-            example_dir,
+            example_retriever,
             examples.value,
             kgdb,
             ignore_no_type_column,
@@ -224,6 +235,4 @@ def get_dataset(
         datamodule.embedding_manager.flush(soft=False)
         return dataset
 
-    return func
-    return func
     return func

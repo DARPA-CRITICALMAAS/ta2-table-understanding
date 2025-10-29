@@ -126,10 +126,10 @@ class OpenAIMinModAssistant(IAssistant):
         schema = copy.deepcopy(schema)
 
         for i in range(len(schema.props)):
-            propname = schema.prop_labels[i].replace(" ", "_")
-            if propname not in prop2exs:
+            propid = schema.props[i]
+            if propid not in prop2exs:
                 continue
-            exdata = prop2exs[propname]
+            exdata = prop2exs[propid]
             label = schema.prop_easy_labels[i] + ". "
             if len(exdata["aliases"]) > 0:
                 label += "Property aliases: " + ", ".join(exdata["aliases"]) + ". "
@@ -153,18 +153,18 @@ class ExampleRetriever:
         self.top_k_examples = top_k_examples
         self.tokenizer = strsim.CharacterTokenizer()
 
-        self.name2exs = {}
+        self.id2exs = {}
         for ex_file in ex_dir.iterdir():
             if ex_file.suffix == ".json":
-                self.name2exs[ex_file.stem] = serde.json.deser(ex_file)
+                obj = serde.json.deser(ex_file)
+                self.id2exs[obj["id"]] = obj
                 if (
-                    "aliases" not in self.name2exs[ex_file.stem]
-                    or "values" not in self.name2exs[ex_file.stem]
+                    "aliases" not in self.id2exs[obj["id"]]
+                    or "values" not in self.id2exs[obj["id"]]
                 ):
                     continue
-                self.name2exs[ex_file.stem]["token_values"] = [
-                    self.tokenizer.tokenize(v)
-                    for v in self.name2exs[ex_file.stem]["values"]
+                self.id2exs[obj["id"]]["token_values"] = [
+                    self.tokenizer.tokenize(v) for v in self.id2exs[obj["id"]]["values"]
                 ]
 
     def get_topk_similar_examples(
@@ -173,7 +173,7 @@ class ExampleRetriever:
         token_cells = [self.tokenizer.tokenize(c) for c in cells if isinstance(c, str)]
         output = {}
 
-        for name, exs in self.name2exs.items():
+        for id, exs in self.id2exs.items():
             values_score = []
             for i, token_val in enumerate(exs["token_values"]):
                 score = max(
@@ -184,7 +184,8 @@ class ExampleRetriever:
             topk = sorted(values_score, key=lambda x: x[1], reverse=True)[
                 : self.top_k_examples
             ]
-            output[name] = {
+            output[id] = {
+                "id": exs["id"],
                 "aliases": exs["aliases"],
                 "values": [exs["values"][i] for i, score in topk],
             }
