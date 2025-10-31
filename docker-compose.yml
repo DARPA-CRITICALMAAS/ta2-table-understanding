@@ -25,8 +25,8 @@ services:
         GID: ${GROUP_ID}
         DATA_REPO_COMMIT_ID: ${DATA_REPO_COMMIT_ID}
         KG_REPO_COMMIT_ID: ${KG_REPO_COMMIT_ID}
-    # ports:
-    #   - 5524:5524
+    ports:
+      - 5524:5524
     env_file:
       - .env
     networks:

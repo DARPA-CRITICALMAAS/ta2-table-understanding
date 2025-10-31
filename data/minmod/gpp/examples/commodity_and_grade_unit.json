@@ -1,0 +1,22 @@
+{
+    "aliases": [],
+    "values": [
+        "%Pb",
+        "%Zn",
+        "g/t Ag",
+        "%Cu",
+        "g/t Au",
+        "g/t In",
+        "%Ba",
+        "%Ni",
+        "%Co",
+        "%Sn",
+        "%Fe",
+        "%Mo",
+        "%WO3",
+        "%U3O8",
+        "%V",
+        "%As"
+    ],
+    "id": "https://minmod.isi.edu/ontology-simple/commodity_and_grade_unit"
+}

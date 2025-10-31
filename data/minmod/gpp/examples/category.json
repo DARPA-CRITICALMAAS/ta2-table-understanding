@@ -1,0 +1,14 @@
+{
+    "aliases": [],
+    "values": [
+        "Inferred",
+        "Indicated",
+        "Measured",
+        "Probable",
+        "Proven",
+        "OriginalResource",
+        "Extracted",
+        "CumulativeExtracted"
+    ],
+    "id": "https://minmod.isi.edu/ontology-simple/category"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "https://minmod.isi.edu/ontology-simple/tonnage_unit",
+    "aliases": [],
+    "values": [
+        "M",
+        "Mt",
+        "t",
+        "tonnes",
+        "tons",
+        "million tonnes",
+        "million tons"
+    ]
+}

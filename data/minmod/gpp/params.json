@@ -1,0 +1,4 @@
+{
+    "is_cta_only": true,
+    "embedding_model": "BAAI/bge-m3"
+}
