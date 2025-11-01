@@ -55,3 +55,4 @@ ADD --chown=$UID:$GID data/minmod/gpp /home/criticalmaas/data/gpp
 RUN uv run --project tum python -m tum.make_db --project minmod && \
     uv run --project tum python -m sand init -d ./data/minmod/sand.db
 
+ADD --chown=$UID:$GID data/minmod/units_and_commodities.json /home/criticalmaas/data/minmod

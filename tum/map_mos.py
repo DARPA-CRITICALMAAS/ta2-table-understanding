@@ -16,7 +16,7 @@ from rdflib import RDF, RDFS, XSD, Graph, Namespace, URIRef
 from slugify import slugify
 from sm.misc.funcs import assert_isinstance
 from tqdm.auto import tqdm
-from tum.config import CRITICAL_MAAS_DIR
+from tum.config import CRITICAL_MAAS_DIR, DATA_DIR
 from tum.lib.unit_and_commodity import (
     CommodityCompatibleLinker,
     UnitAndCommodityTrustedLinker,
@@ -47,8 +47,7 @@ class MosMapping:
         )
         self.unit_commodity_linker = UnitAndCommodityTrustedLinker.get_instance(
             predefined_ent_dir,
-            CRITICAL_MAAS_DIR
-            / "ta2-table-understanding/data/units_and_commodities.json",
+            DATA_DIR / "units_and_commodities.json",
         )
 
         self.unit_linker = UnitCompatibleLinker(self.unit_commodity_linker)
