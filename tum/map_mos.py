@@ -267,14 +267,16 @@ class MosMapping:
             self.object(inv, mos.tonnage)
         ):
             if not self.has(inv, mos.tonnage_unit):
-                raise Exception("Tonnage unit is required when tonnage is provided")
-
-            base["ore"] = {
-                "value": self.map_literal(self.object(inv, mos.tonnage)),
-                "unit": self.get_candidate(
-                    self.object(inv, mos.tonnage_unit), self.unit_linker
-                ),
-            }
+                base["ore"] = {
+                    "value": self.map_literal(self.object(inv, mos.tonnage)),
+                }
+            else:
+                base["ore"] = {
+                    "value": self.map_literal(self.object(inv, mos.tonnage)),
+                    "unit": self.get_candidate(
+                        self.object(inv, mos.tonnage_unit), self.unit_linker
+                    ),
+                }
             if self.has(inv, mos.category):
                 # handle Measure+Indicated
                 inv_cat_lst = []
@@ -293,14 +295,16 @@ class MosMapping:
                 self.object(inv, mos.grade)
             ):
                 if not self.has(inv, mos.grade_unit):
-                    raise Exception("Grade unit is required when grade is provided")
-
-                base["grade"] = {
-                    "value": self.map_literal(self.object(inv, mos.grade)),
-                    "unit": self.get_candidate(
-                        self.object(inv, mos.grade_unit), self.unit_linker
-                    ),
-                }
+                    base["grade"] = {
+                        "value": self.map_literal(self.object(inv, mos.grade)),
+                    }
+                else:
+                    base["grade"] = {
+                        "value": self.map_literal(self.object(inv, mos.grade)),
+                        "unit": self.get_candidate(
+                            self.object(inv, mos.grade_unit), self.unit_linker
+                        ),
+                    }
             return [base]
 
         output = []
