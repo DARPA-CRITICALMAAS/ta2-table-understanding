@@ -47,7 +47,7 @@ class MosMapping:
         )
         self.unit_commodity_linker = UnitAndCommodityTrustedLinker.get_instance(
             predefined_ent_dir,
-            DATA_DIR / "units_and_commodities.json",
+            DATA_DIR / "minmod/units_and_commodities.json",
         )
 
         self.unit_linker = UnitCompatibleLinker(self.unit_commodity_linker)
