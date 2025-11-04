@@ -1,0 +1,22 @@
+{
+    "aliases": [],
+    "values": [
+        "Pb",
+        "Zn",
+        "Ag",
+        "Cu",
+        "Au",
+        "In",
+        "Ba",
+        "Ni",
+        "Co",
+        "Sn",
+        "Fe",
+        "Mo",
+        "WO3",
+        "U3O8",
+        "V",
+        "As"
+    ],
+    "id": "https://minmod.isi.edu/ontology-simple/commodity"
+}

@@ -45,6 +45,21 @@
     "commodity_form_text": ""
   },
   {
+    "value": "Graphite",
+    "unit_observed_value": null,
+    "commodity_observed_value": "Graphite",
+    "commodity_form_observed_value": null,
+    "unit": null,
+    "commodity": "https://minmod.isi.edu/resource/Q589",
+    "commodity_form": null,
+    "unit_score": 1.0,
+    "commodity_score": 1.0,
+    "commodity_form_score": 0.0,
+    "unit_text": "% - Q201 | score = 1.000 | labels = percent, %",
+    "commodity_text": "Zn - Q589 | score = 1.000 | labels = Zinc, Zn, zinc",
+    "commodity_form_text": ""
+  },
+  {
     "value": "g/t",
     "unit_observed_value": "g/t",
     "commodity_observed_value": null,

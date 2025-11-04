@@ -1,0 +1,12 @@
+{
+  "id": "https://minmod.isi.edu/ontology-simple/cutoff_grade",
+  "aliases": [
+  ],
+  "values": [
+    "1.0",
+    "2.0",
+    "0.1",
+    "0.2",
+    "0.12"
+  ]
+}

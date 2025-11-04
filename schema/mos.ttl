@@ -54,7 +54,7 @@ mos:commodity_and_grade_unit rdf:type owl:DatatypeProperty ;
 
 ###  https://minmod.isi.edu/ontology-simple/category
 mos:category rdf:type owl:DatatypeProperty ;
-            rdfs:domain mos:MineralSite ;
+            rdfs:domain mos:MineralInventory ;
             rdfs:label "category"@en .
 
 ###  https://minmod.isi.edu/ontology-simple/country
