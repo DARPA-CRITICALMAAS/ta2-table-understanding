@@ -37,6 +37,24 @@ services:
       uv run --project tum python -m sand start 
       -d ./data/minmod/sand.db 
       -c ./tum/minmod.sand.yml
+  geochem:
+    image: minmod-sand
+    build: 
+      context: .
+      dockerfile: ./containers/sand/Dockerfile
+      args:
+        UID: ${USER_ID}
+        GID: ${GROUP_ID}
+        DATA_REPO_COMMIT_ID: ${DATA_REPO_COMMIT_ID}
+        KG_REPO_COMMIT_ID: ${KG_REPO_COMMIT_ID}
+    env_file:
+      - .env
+    networks:
+      - tum
+    command: >
+      uv run --project tum python -m sand start 
+      -d ./data/geochem/sand.db 
+      -c ./tum/geochem.sand.yml
 
 networks:
   tum:

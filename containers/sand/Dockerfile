@@ -52,7 +52,12 @@ ADD --chown=$UID:$GID schema /home/criticalmaas/tum/schema
 ADD --chown=$UID:$GID minmod.sand.yml /home/criticalmaas/tum/
 ADD --chown=$UID:$GID data/minmod/gpp /home/criticalmaas/data/gpp
 
+# setup MinMod
 RUN uv run --project tum python -m tum.make_db --project minmod && \
     uv run --project tum python -m sand init -d ./data/minmod/sand.db
+
+# setup Geochem
+RUN ONTOLOGY_FILE=/home/criticalmaas/tum/schema/geochem.ttl uv run --project tum python -m tum.make_db --project geochem && \
+    uv run --project tum python -m sand init -d ./data/geochem/sand.db
 
 ADD --chown=$UID:$GID data/minmod/units_and_commodities.json /home/criticalmaas/data/minmod

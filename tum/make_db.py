@@ -202,6 +202,13 @@ if __name__ == "__main__":
     def cli(project: str = "minmod"):
         (DATA_DIR / project).mkdir(parents=True, exist_ok=True)
 
+        if project == "minmod":
+            assert ONTOLOGY_FILE.name == "mos.ttl"
+        elif project == "geochem":
+            assert ONTOLOGY_FILE.name == "geochem.ttl"
+        else:
+            raise ValueError(f"Unknown project: {project}")
+
         for ds in ["entities", "classes", "props", "entity_labels", "entity_metadata"]:
             format = None
             if ds == "entity_metadata":
