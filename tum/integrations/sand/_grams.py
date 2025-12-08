@@ -98,7 +98,7 @@ class GppMinModAssistant(IAssistant):
         )
         self.context = get_context(cwd, dbpath)
 
-        if "OPENAI_API_KEY" in os.environ:
+        if os.environ.get("OPENAI_API_KEY", "").strip() != "":
             self.literal_prediction = OpenAILiteralPrediction(
                 model="gpt-4.1",
                 api_key=os.environ["OPENAI_API_KEY"],

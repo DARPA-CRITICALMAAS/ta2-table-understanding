@@ -61,3 +61,11 @@ assistant:
       max_sampled_rows: 20
       api_key: OPENAI_API_KEY
       example_dir: ::RELPATH::../data/gpp/examples
+  GPT5:
+    constructor: tum.integrations.sand.OpenAIMinModAssistant
+    args:
+      dbpath: ::RELPATH::../data/minmod/databases
+      model: gpt-5
+      max_sampled_rows: 20
+      api_key: OPENAI_API_KEY
+      example_dir: ::RELPATH::../data/gpp/examples
