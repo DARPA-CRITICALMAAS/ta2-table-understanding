@@ -49,6 +49,8 @@ services:
         KG_REPO_COMMIT_ID: ${KG_REPO_COMMIT_ID}
     env_file:
       - .env
+    environment:
+      - ONTOLOGY_FILE=/home/criticalmaas/tum/schema/geochem.ttl
     ports:
       - 5525:5524
     networks:
