@@ -5044,7 +5044,7 @@ wheels = [
 
 [[package]]
 name = "tum"
-version = "1.0.6"
+version = "1.0.7"
 source = { editable = "." }
 dependencies = [
     { name = "azure-ai-formrecognizer" },
@@ -5113,7 +5113,7 @@ provides-extras = ["dev"]
 [package.metadata.requires-dev]
 sand = [
     { name = "sand-drepr", specifier = ">=1.0.4" },
-    { name = "web-sand", specifier = ">=4.3.0" },
+    { name = "web-sand", specifier = ">=4.3.1" },
 ]
 
 [[package]]
@@ -5385,7 +5385,7 @@ wheels = [
 
 [[package]]
 name = "web-sand"
-version = "4.3.0"
+version = "4.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dependency-injector" },
@@ -5403,9 +5403,9 @@ dependencies = [
     { name = "sem-desc" },
     { name = "tornado" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1e/65/8fb69fb8c50e54ffa959ca18403eb53b1eb3fdecef2658dbf4f8875d1e3c/web_sand-4.3.0.tar.gz", hash = "sha256:63bb6dacfec57d10fef3561a5be89e7a7edc6cd46676c36a1c54863e89ef0abb", size = 5615729, upload-time = "2025-10-28T08:08:34.581Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f3/90/6b508555fafaf9abb517804ed685fde7e3daaec211c26b6f1cca3097f7f9/web_sand-4.3.1.tar.gz", hash = "sha256:d635752476107462366ecc0de622d0626a8466981c11eb18bc8ffefce926a4a9", size = 5615472, upload-time = "2025-12-09T08:07:28.024Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/60/17/3efe44a74cd447eb906e51264177a6fa899f3355e2ba7c23f87c7d356682/web_sand-4.3.0-py3-none-any.whl", hash = "sha256:74b79786b351d75ac60bc45de89ef2c74dc5338fd42521fcd84518b18cc4670f", size = 5688201, upload-time = "2025-10-28T08:08:32.394Z" },
+    { url = "https://files.pythonhosted.org/packages/65/64/54e919d9fb471d3f3c199671de4962760454666fc66b555cb632ff1b1c45/web_sand-4.3.1-py3-none-any.whl", hash = "sha256:ca96f08ccd5b40002c6023c38d1efde68e6b2555ff6abbd8f2be09d272ceea44", size = 5688273, upload-time = "2025-12-09T08:07:25.614Z" },
 ]
 
 [[package]]
