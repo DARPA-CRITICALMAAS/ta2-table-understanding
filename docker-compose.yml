@@ -49,6 +49,8 @@ services:
         KG_REPO_COMMIT_ID: ${KG_REPO_COMMIT_ID}
     env_file:
       - .env
+    ports:
+      - 5525:5524
     networks:
       - tum
     command: >
