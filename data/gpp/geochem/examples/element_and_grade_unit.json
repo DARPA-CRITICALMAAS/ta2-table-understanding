@@ -1,0 +1,24 @@
+{
+    "aliases": [],
+    "values": [
+        "%Pb",
+        "%Zn",
+        "g/t Ag",
+        "%Cu",
+        "g/t Au",
+        "g/t In",
+        "%Ba",
+        "%Ni",
+        "%Co",
+        "%Sn",
+        "%Fe",
+        "%Mo",
+        "%WO3",
+        "%U3O8",
+        "%V",
+        "%As",
+        "Ga (ppm)",
+        "Zn (%)"
+    ],
+    "id": "https://geochemistry.isi.edu/ontology/element_and_grade_unit"
+}

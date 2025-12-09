@@ -12,7 +12,7 @@ from sand.models.entity import EntityAR
 from sand.models.ontology import OntClassAR, OntPropertyAR
 from sand.models.table import Table, TableRow
 from sm.prelude import I
-
+from tum.config import ONTOLOGY_FILE
 from tum.dag import PROJECT_DIR, GppSemLabelActor, GppSemLabelArgs, get_context, get_dag
 from tum.integrations.sand._common import set_table
 
@@ -53,7 +53,7 @@ class DSLMinModAssistant(IAssistant):
             without_sm_curation=True,
             without_json_export=True,
         )
-        self.context = get_context(cwd, dbpath)
+        self.context = get_context(cwd, dbpath, ONTOLOGY_FILE)
 
     def predict(self, table: Table, rows: list[TableRow]):
         norm_table = self.convert_table(table, rows)

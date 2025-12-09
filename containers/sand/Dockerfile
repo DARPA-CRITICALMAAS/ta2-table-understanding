@@ -50,7 +50,8 @@ ENV CFG_FILE=/home/criticalmaas/ta2-minmod-kg/config.yml.template
 ADD --chown=$UID:$GID tum /home/criticalmaas/tum/tum
 ADD --chown=$UID:$GID schema /home/criticalmaas/tum/schema
 ADD --chown=$UID:$GID minmod.sand.yml /home/criticalmaas/tum/
-ADD --chown=$UID:$GID data/minmod/gpp /home/criticalmaas/data/gpp
+ADD --chown=$UID:$GID geochem.sand.yml /home/criticalmaas/tum/
+ADD --chown=$UID:$GID data/gpp /home/criticalmaas/data/gpp
 
 # setup MinMod
 RUN uv run --project tum python -m tum.make_db --project minmod && \

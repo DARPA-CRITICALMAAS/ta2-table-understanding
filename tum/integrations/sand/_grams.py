@@ -40,6 +40,7 @@ from sm.dataset import Example, FullTable
 from sm.misc.funcs import filter_duplication
 from sm.prelude import I
 from smml.dataset import ColumnarDataset
+from tum.config import ONTOLOGY_FILE
 from tum.dag import PROJECT_DIR, GppSemLabelActor, GppSemLabelArgs, get_context, get_dag
 from tum.integrations.sand._common import InputTable, post_process_sm, set_table
 from tum.integrations.sand._openai import ExampleRetriever
@@ -96,7 +97,7 @@ class GppMinModAssistant(IAssistant):
             without_sm_curation=True,
             without_json_export=True,
         )
-        self.context = get_context(cwd, dbpath)
+        self.context = get_context(cwd, dbpath, ONTOLOGY_FILE)
 
         if os.environ.get("OPENAI_API_KEY", "").strip() != "":
             self.literal_prediction = OpenAILiteralPrediction(

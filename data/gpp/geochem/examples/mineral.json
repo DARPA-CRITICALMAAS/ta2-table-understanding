@@ -1,0 +1,10 @@
+{
+    "aliases": [
+        "Sphalerite"
+    ],
+    "values": [
+        "Light Yellow Sphalerite",
+        "Dark Brown Sphalerite"
+    ],
+    "id": "https://geochemistry.isi.edu/ontology/mineral"
+}

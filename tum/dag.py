@@ -44,7 +44,6 @@ from sm.misc.prelude import Matrix, get_classpath
 from sm.namespaces.prelude import KGName, register_kgns
 from sm.outputs.semantic_model import SemanticModel
 from timer import Timer
-
 from tum.actors.drepr import DReprActor, DReprArgs
 from tum.actors.mos import mos_map
 from tum.config import CRITICAL_MAAS_DIR, PROJECT_DIR
@@ -92,6 +91,7 @@ def always_fail(input: T) -> T:
 def get_context(
     cwd: Path,
     dbpath: Path = CRITICAL_MAAS_DIR / "data/minmod/databases",
+    ontology_file: Path = PROJECT_DIR / "schema/mos.ttl",
 ):
     GlobalStorage.init(cwd / "storage")
 
@@ -100,9 +100,9 @@ def get_context(
         ontology, entities = Ontology.from_ttl(
             KGName.Generic,
             kgns,
-            Path(__file__).parent.parent / "schema/mos.ttl",
+            ontology_file,
         )
-        ontkey = "mos-v3"
+        ontkey = ontology_file.stem
         schema = Schema.from_ontology(ontology)
         context = {
             "ontology": IdentObj(ontkey, ontology),

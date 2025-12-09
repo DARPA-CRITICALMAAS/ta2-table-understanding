@@ -23,7 +23,6 @@ from sm.outputs.semantic_model import (
 )
 from sm.typing import ColumnIndex, ExampleId, InternalID
 from smml.dataset import ColumnarDataset
-
 from tum.config import PROJECT_DIR
 from tum.lib.cgraph import CGraph
 from tum.lib.graph_generation import GraphGeneration
@@ -126,12 +125,28 @@ def gen_can_graph(
         {
             kgns.get_abs_uri("mos:MineralSite"): 1,
             kgns.get_abs_uri("mos:MineralInventory"): 1,
+            kgns.get_abs_uri("gemo:Analysis"): 1,
+            kgns.get_abs_uri("gemo:Sample"): 1,
+            kgns.get_abs_uri("gemo:Element"): 1,
+            kgns.get_abs_uri("gemo:Isotope"): 1,
         },
         {
             (
                 kgns.get_abs_uri("mos:MineralSite"),
                 kgns.get_abs_uri("mos:MineralInventory"),
             ): {kgns.get_abs_uri("mos:mineral_inventory"): 1.0},
+            (
+                kgns.get_abs_uri("gemo:Sample"),
+                kgns.get_abs_uri("gemo:Analysis"),
+            ): {kgns.get_abs_uri("gemo:has_analysis"): 1.0},
+            (
+                kgns.get_abs_uri("gemo:Analysis"),
+                kgns.get_abs_uri("gemo:Element"),
+            ): {kgns.get_abs_uri("gemo:element"): 1.0},
+            (
+                kgns.get_abs_uri("gemo:Analysis"),
+                kgns.get_abs_uri("gemo:Isotope"),
+            ): {kgns.get_abs_uri("gemo:isotope"): 1.0},
         },
     )
 

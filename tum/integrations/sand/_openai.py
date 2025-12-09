@@ -18,6 +18,7 @@ from sand.models.ontology import OntClassAR, OntPropertyAR
 from sand.models.table import Table, TableRow
 from sm.dataset import FullTable
 from sm.prelude import I, O
+from tum.config import ONTOLOGY_FILE
 from tum.dag import (
     PROJECT_DIR,
     GppSemLabelActor,
@@ -80,7 +81,7 @@ class OpenAIMinModAssistant(IAssistant):
             outdir=cwd / f"literal-prediction-{model}-{max_sampled_rows}",
             max_sampled_rows=max_sampled_rows,
         )
-        self.context = get_context(cwd, dbpath)
+        self.context = get_context(cwd, dbpath, ONTOLOGY_FILE)
         self.example_retriever = ExampleRetriever(Path(example_dir))
 
     def predict(self, table: Table, rows: list[TableRow]):

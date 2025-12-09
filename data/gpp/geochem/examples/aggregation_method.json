@@ -1,0 +1,13 @@
+{
+    "aliases": [
+        "Statistics"
+    ],
+    "values": [
+        "Average",
+        "Maximum",
+        "Minimum",
+        "Sum",
+        "Median"
+    ],
+    "id": "https://geochemistry.isi.edu/ontology/aggregation_method"
+}

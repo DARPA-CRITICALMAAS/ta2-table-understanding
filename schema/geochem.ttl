@@ -71,6 +71,7 @@
 ###  https://geochemistry.isi.edu/ontology/grade
 :grade rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Analysis ;
        rdfs:label "grade"@en .
 
 
@@ -79,6 +80,12 @@
       rdfs:subPropertyOf owl:topDataProperty ;
       rdfs:domain :Analysis ;
       rdfs:label "grade unit"@en .
+
+
+###  https://geochemistry.isi.edu/ontology/element_and_grade_unit
+:element_and_grade_unit rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Analysis ;
+       rdfs:label "element and grade unit"@en .
 
 
 :aggregation_method rdf:type owl:DatatypeProperty ;
