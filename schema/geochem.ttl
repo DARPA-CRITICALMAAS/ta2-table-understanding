@@ -186,6 +186,14 @@
                 rdfs:label "standards used"@en ;
                 rdfs:comment "Standards used for the analysis."@en .
 
+
+###  https://geochemistry.isi.edu/ontology/data_quality
+:data_quality rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Analysis ;
+              rdfs:label "data quality"@en ;
+              rdfs:comment "Summarised comments about the data quality, if known."@en .
+
 ###  https://geochemistry.isi.edu/ontology/mineral
 :mineral rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
@@ -230,6 +238,14 @@
                 rdfs:comment "Broad categorisation of the sample material type (e.g., rock, regolith, sediment)."@en .
 
 
+###  https://geochemistry.isi.edu/ontology/material_class_comment
+:material_class_comment rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :Sample ;
+                        rdfs:label "material class comment"@en ;
+                        rdfs:comment "Any additional comments about the sample material class/type."@en .
+
+
 ###  https://geochemistry.isi.edu/ontology/analysed_material
 :analysed_material rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf owl:topDataProperty ;
@@ -246,12 +262,12 @@
                          rdfs:comment "Description of the sample's relation to the mineral deposit (e.g., high grade ore, low grade ore, gangue, alteration halo, host rock)."@en .
 
 
-###  https://geochemistry.isi.edu/ontology/province
-:province rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf owl:topDataProperty ;
-          rdfs:domain :Sample ;
-          rdfs:label "province"@en ;
-          rdfs:comment "Geological province - an extensive region characterised by similar geological history, structural, petrographic, or physiographic features."@en .
+###  https://geochemistry.isi.edu/ontology/geological_province
+:geological_province rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Sample ;
+                     rdfs:label "geological province"@en ;
+                     rdfs:comment "Geological province - an extensive region characterised by similar geological history, structural, petrographic, or physiographic features."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/strat_unit_uid
@@ -380,6 +396,14 @@
                 rdfs:domain :Sample ;
                 rdfs:label "bottom depth m"@en ;
                 rdfs:comment "Lowermost depth (in metres) for borehole interval for drill hole, trench, auger samples where depth is known."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/comments
+:comments rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Sample ;
+          rdfs:label "comments"@en ;
+          rdfs:comment "Summarised comments about the data quality or any other miscellaneous comments about the deposit, sample, or geochemical analysis."@en .
 
 #################################################################
 #    Classes
