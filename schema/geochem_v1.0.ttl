@@ -26,6 +26,13 @@ geo:wktLiteral rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://geochemistry.isi.edu/ontology/has_sample
+:has_sample rdf:type owl:ObjectProperty ;
+            rdfs:domain :MineralResourcePaper ;
+            rdfs:range :Sample ;
+            rdfs:label "has sample"@en ;
+            rdfs:comment "Links a mineral resource paper to its geochemical samples"@en .
+
 ###  https://geochemistry.isi.edu/ontology/has_analysis
 :has_analysis rdf:type owl:ObjectProperty ;
               rdfs:domain :Sample ;
@@ -357,6 +364,54 @@ mo:unit rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://geochemistry.isi.edu/ontology/paper_title
+:paper_title rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :MineralResourcePaper ;
+             rdfs:range xsd:string ;
+             rdfs:label "paper title"@en ;
+             rdfs:comment "Title of the mineral resource paper"@en .
+
+###  https://geochemistry.isi.edu/ontology/paper_authors
+:paper_authors rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :MineralResourcePaper ;
+               rdfs:range xsd:string ;
+               rdfs:label "paper authors"@en ;
+               rdfs:comment "Authors of the mineral resource paper"@en .
+
+###  https://geochemistry.isi.edu/ontology/paper_doi
+:paper_doi rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :MineralResourcePaper ;
+           rdfs:range xsd:string ;
+           rdfs:label "paper doi"@en ;
+           rdfs:comment "DOI of the mineral resource paper"@en .
+
+###  https://geochemistry.isi.edu/ontology/paper_year
+:paper_year rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :MineralResourcePaper ;
+            rdfs:range xsd:integer ;
+            rdfs:label "paper year"@en ;
+            rdfs:comment "Publication year of the mineral resource paper"@en .
+
+###  https://geochemistry.isi.edu/ontology/paper_journal
+:paper_journal rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :MineralResourcePaper ;
+               rdfs:range xsd:string ;
+               rdfs:label "paper journal"@en ;
+               rdfs:comment "Journal where the paper was published"@en .
+
+###  https://geochemistry.isi.edu/ontology/paper_url
+:paper_url rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :MineralResourcePaper ;
+           rdfs:range xsd:anyURI ;
+           rdfs:label "paper url"@en ;
+           rdfs:comment "URL of the mineral resource paper"@en .
 
 ###  https://geochemistry.isi.edu/ontology/date
 :date rdf:type owl:DatatypeProperty ;
@@ -1188,6 +1243,12 @@ mo:url rdf:type owl:DatatypeProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+###  https://geochemistry.isi.edu/ontology/MineralResourcePaper
+:MineralResourcePaper rdf:type owl:Class ;
+                      rdfs:label "Mineral Resource Paper"@en ;
+                      rdfs:comment "A scientific paper or publication containing geochemical data and mineral resource information"@en .
+
 
 ###  https://geochemistry.isi.edu/ontology/Analysis
 :Analysis rdf:type owl:Class ;
