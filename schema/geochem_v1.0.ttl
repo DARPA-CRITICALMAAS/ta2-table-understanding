@@ -432,14 +432,14 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/detection_limit
 :detection_limit rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:domain :Sample ;
+                 rdfs:domain :Element ;
                  rdfs:label "detection limit"@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/detection_limit_unit
 :detection_limit_unit rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain :Sample ;
+                      rdfs:domain :Element ;
                       rdfs:label "detection limit unit"@en .
 
 
@@ -455,12 +455,6 @@ mo:unit rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf owl:topDataProperty ;
       rdfs:domain :Analysis ;
       rdfs:label "grade unit"@en .
-
-
-###  https://geochemistry.isi.edu/ontology/element_and_grade_unit
-:element_and_grade_unit rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Analysis ;
-       rdfs:label "element and grade unit"@en .
 
 
 :aggregation_method rdf:type owl:DatatypeProperty ;
@@ -561,19 +555,6 @@ mo:unit rdf:type owl:ObjectProperty ;
        rdfs:domain :Sample ;
        rdfs:label "mineral"@en ;
        rdfs:comment "The mineral of the sample (e.g., Light-Yellow Sphalerite)"@en .
-
-###  https://geochemistry.isi.edu/ontology/number_of_samples
-:number_of_samples rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :Sample ;
-       rdfs:label "number of samples"@en .
-
-###  https://geochemistry.isi.edu/ontology/number_of_analyses
-:number_of_analyses rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :Sample ;
-       rdfs:label "number of analyses"@en .
-
 
 ###  https://geochemistry.isi.edu/ontology/sampling_method
 :sampling_method rdf:type owl:DatatypeProperty ;
