@@ -549,6 +549,15 @@ mo:unit rdf:type owl:ObjectProperty ;
               rdfs:label "data quality"@en ;
               rdfs:comment "Summarised comments about the data quality, if known."@en .
 
+
+###  https://geochemistry.isi.edu/ontology/analysis_date
+:analysis_date rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Analysis ;
+               rdfs:range xsd:dateTime ;
+               rdfs:label "analysis date"@en ;
+               rdfs:comment "Date on which the geochemical analysis was performed."@en .
+
 ###  https://geochemistry.isi.edu/ontology/mineral
 :mineral rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
