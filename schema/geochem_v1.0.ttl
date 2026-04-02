@@ -439,7 +439,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/detection_limit_unit
 :detection_limit_unit rdf:type owl:ObjectProperty ;
                       rdfs:domain :Element ;
-                      rdfs:range :MeasurementUnit ;
+                      rdfs:range mo:UnitCandidate ;
                       rdfs:label "detection limit unit"@en .
 
 
@@ -453,7 +453,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/grade_unit
 :grade_unit rdf:type owl:ObjectProperty ;
       rdfs:domain :Analysis ;
-      rdfs:range :MeasurementUnit ;
+      rdfs:range mo:UnitCandidate ;
       rdfs:label "grade unit"@en .
 
 
@@ -1253,13 +1253,6 @@ mo:url rdf:type owl:DatatypeProperty ;
 ###  https://geochemistry.isi.edu/ontology/Isotope
 :Isotope rdf:type owl:Class ;
          rdfs:label "Isotope"@en .
-
-
-###  https://geochemistry.isi.edu/ontology/MeasurementUnit
-:MeasurementUnit rdf:type owl:Class ;
-                 rdfs:subClassOf mo:ThingHasLabel ;
-                 rdfs:label "Measurement Unit"@en ;
-                 rdfs:comment "A unit of measurement for geochemical analyses (e.g., ppm, wt%, ppb)."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/Sample
