@@ -109,13 +109,6 @@ mo:cutoff_grade rdf:type owl:ObjectProperty ;
               rdfs:label "cutoff grade"@en .
 
 
-###  https://minmod.isi.edu/ontology/deposit_type
-mo:deposit_type rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf mo:mineral_system_objectproperty ;
-              rdfs:range mo:DepositType ;
-              rdfs:label "deposit type"@en .
-
-
 ###  https://minmod.isi.edu/ontology/deposit_type_candidate
 mo:deposit_type_candidate rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf mo:mineral_site_objectproperty ;
@@ -128,13 +121,6 @@ mo:document rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf mo:reference_objectproperty ;
           rdfs:range mo:Document ;
           rdfs:label "document"@en .
-
-
-###  https://minmod.isi.edu/ontology/energy
-mo:energy rdf:type owl:ObjectProperty ;
-        rdfs:subPropertyOf mo:mineral_system_objectproperty ;
-        rdfs:range mo:MappableCriteria ;
-        rdfs:label "energy"@en .
 
 
 ###  https://minmod.isi.edu/ontology/geology_info
@@ -162,13 +148,6 @@ mo:location_info_objectproperty rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf owl:topObjectProperty ;
                               rdfs:domain mo:LocationInfo ;
                               rdfs:label "location info objectproperty"@en .
-
-
-###  https://minmod.isi.edu/ontology/mappable_criteria_objectproperty
-mo:mappable_criteria_objectproperty rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf owl:topObjectProperty ;
-                                  rdfs:domain mo:MappableCriteria ;
-                                  rdfs:label "mappable criteria objectproperty"@en .
 
 
 ###  https://minmod.isi.edu/ontology/match_info_objectproperty
@@ -217,13 +196,6 @@ mo:mineral_site_objectproperty rdf:type owl:ObjectProperty ;
                              rdfs:label "mineral site objectproperty"@en .
 
 
-###  https://minmod.isi.edu/ontology/mineral_system_objectproperty
-mo:mineral_system_objectproperty rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf owl:topObjectProperty ;
-                               rdfs:domain mo:MineralSystem ;
-                               rdfs:label "mineral system objectproperty"@en .
-
-
 ###  https://minmod.isi.edu/ontology/normalized_uri
 mo:normalized_uri rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf mo:match_info_objectproperty ;
@@ -246,13 +218,6 @@ mo:ore rdf:type owl:ObjectProperty ;
      rdfs:subPropertyOf mo:mineral_inventory_objectproperty ;
      rdfs:range mo:Measure ;
      rdfs:label "ore"@en .
-
-
-###  https://minmod.isi.edu/ontology/outflow
-mo:outflow rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf mo:mineral_system_objectproperty ;
-         rdfs:range mo:MappableCriteria ;
-         rdfs:label "outflow"@en .
 
 
 ###  https://minmod.isi.edu/ontology/page_info
@@ -278,27 +243,6 @@ mo:page_info_objectproperty rdf:type owl:ObjectProperty ;
                           rdfs:label "page info objectproperty"@en .
 
 
-###  https://minmod.isi.edu/ontology/pathway
-mo:pathway rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf mo:mineral_system_objectproperty ;
-         rdfs:range mo:MappableCriteria ;
-         rdfs:label "pathway"@en .
-
-
-###  https://minmod.isi.edu/ontology/potential_dataset
-mo:potential_dataset rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf mo:mappable_criteria_objectproperty ;
-                   rdfs:range mo:EvidenceLayer ;
-                   rdfs:label "potential dataset"@en .
-
-
-###  https://minmod.isi.edu/ontology/preservation
-mo:preservation rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf mo:mineral_system_objectproperty ;
-              rdfs:range mo:MappableCriteria ;
-              rdfs:label "preservation"@en .
-
-
 ###  https://minmod.isi.edu/ontology/reference
 mo:reference rdf:type owl:ObjectProperty ;
            rdfs:domain [ rdf:type owl:Class ;
@@ -319,16 +263,8 @@ mo:reference_objectproperty rdf:type owl:ObjectProperty ;
 
 ###  https://minmod.isi.edu/ontology/source
 mo:source rdf:type rdf:Property ;
-        rdfs:domain [ rdf:type owl:Class ;
-                      owl:unionOf ( mo:MatchInfo
-                                    mo:MineralSystem
-                                  )
-                    ] ;
-        rdfs:range [ rdf:type owl:Class ;
-                     owl:unionOf ( xsd:string
-                                   mo:MappableCriteria
-                                 )
-                   ] ;
+        rdfs:domain mo:MatchInfo ;
+        rdfs:range xsd:string ;
         rdfs:label "source"@en .
 
 
@@ -337,20 +273,6 @@ mo:state_or_province rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf mo:location_info_objectproperty ;
                    rdfs:range mo:StateOrProvinceCandidate ;
                    rdfs:label "state or province"@en .
-
-
-###  https://minmod.isi.edu/ontology/supporting_references
-mo:supporting_references rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf mo:mappable_criteria_objectproperty ;
-                       rdfs:range mo:Reference ;
-                       rdfs:label "supporting references"@en .
-
-
-###  https://minmod.isi.edu/ontology/trap
-mo:trap rdf:type owl:ObjectProperty ;
-      rdfs:subPropertyOf mo:mineral_system_objectproperty ;
-      rdfs:range mo:MappableCriteria ;
-      rdfs:label "trap"@en .
 
 
 ###  https://minmod.isi.edu/ontology/unit
@@ -413,12 +335,13 @@ mo:unit rdf:type owl:ObjectProperty ;
            rdfs:label "paper url"@en ;
            rdfs:comment "URL of the mineral resource paper"@en .
 
-###  https://geochemistry.isi.edu/ontology/date
-:date rdf:type owl:DatatypeProperty ;
-      rdfs:subPropertyOf owl:topDataProperty ;
-      rdfs:domain :Sample ;
-      rdfs:label "date"@en ;
-      rdfs:comment "The date the sample was collected."@en .
+###  https://geochemistry.isi.edu/ontology/collection_date
+:collection_date rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :Sample ;
+                 rdfs:range xsd:date ;
+                 rdfs:label "collection date"@en ;
+                 rdfs:comment "The date the sample was collected."@en .
 
 
 
@@ -799,13 +722,6 @@ mo:conversion rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:decimal .
 
 
-###  https://minmod.isi.edu/ontology/criteria
-mo:criteria rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf mo:mappable_criteria_dataproperty ;
-          rdfs:range xsd:string ;
-          rdfs:label "criteria"@en .
-
-
 ###  https://minmod.isi.edu/ontology/date
 mo:date rdf:type owl:DatatypeProperty ;
       rdfs:subPropertyOf mo:mineral_inventory_dataproperty ;
@@ -849,13 +765,6 @@ mo:environment rdf:type owl:DatatypeProperty ;
                                 mo:geology_info_dataproperty ;
              rdfs:range xsd:string ;
              rdfs:label "environment"@en .
-
-
-###  https://minmod.isi.edu/ontology/evidence_layer_dataproperty
-mo:evidence_layer_dataproperty rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
-                             rdfs:domain mo:EvidenceLayer ;
-                             rdfs:label "evidence layer dataproperty"@en .
 
 
 ###  https://minmod.isi.edu/ontology/geology_info_dataproperty
@@ -930,13 +839,6 @@ mo:location_info_dataproperty rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf owl:topDataProperty ;
                             rdfs:domain mo:LocationInfo ;
                             rdfs:label "location info dataproperty"@en .
-
-
-###  https://minmod.isi.edu/ontology/mappable_criteria_dataproperty
-mo:mappable_criteria_dataproperty rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
-                                rdfs:domain mo:MappableCriteria ;
-                                rdfs:label "mappable criteria dataproperty"@en .
 
 
 ###  https://minmod.isi.edu/ontology/match_info_dataproperty
@@ -1038,13 +940,6 @@ mo:record_id rdf:type owl:DatatypeProperty ;
            rdfs:label "record id"@en .
 
 
-###  https://minmod.isi.edu/ontology/relevance_score
-mo:relevance_score rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf mo:evidence_layer_dataproperty ;
-                 rdfs:range xsd:decimal ;
-                 rdfs:label "relevance score"@en .
-
-
 ###  https://minmod.isi.edu/ontology/site_rank
 mo:site_rank rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf mo:mineral_site_dataproperty ;
@@ -1073,13 +968,6 @@ mo:source_id rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:string ;
            rdfs:comment "Source dataset that the site info is retrieved from"@en ;
            rdfs:label "source id"@en .
-
-
-###  https://minmod.isi.edu/ontology/theoretical
-mo:theoretical rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf mo:mappable_criteria_dataproperty ;
-             rdfs:range xsd:string ;
-             rdfs:label "theoretical"@en .
 
 
 ###  https://minmod.isi.edu/ontology/title
@@ -1162,72 +1050,19 @@ mo:zone rdf:type owl:DatatypeProperty ;
 
 
 #################################################################
-#    Additional properties from mos.ttl (simplified ontology)
-#    Only properties that don't exist in full MinMod ontology
+#    Simplified convenience properties extending MinMod classes
+#    Defined in geochem namespace to avoid polluting mo: namespace
 #################################################################
 
-###  https://minmod.isi.edu/ontology/latitude
-mo:latitude rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf mo:location_info_dataproperty ;
-            rdfs:range xsd:float ;
-            rdfs:label "latitude"@en ;
-            rdfs:comment "Latitude coordinate (simplified representation, use mo:location for WKT representation)"@en .
+###  https://geochemistry.isi.edu/ontology/row_index
+:row_index rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf mo:mineral_site_dataproperty ;
+           rdfs:domain mo:MineralSite ;
+           rdfs:range xsd:integer ;
+           rdfs:label "row index"@en ;
+           rdfs:comment "Row index in source table/spreadsheet"@en .
 
 
-###  https://minmod.isi.edu/ontology/longitude
-mo:longitude rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf mo:location_info_dataproperty ;
-             rdfs:range xsd:float ;
-             rdfs:label "longitude"@en ;
-             rdfs:comment "Longitude coordinate (simplified representation, use mo:location for WKT representation)"@en .
-
-
-###  https://minmod.isi.edu/ontology/tonnage
-mo:tonnage rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf mo:mineral_inventory_dataproperty ;
-           rdfs:range xsd:float ;
-           rdfs:label "tonnage"@en ;
-           rdfs:comment "Ore tonnage value (simplified representation, use mo:ore for structured Measure representation)"@en .
-
-
-###  https://minmod.isi.edu/ontology/tonnage_unit
-mo:tonnage_unit rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf mo:mineral_inventory_dataproperty ;
-                rdfs:range xsd:string ;
-                rdfs:label "tonnage unit"@en ;
-                rdfs:comment "Unit for tonnage (simplified representation, use mo:ore for structured Measure representation)"@en .
-
-
-###  https://minmod.isi.edu/ontology/commodity_and_grade_unit
-mo:commodity_and_grade_unit rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf mo:mineral_inventory_dataproperty ;
-                            rdfs:range xsd:string ;
-                            rdfs:label "commodity and grade unit"@en ;
-                            rdfs:comment "Combined commodity and grade unit field (simplified representation)"@en .
-
-
-###  https://minmod.isi.edu/ontology/cutoff_grade_unit
-mo:cutoff_grade_unit rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf mo:mineral_inventory_dataproperty ;
-                     rdfs:range xsd:string ;
-                     rdfs:label "cutoff grade unit"@en ;
-                     rdfs:comment "Unit for cutoff grade (simplified representation, use mo:cutoff_grade for structured Measure representation)"@en .
-
-
-###  https://minmod.isi.edu/ontology/row_index
-mo:row_index rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf mo:mineral_site_dataproperty ;
-             rdfs:range xsd:integer ;
-             rdfs:label "row index"@en ;
-             rdfs:comment "Row index in source table/spreadsheet"@en .
-
-
-###  https://minmod.isi.edu/ontology/url
-mo:url rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf mo:document_dataproperty ;
-       rdfs:range xsd:string ;
-       rdfs:label "url"@en ;
-       rdfs:comment "Document URL (alternative to mo:uri)"@en .
 
 
 #################################################################
@@ -1394,16 +1229,6 @@ mo:Document rdf:type owl:Class ;
           rdfs:label "Document"@en .
 
 
-###  https://minmod.isi.edu/ontology/EvidenceLayer
-mo:EvidenceLayer rdf:type owl:Class ;
-               rdfs:subClassOf mo:ThingHasLabel ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty mo:relevance_score ;
-                                 owl:cardinality "1"^^xsd:nonNegativeInteger
-                               ] ;
-               rdfs:label "Evidence Layer"@en .
-
-
 ###  https://minmod.isi.edu/ontology/GeologyInfo
 mo:GeologyInfo rdf:type owl:Class ;
              rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -1436,19 +1261,6 @@ mo:LocationInfo rdf:type owl:Class ;
                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
                               ] ;
               rdfs:label "Location Info"@en .
-
-
-###  https://minmod.isi.edu/ontology/MappableCriteria
-mo:MappableCriteria rdf:type owl:Class ;
-                  rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                    owl:onProperty mo:criteria ;
-                                    owl:cardinality "1"^^xsd:nonNegativeInteger
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty mo:theoretical ;
-                                    owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                  ] ;
-                  rdfs:label "Mappable Criteria"@en .
 
 
 ###  https://minmod.isi.edu/ontology/MatchInfo
@@ -1598,15 +1410,6 @@ mo:MineralSite rdf:type owl:Class ;
              rdfs:label "Mineral Site"@en .
 
 
-###  https://minmod.isi.edu/ontology/MineralSystem
-mo:MineralSystem rdf:type owl:Class ;
-               rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                 owl:onProperty mo:source ;
-                                 owl:allValuesFrom mo:MappableCriteria
-                               ] ;
-               rdfs:label "Mineral System"@en .
-
-
 ###  https://minmod.isi.edu/ontology/PageInfo
 mo:PageInfo rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -1711,15 +1514,12 @@ mo:UnitCandidate rdf:type owl:Class ;
                 mo:Country
                 mo:DepositType
                 mo:Document
-                mo:EvidenceLayer
                 mo:GeologyInfo
                 mo:LocationInfo
-                mo:MappableCriteria
                 mo:MatchInfo
                 mo:Measure
                 mo:MineralInventory
                 mo:MineralSite
-                mo:MineralSystem
                 mo:PageInfo
                 mo:Reference
                 mo:ResourceReserveCategory
