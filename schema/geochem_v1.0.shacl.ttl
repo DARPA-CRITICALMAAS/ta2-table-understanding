@@ -73,12 +73,12 @@
         sh:name "paper url" ;
     ] ;
     sh:property [
-        sh:path :has_sample ;
-        sh:class :Sample ;
+        sh:path :has_mineral_site ;
+        sh:class mo:MineralSite ;
         sh:minCount 1 ;
         sh:severity sh:Warning ;
-        sh:message "A MineralResourcePaper should link to at least one Sample via :has_sample" ;
-        sh:name "has sample" ;
+        sh:message "A MineralResourcePaper should link to at least one mo:MineralSite via :has_mineral_site" ;
+        sh:name "has mineral site" ;
     ] .
 
 
@@ -98,17 +98,6 @@
             SELECT $this WHERE {
                 FILTER NOT EXISTS { $this <https://geochemistry.isi.edu/ontology/sample_id> ?id }
                 FILTER NOT EXISTS { $this <https://geochemistry.isi.edu/ontology/sample_name> ?n }
-            }
-        """ ;
-    ] ;
-
-    # Recommended: link to MinMod site for cross-dataset queries
-    sh:sparql [
-        sh:message "A Sample should link to a mo:MineralSite via :from_deposit to enable MinMod integration" ;
-        sh:severity sh:Warning ;
-        sh:select """
-            SELECT $this WHERE {
-                FILTER NOT EXISTS { $this <https://geochemistry.isi.edu/ontology/from_deposit> ?site }
             }
         """ ;
     ] ;
@@ -169,12 +158,6 @@
         sh:datatype xsd:string ;
         sh:maxCount 1 ;
         sh:name "mineral" ;
-    ] ;
-    sh:property [
-        sh:path :from_deposit ;
-        sh:class mo:MineralSite ;
-        sh:maxCount 1 ;
-        sh:name "from deposit" ;
     ] ;
     sh:property [
         sh:path :has_analysis ;
@@ -515,6 +498,11 @@
         sh:maxCount 1 ;
         sh:minInclusive 0 ;
         sh:name "row index" ;
+    ] ;
+    sh:property [
+        sh:path :has_sample ;
+        sh:class :Sample ;
+        sh:name "has sample" ;
     ] .
 
 

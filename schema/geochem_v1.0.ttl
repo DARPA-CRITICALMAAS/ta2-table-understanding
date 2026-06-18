@@ -26,25 +26,25 @@ geo:wktLiteral rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://geochemistry.isi.edu/ontology/has_mineral_site
+:has_mineral_site rdf:type owl:ObjectProperty ;
+                   rdfs:domain :MineralResourcePaper ;
+                   rdfs:range mo:MineralSite ;
+                   rdfs:label "has mineral site"@en ;
+                   rdfs:comment "Links a mineral resource paper to the mineral site/deposit it discusses"@en .
+
 ###  https://geochemistry.isi.edu/ontology/has_sample
 :has_sample rdf:type owl:ObjectProperty ;
-            rdfs:domain :MineralResourcePaper ;
+            rdfs:domain mo:MineralSite ;
             rdfs:range :Sample ;
             rdfs:label "has sample"@en ;
-            rdfs:comment "Links a mineral resource paper to its geochemical samples"@en .
+            rdfs:comment "Links a mineral site to the geochemical samples collected from it"@en .
 
 ###  https://geochemistry.isi.edu/ontology/has_analysis
 :has_analysis rdf:type owl:ObjectProperty ;
               rdfs:domain :Sample ;
               rdfs:range :Analysis ;
               rdfs:label "has analysis"@en .
-
-###  https://geochemistry.isi.edu/ontology/from_deposit
-:from_deposit rdf:type owl:ObjectProperty ;
-              rdfs:domain :Sample ;
-              rdfs:range mo:MineralSite ;
-              rdfs:label "from deposit"@en ;
-              rdfs:comment "Links a geochemical sample to the mineral site/deposit it was collected from"@en .
 
 ###  https://geochemistry.isi.edu/ontology/isotope
 :isotope rdf:type owl:ObjectProperty ;
