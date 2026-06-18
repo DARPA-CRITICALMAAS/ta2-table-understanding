@@ -80,9 +80,9 @@
 
 | Property | Domain → Range | Description |
 |---|---|---|
-| `:has_sample` | `MineralResourcePaper` → `Sample` | Links paper to its samples |
+| `:has_mineral_site` | `MineralResourcePaper` → `mo:MineralSite` | Links paper to the mineral site it discusses |
+| `:has_sample` | `mo:MineralSite` → `Sample` | Links mineral site to its samples |
 | `:has_analysis` | `Sample` → `Analysis` | Links sample to analyses |
-| `:from_deposit` | `Sample` → `mo:MineralSite` | Links sample to its deposit |
 | `:element` | `Analysis` → `Element` | Element analysed |
 | `:isotope` | `Analysis` → `Isotope` | Isotope measured |
 | `:grade_unit` | `Analysis` → `mo:UnitCandidate` | Unit for grade measurement |
@@ -125,12 +125,12 @@ GeoChem instance data can be loaded directly into an existing MinMod triplestore
 ### What Works
 
 - **Shared `mo:` vocabulary**: Any `mo:MineralSite`, `mo:MineralInventory`, etc. instances created via GeoChem use the same URIs as MinMod and are immediately compatible.
-- **The bridge property**: `:from_deposit` links a `:Sample` to an existing `mo:MineralSite` URI in the triplestore, enabling cross-dataset SPARQL queries without any special joins.
+- **The bridge property**: `:has_mineral_site` links a `:MineralResourcePaper` to an existing `mo:MineralSite` URI in the triplestore, and `:has_sample` links that `mo:MineralSite` to its `:Sample` instances, enabling cross-dataset SPARQL queries (`Paper → MineralSite → Sample`) without any special joins.
 - **GeoChem-specific classes are isolated by design**: `:Sample`, `:Analysis`, `:Element`, `:Isotope`, `:MineralResourcePaper` live in the geochem namespace. MinMod applications will ignore them, which is the correct behaviour — they are not MinMod concepts.
 
 ### Key Requirement
 
-The `mo:MineralSite` URI used in `:from_deposit` must match the URI already in the MinMod triplestore. The geochem data is only as connected as the site identifiers it references.
+The `mo:MineralSite` URI used in `:has_mineral_site` / `:has_sample` must match the URI already in the MinMod triplestore. The geochem data is only as connected as the site identifiers it references.
 
 ### Property Name Notes
 

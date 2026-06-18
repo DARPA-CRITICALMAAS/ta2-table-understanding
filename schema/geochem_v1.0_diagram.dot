@@ -1,0 +1,394 @@
+digraph GeochemOntology {
+    rankdir=LR;
+    node [shape=plaintext, fontname="Arial", fontsize=10];
+    edge [fontname="Arial", fontsize=9, arrowhead=vee];
+
+    // Define styles
+    graph [splines=polyline, nodesep=1.0, ranksep=1.5];
+
+    // GeoChemistry Classes
+    MineralResourcePaper [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#E8F4F8"><b>MineralResourcePaper</b></td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">paper_title : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">paper_authors : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">paper_doi : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">paper_year : Optional[int]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">paper_journal : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">paper_url : Optional[anyURI]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">has_mineral_site : Optional[MineralSite]</td></tr>
+        </table>
+    >];
+
+    Sample [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#E8F4F8"><b>Sample</b></td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">sample_id : str</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">sample_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">sample_local_id : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">sample_type : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">date : Optional[date]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">description : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">mineral : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">number_of_samples : Optional[int]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">number_of_analyses : Optional[int]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">sampling_method : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">sample_preparation : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">material_class : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">material_class_comment : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">analysed_material : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">sample_deposit_relation : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">geological_province : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">strat_unit_uid : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">strat_grouping : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">earth_material_group : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">earth_material_qualifier : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">mode_occurrence : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">metamorphic_grade : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">alteration : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">paragenetic_stage : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">texture : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">color : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">associated_minerals : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">feature_type : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">feature_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">feature_local_uid : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">top_depth_m : Optional[float]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">bottom_depth_m : Optional[float]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">detection_limit : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">detection_limit_unit : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">comments : Optional[str]</td></tr>
+        </table>
+    >];
+
+    Analysis [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#E8F4F8"><b>Analysis</b></td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">analysis_id : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">grade : Optional[float]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">grade_unit : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">element_and_grade_unit : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">aggregation_method : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">analytical_method : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">instrument_type : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">laboratory_location : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">operating_conditions : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">standards_used : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">data_quality : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">element : Optional[Element]</td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">isotope : Optional[Isotope]</td></tr>
+        </table>
+    >];
+
+    Element [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#E8F4F8"><b>Element</b></td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">name : str</td></tr>
+        </table>
+    >];
+
+    Isotope [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#E8F4F8"><b>Isotope</b></td></tr>
+            <tr><td align="left" bgcolor="#E8F4F8">name : str</td></tr>
+        </table>
+    >];
+
+    // MinMod Core Classes
+    MineralSite [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>MineralSite</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">name : str</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">aliases : Optional[list[str]]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">deposit_type_candidate : list[DepositTypeCandidate]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">location_info : LocationInfo</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">mineral_inventory : list[MineralInventory]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">modified_at : datetime</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">record_id : str</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">reference : NotEmptyList[Reference]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">site_rank : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">site_type : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">source_id : str</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">has_sample : Optional[list[Sample]]</td></tr>
+        </table>
+    >];
+
+    LocationInfo [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>LocationInfo</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">country : list[CountryCandidate]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">crs : Optional[CoordinateReferenceSystemCandidate]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">location : Optional[geo:wktLiteral]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">state_or_province : list[StateOrProvinceCandidate]</td></tr>
+        </table>
+    >];
+
+    MineralInventory [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>MineralInventory</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">category : list[ResourceReserveCategoryCandidate]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">commodity : CommodityCandidate</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">contained_metal : Optional[float]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">cutoff_grade : Optional[Measure]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">date : Optional[datetime]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">grade : Optional[Measure]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">material_form : Optional[MaterialFormCandidate]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">ore : Optional[Measure]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">reference : Reference</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">zone : Optional[str]</td></tr>
+        </table>
+    >];
+
+    GeologyInfo [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>GeologyInfo</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">age : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">comments : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">description : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">unit_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">environment : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">lithology : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">process : Optional[str]</td></tr>
+        </table>
+    >];
+
+    Document [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>Document</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">title : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">doi : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">uri : Optional[anyURI]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">url : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">journal : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">year : Optional[int]</td></tr>
+        </table>
+    >];
+
+    Reference [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>Reference</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">document : Document</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">page_info : list[PageInfo]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">property : Optional[anyURI]</td></tr>
+        </table>
+    >];
+
+    PageInfo [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>PageInfo</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">bounding_box : Optional[BoundingBox]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">page : int</td></tr>
+        </table>
+    >];
+
+    // Candidate Classes
+    CommodityCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>CommodityCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[Commodity]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    Commodity [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>Commodity</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+        </table>
+    >];
+
+    CountryCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>CountryCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[Country]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    Country [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>Country</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+        </table>
+    >];
+
+    StateOrProvinceCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>StateOrProvinceCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[StateOrProvince]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    StateOrProvince [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>StateOrProvince</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+        </table>
+    >];
+
+    DepositTypeCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>DepositTypeCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[DepositType]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    DepositType [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>DepositType</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">environment : str</td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">group : str</td></tr>
+        </table>
+    >];
+
+    ResourceReserveCategoryCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>ResourceReserveCategoryCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[ResourceReserveCategory]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    ResourceReserveCategory [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>ResourceReserveCategory</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+        </table>
+    >];
+
+    MaterialFormCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>MaterialFormCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[MaterialForm]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    MaterialForm [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>MaterialForm</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">commodity : Commodity</td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">conversion : float</td></tr>
+        </table>
+    >];
+
+    Measure [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>Measure</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">unit : Optional[UnitCandidate]</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">value : Optional[float]</td></tr>
+        </table>
+    >];
+
+    UnitCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>UnitCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[Unit]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    Unit [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>Unit</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+        </table>
+    >];
+
+    CoordinateReferenceSystemCandidate [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#F0F0F0"><b>CoordinateReferenceSystemCandidate</b></td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">confidence : float</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">normalized_uri : Optional[CoordinateReferenceSystem]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">observed_name : Optional[str]</td></tr>
+            <tr><td align="left" bgcolor="#F0F0F0">source : str</td></tr>
+        </table>
+    >];
+
+    CoordinateReferenceSystem [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#D4E6F1"><b>CoordinateReferenceSystem</b></td></tr>
+            <tr><td align="left" bgcolor="#D4E6F1">name : str</td></tr>
+        </table>
+    >];
+
+    BoundingBox [label=<
+        <table border="1" cellborder="0" cellspacing="0" cellpadding="4">
+            <tr><td align="center" bgcolor="#FFF4E6"><b>BoundingBox</b></td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">x_max : float</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">x_min : float</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">y_max : float</td></tr>
+            <tr><td align="left" bgcolor="#FFF4E6">y_min : float</td></tr>
+        </table>
+    >];
+
+    // Relationships shown with arrows
+    MineralResourcePaper -> MineralSite [label="has_mineral_site", style=dashed];
+    MineralSite -> Sample [label="has_sample", style=dashed];
+    Sample -> Analysis [label="has_analysis"];
+    Analysis -> Element [label="element"];
+    Analysis -> Isotope [label="isotope"];
+
+    MineralSite -> LocationInfo [label="location_info"];
+    MineralSite -> MineralInventory [label="mineral_inventory"];
+    MineralSite -> DepositTypeCandidate [label="deposit_type_candidate"];
+    MineralSite -> Reference [label="reference"];
+
+    LocationInfo -> CountryCandidate [label="country"];
+    LocationInfo -> StateOrProvinceCandidate [label="state_or_province"];
+    LocationInfo -> CoordinateReferenceSystemCandidate [label="crs"];
+
+    MineralInventory -> CommodityCandidate [label="commodity"];
+    MineralInventory -> ResourceReserveCategoryCandidate [label="category"];
+    MineralInventory -> MaterialFormCandidate [label="material_form"];
+    MineralInventory -> Measure [label="grade"];
+    MineralInventory -> Measure [label="cutoff_grade"];
+    MineralInventory -> Measure [label="ore"];
+    MineralInventory -> Reference [label="reference"];
+
+    Reference -> Document [label="document"];
+    Reference -> PageInfo [label="page_info"];
+
+    PageInfo -> BoundingBox [label="bounding_box"];
+
+    Measure -> UnitCandidate [label="unit"];
+
+    CommodityCandidate -> Commodity [label="normalized_uri", style=dashed];
+    CountryCandidate -> Country [label="normalized_uri", style=dashed];
+    StateOrProvinceCandidate -> StateOrProvince [label="normalized_uri", style=dashed];
+    DepositTypeCandidate -> DepositType [label="normalized_uri", style=dashed];
+    ResourceReserveCategoryCandidate -> ResourceReserveCategory [label="normalized_uri", style=dashed];
+    UnitCandidate -> Unit [label="normalized_uri", style=dashed];
+    CoordinateReferenceSystemCandidate -> CoordinateReferenceSystem [label="normalized_uri", style=dashed];
+    MaterialFormCandidate -> MaterialForm [label="normalized_uri", style=dashed];
+    MaterialForm -> Commodity [label="commodity"];
+
+    // Legend
+    Legend [label=<
+        <table border="1" cellborder="1" cellspacing="0" cellpadding="8">
+            <tr><td colspan="2" align="center"><b>Legend</b></td></tr>
+            <tr><td bgcolor="#E8F4F8" align="left">GeoChemistry Classes</td><td></td></tr>
+            <tr><td bgcolor="#FFF4E6" align="left">MinMod Classes</td><td></td></tr>
+            <tr><td bgcolor="#F0F0F0" align="left">Candidate Classes</td><td></td></tr>
+            <tr><td bgcolor="#D4E6F1" align="left">Normalized Classes</td><td></td></tr>
+        </table>
+    >];
+}
