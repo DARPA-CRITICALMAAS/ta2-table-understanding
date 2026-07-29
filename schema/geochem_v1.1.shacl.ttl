@@ -9,8 +9,8 @@
 @base <https://geochemistry.isi.edu/ontology/> .
 
 <https://geochemistry.isi.edu/ontology/shacl> rdf:type owl:Ontology ;
-    rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.0.ttl)"@en ;
-    owl:versionInfo "1.0.0" ;
+    rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.1.ttl)"@en ;
+    owl:versionInfo "1.1.0" ;
     owl:imports <https://geochemistry.isi.edu/ontology/> .
 
 
@@ -166,6 +166,11 @@
         sh:severity sh:Warning ;
         sh:message "A Sample should have at least one Analysis via :has_analysis" ;
         sh:name "has analysis" ;
+    ] ;
+    sh:property [
+        sh:path :reference ;
+        sh:class mo:Reference ;
+        sh:name "reference" ;
     ] ;
     sh:property [
         sh:path :sampling_method ;
@@ -422,6 +427,17 @@
         sh:datatype xsd:dateTime ;
         sh:maxCount 1 ;
         sh:name "analysis date" ;
+    ] ;
+    sh:property [
+        sh:path :source_analysis_uri ;
+        sh:datatype xsd:anyURI ;
+        sh:maxCount 1 ;
+        sh:name "source analysis uri" ;
+    ] ;
+    sh:property [
+        sh:path :reference ;
+        sh:class mo:Reference ;
+        sh:name "reference" ;
     ] .
 
 
@@ -463,6 +479,11 @@
         sh:class mo:UnitCandidate ;
         sh:maxCount 1 ;
         sh:name "detection limit unit" ;
+    ] ;
+    sh:property [
+        sh:path :reference ;
+        sh:class mo:Reference ;
+        sh:name "reference" ;
     ] .
 
 
@@ -503,6 +524,145 @@
         sh:path :has_sample ;
         sh:class :Sample ;
         sh:name "has sample" ;
+    ] .
+
+
+:ReferenceGeochemShape rdf:type sh:NodeShape ;
+    sh:targetClass mo:Reference ;
+    sh:name "Reference (GeoChem extensions)" ;
+
+    # Recommended: mo:page_info (PDF) and :artifact_info (non-PDF) are alternative locators
+    sh:sparql [
+        sh:message "A Reference should not combine mo:page_info (PDF locator) with :artifact_info (non-PDF locator)" ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <https://minmod.isi.edu/ontology/page_info> ?p .
+                $this <https://geochemistry.isi.edu/ontology/artifact_info> ?a .
+            }
+        """ ;
+    ] ;
+
+    sh:property [
+        sh:path :evidence_quote ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "evidence quote" ;
+    ] ;
+    sh:property [
+        sh:path :evidence_confidence ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 1 ;
+        sh:name "evidence confidence" ;
+    ] ;
+    sh:property [
+        sh:path :extraction_backend ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "extraction backend" ;
+    ] ;
+    sh:property [
+        sh:path :extraction_confidence ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 1 ;
+        sh:name "extraction confidence" ;
+    ] ;
+    sh:property [
+        sh:path :paper_id ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "paper id" ;
+    ] ;
+    sh:property [
+        sh:path :artifact_info ;
+        sh:class :ArtifactInfo ;
+        sh:maxCount 1 ;
+        sh:name "artifact info" ;
+    ] .
+
+
+###  ArtifactInfo hierarchy
+
+:ArtifactInfoShape rdf:type sh:NodeShape ;
+    sh:targetClass :ArtifactInfo ;
+    sh:name "ArtifactInfo" ;
+
+    sh:property [
+        sh:path :artifact_path ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "artifact path" ;
+    ] .
+
+
+:TableArtifactInfoShape rdf:type sh:NodeShape ;
+    sh:targetClass :TableArtifactInfo ;
+    sh:name "TableArtifactInfo" ;
+
+    # Recommended: table_row and table_col should appear together
+    sh:sparql [
+        sh:message "table_row and table_col should be specified together" ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this WHERE {
+                { $this <https://geochemistry.isi.edu/ontology/table_row> ?r
+                  FILTER NOT EXISTS { $this <https://geochemistry.isi.edu/ontology/table_col> ?c } }
+                UNION
+                { $this <https://geochemistry.isi.edu/ontology/table_col> ?c
+                  FILTER NOT EXISTS { $this <https://geochemistry.isi.edu/ontology/table_row> ?r } }
+            }
+        """ ;
+    ] ;
+
+    sh:property [
+        sh:path :table_id ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "table id" ;
+    ] ;
+    sh:property [
+        sh:path :table_row ;
+        sh:datatype xsd:integer ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:name "table row" ;
+    ] ;
+    sh:property [
+        sh:path :table_col ;
+        sh:datatype xsd:integer ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:name "table column" ;
+    ] .
+
+
+:ExcelArtifactInfoShape rdf:type sh:NodeShape ;
+    sh:targetClass :ExcelArtifactInfo ;
+    sh:name "ExcelArtifactInfo" ;
+
+    sh:property [
+        sh:path :sheet_name ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+        sh:name "sheet name" ;
+    ] .
+
+
+:JsonArtifactInfoShape rdf:type sh:NodeShape ;
+    sh:targetClass :JsonArtifactInfo ;
+    sh:name "JsonArtifactInfo" ;
+
+    sh:property [
+        sh:path :json_path ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+        sh:name "json path" ;
     ] .
 
 

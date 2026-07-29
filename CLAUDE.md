@@ -21,9 +21,10 @@ The codebase is organized into distinct processing layers:
 - **tum/raw_transformations/** - Data type transformers (numbers, coordinates, decimals)
 - **schema/** - RDF/TTL ontology definitions and validation
   - `mos.ttl` - simplified MinMod ontology
-  - `geochem_v1.0.ttl` - GeoChem ontology (extends MinMod with Sample/Analysis/Element/Isotope classes)
-  - `geochem_v1.0.shacl.ttl` - SHACL validation shapes for GeoChem
+  - `geochem_v1.1.ttl` - GeoChem ontology (extends MinMod with Sample/Analysis/Element/Isotope classes)
+  - `geochem_v1.1.shacl.ttl` - SHACL validation shapes for GeoChem
   - `geochem_vs_minmod.md` - comparison report detailing what GeoChem adds/omits relative to MinMod
+  - `provenance_extension.md` - per-field extraction provenance design (mo:Reference / ArtifactInfo)
 - **data/** - Databases, examples, and table descriptions organized by project (minmod, geochem)
 
 ## Project Setup
@@ -187,7 +188,7 @@ Integration modules in tum/integrations/sand/ provide:
 ### Multiple Projects
 
 The system supports multiple projects (minmod, geochem) with separate:
-- Ontology files (schema/mos.ttl, schema/geochem_v1.0.ttl)
+- Ontology files (schema/mos.ttl, schema/geochem_v1.1.ttl)
 - Databases (data/minmod/databases/, data/geochem/databases/)
 - SAND configurations (minmod.sand.yml, geochem.sand.yml)
 - Docker services (sand:5524, geochem:5525)

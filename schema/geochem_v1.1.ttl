@@ -11,7 +11,7 @@
 
 <https://geochemistry.isi.edu/ontology/> rdf:type owl:Ontology ;
                                           rdfs:comment "Merged GeoChemistry and MinMod ontology"@en ;
-                                          owl:versionInfo "1.0.0" ;
+                                          owl:versionInfo "1.1.0" ;
                                           owl:imports <https://minmod.isi.edu/ontology/> .
 
 #################################################################
@@ -385,6 +385,15 @@ mo:unit rdf:type owl:ObjectProperty ;
        rdfs:domain :Analysis ;
        rdfs:label "aggregation method"@en ;
        rdfs:comment "The method used to aggregate results of one or multiple analyses for one or multiple samples (e.g., mean, median)."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/source_analysis_uri
+:source_analysis_uri rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Analysis ;
+                     rdfs:range xsd:anyURI ;
+                     rdfs:label "source analysis uri"@en ;
+                     rdfs:comment "URI of the un-split spot-level Analysis this per-element Analysis was derived from (join key back to the canonical shape). Distinct from mo:uri, which is the node's own identifier, not a cross-reference."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/sample_id
@@ -1061,6 +1070,167 @@ mo:zone rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:integer ;
            rdfs:label "row index"@en ;
            rdfs:comment "Row index in source table/spreadsheet"@en .
+
+
+###  https://geochemistry.isi.edu/ontology/reference
+:reference rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf mo:reference ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Sample
+                                       :Analysis
+                                       :Element
+                                     )
+                       ] ;
+           rdfs:range mo:Reference ;
+           rdfs:label "reference"@en ;
+           rdfs:comment "Per-field extraction provenance for a Sample/Analysis/Element value, reusing mo:Reference. Scope to a single field via the existing mo:property; scope to a page/bbox via the existing mo:page_info -> mo:PageInfo -> mo:BoundingBox for PDF sources, or via :artifact_info below for other artifact types."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/artifact_info
+:artifact_info rdf:type owl:ObjectProperty ;
+               rdfs:domain mo:Reference ;
+               rdfs:range :ArtifactInfo ;
+               rdfs:label "artifact info"@en ;
+               rdfs:comment "Structural location of the extracted value within a non-PDF source artifact (Excel, CSV, JSON, ...). For PDF sources, use the existing mo:page_info -> mo:PageInfo -> mo:BoundingBox instead."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/evidence_quote
+:evidence_quote rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain mo:Reference ;
+                rdfs:range xsd:string ;
+                rdfs:label "evidence quote"@en ;
+                rdfs:comment "Verbatim or near-verbatim paper snippet supporting the value this Reference is for."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/evidence_confidence
+:evidence_confidence rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain mo:Reference ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:label "evidence confidence"@en ;
+                     rdfs:comment "Confidence in [0,1] derived from how precisely the value could be anchored to its source (e.g. quote located to a page rectangle, to a page, quote only, asserted with no supporting quote). Distinct from mo:confidence, which scores model/candidate agreement rather than source anchoring."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/extraction_backend
+:extraction_backend rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain mo:Reference ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "extraction backend"@en ;
+                    rdfs:comment "Table-extraction backend that produced this measurement (e.g. docling, pdfplumber, camelot)."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/extraction_confidence
+:extraction_confidence rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain mo:Reference ;
+                       rdfs:range xsd:decimal ;
+                       rdfs:label "extraction confidence"@en ;
+                       rdfs:comment "Cross-backend agreement for this measurement in [0,1] (n_backends_agreeing / n_backends_active). Distinct from :evidence_confidence and mo:confidence."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/paper_id
+:paper_id rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain mo:Reference ;
+          rdfs:range xsd:string ;
+          rdfs:label "paper id"@en ;
+          rdfs:comment "Corpus-local paper id (e.g. '2018_Yuan_etal') of the Reference's source document."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/artifact_path
+:artifact_path rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :ArtifactInfo ;
+               rdfs:range xsd:string ;
+               rdfs:label "artifact path"@en ;
+               rdfs:comment "Path/identifier of the source artifact a value was read from, e.g. 'supp:2018_Yuan_etal.xlsx' or 'extract:2018_Yuan_etal.json'."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/table_id
+:table_id rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :TableArtifactInfo ;
+          rdfs:range xsd:string ;
+          rdfs:label "table id"@en ;
+          rdfs:comment "Stable id of the source table a value came from (e.g. 'T1')."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/table_row
+:table_row rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :TableArtifactInfo ;
+           rdfs:range xsd:integer ;
+           rdfs:label "table row"@en ;
+           rdfs:comment "Row index of the source table cell."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/table_col
+:table_col rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :TableArtifactInfo ;
+           rdfs:range xsd:integer ;
+           rdfs:label "table column"@en ;
+           rdfs:comment "Column index of the source table cell."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/sheet_name
+:sheet_name rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :ExcelArtifactInfo ;
+            rdfs:range xsd:string ;
+            rdfs:label "sheet name"@en ;
+            rdfs:comment "Excel sheet name."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/json_path
+:json_path rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :JsonArtifactInfo ;
+           rdfs:range xsd:string ;
+           rdfs:label "json path"@en ;
+           rdfs:comment "JSONPath (or dot-path) locating the extracted field within the source JSON document, e.g. '$.samples[3].analyses[1].grade'."@en .
+
+
+#################################################################
+#    ArtifactInfo class hierarchy
+#    Type-scoped location metadata for non-PDF source artifacts,
+#    attached to mo:Reference via :artifact_info
+#################################################################
+
+###  https://geochemistry.isi.edu/ontology/ArtifactInfo
+:ArtifactInfo rdf:type owl:Class ;
+              rdfs:label "Artifact Info"@en ;
+              rdfs:comment "Abstract base for non-PDF source-artifact location metadata. Always instantiated as one of its subclasses (:ExcelArtifactInfo, :CsvArtifactInfo, :JsonArtifactInfo, ...), never directly."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/TableArtifactInfo
+:TableArtifactInfo rdf:type owl:Class ;
+                    rdfs:subClassOf :ArtifactInfo ;
+                    rdfs:label "Table Artifact Info"@en ;
+                    rdfs:comment "Abstract base for artifacts organized as a row/column table (Excel, CSV, ...). Always instantiated as one of its subclasses, never directly."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/ExcelArtifactInfo
+:ExcelArtifactInfo rdf:type owl:Class ;
+                    rdfs:subClassOf :TableArtifactInfo ;
+                    rdfs:label "Excel Artifact Info"@en ;
+                    rdfs:comment "Location within an Excel workbook: sheet name plus the table cell (via inherited :table_id/:table_row/:table_col)."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/CsvArtifactInfo
+:CsvArtifactInfo rdf:type owl:Class ;
+                  rdfs:subClassOf :TableArtifactInfo ;
+                  rdfs:label "CSV Artifact Info"@en ;
+                  rdfs:comment "Location within a CSV/delimited-text table (via inherited :table_id/:table_row/:table_col)."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/JsonArtifactInfo
+:JsonArtifactInfo rdf:type owl:Class ;
+                   rdfs:subClassOf :ArtifactInfo ;
+                   rdfs:label "JSON Artifact Info"@en ;
+                   rdfs:comment "Location within a JSON document, given as a :json_path."@en .
 
 
 
