@@ -2,13 +2,13 @@
 
 **Files compared:**
 - MinMod: `../ta2-minmod-kg/schema/ontology.ttl` (v2.1.1)
-- GeoChem: `schema/geochem_v1.0.ttl` (v1.0.0)
+- GeoChem: `schema/geochem_v1.1.ttl` (v1.1.0)
 
 ---
 
 ## Key Finding: GeoChem is a Selective Superset of MinMod
 
-`geochem_v1.0.ttl` declares `owl:imports <https://minmod.isi.edu/ontology/>` and explicitly re-declares the MinMod classes and properties relevant to geochemistry. Concepts specific to mineral systems modelling (`mo:MineralSystem`, `mo:EvidenceLayer`, `mo:MappableCriteria` and their associated properties) are intentionally omitted from the explicit declarations — they remain accessible via the import but play no role in geochem data. Semantically, GeoChem is a superset of the relevant MinMod vocabulary.
+`geochem_v1.1.ttl` declares `owl:imports <https://minmod.isi.edu/ontology/>` and explicitly re-declares the MinMod classes and properties relevant to geochemistry. Concepts specific to mineral systems modelling (`mo:MineralSystem`, `mo:EvidenceLayer`, `mo:MappableCriteria` and their associated properties) are intentionally omitted from the explicit declarations — they remain accessible via the import but play no role in geochem data. Semantically, GeoChem is a superset of the relevant MinMod vocabulary.
 
 ---
 
