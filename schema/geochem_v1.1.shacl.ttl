@@ -11,7 +11,7 @@
 
 <https://geochemistry.isi.edu/ontology/shacl> rdf:type owl:Ontology ;
     rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.1.ttl)"@en ;
-    owl:versionInfo "1.1.1" ;
+    owl:versionInfo "1.1.2" ;
     owl:imports <https://geochemistry.isi.edu/ontology/> .
 
 
@@ -351,16 +351,48 @@
         """ ;
     ] ;
 
+    # Recommended: a single :grade is ambiguous once an Analysis covers more than one element
+    sh:sparql [
+        sh:message "An Analysis with :grade set should reference at most one :element — for multi-element panels, split into one :Analysis per element (each with its own :grade) and link back via :source_analysis_uri" ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <https://geochemistry.isi.edu/ontology/grade> ?g .
+                {
+                    SELECT $this (COUNT(?e) as ?n) WHERE {
+                        $this <https://geochemistry.isi.edu/ontology/element> ?e .
+                    } GROUP BY $this
+                }
+                FILTER (?n > 1)
+            }
+        """ ;
+    ] ;
+
+    # Recommended: same ambiguity for :grade once an Analysis covers more than one isotope
+    sh:sparql [
+        sh:message "An Analysis with :grade set should reference at most one :isotope — for multi-isotope panels, split into one :Analysis per isotope (each with its own :grade) and link back via :source_analysis_uri" ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <https://geochemistry.isi.edu/ontology/grade> ?g .
+                {
+                    SELECT $this (COUNT(?i) as ?n) WHERE {
+                        $this <https://geochemistry.isi.edu/ontology/isotope> ?i .
+                    } GROUP BY $this
+                }
+                FILTER (?n > 1)
+            }
+        """ ;
+    ] ;
+
     sh:property [
         sh:path :element ;
         sh:class :Element ;
-        sh:maxCount 1 ;
         sh:name "element" ;
     ] ;
     sh:property [
         sh:path :isotope ;
         sh:class :Isotope ;
-        sh:maxCount 1 ;
         sh:name "isotope" ;
     ] ;
     sh:property [
@@ -547,6 +579,29 @@
     sh:targetClass mo:LocationInfo ;
     sh:name "LocationInfo" ;
 
+    # Longitude/latitude of a POINT geometry must be within physical range.
+    # Scoped to POINT only (mo:location also permits polygons, not checked here).
+    sh:sparql [
+        sh:message "mo:location POINT longitude must be in [-180,180] and latitude in [-90,90]" ;
+        sh:select """
+            PREFIX mo: <https://minmod.isi.edu/ontology/>
+            SELECT $this WHERE {
+                $this mo:location ?loc .
+                FILTER(REGEX(STR(?loc), "^POINT\\\\s*\\\\("))
+                BIND(REPLACE(REPLACE(STR(?loc), "^POINT\\\\s*\\\\(\\\\s*", ""), "\\\\s*\\\\)\\\\s*$", "") AS ?coords)
+                BIND(STRBEFORE(?coords, " ") AS ?lonStr)
+                BIND(STRAFTER(?coords, " ") AS ?latStr)
+                BIND(xsd:double(?lonStr) AS ?lon)
+                BIND(xsd:double(?latStr) AS ?lat)
+                FILTER(
+                    !BOUND(?lon) || !BOUND(?lat) ||
+                    ?lon < -180.0 || ?lon > 180.0 ||
+                    ?lat < -90.0 || ?lat > 90.0
+                )
+            }
+        """ ;
+    ] ;
+
     sh:property [
         sh:path mo:location ;
         sh:datatype geo:wktLiteral ;
@@ -580,6 +635,11 @@
         sh:datatype xsd:string ;
         sh:maxCount 1 ;
         sh:name "location description" ;
+    ] ;
+    sh:property [
+        sh:path :reference ;
+        sh:class mo:Reference ;
+        sh:name "reference" ;
     ] .
 
 
@@ -635,6 +695,14 @@
         sh:minInclusive 0 ;
         sh:maxInclusive 1 ;
         sh:name "evidence confidence" ;
+    ] ;
+    sh:property [
+        sh:path :candidate_confidence ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 1 ;
+        sh:name "candidate confidence" ;
     ] ;
     sh:property [
         sh:path :extraction_backend ;
