@@ -5,12 +5,13 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
 
 @base <https://geochemistry.isi.edu/ontology/> .
 
 <https://geochemistry.isi.edu/ontology/shacl> rdf:type owl:Ontology ;
     rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.1.ttl)"@en ;
-    owl:versionInfo "1.1.0" ;
+    owl:versionInfo "1.1.1" ;
     owl:imports <https://geochemistry.isi.edu/ontology/> .
 
 
@@ -501,6 +502,84 @@
         sh:minCount 1 ;
         sh:message "An Isotope must have an rdfs:label (e.g., '206Pb')" ;
         sh:name "label" ;
+    ] .
+
+
+#################################################################
+#    MinMod classes reused directly by geochem geolocation data
+#################################################################
+
+:CandidateEntityShape rdf:type sh:NodeShape ;
+    sh:targetClass mo:CandidateEntity ;
+    sh:name "CandidateEntity" ;
+
+    sh:property [
+        sh:path mo:source ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:name "source" ;
+    ] ;
+    sh:property [
+        sh:path mo:confidence ;
+        sh:datatype xsd:decimal ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:maxInclusive 1 ;
+        sh:name "confidence" ;
+    ] ;
+    sh:property [
+        sh:path mo:observed_name ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "observed name" ;
+    ] ;
+    sh:property [
+        sh:path mo:normalized_uri ;
+        sh:nodeKind sh:IRI ;
+        sh:maxCount 1 ;
+        sh:name "normalized uri" ;
+    ] .
+
+
+:LocationInfoShape rdf:type sh:NodeShape ;
+    sh:targetClass mo:LocationInfo ;
+    sh:name "LocationInfo" ;
+
+    sh:property [
+        sh:path mo:location ;
+        sh:datatype geo:wktLiteral ;
+        sh:maxCount 1 ;
+        sh:name "location" ;
+    ] ;
+    sh:property [
+        sh:path mo:country ;
+        sh:class mo:CandidateEntity ;
+        sh:name "country" ;
+    ] ;
+    sh:property [
+        sh:path mo:state_or_province ;
+        sh:class mo:CandidateEntity ;
+        sh:name "state or province" ;
+    ] ;
+    sh:property [
+        sh:path mo:crs ;
+        sh:class mo:CandidateEntity ;
+        sh:maxCount 1 ;
+        sh:name "crs" ;
+    ] ;
+    sh:property [
+        sh:path mo:location_source ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "location source" ;
+    ] ;
+    sh:property [
+        sh:path mo:location_description ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:name "location description" ;
     ] .
 
 

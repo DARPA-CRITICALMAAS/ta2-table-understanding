@@ -14,17 +14,16 @@
 
 ## Complete MinMod Inventory (all present in GeoChem)
 
-### Classes (29 re-declared in GeoChem)
+### Classes (27 re-declared in GeoChem)
 
 | Class | Description |
 |---|---|
 | `mo:BoundingBox` | Bounding box coordinates in a document |
+| `mo:CandidateEntity` | Generic match-candidate wrapper (source, confidence, observed_name, normalized_uri). Reused directly by `mo:country`, `mo:state_or_province`, `mo:crs` — see note below |
 | `mo:Commodity` | A mineral commodity |
 | `mo:CommodityCandidate` | Candidate commodity match (subclass of MatchInfo) |
 | `mo:CoordinateReferenceSystem` | CRS definition |
-| `mo:CoordinateReferenceSystemCandidate` | CRS match candidate |
 | `mo:Country` | Country entity |
-| `mo:CountryCandidate` | Country match candidate |
 | `mo:DepositType` | Deposit type with environment and group |
 | `mo:DepositTypeCandidate` | Deposit type match candidate |
 | `mo:Document` | Source document (doi, journal, title, year, etc.) |
@@ -41,7 +40,6 @@
 | `mo:ResourceReserveCategory` | JORC/NI 43-101 resource/reserve category |
 | `mo:ResourceReserveCategoryCandidate` | Category match candidate |
 | `mo:StateOrProvince` | State or province entity |
-| `mo:StateOrProvinceCandidate` | State/province match candidate |
 | `mo:ThingHasLabel` | Mixin: requires `rdfs:label` |
 | `mo:ThingMayHaveAltLabel` | Mixin: may have `skos:altLabel` |
 | `mo:ThingMayHaveComment` | Mixin: may have `rdfs:comment` |
@@ -49,6 +47,8 @@
 | `mo:UnitCandidate` | Unit match candidate |
 
 **Not re-declared** (available via `owl:imports` but not relevant to geochem): `mo:EvidenceLayer`, `mo:MappableCriteria`, `mo:MineralSystem`
+
+**Dropped from re-declaration (2026-07-31): `mo:CountryCandidate`, `mo:StateOrProvinceCandidate`, `mo:CoordinateReferenceSystemCandidate`.** These are declared in the imported `mo:` ontology but confirmed (via SPARQL against the live KG, `https://minmod.isi.edu/sparql`) to have **zero instances in production** — every `mo:country`/`mo:state_or_province`/`mo:crs` value is actually typed `mo:CandidateEntity` (3.4M live instances), a single generic class the ETL/API code (`minmodkg/models/kg/candidate_entity.py`) uses in place of the typed subclasses. `mo:country`/`mo:state_or_province`/`mo:crs` now range on `mo:CandidateEntity` here to match reality. Note `mo:CommodityCandidate`/`mo:DepositTypeCandidate`/`mo:MaterialFormCandidate`/`mo:ResourceReserveCategoryCandidate`/`mo:UnitCandidate` are very likely equally unused in production (same `CandidateEntity`-only pattern), but that wasn't confirmed field-by-field and is out of scope for this pass — flagged as a follow-up. `mo:CandidateEntity` itself isn't declared in the upstream `ta2-minmod-kg/schema/ontology.ttl` either (checked) — this re-declaration is a local stopgap; the real fix belongs upstream.
 
 ### Object Properties (29 re-declared in GeoChem)
 
