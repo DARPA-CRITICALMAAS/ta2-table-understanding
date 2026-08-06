@@ -11,7 +11,7 @@
 
 <https://geochemistry.isi.edu/ontology/> rdf:type owl:Ontology ;
                                           rdfs:comment "Merged GeoChemistry and MinMod ontology"@en ;
-                                          owl:versionInfo "1.1.1" ;
+                                          owl:versionInfo "1.1.2" ;
                                           owl:imports <https://minmod.isi.edu/ontology/> .
 
 #################################################################
@@ -140,6 +140,7 @@ mo:grade rdf:type owl:ObjectProperty ;
 mo:location_info rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf mo:mineral_site_objectproperty ;
                rdfs:range mo:LocationInfo ;
+               rdfs:comment "A site may have more than one LocationInfo (e.g. multiple reported localities for the same deposit); no cardinality restriction is declared on mo:MineralSite for this property."@en ;
                rdfs:label "location info"@en .
 
 
@@ -1079,11 +1080,12 @@ mo:zone rdf:type owl:DatatypeProperty ;
                          owl:unionOf ( :Sample
                                        :Analysis
                                        :Element
+                                       mo:LocationInfo
                                      )
                        ] ;
            rdfs:range mo:Reference ;
            rdfs:label "reference"@en ;
-           rdfs:comment "Per-field extraction provenance for a Sample/Analysis/Element value, reusing mo:Reference. Scope to a single field via the existing mo:property; scope to a page/bbox via the existing mo:page_info -> mo:PageInfo -> mo:BoundingBox for PDF sources, or via :artifact_info below for other artifact types."@en .
+           rdfs:comment "Per-field extraction provenance for a Sample/Analysis/Element value, or per-extraction provenance for a LocationInfo candidate, reusing mo:Reference. Scope to a single field via the existing mo:property; scope to a page/bbox via the existing mo:page_info -> mo:PageInfo -> mo:BoundingBox for PDF sources, or via :artifact_info below for other artifact types. On a LocationInfo, use :candidate_confidence to record how likely this particular extraction is the correct location — a MineralSite may have several LocationInfo extractions (see mo:location_info's relaxed cardinality) that differ only in :candidate_confidence."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/artifact_info
@@ -1110,6 +1112,15 @@ mo:zone rdf:type owl:DatatypeProperty ;
                      rdfs:range xsd:decimal ;
                      rdfs:label "evidence confidence"@en ;
                      rdfs:comment "Confidence in [0,1] derived from how precisely the value could be anchored to its source (e.g. quote located to a page rectangle, to a page, quote only, asserted with no supporting quote). Distinct from mo:confidence, which scores model/candidate agreement rather than source anchoring."@en .
+
+
+###  https://geochemistry.isi.edu/ontology/candidate_confidence
+:candidate_confidence rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain mo:Reference ;
+                      rdfs:range xsd:decimal ;
+                      rdfs:label "candidate confidence"@en ;
+                      rdfs:comment "Confidence in [0,1] that this candidate (e.g. a LocationInfo extraction reached via :reference) is the correct one among several alternatives. Same kind of judgment as mo:confidence (model/candidate agreement) and mo:CandidateEntity.confidence, but domain-safe on mo:Reference for classes like mo:LocationInfo that mo:reference's domain doesn't cover as a mo:MatchInfo. Distinct from :evidence_confidence, which scores source-anchoring precision, not candidate correctness."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/extraction_backend
@@ -1538,10 +1549,6 @@ mo:MineralSite rdf:type owl:Class ;
                              mo:ThingMayHaveAltLabel ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty mo:modified_at ;
-                               owl:cardinality "1"^^xsd:nonNegativeInteger
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty mo:location_info ;
                                owl:cardinality "1"^^xsd:nonNegativeInteger
                              ] ,
                              [ rdf:type owl:Restriction ;
