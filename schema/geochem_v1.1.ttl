@@ -11,7 +11,7 @@
 
 <https://geochemistry.isi.edu/ontology/> rdf:type owl:Ontology ;
                                           rdfs:comment "Merged GeoChemistry and MinMod ontology"@en ;
-                                          owl:versionInfo "1.1.0" ;
+                                          owl:versionInfo "1.1.1" ;
                                           owl:imports <https://minmod.isi.edu/ontology/> .
 
 #################################################################
@@ -90,14 +90,14 @@ mo:commodity rdf:type owl:ObjectProperty ;
 ###  https://minmod.isi.edu/ontology/country
 mo:country rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf mo:location_info_objectproperty ;
-         rdfs:range mo:CountryCandidate ;
+         rdfs:range mo:CandidateEntity ;
          rdfs:label "country"@en .
 
 
 ###  https://minmod.isi.edu/ontology/crs
 mo:crs rdf:type owl:ObjectProperty ;
      rdfs:subPropertyOf mo:location_info_objectproperty ;
-     rdfs:range mo:CoordinateReferenceSystemCandidate ;
+     rdfs:range mo:CandidateEntity ;
      rdfs:comment "The Coordinate Reference System (CRS) of the location"@en ;
      rdfs:label "crs"@en .
 
@@ -271,7 +271,7 @@ mo:source rdf:type rdf:Property ;
 ###  https://minmod.isi.edu/ontology/state_or_province
 mo:state_or_province rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf mo:location_info_objectproperty ;
-                   rdfs:range mo:StateOrProvinceCandidate ;
+                   rdfs:range mo:CandidateEntity ;
                    rdfs:label "state or province"@en .
 
 
@@ -1286,6 +1286,13 @@ mo:BoundingBox rdf:type owl:Class ;
              rdfs:label "Bounding Box"@en .
 
 
+###  https://minmod.isi.edu/ontology/CandidateEntity
+mo:CandidateEntity rdf:type owl:Class ;
+                 rdfs:subClassOf mo:MatchInfo ;
+                 rdfs:comment "Generic match-candidate wrapper (source, confidence, observed_name, normalized_uri) reused across mo:country, mo:state_or_province, mo:crs, etc. This is what the live MinMod KG actually stores (confirmed via SPARQL against https://minmod.isi.edu/sparql: 3.4M mo:CandidateEntity instances, zero instances of any typed *Candidate subclass). Supersedes mo:CountryCandidate/mo:StateOrProvinceCandidate/mo:CoordinateReferenceSystemCandidate, which were declared in the imported mo: ontology but never adopted by the ETL/API (see minmodkg/models/kg/candidate_entity.py upstream) — dropped from this re-declaration accordingly."@en ;
+                 rdfs:label "Candidate Entity"@en .
+
+
 ###  https://minmod.isi.edu/ontology/Commodity
 mo:Commodity rdf:type owl:Class ;
            rdfs:subClassOf mo:ThingHasLabel ;
@@ -1308,30 +1315,10 @@ mo:CoordinateReferenceSystem rdf:type owl:Class ;
                            rdfs:label "Coordinate Reference System"@en .
 
 
-###  https://minmod.isi.edu/ontology/CoordinateReferenceSystemCandidate
-mo:CoordinateReferenceSystemCandidate rdf:type owl:Class ;
-                                    rdfs:subClassOf mo:MatchInfo ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty mo:normalized_uri ;
-                                                      owl:allValuesFrom mo:CoordinateReferenceSystem
-                                                    ] ;
-                                    rdfs:label "Coordinate Reference System Candidate"@en .
-
-
 ###  https://minmod.isi.edu/ontology/Country
 mo:Country rdf:type owl:Class ;
          rdfs:subClassOf mo:ThingHasLabel ;
          rdfs:label "Country"@en .
-
-
-###  https://minmod.isi.edu/ontology/CountryCandidate
-mo:CountryCandidate rdf:type owl:Class ;
-                  rdfs:subClassOf mo:MatchInfo ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty mo:normalized_uri ;
-                                    owl:allValuesFrom mo:Country
-                                  ] ;
-                  rdfs:label "Country Candidate"@en .
 
 
 ###  https://minmod.isi.edu/ontology/DepositType
@@ -1629,16 +1616,6 @@ mo:StateOrProvince rdf:type owl:Class ;
                  rdfs:label "State or Province"@en .
 
 
-###  https://minmod.isi.edu/ontology/StateOrProvinceCandidate
-mo:StateOrProvinceCandidate rdf:type owl:Class ;
-                          rdfs:subClassOf mo:MatchInfo ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty mo:normalized_uri ;
-                                            owl:allValuesFrom mo:StateOrProvince
-                                          ] ;
-                          rdfs:label "State Or Province Candidate"@en .
-
-
 ###  https://minmod.isi.edu/ontology/ThingHasLabel
 mo:ThingHasLabel rdf:type owl:Class ;
                rdfs:comment "Instance of this class must have rdfs:label"@en ;
@@ -1701,12 +1678,9 @@ mo:UnitCandidate rdf:type owl:Class ;
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( mo:CommodityCandidate
-                mo:CoordinateReferenceSystemCandidate
-                mo:CountryCandidate
                 mo:DepositTypeCandidate
                 mo:MaterialFormCandidate
                 mo:ResourceReserveCategoryCandidate
-                mo:StateOrProvinceCandidate
                 mo:UnitCandidate
               )
 ] .
