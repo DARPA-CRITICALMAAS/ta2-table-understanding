@@ -11,7 +11,7 @@
 
 <https://geochemistry.isi.edu/ontology/> rdf:type owl:Ontology ;
                                           rdfs:comment "Merged GeoChemistry and MinMod ontology"@en ;
-                                          owl:versionInfo "1.1.2" ;
+                                          owl:versionInfo "1.2.0" ;
                                           owl:imports <https://minmod.isi.edu/ontology/> .
 
 #################################################################
@@ -370,13 +370,14 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/grade
 :grade rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :Analysis ;
-       rdfs:label "grade"@en .
+       rdfs:domain :Element ;
+       rdfs:label "grade"@en ;
+       rdfs:comment "The measured value for this element within its :Analysis (parallel to :detection_limit — both are per-element measurement facts, not per-analysis ones). Deliberately not reusing mo:grade/mo:Measure: mo:grade is a deposit-level aggregate/reserve-estimate figure on mo:MineralInventory, this is a raw per-sample lab measurement — different scale, would need real aggregation to promote one into the other, not a rename (see geochem_vs_minmod.md)."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/grade_unit
 :grade_unit rdf:type owl:ObjectProperty ;
-      rdfs:domain :Analysis ;
+      rdfs:domain :Element ;
       rdfs:range mo:UnitCandidate ;
       rdfs:label "grade unit"@en .
 
@@ -386,15 +387,6 @@ mo:unit rdf:type owl:ObjectProperty ;
        rdfs:domain :Analysis ;
        rdfs:label "aggregation method"@en ;
        rdfs:comment "The method used to aggregate results of one or multiple analyses for one or multiple samples (e.g., mean, median)."@en .
-
-
-###  https://geochemistry.isi.edu/ontology/source_analysis_uri
-:source_analysis_uri rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
-                     rdfs:domain :Analysis ;
-                     rdfs:range xsd:anyURI ;
-                     rdfs:label "source analysis uri"@en ;
-                     rdfs:comment "URI of the un-split spot-level Analysis this per-element Analysis was derived from (join key back to the canonical shape). Distinct from mo:uri, which is the node's own identifier, not a cross-reference."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/sample_id
@@ -1258,7 +1250,8 @@ mo:zone rdf:type owl:DatatypeProperty ;
 
 ###  https://geochemistry.isi.edu/ontology/Analysis
 :Analysis rdf:type owl:Class ;
-          rdfs:label "Analysis"@en .
+          rdfs:label "Analysis"@en ;
+          rdfs:comment "One lab run/spot. :element is not capped at one (a multi-element panel is a single :Analysis referencing several :Element instances), so the method/instrument/lab fields (:analytical_method, :instrument_type, :laboratory_location, :operating_conditions, :standards_used, :aggregation_method, :data_quality, :analysis_date) are stated once per run here rather than once per element. The per-element measured value lives on :Element instead (:grade/:grade_unit, alongside the pre-existing :detection_limit/:detection_limit_unit), since a single :Analysis can't unambiguously pair multiple scalar grades with multiple elements any other way. Verified against the live KG (2026-08-12): of 822,295 pre-fix per-element :Analysis nodes, these fields were 100% consistent within each of the 55,565 real runs — confirming this was pure duplication, not genuine per-element variation."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/Element

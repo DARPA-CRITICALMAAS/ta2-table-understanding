@@ -10,8 +10,8 @@
 @base <https://geochemistry.isi.edu/ontology/> .
 
 <https://geochemistry.isi.edu/ontology/shacl> rdf:type owl:Ontology ;
-    rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.1.2.ttl)"@en ;
-    owl:versionInfo "1.1.2" ;
+    rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.2.0.ttl)"@en ;
+    owl:versionInfo "1.2.0" ;
     owl:imports <https://geochemistry.isi.edu/ontology/> .
 
 
@@ -339,52 +339,6 @@
         """ ;
     ] ;
 
-    # Recommended: grade_unit should accompany grade
-    sh:sparql [
-        sh:message "If :grade is specified, :grade_unit should also be specified" ;
-        sh:severity sh:Warning ;
-        sh:select """
-            SELECT $this WHERE {
-                $this <https://geochemistry.isi.edu/ontology/grade> ?g .
-                FILTER NOT EXISTS { $this <https://geochemistry.isi.edu/ontology/grade_unit> ?u }
-            }
-        """ ;
-    ] ;
-
-    # Recommended: a single :grade is ambiguous once an Analysis covers more than one element
-    sh:sparql [
-        sh:message "An Analysis with :grade set should reference at most one :element — for multi-element panels, split into one :Analysis per element (each with its own :grade) and link back via :source_analysis_uri" ;
-        sh:severity sh:Warning ;
-        sh:select """
-            SELECT $this WHERE {
-                $this <https://geochemistry.isi.edu/ontology/grade> ?g .
-                {
-                    SELECT $this (COUNT(?e) as ?n) WHERE {
-                        $this <https://geochemistry.isi.edu/ontology/element> ?e .
-                    } GROUP BY $this
-                }
-                FILTER (?n > 1)
-            }
-        """ ;
-    ] ;
-
-    # Recommended: same ambiguity for :grade once an Analysis covers more than one isotope
-    sh:sparql [
-        sh:message "An Analysis with :grade set should reference at most one :isotope — for multi-isotope panels, split into one :Analysis per isotope (each with its own :grade) and link back via :source_analysis_uri" ;
-        sh:severity sh:Warning ;
-        sh:select """
-            SELECT $this WHERE {
-                $this <https://geochemistry.isi.edu/ontology/grade> ?g .
-                {
-                    SELECT $this (COUNT(?i) as ?n) WHERE {
-                        $this <https://geochemistry.isi.edu/ontology/isotope> ?i .
-                    } GROUP BY $this
-                }
-                FILTER (?n > 1)
-            }
-        """ ;
-    ] ;
-
     sh:property [
         sh:path :element ;
         sh:class :Element ;
@@ -394,18 +348,6 @@
         sh:path :isotope ;
         sh:class :Isotope ;
         sh:name "isotope" ;
-    ] ;
-    sh:property [
-        sh:path :grade ;
-        sh:datatype xsd:decimal ;
-        sh:maxCount 1 ;
-        sh:name "grade" ;
-    ] ;
-    sh:property [
-        sh:path :grade_unit ;
-        sh:class mo:UnitCandidate ;
-        sh:maxCount 1 ;
-        sh:name "grade unit" ;
     ] ;
     sh:property [
         sh:path :analysis_id ;
@@ -462,12 +404,6 @@
         sh:name "analysis date" ;
     ] ;
     sh:property [
-        sh:path :source_analysis_uri ;
-        sh:datatype xsd:anyURI ;
-        sh:maxCount 1 ;
-        sh:name "source analysis uri" ;
-    ] ;
-    sh:property [
         sh:path :reference ;
         sh:class mo:Reference ;
         sh:name "reference" ;
@@ -494,12 +430,36 @@
         """ ;
     ] ;
 
+    # Recommended: grade_unit should accompany grade
+    sh:sparql [
+        sh:message "If :grade is specified, :grade_unit should also be specified" ;
+        sh:severity sh:Warning ;
+        sh:select """
+            SELECT $this WHERE {
+                $this <https://geochemistry.isi.edu/ontology/grade> ?g .
+                FILTER NOT EXISTS { $this <https://geochemistry.isi.edu/ontology/grade_unit> ?u }
+            }
+        """ ;
+    ] ;
+
     sh:property [
         sh:path rdfs:label ;
         sh:datatype xsd:string ;
         sh:minCount 1 ;
         sh:message "An Element must have an rdfs:label (e.g., the element symbol or name)" ;
         sh:name "label" ;
+    ] ;
+    sh:property [
+        sh:path :grade ;
+        sh:datatype xsd:decimal ;
+        sh:maxCount 1 ;
+        sh:name "grade" ;
+    ] ;
+    sh:property [
+        sh:path :grade_unit ;
+        sh:class mo:UnitCandidate ;
+        sh:maxCount 1 ;
+        sh:name "grade unit" ;
     ] ;
     sh:property [
         sh:path :detection_limit ;
