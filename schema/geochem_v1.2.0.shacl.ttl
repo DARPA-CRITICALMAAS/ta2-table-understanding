@@ -10,8 +10,8 @@
 @base <https://geochemistry.isi.edu/ontology/> .
 
 <https://geochemistry.isi.edu/ontology/shacl> rdf:type owl:Ontology ;
-    rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.1.2.ttl)"@en ;
-    owl:versionInfo "1.1.2" ;
+    rdfs:comment "SHACL shapes for the GeoChem ontology (geochem_v1.2.0.ttl)"@en ;
+    owl:versionInfo "1.2.0" ;
     owl:imports <https://geochemistry.isi.edu/ontology/> .
 
 
@@ -353,7 +353,7 @@
 
     # Recommended: a single :grade is ambiguous once an Analysis covers more than one element
     sh:sparql [
-        sh:message "An Analysis with :grade set should reference at most one :element — for multi-element panels, split into one :Analysis per element (each with its own :grade) and link back via :source_analysis_uri" ;
+        sh:message "An Analysis with :grade set should reference at most one :element — for multi-element panels, split into one :Analysis per element (each with its own :grade) and link back via :analytical_run" ;
         sh:severity sh:Warning ;
         sh:select """
             SELECT $this WHERE {
@@ -370,7 +370,7 @@
 
     # Recommended: same ambiguity for :grade once an Analysis covers more than one isotope
     sh:sparql [
-        sh:message "An Analysis with :grade set should reference at most one :isotope — for multi-isotope panels, split into one :Analysis per isotope (each with its own :grade) and link back via :source_analysis_uri" ;
+        sh:message "An Analysis with :grade set should reference at most one :isotope — for multi-isotope panels, split into one :Analysis per isotope (each with its own :grade) and link back via :analytical_run" ;
         sh:severity sh:Warning ;
         sh:select """
             SELECT $this WHERE {
@@ -413,6 +413,27 @@
         sh:maxCount 1 ;
         sh:name "analysis id" ;
     ] ;
+    sh:property [
+        sh:path :analytical_run ;
+        sh:class :AnalyticalRun ;
+        sh:maxCount 1 ;
+        sh:name "analytical run" ;
+    ] ;
+    sh:property [
+        sh:path :reference ;
+        sh:class mo:Reference ;
+        sh:name "reference" ;
+    ] .
+
+
+#################################################################
+#    AnalyticalRun
+#################################################################
+
+:AnalyticalRunShape rdf:type sh:NodeShape ;
+    sh:targetClass :AnalyticalRun ;
+    sh:name "Analytical Run" ;
+
     sh:property [
         sh:path :analytical_method ;
         sh:datatype xsd:string ;
@@ -460,12 +481,6 @@
         sh:datatype xsd:dateTime ;
         sh:maxCount 1 ;
         sh:name "analysis date" ;
-    ] ;
-    sh:property [
-        sh:path :source_analysis_uri ;
-        sh:datatype xsd:anyURI ;
-        sh:maxCount 1 ;
-        sh:name "source analysis uri" ;
     ] ;
     sh:property [
         sh:path :reference ;

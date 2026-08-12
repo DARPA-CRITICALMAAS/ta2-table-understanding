@@ -11,7 +11,7 @@
 
 <https://geochemistry.isi.edu/ontology/> rdf:type owl:Ontology ;
                                           rdfs:comment "Merged GeoChemistry and MinMod ontology"@en ;
-                                          owl:versionInfo "1.1.2" ;
+                                          owl:versionInfo "1.2.0" ;
                                           owl:imports <https://minmod.isi.edu/ontology/> .
 
 #################################################################
@@ -383,18 +383,17 @@ mo:unit rdf:type owl:ObjectProperty ;
 
 :aggregation_method rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :Analysis ;
+       rdfs:domain :AnalyticalRun ;
        rdfs:label "aggregation method"@en ;
        rdfs:comment "The method used to aggregate results of one or multiple analyses for one or multiple samples (e.g., mean, median)."@en .
 
 
-###  https://geochemistry.isi.edu/ontology/source_analysis_uri
-:source_analysis_uri rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
-                     rdfs:domain :Analysis ;
-                     rdfs:range xsd:anyURI ;
-                     rdfs:label "source analysis uri"@en ;
-                     rdfs:comment "URI of the un-split spot-level Analysis this per-element Analysis was derived from (join key back to the canonical shape). Distinct from mo:uri, which is the node's own identifier, not a cross-reference."@en .
+###  https://geochemistry.isi.edu/ontology/analytical_run
+:analytical_run rdf:type owl:ObjectProperty ;
+                rdfs:domain :Analysis ;
+                rdfs:range :AnalyticalRun ;
+                rdfs:label "analytical run"@en ;
+                rdfs:comment "The un-split spot-level run this per-element :Analysis was derived from (a multi-element panel is split into one :Analysis per element, each pointing back at the same :AnalyticalRun). Supersedes :source_analysis_uri, which held the same URI as an inert xsd:anyURI literal (a join key by convention, not a real graph edge) — this is that URI, now materialized as an actual node and reached via a real property."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/sample_id
@@ -430,7 +429,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/analytical_method
 :analytical_method rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :Analysis ;
+       rdfs:domain :AnalyticalRun ;
        rdfs:label "analytical method"@en ;
        rdfs:comment "The analytical method/technique used to obtain the analysis (e.g., ICP-MS)."@en .
 
@@ -446,7 +445,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/instrument_type
 :instrument_type rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:domain :Analysis ;
+                 rdfs:domain :AnalyticalRun ;
                  rdfs:label "instrument type"@en ;
                  rdfs:comment "Instrument type and model used for analysis."@en .
 
@@ -454,7 +453,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/laboratory_location
 :laboratory_location rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
-                     rdfs:domain :Analysis ;
+                     rdfs:domain :AnalyticalRun ;
                      rdfs:label "laboratory location"@en ;
                      rdfs:comment "Laboratory location for the analysis."@en .
 
@@ -462,7 +461,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/operating_conditions
 :operating_conditions rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain :Analysis ;
+                      rdfs:domain :AnalyticalRun ;
                       rdfs:label "operating conditions"@en ;
                       rdfs:comment "Operating conditions for the analysis."@en .
 
@@ -470,7 +469,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/standards_used
 :standards_used rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :Analysis ;
+                rdfs:domain :AnalyticalRun ;
                 rdfs:label "standards used"@en ;
                 rdfs:comment "Standards used for the analysis."@en .
 
@@ -478,7 +477,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/data_quality
 :data_quality rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain :Analysis ;
+              rdfs:domain :AnalyticalRun ;
               rdfs:label "data quality"@en ;
               rdfs:comment "Summarised comments about the data quality, if known."@en .
 
@@ -486,7 +485,7 @@ mo:unit rdf:type owl:ObjectProperty ;
 ###  https://geochemistry.isi.edu/ontology/analysis_date
 :analysis_date rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
-               rdfs:domain :Analysis ;
+               rdfs:domain :AnalyticalRun ;
                rdfs:range xsd:dateTime ;
                rdfs:label "analysis date"@en ;
                rdfs:comment "Date on which the geochemical analysis was performed."@en .
@@ -1079,13 +1078,14 @@ mo:zone rdf:type owl:DatatypeProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( :Sample
                                        :Analysis
+                                       :AnalyticalRun
                                        :Element
                                        mo:LocationInfo
                                      )
                        ] ;
            rdfs:range mo:Reference ;
            rdfs:label "reference"@en ;
-           rdfs:comment "Per-field extraction provenance for a Sample/Analysis/Element value, or per-extraction provenance for a LocationInfo candidate, reusing mo:Reference. Scope to a single field via the existing mo:property; scope to a page/bbox via the existing mo:page_info -> mo:PageInfo -> mo:BoundingBox for PDF sources, or via :artifact_info below for other artifact types. On a LocationInfo, use :candidate_confidence to record how likely this particular extraction is the correct location — a MineralSite may have several LocationInfo extractions (see mo:location_info's relaxed cardinality) that differ only in :candidate_confidence."@en .
+           rdfs:comment "Per-field extraction provenance for a Sample/Analysis/AnalyticalRun/Element value, or per-extraction provenance for a LocationInfo candidate, reusing mo:Reference. Scope to a single field via the existing mo:property; scope to a page/bbox via the existing mo:page_info -> mo:PageInfo -> mo:BoundingBox for PDF sources, or via :artifact_info below for other artifact types. On a LocationInfo, use :candidate_confidence to record how likely this particular extraction is the correct location — a MineralSite may have several LocationInfo extractions (see mo:location_info's relaxed cardinality) that differ only in :candidate_confidence. :AnalyticalRun added alongside the :analytical_run property so method-field provenance can live once per run instead of once per split-out per-element :Analysis."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/artifact_info
@@ -1259,6 +1259,12 @@ mo:zone rdf:type owl:DatatypeProperty ;
 ###  https://geochemistry.isi.edu/ontology/Analysis
 :Analysis rdf:type owl:Class ;
           rdfs:label "Analysis"@en .
+
+
+###  https://geochemistry.isi.edu/ontology/AnalyticalRun
+:AnalyticalRun rdf:type owl:Class ;
+               rdfs:label "Analytical Run"@en ;
+               rdfs:comment "The lab run/spot behind one or more per-element :Analysis records (a multi-element panel is split into one :Analysis per element, linked back via :analytical_run — see :analytical_run's comment). Holds the method/instrument/lab fields that are constant across every element in that run, instead of repeating them on each per-element :Analysis. Verified against the live KG (2026-08-12): of 822,295 :Analysis nodes collapsing to 55,565 runs, 0 runs had inconsistent values for any of these fields."@en .
 
 
 ###  https://geochemistry.isi.edu/ontology/Element
